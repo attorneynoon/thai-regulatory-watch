@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-09-19T10:12:30Z",
+  "generated_at": "2026-09-19T11:07:28Z",
   "records": [
+    {
+      "event_id": "health-e5d4d02a5b5faaed884f904a068d33ad",
+      "message": null,
+      "observed_at": "2026-09-19T11:07:28Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "not-run",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-c870a491dcd030bb3ab681f375ef09ab",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-19T11:07:28Z",
+      "official_url": "https://www.etda.or.th/th/newsevents/pr-news.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-7c8be69a6b9c791eb886addda136ee91",
+      "message": null,
+      "observed_at": "2026-09-19T11:07:28Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "not-run",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-48ded66555da2a9a4311d6eb4983dcba",
+      "message": null,
+      "observed_at": "2026-09-19T11:07:28Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3cc093e782b73d153f23e9c245059e36",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-19T11:07:28Z",
+      "official_url": "https://www.etda.or.th/en/newsevents/pr-news.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-02",
+      "status": "failed"
+    },
     {
       "event_id": "health-f47614191444e081aabebf6c6778c074",
       "message": null,
