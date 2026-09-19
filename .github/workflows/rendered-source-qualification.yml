@@ -21,6 +21,15 @@ jobs:
       - run: python scripts/probe_rendered_sources.py
         env:
           PYTHONIOENCODING: utf-8
+          RENDERED_PROBE_OUTPUT: ${{ runner.temp }}/rendered-probe
+      - name: Upload script-free rendered markup for selector review
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: rendered-selector-review
+          path: ${{ runner.temp }}/rendered-probe
+          retention-days: 1
+          if-no-files-found: ignore
       - run: python scripts/probe_pdpc_alternates.py
         env:
           PYTHONIOENCODING: utf-8

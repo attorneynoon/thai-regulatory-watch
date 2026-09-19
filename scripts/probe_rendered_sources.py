@@ -1,11 +1,13 @@
 """Read-only GitHub Chromium qualification for unhealthy HTML sources."""
 import json
+import os
 import sys
 from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +16,24 @@ sys.path.insert(0, str(ROOT))
 from regwatch.collector import collect_source
 from regwatch.browser_transport import RenderedTransport
 from regwatch.engine import empty_state
+
+
+MARKUP_TARGETS = {
+    'dlt-watch', 'etda-listing-01', 'etda-listing-02', 'mot-watch',
+    'ocs-council-of-state-law-search-application', 'set-watch', 'tsd-watch',
+}
+
+
+def save_safe_markup(source_id, body):
+    output = os.environ.get('RENDERED_PROBE_OUTPUT')
+    if not output or source_id not in MARKUP_TARGETS or not body:
+        return
+    soup = BeautifulSoup(body, 'html.parser')
+    for node in soup.select('script,style,noscript,iframe,form,input,textarea,meta'):
+        node.decompose()
+    path = Path(output)
+    path.mkdir(parents=True, exist_ok=True)
+    (path/f'{source_id}.html').write_text(str(soup), encoding='utf-8')
 
 
 def main():
@@ -38,6 +58,7 @@ def main():
                 transport = RenderedTransport(test_source,browser)
                 try:
                     result = collect_source(state,test_source,now,transport=transport,root=ROOT)
+                    save_safe_markup(source['id'], transport.last_body)
                     examples = [
                         {
                             'title': row.get('title'),

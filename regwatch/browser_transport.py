@@ -18,6 +18,7 @@ class RenderedTransport:
         self.context = browser.new_context()
         self._public_hosts = set()
         self._navigation_block = None
+        self.last_body = None
         self.context.route('**/*', self._route_request)
 
     def _route_request(self, route):
@@ -58,6 +59,7 @@ class RenderedTransport:
             time.sleep(wait)
         self.safety.last_request[host] = time.monotonic()
         self._navigation_block = None
+        self.last_body = None
         page = self.context.new_page()
         try:
             try:
@@ -92,6 +94,7 @@ class RenderedTransport:
                 raise ValueError('Rendered response exceeds byte budget')
             if any(marker in body[:20000].lower() for marker in CHALLENGE_MARKERS):
                 raise AccessBlocked('Rendered challenge page')
+            self.last_body = body
             return status, dict(response.headers), body, final
         finally:
             page.close()

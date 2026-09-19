@@ -44,6 +44,7 @@ class BrowserTransportTests(unittest.TestCase):
         safety=Mock();safety._policy.return_value=0;safety.last_request={}
         transport=RenderedTransport(self.source(),Browser(Page()),safety=safety)
         self.assertIn(b'<article>News</article>',transport.fetch('https://example.org/news')[2])
+        self.assertIn(b'<article>News</article>',transport.last_body)
         safety._policy.assert_called_once_with('https://example.org/news')
         self.assertEqual(transport.context.page.goto_options['wait_until'],'commit')
 
