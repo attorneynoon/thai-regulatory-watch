@@ -77,6 +77,14 @@ class StateSafetyTests(unittest.TestCase):
         self.assertEqual(s['events'],old)
         self.assertEqual(s['sources'][SOURCE['id']]['status'],'degraded')
 
+    def test_repeated_attachment_failure_does_not_fake_recovery(self):
+        s=empty_state()
+        source={**SOURCE,'allowed_hosts':['example.org'],'mode':'html','asset_budget':1}
+        html=b'<a href="/docs/1.pdf">Order A</a>'
+        for day in [19,20]:
+            collect_source(s,source,f'2026-09-{day}T00:00:00Z',FakeTransport([html,b'<html>Error</html>']))
+        self.assertEqual([e['status'] for e in s['health_events']],['degraded'])
+
     def test_suspicious_drop(self):
         s=empty_state(); source={**SOURCE,'mode':'html','allowed_hosts':['example.org']}
         apply_observations(s,source,[{'url':f'https://example.org/{i}','title':str(i)} for i in range(10)],'2026-09-19T00:00:00Z')

@@ -22,7 +22,7 @@ def set_health(state, source, status, now, error=None):
         ss["last_success_at"] = now
 
 
-def apply_observations(state, source, candidates, now):
+def apply_observations(state, source, candidates, now, mark_healthy=True):
     ss = source_state(state, source["id"])
     baseline = not ss["baseline_complete"]
     for record in candidates:
@@ -60,5 +60,6 @@ def apply_observations(state, source, candidates, now):
         observation["event_id"] = event["event_id"]
         state["events"].append(deepcopy(event))
     ss.update(baseline_complete=True, last_count=len(candidates))
-    set_health(state, source, "healthy", now)
+    if mark_healthy:
+        set_health(state, source, "healthy", now)
     state["last_run_at"] = now

@@ -32,3 +32,11 @@ The hourly schedule is configured, with manual invocation proven. Scheduled deli
 ### Reload-determinism amendment
 
 Comparison of cloud-generated XML with an offline rebuild exposed differing extension-field order after state serialization. Added a failing state-roundtrip regression and fixed RSS field ordering. **36 tests passed** after the correction, including identical artifact bytes before/after state JSON reload. Event IDs, observation contents and retained history were unchanged.
+
+### Health-transition amendment
+
+A repeated PDF failure regression exposed intermediate healthy/degraded transitions within one collection. Final health is now emitted once after all listing/document work. **37 tests passed** including repeated-failure deduplication. No recovery is emitted merely because the listing succeeds while its checked attachment still fails.
+
+### Second hosted run
+
+[Run 35432691007](https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/35432691007) passed collection and deployment; health remained failed for the same coverage limits. Public readback passed again. All 575 event IDs were unchanged, the changes feed remained empty, and the combined RSS SHA-256 remained `7f1ee6fdb9fa22131de167bf24d6bce67398d2c353e519a972a8a9f035c2f3cf`. New first-time PDF fingerprints did not create revision alerts. The final health-transition amendment was verified by regression tests; it was made after this hosted run and will be picked up by the next scheduled/manual collection.

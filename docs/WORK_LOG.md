@@ -27,3 +27,7 @@ Created the owner-approved public GitHub repository, enabled Pages with workflow
 Next obligations: maintainers qualify failed/pending source scopes with representative fixtures and permitted live checks; owner selects the repository in Codex cloud for coding tasks and chooses where existing GRC consumers should read these public endpoints. Those downstream changes are outside this producer deployment.
 
 Cloud/local artifact comparison exposed RSS extension ordering differences after persisted-state reload. Added a regression and sorted extension fields; 36 tests passed. This changes serialization order only, preserving all event identities and source evidence. Re-running the hosted workflow verifies the amended producer and deployment.
+
+Final health regression found that repeated attachment failures could emit a temporary healthy transition within each run. Collector now sets final health only once after document checks. The failing regression passed after the fix; 37 tests passed. This prevents misleading recovery notices without weakening the separate health-failure signal.
+
+Second hosted run 35432691007 passed collection/deployment and retained the same 575 event IDs and identical combined RSS bytes, with no false content-change events. Health remained red for unresolved source coverage. Public readback passed again. The final health-transition correction is test-verified and queued for the next scheduled/manual run; no claim is made that that later code path ran in this second collection.
