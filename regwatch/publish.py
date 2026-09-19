@@ -145,7 +145,13 @@ def rss(name,events,base,limit,source_map=None):
     element(channel,'link',base+'/')
     detected=name in ('changes','changes-all','health')
     date_note='Detection order; pubDate is detected/observed time.' if detected else 'Newest source publication first, falling back to source modification. Undated items follow dated items; no pubDate is invented. Date-only pubDate uses midnight UTC for presentation, not a known publication time.'
-    element(channel,'description','Public observations for review. '+date_note+' Legal effect is Not assessed. RSS window: '+str(limit)+'. Full history: '+base+'/api/v1/events.json')
+    coverage_note=''
+    if name in ('changes','regulatory'):
+        selected=[s for s in (source_map or {}).values() if s.get('feed_priority')=='regulatory' and s.get('enabled')]
+        unavailable=[s['id'] for s in selected if s.get('status')!='healthy']
+        coverage_note=' Regulatory source coverage: '+str(len(selected)-len(unavailable))+'/'+str(len(selected))+' healthy. '
+        if unavailable:coverage_note+='Incomplete coverage: '+', '.join(unavailable)+'. No new feed entries is not proof of no regulatory updates. '
+    element(channel,'description','Public observations for review. '+date_note+coverage_note+' Legal effect is Not assessed. RSS window: '+str(limit)+'. Full history: '+base+'/api/v1/events.json')
     element(channel,'{http://www.w3.org/2005/Atom}link',None,href=base+'/feeds/'+name+'.xml',rel='self',type='application/rss+xml')
     for e in ordered_events(events,detected)[:limit]:
         item=ET.SubElement(channel,'item')
@@ -226,7 +232,7 @@ def dashboard(state,sources,events,items,base):
         escape(' · '.join(f'{k}: {v}' for k,v in sorted(counts.items())))+'</p><p>Candidate collection does not establish complete coverage. Pending scopes are included in the inventory but are not being collected. Publication dates may be unknown. All observations require review; legal effect is Not assessed.</p>'+
         '<section><h2>Regulatory focus</h2><p>Selected legal, decision, consultation and guidance sections. This is source-scope curation, not a finding of legal significance. General publicity stays in the full archive. '+link('feeds/regulatory.xml','Subscribe to regulatory inventory')+' · '+link('feeds/changes.xml','Regulatory changes only')+' · '+link('feeds/changes-all.xml','All changes including general news')+'</p></section>'+
         '<section><h2>Recent changes</h2><p>Regulatory-focus detections first; an update to an old document appears here.</p>'+event_list(ordered_events(focused_changes,detected=True)[:100],detected=True)+'</section>'+
-        '<section><h2>Current inventory</h2><p>Showing '+str(min(100,len(current)))+' of '+str(len(current))+' retained items. One representative current observation per canonical item. Newest source publication first, then source modification as fallback; undated items follow dated items. RSS up to 500 by default: '+link('feeds/current/all.xml','Subscribe to current items')+' · Full JSON (all retained items): '+link('api/v1/items.json','items.json')+'</p>'+event_list(current[:100])+'</section>'+
+        '<section><h2>Current regulatory inventory</h2><p>Showing '+str(min(100,len(current)))+' of '+str(len(current))+' retained regulatory-focus items. One representative current observation per canonical item. Newest source publication first, then source modification as fallback; undated items follow dated items. '+link('feeds/regulatory.xml','Subscribe to regulatory items')+' · '+link('feeds/current/all.xml','Unfiltered current inventory')+' · Full JSON (all retained items): '+link('api/v1/items.json','items.json')+'</p>'+event_list(current[:100])+'</section>'+
         '<section><h2>Regulator subscriptions</h2><p>Choose all sections for a regulator, or subscribe to an individual configured source section.</p><ul id="subscriptions">'+subscriptions+'</ul></section>'+
         '<section id="source-coverage"><h2>Source coverage</h2><input id="filter" aria-label="Filter sources" placeholder="Filter regulator, source or status"><div class="table"><table><thead><tr><th>Source RSS</th><th>Publisher / configured section</th><th>Run status</th><th>Validation</th><th>Last success</th><th>Limitations</th></tr></thead><tbody id="sources">'+''.join(rows)+'</tbody></table></div></section>'+
         '<footer>RSS keeps up to 500 events per view by default in the order described above. JSON preserves the retained history. A source failure is a coverage limitation, not evidence of no regulatory change.</footer>'
@@ -261,7 +267,7 @@ def build_site(state,sources,out,base,limit=500):
     for topic in sorted({t for s in sources for t in s['topics']}):
         feeds['topic-'+topic]=[e for e in events if topic in e['topics']]
     for s in sources: feeds[s['id']]=[e for e in events if e['source_id']==s['id']]
-    source_map={s['id']:s for s in sources}
+    source_map={s['id']:{**s,**next(p for p in public if p['id']==s['id'])} for s in sources}
     for name,es in feeds.items(): write_changed(out/'feeds'/f'{name}.xml',rss(name,es,base,limit,source_map))
     root=ET.Element('opml',version='2.0')
     element(ET.SubElement(root,'head'),'title','Thai Regulatory Watch')

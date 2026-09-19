@@ -1796,7 +1796,8 @@ sources:
 - id: pdpc-official-consultations
   feed_priority: regulatory
   regulator_id: pdpc
-  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  title: PDPC — Published consultation opinions
+  publisher_name: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
   url: https://www.pdpc.or.th/consultation/
   topics:
   - privacy
@@ -1924,7 +1925,8 @@ sources:
 - id: pdpc-official-orders
   feed_priority: regulatory
   regulator_id: pdpc
-  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  title: PDPC — Expert committee order summaries, panels 1–4
+  publisher_name: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
   url: https://www.pdpc.or.th/adjudication-panel-decisionsummary/
   topics:
   - privacy

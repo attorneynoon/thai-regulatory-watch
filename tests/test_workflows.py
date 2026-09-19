@@ -15,6 +15,10 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(jobs['health']['needs'],'collect')
         self.assertEqual(jobs['deploy']['permissions'],{'pages':'write','id-token':'write'})
         self.assertNotIn('pull_request',workflow['on'])
+        self.assertEqual(workflow['on']['workflow_dispatch']['inputs']['collection_scope']['default'],'all')
+        collection=next(s for s in jobs['collect']['steps'] if s.get('name')=='Collect public sources')
+        self.assertIn('--source pdpc-official-orders',collection['run'])
+        self.assertIn('else\n',collection['run'])
         for job in jobs.values():
             for step in job.get('steps',[]):
                 if 'uses' in step:

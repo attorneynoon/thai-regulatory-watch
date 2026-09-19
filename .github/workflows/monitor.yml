@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
+    inputs:
+      collection_scope:
+        description: Collection scope (scheduled runs always collect all sources)
+        type: choice
+        options: [all, pdpc]
+        default: all
 permissions:
   contents: read
 concurrency:
@@ -27,7 +33,15 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: python -m regwatch validate
-      - run: python -m regwatch collect --allow-source-errors
+      - name: Collect public sources
+        env:
+          COLLECTION_SCOPE: ${{ inputs.collection_scope }}
+        run: |
+          if [ "$COLLECTION_SCOPE" = "pdpc" ]; then
+            python -m regwatch collect --allow-source-errors --source pdpc-official-orders --source pdpc-official-consultations --source pdpc-laws --source pdpc-announcements --source pdpc-news
+          else
+            python -m regwatch collect --allow-source-errors
+          fi
       - run: python -m regwatch check
       - name: Preserve collected public state and outputs
         run: |
