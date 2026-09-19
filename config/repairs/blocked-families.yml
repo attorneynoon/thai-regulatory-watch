@@ -1,0 +1,145 @@
+sources:
+- id: tisi-listing-04
+  tls_intermediates:
+    pr.tisi.go.th: config/tls/globalsign-gcc-r6-alphassl-2025.pem
+  link_selector: '#magone-archive-blog-rolls .item-title a[href]'
+  item_selector: .item
+  date_selector: .meta-item-date span
+  include_url: null
+  fixture: tests/fixtures/repairs/blocked-tisi-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Current first-page PR archive cards with displayed Thai publication dates. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory. No completeness assertion.
+- id: tisi-listing-05
+  tls_intermediates:
+    pr.tisi.go.th: config/tls/globalsign-gcc-r6-alphassl-2025.pem
+  link_selector: '#magone-archive-blog-rolls .item-title a[href]'
+  item_selector: .item
+  date_selector: .meta-item-date span
+  include_url: null
+  fixture: tests/fixtures/repairs/blocked-tisi-documents.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Current first-page official document archive cards with displayed Thai publication dates; includes dual-category articles and no nested attachment traversal. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory.
+- id: tisi-listing-06
+  tls_intermediates:
+    pr.tisi.go.th: config/tls/globalsign-gcc-r6-alphassl-2025.pem
+  fixture: tests/fixtures/repairs/blocked-tisi-feed.xml
+  fixture_kind: representative-official-extract
+  limitations:
+  - Qualified public RSS with 10 latest items and explicit RFC publication timestamps. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory. RSS is bounded and not full historical coverage.
+- id: pdpc-listing-02
+  mode: json-page
+  enabled: true
+  validation_status: candidate
+  title: PDPC consultation topic taxonomy snapshot
+  document_type: source-snapshot
+  json_rows: data
+  json_snapshot_fields: [id, title]
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-pdpc-topics.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial aggregate snapshot of the public consultation-topic taxonomy, not consultation opinions or individual publications. Hash only public id/title fields at the actual API URL; creation timestamps are not publication dates and remain null. No fabricated per-topic URLs.
+- id: pdpc-listing-03
+  mode: json-page
+  enabled: true
+  validation_status: candidate
+  title: PDPC public knowledge content snapshot
+  document_type: source-snapshot
+  json_rows: data
+  json_filter: {status: 1}
+  json_snapshot_fields: [id, document_number, subject, legal_topic, research_direction, consultation]
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-pdpc-knowledge.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial aggregate snapshot of active public knowledge content at the actual API URL, not individual publications. Qualified with 68 active records and 2 disabled records excluded. Explicit field whitelist excludes internal user IDs, media metadata and timestamps. Public HTML content is hashed, not rendered. No per-item reader URLs or publication dates inferred.
+- id: pdpc-listing-01
+  url: https://www.pdpc.or.th/front-page/
+  mode: html
+  enabled: true
+  validation_status: candidate
+  link_selector: .detail h3.title a
+  item_selector: .detail
+  date_selector: .date
+  include_url: '/[0-9]+/?$'
+  fixture: tests/fixtures/repairs/blocked-pdpc-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - The root landing page has no publication cards; follow the official front-page destination. Qualified locally on 2026-09-19 with 21 unique news cards and displayed dates. Current front-page subset only; cloud robots availability may differ.
+- id: pdpc-official-home
+  link_selector: .detail h3.title a
+  item_selector: .detail
+  date_selector: .date
+  include_url: '/[0-9]+/?$'
+  fixture: tests/fixtures/repairs/blocked-pdpc-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Qualified locally on 2026-09-19 with 21 unique numeric-permalink news cards and displayed dates. Current front-page subset only; cloud robots availability may differ.
+- id: pdpc-official-office-orders
+  link_selector: .detail h3.title a
+  item_selector: .detail
+  date_selector: .date
+  include_url: '/[0-9]+/?$'
+  fixture: tests/fixtures/repairs/blocked-pdpc-office.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Qualified locally on 2026-09-19 with one listed office order dated 2023-01-06. Numeric article permalink and displayed publication date; no completeness assertion or nested PDF discovery. Cloud robots availability may differ.
+- id: pdpc-official-orders
+  pagination_selector: 'article .entry-content a[href*="/adjudication-panel-decisionsummary-"]'
+  max_pages: 5
+  fixture: tests/fixtures/repairs/blocked-pdpc-orders.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - The parent page links to four expert-committee panels; follow those official links under a five-page bound. Qualified locally on 2026-09-19; retain existing history. Dates are displayed publication dates, not inferred decision dates. Cloud robots availability may differ. Legal effect remains Not assessed.
+- id: pdpc-official-private-sector
+  mode: page
+  enabled: true
+  validation_status: candidate
+  content_selector: 'main > section:nth-of-type(2) h2, main > section:nth-of-type(2) h3, main > section:nth-of-type(2) p'
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-pdpc-private.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial selected-content page watch of the public GPPC PLUS program description and four component descriptions. This is not individual-item publication collection. Excludes registration controls and menus; no registration or submission performed. Publication date unknown.
+- id: sec-listing-02
+  mode: page
+  enabled: true
+  validation_status: candidate
+  content_selector: '#gPP26T02'
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-sec-enforcement.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial selected-content page watch of the official recent-enforcement table, observed locally with 161 data rows on 2026-09-19. This is not individual enforcement-item collection; table dates are not assigned as the page publication date. News links repeat across entities, so URL deduplication cannot represent individual enforcement rows. No access to the blocked www.sec.or.th host is required. Legal effect remains Not assessed.
+- id: etda-standards
+  url: https://opendata.etda.or.th/th/group/etda-recommendation
+  allowed_hosts: [opendata.etda.or.th]
+  mode: html
+  enabled: true
+  validation_status: candidate
+  link_selector: .dataset-heading a[href]
+  title_attribute: title
+  item_selector: .dataset-item
+  date_selector: 'time.publication-date-not-present'
+  include_url: '/th/dataset/[^/?]+$'
+  pagination_selector: '.pagination li:not(.active) a[href]'
+  max_pages: 2
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-etda-recommendations.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial alternate official ETDA Recommendation catalog, with 41 catalog datasets across two pages. This does not cover standards news, consultations or all standards. Dataset full titles come from anchor title attributes. Catalog update dates are not established publication dates and remain null. Original www.etda.or.th robots redirects to HTML and remains blocked; no bypass is used.
+- id: tisi-listing-03
+  url: https://tcps.tisi.go.th/public/StandardList.aspx
+  allowed_hosts: [tcps.tisi.go.th]
+  mode: page
+  enabled: true
+  validation_status: candidate
+  content_selector: '#ctl00_ContentPlaceHolder1_Standard1_GridView1 tr:has(a[id$="HyperLink2"])'
+  asset_budget: 0
+  fixture: tests/fixtures/repairs/blocked-tisi-community.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Partial selected-content page watch of the official community-product standards table, first 50 standards only. This is not individual-item collection and does not replace general industrial standards or certification coverage. HTTP/backslash document links are not fetched or rewritten. Publication date unknown; legal effect remains Not assessed.

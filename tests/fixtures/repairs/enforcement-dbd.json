@@ -1,0 +1,19 @@
+{
+  "statusCode": 200,
+  "data": {
+    "result": [
+      {
+        "id": "e25249dd-b4b8-44f4-8e9f-e3a5106175e9",
+        "title": "กรมพัฒนาธุรกิจการค้า เดินหน้าสู่ระบบดิจิทัล เตรียมยุติให้บริการสำนักงานพัฒนาธุรกิจการค้า เขต 6 ตั้งแต่ 1 เม.ย. 69 เป็นต้นไป... พร้อมเสริมทัพบุคลากร",
+        "slug": "14605032569",
+        "rawDate": "2026-03-05T03:24:37.370Z"
+      },
+      {
+        "id": "eda7d31e-92fd-402b-b79e-ca1f8f77afac",
+        "title": "Department of Business Development (DBD) will organize a workshop on “How to use the new online e-Foreign Business service system” ",
+        "slug": "139170767",
+        "rawDate": "2024-07-17T02:39:33.947Z"
+      }
+    ]
+  }
+}

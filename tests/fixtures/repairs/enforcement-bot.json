@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "results": [
+    {
+      "pagePath": "https://www.bot.or.th/th/news-and-media/news/news-20260914.html",
+      "listingTitle": "ธปท. เปิดให้แลกธนบัตรที่ระลึกเฉลิมพระเกียรติสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถพระบรมราชชนนีพันปีหลวง ที่เคยได้จัดทำขึ้นเมื่อปี 2547 และปี 2559",
+      "issueDt": "14 ก.ย. 2569"
+    },
+    {
+      "pagePath": "https://www.bot.or.th/th/news-and-media/news/news-20260910.html",
+      "listingTitle": "ธปท. ผนึกกำลังภาคการเงินไทยยกระดับมาตรการเชิงรุกต้านธุรกรรมผิดกฎหมาย ",
+      "issueDt": "10 ก.ย. 2569"
+    }
+  ]
+}

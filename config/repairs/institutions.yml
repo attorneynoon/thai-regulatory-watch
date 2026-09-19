@@ -1,0 +1,447 @@
+sources:
+- id: administrative-court-watch
+  url: https://www.admincourt.go.th/public-relations/public-relations-news
+  allowed_hosts:
+  - www.admincourt.go.th
+  enabled: true
+  validation_status: candidate
+  mode: next-data
+  json_rows: 3.content.list.data
+  json_fields:
+    title: title
+    published_at: startDate
+    modified_at: updatedDate
+    document_id: uuid
+  url_template: https://www.admincourt.go.th/public-relations/public-relations-news/{uuid}
+  fixture: tests/fixtures/repairs/institution-administrative-court.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: bora-watch
+  url: https://www.bora.dopa.go.th/menu-news/
+  allowed_hosts:
+  - www.bora.dopa.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .ultp-block-title a
+  item_selector: .ultp-block-item
+  date_selector: .ultp-block-date
+  fixture: tests/fixtures/repairs/institution-bora.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: ccib-watch
+  url: https://www.ccib.go.th/ประชาสมพนธ/ขาวจบกม
+  allowed_hosts:
+  - www.ccib.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .jXK9ad-SmKAyb a[href]
+  item_selector: .jXK9ad-SmKAyb
+  title_selector: p:first-child
+  include_url: /20\d{2}-
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-ccib.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+  - 131 raw links qualified on the page; collection is bounded to 100 items per run.
+    First unlinked headline is not represented.
+  - Listing has entries without explicit publication dates; dates are not inferred
+    from titles or URLs.
+- id: cifs-watch
+  url: https://www.cifs.go.th/index.php?mod=news
+  allowed_hosts:
+  - www.cifs.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .card-news h3 a
+  item_selector: .card-news
+  date_selector: .datetime
+  include_url: route=news_detail
+  fixture: tests/fixtures/repairs/institution-cifs.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: courts-watch
+  url: https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N
+  allowed_hosts:
+  - nbljc.coj.go.th
+  - nknjc.coj.go.th
+  - nnkc.coj.go.th
+  - pngjc.coj.go.th
+  - rayjc.coj.go.th
+  - skuc.coj.go.th
+  - www.coj.go.th
+  enabled: true
+  validation_status: candidate
+  mode: json-html
+  json_html_field: html
+  link_selector: .detail-title a
+  item_selector: .infocard
+  date_selector: .detail-date
+  date_pattern: (\d{4}-\d{2}-\d{2} \d{2}:\d{2})
+  limitations:
+  - First six national court news cards only. Exact destination hosts observed in
+    this response are allowed; newly appearing court hosts require explicit allowlist
+    qualification. No historical completeness claim.
+  fixture: tests/fixtures/repairs/institution-courts.json
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+- id: dlpw-watch
+  url: https://www.labour.go.th/
+  allowed_hosts:
+  - www.labour.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: article h2 a
+  item_selector: article
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-dlpw.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: dlt-watch
+  url: https://www.dlt.go.th/
+  allowed_hosts:
+  - www.dlt.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - Public HTML is an empty Nuxt application shell with no publication anchors. Its
+    advertised API origin https://dltweb-main-api.dlt.go.th/ returned HTTP 401 through
+    robots-respecting Transport. No credential flow or authentication bypass attempted.
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: doe-watch
+  url: https://www.doe.go.th/prd/main/index?page=home
+  allowed_hosts:
+  - www.doe.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .rst-shortcodeslist a[href], h6 a[href]
+  include_url: /prd/main/news/.*/object_id/\d+
+  item_selector: li
+  title_attribute: title
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-doe.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+  - Listing has entries without explicit publication dates; dates are not inferred
+    from titles or URLs.
+- id: dopa-watch
+  url: https://www.dopa.go.th/news/cate1
+  allowed_hosts:
+  - www.dopa.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: article.news-list > a
+  item_selector: article.news-list
+  title_attribute: title
+  date_selector: .date
+  fixture: tests/fixtures/repairs/institution-dopa.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: labour-court-watch
+  url: https://lbc.coj.go.th/th/content/category/getarticles/id/10?pageIndex=1
+  allowed_hosts:
+  - lbc.coj.go.th
+  enabled: true
+  validation_status: candidate
+  mode: json-html
+  json_html_field: html
+  link_selector: .detail-title a
+  item_selector: .inforow
+  date_selector: .detail-date .date
+  fixture: tests/fixtures/repairs/institution-labour-court.json
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+  - This official general-news category currently starts with a 2024 item; recentness
+    across other categories is not established.
+- id: labour-relations-watch
+  url: https://relation.labour.go.th/คณะกรรมการแรงงานสัมพันธ์
+  allowed_hosts:
+  - relation.labour.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .category-list td.list-title a
+  item_selector: tr
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-labour-relations.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+  - Listing has entries without explicit publication dates; dates are not inferred
+    from titles or URLs.
+- id: mdes-watch
+  url: https://www.mdes.go.th/rss
+  allowed_hosts:
+  - www.mdes.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - 'AccessBlocked: Access unavailable: HTTP 403'
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: moph-watch
+  url: https://pr.moph.go.th/
+  allowed_hosts:
+  - pr.moph.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: article h3 a
+  item_selector: article
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-moph.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: morprom-watch
+  url: https://mohpromt.moph.go.th/
+  allowed_hosts:
+  - mohpromt.moph.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - 'AccessBlocked: Access unavailable: HTTP 403'
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: mot-watch
+  url: https://www.mot.go.th/news
+  allowed_hosts:
+  - www.mot.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - 'AccessBlocked: Robots unavailable: Robots unavailable: HTTP 418'
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: nacc-watch
+  url: https://nacc.go.th/category/2018083118464105/list
+  allowed_hosts:
+  - nacc.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .t-list2f a
+  item_selector: .list_des2f
+  date_selector: .date
+  include_url: /categorydetail/2018083118464105/
+  fixture: tests/fixtures/repairs/institution-nacc.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: nhso-watch
+  url: https://www.nhso.go.th/th/communicate-th/thnewsforperson
+  allowed_hosts:
+  - www.nhso.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .article-title h2 a
+  item_selector: .uk-card-body
+  date_selector: time
+  fixture: tests/fixtures/repairs/institution-nhso.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: prosecutors-watch
+  url: https://www.ago.go.th/feed/
+  allowed_hosts:
+  - www.ago.go.th
+  enabled: true
+  validation_status: candidate
+  mode: rss
+  fixture: tests/fixtures/repairs/institution-prosecutors.xml
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: sepo-watch
+  url: https://www.sepo.go.th/news/index
+  allowed_hosts:
+  - www.sepo.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - 'AccessBlocked: Robots unavailable: Robots unavailable: HTTP 200'
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: set-watch
+  url: https://www.set.or.th/th/about/mediacenter/news-release/main
+  allowed_hosts:
+  - www.set.or.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - News Releases HTML contains no article anchors. Exact public GET /api/cms/v1/knowledge/cards
+    endpoint and news category IDs were recovered from the linked page component;
+    its robots-permitted request returned HTTP 403. No bypass attempted.
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: sso-watch
+  url: https://www.sso.go.th/
+  allowed_hosts:
+  - www.sso.go.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - 'AccessBlocked: Robots unavailable: (''Connection aborted.'', RemoteDisconnected(''Remote
+    end closed connection without response''))'
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: thaicert-watch
+  url: https://www.thaicert.or.th/cyber-threat-news-th/
+  allowed_hosts:
+  - www.thaicert.or.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .tc-cn-post-title a
+  item_selector: .tc-cn-post-card
+  date_selector: .tc-cn-meta > span:nth-child(2)
+  include_url: /\d{4}/\d{2}/\d{2}/
+  fixture: tests/fixtures/repairs/institution-thaicert.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+- id: tsd-watch
+  url: https://www.set.or.th/th/tsd/overview
+  allowed_hosts:
+  - www.set.or.th
+  enabled: false
+  validation_status: pending
+  mode: html
+  limitations:
+  - Official TSD overview is accessible, but is institutional/service content, not
+    a publication listing. TSD announcement discovery uses SET News Releases; its
+    advertised public knowledge/cards API returned HTTP 403. No operational article
+    collection qualified.
+  - Discovery or access remains pending; no operational coverage or no-update claim.
+- id: wage-committee-watch
+  url: https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ
+  allowed_hosts:
+  - www.mol.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .mecontent td:nth-child(3) a
+  item_selector: tr
+  date_selector: time
+  include_url: (?i)\.pdf(?:\?|$)
+  include_title: ประกาศ|ระเบียบ|คำชี้แจง|รายงาน|สรุปมติ|คู่มือ|ข้อมูล
+  fixture: tests/fixtures/repairs/institution-wage-committee.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
+  - Listing has entries without explicit publication dates; dates are not inferred
+    from titles or URLs.
+- id: mol-listing-01
+  url: https://www.mol.go.th/
+  allowed_hosts:
+  - www.mol.go.th
+  enabled: true
+  validation_status: candidate
+  mode: html
+  link_selector: .blog-entry h4 a
+  item_selector: .blog-entry
+  date_selector: .entry-meta li:has(.fa-calendar-o)
+  date_pattern: (\d{1,2}\s+[^\s]+\s+\d{4})
+  include_url: https://www\.mol\.go\.th/news/
+  fixture: tests/fixtures/repairs/institution-mol.html
+  fixture_kind: representative-official-extract
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live-qualified first-page publication metadata only; no historical, full-document,
+    or legal-effect completeness claim. Unknown publication dates remain null.
