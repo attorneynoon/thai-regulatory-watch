@@ -2,7 +2,7 @@
 
 Independent, automatically updated public regulatory RSS and JSON for review-only GRC intake.
 
-**[Dashboard](https://attorneynoon.github.io/thai-regulatory-watch/)** · **[Changes RSS](https://attorneynoon.github.io/thai-regulatory-watch/feeds/changes.xml)** · **[All events RSS](https://attorneynoon.github.io/thai-regulatory-watch/feeds/all.xml)** · **[GRC events JSON](https://attorneynoon.github.io/thai-regulatory-watch/api/v1/events.json)** · **[Source health](https://attorneynoon.github.io/thai-regulatory-watch/feeds/health.xml)**
+**[Dashboard](https://attorneynoon.github.io/thai-regulatory-watch/)** · **[Tech Lawyer & Digital Platforms](https://attorneynoon.github.io/thai-regulatory-watch/practice/tech-lawyer-digital-platforms/)** · **[Changes RSS](https://attorneynoon.github.io/thai-regulatory-watch/feeds/changes.xml)** · **[All events RSS](https://attorneynoon.github.io/thai-regulatory-watch/feeds/all.xml)** · **[GRC events JSON](https://attorneynoon.github.io/thai-regulatory-watch/api/v1/events.json)** · **[Source health](https://attorneynoon.github.io/thai-regulatory-watch/feeds/health.xml)**
 
 The inventory reconciles the existing enforcement, upstream GR/GA, legislative and cloud monitoring watch lists: **96 source scopes across 53 regulator, legislative and related public-institution groups**. It includes government agencies, statutory consumer advocacy, and self-regulatory sources with distinct authority classifications. **Inventory inclusion is not operational coverage.** Check the dashboard or `site/api/v1/sources.json` for each scope's enablement, validation and run status.
 
@@ -25,6 +25,8 @@ The inventory reconciles the existing enforcement, upstream GR/GA, legislative a
 | `api/v1/sources.json` | Source inventory, coverage and last-run health |
 
 RSS keeps up to **500 entries per view**. JSON retains complete observation history. A publication may have several revision events in `all.xml`; `current/all.xml` and `current/<regulator>.xml` offer a deduplicated current-item view without deleting any history. Subscribe to a combined view **or** selected regulator/topic/source feeds to avoid duplicate reading.
+
+Nine [practice-focus pages](docs/PRACTICE_FOCUS.md) combine relevant regulators for human reading. Each page publishes a current-items RSS and a post-baseline changes RSS. A regulator may appear in more than one practice; these are configurable reading scopes, not legal classifications.
 
 Source-chronology feeds sort newest official publication first, then source modification; undated records follow dated ones and omit `pubDate`. Date-only values use midnight UTC solely as an RSS display convention, explicitly labelled `rss_date_precision=day`. **Changes and health feeds remain detection-ordered** so revisions to old documents are visible. Descriptions show source dates, observation dates, full publisher/section, available excerpts/document IDs, types, topics and limitations. See [feed reading and date semantics](docs/FEED_READING.md).
 
