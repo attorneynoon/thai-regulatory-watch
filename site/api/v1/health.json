@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-09-19T08:22:41Z",
+  "generated_at": "2026-09-19T08:34:36Z",
   "records": [
+    {
+      "event_id": "health-e6087c7775e3a1c1d7a154237c7f1c11",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/announce/writ/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-office-orders",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-dbd1772886f0250c86c504a2c61265e4",
+      "message": null,
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-ca3ee94b2c1635980872caa6297066f8",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/front-page/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-home",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7331da1eabf845fa794fb58ce1f5acac",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/consultation/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-consultations",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-71f7db19089ae4f0e1e7ab3af71b6711",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/contact-us/public_hearing/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-public-hearings",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-522a067c747de1e34797511c2aa3dba8",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/adjudication-panel-decisionsummary/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-orders",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-38dc25771b0077fd090cdc5e37d7cf8a",
+      "message": "Robots unavailable: Robots unavailable: HTTP 403",
+      "observed_at": "2026-09-19T08:34:36Z",
+      "official_url": "https://www.pdpc.or.th/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-e111feaf2b59d6a6c4e00e26e918190e",
       "message": null,
