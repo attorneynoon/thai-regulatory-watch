@@ -14,6 +14,8 @@ The inventory reconciles the existing enforcement, upstream GR/GA, legislative a
 | `feeds/changes.xml` | New items and revisions after source baseline |
 | `feeds/<regulator>.xml` | Events for one regulator/institution |
 | `feeds/<source-id>.xml` | Events for one monitored page/scope |
+| `feeds/current/all.xml` | One current observation per canonical item, newest official dates first |
+| `feeds/current/<regulator>.xml` | Deduplicated current items for one regulator |
 | `feeds/topic-<topic>.xml` | Events for one topic across sources |
 | `feeds/baseline.xml` | Initial inventories |
 | `feeds/health.xml` | Failures and recoveries |
@@ -22,9 +24,11 @@ The inventory reconciles the existing enforcement, upstream GR/GA, legislative a
 | `api/v1/items.json` | Current items, preserving source-specific observations |
 | `api/v1/sources.json` | Source inventory, coverage and last-run health |
 
-RSS keeps the latest **500 events per view**. JSON retains complete observation history. A publication may have several revision events in `all.xml`; `items.json` is the deduplicated current inventory. Subscribe to the combined feed **or** selected regulator/topic/source feeds to avoid duplicate reading.
+RSS keeps up to **500 entries per view**. JSON retains complete observation history. A publication may have several revision events in `all.xml`; `current/all.xml` and `current/<regulator>.xml` offer a deduplicated current-item view without deleting any history. Subscribe to a combined view **or** selected regulator/topic/source feeds to avoid duplicate reading.
 
-`pubDate` is observation time. Official publication dates remain separate and may be unknown. Initial existing publications are `BASELINE`, not new news. Legal effect remains `Not assessed`. Hash changes signal changed bytes; PDFs are not archived and a hash cannot reconstruct a previous document.
+Source-chronology feeds sort newest official publication first, then source modification; undated records follow dated ones and omit `pubDate`. Date-only values use midnight UTC solely as an RSS display convention, explicitly labelled `rss_date_precision=day`. **Changes and health feeds remain detection-ordered** so revisions to old documents are visible. Descriptions show source dates, observation dates, full publisher/section, available excerpts/document IDs, types, topics and limitations. See [feed reading and date semantics](docs/FEED_READING.md).
+
+Initial existing publications are `BASELINE`, not new news. Legal effect remains `Not assessed`. Hash changes signal changed bytes; PDFs are not archived and a hash cannot reconstruct a previous document.
 
 The first successful PDF fingerprint establishes its baseline, not a change alert. Latest document-check evidence is in `items.json`; immutable event records retain the evidence available when that event occurred. Listings may include general administrative news, and configuration-based topic tags do not determine relevance or legal authority.
 
@@ -45,7 +49,7 @@ Raw fallback: [all.xml](https://raw.githubusercontent.com/attorneynoon/thai-regu
 
 ## Add another government URL
 
-Open **Issues → New issue → Add a government source**, or ask a cloud coding task to update `config/sources.yml` using [the onboarding guide](docs/ADDING_SOURCES.md). Ordinary HTML, RSS/Atom and selected-content pages use configuration. API or JavaScript portals need a tested adapter. Requests remain pending until reviewed.
+Open **Issues → New issue → Add a government source**, or ask a cloud coding task to update `config/sources.yml` using [the onboarding guide](docs/ADDING_SOURCES.md). HTML, RSS/Atom, selected-content pages and observed public JSON contracts use configuration and representative tests. Inert embedded JSON and narrow Next-data contracts are supported without executing page scripts. Requests remain pending until reviewed.
 
 ## Use from ChatGPT and Codex cloud
 

@@ -35,6 +35,7 @@ def parse_date(raw):
         return None
     s = str(raw).strip().translate(str.maketrans("๐๑๒๓๔๕๖๗๘๙", "0123456789"))
     original_s = s
+    month_first=any(s.startswith(m+' ') for m in MONTHS+SHORT_MONTHS)
     try:
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", s):
             return datetime.strptime(s, "%Y-%m-%d").date().isoformat()
@@ -47,7 +48,9 @@ def parse_date(raw):
             s = s.replace(name, str(i))
     for i,name in enumerate(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],1):
         s=re.sub(r'\b'+name+r'\b',str(i),s,flags=re.I)
-    match = re.fullmatch(r"\s*(\d{1,2})[ /.-]+(\d{1,2})[ /.-]+(?:พ.ศ.\s*)?(\d{4})\s*", s)
+    if month_first:
+        s=re.sub(r'^(\d{1,2})\s+(\d{1,2}),\s*(\d{4})$',r'\2 \1 \3',s)
+    match = re.fullmatch(r"\s*(\d{1,2})[ /.-]+(\d{1,2})[ /.-]+(?:พ.ศ.\s*)?(\d{4})(?:\s+(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?)?\s*", s)
     if match:
         day, month, year = map(int, match.groups())
         try:
