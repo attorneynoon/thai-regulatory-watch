@@ -1,0 +1,3337 @@
+{
+  "generated_at": "2026-09-19T08:22:41Z",
+  "records": [
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "administrative-court-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "administrative-court",
+      "status": "pending",
+      "title": "Administrative Court",
+      "topics": [
+        "enforcement"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "amlo-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:amlo:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "amlo",
+      "status": "pending",
+      "title": "สำนักงานป้องกันและปราบปรามการฟอกเงิน",
+      "topics": [
+        "aml"
+      ],
+      "url": "https://www.amlo.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "amlo-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:amlo:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "amlo",
+      "status": "pending",
+      "title": "สำนักงานป้องกันและปราบปรามการฟอกเงิน",
+      "topics": [
+        "aml"
+      ],
+      "url": "https://www.amlo.go.th/dpl/content/index/3",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "amlo-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:amlo:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "amlo",
+      "status": "pending",
+      "title": "สำนักงานป้องกันและปราบปรามการฟอกเงิน",
+      "topics": [
+        "aml"
+      ],
+      "url": "https://sed.amlo.go.th/content/index/44?page=1",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "bora-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "bora",
+      "status": "pending",
+      "title": "Bureau of Registration Administration",
+      "topics": [
+        "privacy"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "bot-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Live HTML contained no article URLs; likely client-rendered listing. Requires an explicit tested adapter."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:bot:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "bot",
+      "status": "pending",
+      "title": "ธนาคารแห่งประเทศไทย",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": "https://www.bot.or.th/th/news-and-media/news.html",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "cabinet-secretariat-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cabinet-secretariat:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "cabinet-secretariat",
+      "status": "pending",
+      "title": "สำนักเลขาธิการคณะรัฐมนตรี",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://www.soc.go.th/?page_id=28201",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ccib-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ccib",
+      "status": "pending",
+      "title": "Cyber Crime Investigation Bureau",
+      "topics": [
+        "cybersecurity"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "cifs-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "cifs",
+      "status": "pending",
+      "title": "Central Institute of Forensic Science",
+      "topics": [
+        "enforcement"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "council-of-state-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "council-of-state:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "council-of-state",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการกฤษฎีกา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://www.krisdika.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "courts-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "courts",
+      "status": "pending",
+      "title": "Official court publications",
+      "topics": [
+        "enforcement"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "customs-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:customs:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "customs",
+      "status": "pending",
+      "title": "กรมศุลกากร",
+      "topics": [
+        "trade"
+      ],
+      "url": "https://www.customs.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dbd-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:dbd:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dbd",
+      "status": "pending",
+      "title": "กรมพัฒนาธุรกิจการค้า",
+      "topics": [
+        "corporate"
+      ],
+      "url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dip-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:dip:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dip",
+      "status": "pending",
+      "title": "กรมทรัพย์สินทางปัญญา",
+      "topics": [
+        "intellectual-property"
+      ],
+      "url": "https://webnew.ipthailand.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "diw-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:diw:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "diw",
+      "status": "pending",
+      "title": "กรมโรงงานอุตสาหกรรม",
+      "topics": [
+        "industry"
+      ],
+      "url": "https://www.diw.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "diw-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:diw:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "diw",
+      "status": "pending",
+      "title": "กรมโรงงานอุตสาหกรรม",
+      "topics": [
+        "industry"
+      ],
+      "url": "https://www.diw.go.th/webdiw/news/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "diw-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:diw:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "diw",
+      "status": "pending",
+      "title": "กรมโรงงานอุตสาหกรรม",
+      "topics": [
+        "industry"
+      ],
+      "url": "https://www.diw.go.th/webdiw/wp-json/wp/v2/posts?per_page=100&orderby=modified&order=desc&_fields=id,date,modified,slug,link,title,excerpt,categories",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dlpw-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dlpw",
+      "status": "pending",
+      "title": "Department of Labour Protection and Welfare",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dlt-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dlt",
+      "status": "pending",
+      "title": "Department of Land Transport",
+      "topics": [
+        "privacy",
+        "transport"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "doe-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "doe",
+      "status": "pending",
+      "title": "Department of Employment",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dopa-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dopa",
+      "status": "pending",
+      "title": "Department of Provincial Administration",
+      "topics": [
+        "privacy"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "dsi-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:dsi:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "dsi",
+      "status": "pending",
+      "title": "กรมสอบสวนคดีพิเศษ",
+      "topics": [
+        "enforcement"
+      ],
+      "url": "https://www.dsi.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "etda-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: Response exceeds byte budget",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:etda:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "etda",
+      "status": "blocked",
+      "title": "สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์",
+      "topics": [
+        "platforms",
+        "digital-services"
+      ],
+      "url": "https://www.etda.or.th/th/newsevents/pr-news.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "etda-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: Response exceeds byte budget",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:etda:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "etda",
+      "status": "blocked",
+      "title": "สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์",
+      "topics": [
+        "platforms",
+        "digital-services"
+      ],
+      "url": "https://www.etda.or.th/en/newsevents/pr-news.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "etda-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: Response exceeds byte budget",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:etda:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "etda",
+      "status": "blocked",
+      "title": "สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์",
+      "topics": [
+        "platforms",
+        "digital-services"
+      ],
+      "url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "etda-standards",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: Response exceeds byte budget",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "etda",
+      "status": "blocked",
+      "title": "ETDA standards",
+      "topics": [
+        "standards",
+        "digital-services"
+      ],
+      "url": "https://www.etda.or.th/th/StandardNews.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "excise-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:excise:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "excise",
+      "status": "pending",
+      "title": "กรมสรรพสามิต",
+      "topics": [
+        "tax"
+      ],
+      "url": "https://www.excise.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "excise-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:excise:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "excise",
+      "status": "pending",
+      "title": "กรมสรรพสามิต",
+      "topics": [
+        "tax"
+      ],
+      "url": "https://webdev.excise.go.th/act2560/suppress-news/79-2569",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "fda-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:fda:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "fda",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการอาหารและยา",
+      "topics": [
+        "consumer",
+        "product-safety"
+      ],
+      "url": "https://api.oryor.com/media/newsUpdate",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "fda-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:fda:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "fda",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการอาหารและยา",
+      "topics": [
+        "consumer",
+        "product-safety"
+      ],
+      "url": "https://oryor.com/media/newsUpdate",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "house-section-77-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "house-section-77:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "house-section-77",
+      "status": "failed",
+      "title": "สำนักงานเลขาธิการสภาผู้แทนราษฎร",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://www.parliament.go.th/section77/survey_list77.php",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "labour-court-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "labour-court",
+      "status": "pending",
+      "title": "Labour courts and official judgments",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "labour-relations-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "labour-relations",
+      "status": "pending",
+      "title": "Official labour-relations bodies",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "law-go-th-api",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "law-go-th:public-hearings:api",
+        "law-go-th:api_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "law-go-th",
+      "status": "pending",
+      "title": "สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน) / ศูนย์กลางข้อมูลกฎหมาย",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://apig.law.go.th/dga-user-service-survey/surveys",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "law-go-th-public-hearings",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "law-go-th:public-hearings",
+        "law-go-th:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "law-go-th",
+      "status": "pending",
+      "title": "สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน) / ศูนย์กลางข้อมูลกฎหมาย",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://law.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "mdes-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "mdes",
+      "status": "pending",
+      "title": "Ministry of Digital Economy and Society",
+      "topics": [
+        "digital-services"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "mol-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:mol:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "mol",
+      "status": "pending",
+      "title": "กระทรวงแรงงาน",
+      "topics": [
+        "employment"
+      ],
+      "url": "https://www.mol.go.th/news_group/news/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "moph-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "moph",
+      "status": "pending",
+      "title": "Ministry of Public Health",
+      "topics": [
+        "privacy",
+        "health"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "morprom-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "morprom",
+      "status": "pending",
+      "title": "MorProm official publications",
+      "topics": [
+        "privacy",
+        "health"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "mot-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "mot",
+      "status": "pending",
+      "title": "Ministry of Transport",
+      "topics": [
+        "transport"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "nacc-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "nacc",
+      "status": "pending",
+      "title": "National Anti-Corruption Commission",
+      "topics": [
+        "enforcement"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "nbtc-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:nbtc:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "nbtc",
+      "status": "pending",
+      "title": "สำนักงาน กสทช.",
+      "topics": [
+        "telecom"
+      ],
+      "url": "https://www.nbtc.go.th/News.aspx",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ncsa-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:ncsa:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ncsa",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ",
+      "topics": [
+        "cybersecurity"
+      ],
+      "url": "https://www.ncsa.or.th/news?category=announcement",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ncsa-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:ncsa:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ncsa",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ",
+      "topics": [
+        "cybersecurity"
+      ],
+      "url": "https://www.ncsa.or.th/news?category=news",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ncsa-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:ncsa:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ncsa",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ",
+      "topics": [
+        "cybersecurity"
+      ],
+      "url": "https://www.ncsa.or.th/data/output/news.json",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "nhso-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "nhso",
+      "status": "pending",
+      "title": "National Health Security Office",
+      "topics": [
+        "privacy",
+        "health"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "ocpb-home",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ocpb",
+      "status": "failed",
+      "title": "OCPB news",
+      "topics": [
+        "consumer",
+        "news"
+      ],
+      "url": "https://www.ocpb.go.th/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ocpb-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Live generic more_news.php response contained navigation links only. A category-specific listing must be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:ocpb:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ocpb",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการคุ้มครองผู้บริโภค",
+      "topics": [
+        "consumer"
+      ],
+      "url": "https://www.ocpb.go.th/more_news.php",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ocs-council-of-state-law-search-api",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "ocs-council-of-state-law-search:api_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ocs-council-of-state-law-search",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการกฤษฎีกา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://searchlaw.ocs.go.th/ocs-api",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ocs-council-of-state-law-search-application",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Upstream registry explicitly has watch_enabled false; retained as pending scope."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "ocs-council-of-state-law-search:application_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ocs-council-of-state-law-search",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการกฤษฎีกา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://searchlaw.ocs.go.th/council-of-state/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "ocs-council-of-state-law-search-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Upstream registry explicitly has watch_enabled false; retained as pending scope."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "ocs-council-of-state-law-search:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "ocs-council-of-state-law-search",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการกฤษฎีกา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://www.ocs.go.th/searchlaw-law",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "parliament-einitiative-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "parliament-einitiative:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "parliament-einitiative",
+      "status": "pending",
+      "title": "สำนักงานเลขาธิการสภาผู้แทนราษฎร",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://einitiative.parliament.go.th/draft-law-more?type=0",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "parliament-repository-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "parliament-repository:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "parliament-repository",
+      "status": "pending",
+      "title": "รัฐสภา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://prt.parliament.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "pdpc-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:pdpc:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://www.pdpc.or.th/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "pdpc-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:pdpc:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://lawcenter-service.pdpc.or.th/api/v1/consult/getAllConsultTopic",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "pdpc-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Known first-party API endpoint; payload and pagination adapter need qualification."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:pdpc:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://lawcenter-service.pdpc.or.th/api/v1/public/knowledge/getLastKnowledge?limit=1000&offset=0&from=&to=&type=0&orderBy=DESC",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 79,
+      "attachment_checks": 2,
+      "authority_class": "official-publication",
+      "document_type": "consultation-opinion",
+      "enabled": true,
+      "id": "pdpc-official-consultations",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:22:41Z",
+      "last_count": 81,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:22:41Z",
+      "limitations": [
+        "Attachment-box title, explicit displayed publication date and direct PDF URL. Consultation opinions are not public hearings. PDF hashes rotate; no legal effect assessed."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 300,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-consultations"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "pdpc",
+      "status": "healthy",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy",
+        "consultation-opinions"
+      ],
+      "url": "https://www.pdpc.or.th/consultation/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "pdpc-official-gppc",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-gppc"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://gppc.pdpc.or.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "pdpc-official-home",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-home"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://www.pdpc.or.th/front-page/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "pdpc-official-office-orders",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-office-orders"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://www.pdpc.or.th/category/pdpc-law/announce/writ/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "expert-committee-order-summary",
+      "enabled": true,
+      "id": "pdpc-official-orders",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:22:41Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Attachment-box title, explicit displayed publication date and direct PDF URL. Consultation opinions are not public hearings. PDF hashes rotate; no legal effect assessed."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 300,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-orders"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy",
+        "orders"
+      ],
+      "url": "https://www.pdpc.or.th/adjudication-panel-decisionsummary/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "pdpc-official-private-sector",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-private-sector"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://register-gppc-plus.pdpc.or.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "pdpc-official-public-hearings",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "pdpc:official-public-hearings"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "pdpc",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)",
+      "topics": [
+        "privacy"
+      ],
+      "url": "https://www.pdpc.or.th/contact-us/public_hearing/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "prosecutors-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "prosecutors",
+      "status": "pending",
+      "title": "Official prosecution publications",
+      "topics": [
+        "enforcement"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 4,
+      "attachment_checks": 2,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "rd-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 6,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:17:46Z",
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:rd:1"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "rd",
+      "status": "healthy",
+      "title": "กรมสรรพากร",
+      "topics": [
+        "tax"
+      ],
+      "url": "https://www.rd.go.th/21.html",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "royal-gazette-discovery",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "royal-gazette:discovery_url"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "royal-gazette",
+      "status": "pending",
+      "title": "สำนักเลขาธิการคณะรัฐมนตรี / ราชกิจจานุเบกษา",
+      "topics": [
+        "legislation"
+      ],
+      "url": "https://ratchakitcha.soc.go.th/",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "sec-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: Robots unavailable: HTTP 403",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:sec:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "sec",
+      "status": "blocked",
+      "title": "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": "https://www.sec.or.th/TH/Pages/News.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "sec-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:sec:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "sec",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "sepo-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "sepo",
+      "status": "pending",
+      "title": "State Enterprise Policy Office",
+      "topics": [
+        "competition"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "set-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "set",
+      "status": "pending",
+      "title": "Stock Exchange of Thailand",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "sso-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "sso",
+      "status": "pending",
+      "title": "Social Security Office",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "statutory-consumer-advocacy",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcc-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcc:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcc",
+      "status": "failed",
+      "title": "สภาองค์กรของผู้บริโภค",
+      "topics": [
+        "consumer"
+      ],
+      "url": "https://www.tcc.or.th/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 97,
+      "attachment_checks": 2,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-announcements",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:22:41Z",
+      "last_count": 100,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:22:41Z",
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "tcct",
+      "status": "healthy",
+      "title": "TCCT announcements",
+      "topics": [
+        "competition",
+        "announcements"
+      ],
+      "url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:1",
+        "tcct:official-home"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/Press_release_2026/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-04",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:4"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/news_and_events/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-05",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:5"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-listing-06",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:6"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/statistics/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "tcct-listing-07",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tcct:7",
+        "tcct:official-catalog"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "pending",
+      "title": "สำนักงานคณะกรรมการแข่งขันทางการค้า",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://catalog.tcct.or.th/th/organization/tcct",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 98,
+      "attachment_checks": 2,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-merger",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 100,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:17:46Z",
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "tcct",
+      "status": "healthy",
+      "title": "TCCT merger rulings",
+      "topics": [
+        "competition",
+        "mergers"
+      ],
+      "url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-official-complaints-prosecution",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "tcct:official-complaints-prosecution"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการการแข่งขันทางการค้า (TCCT)",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/fact_finding_and_prosecution_process/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-official-rules-guidelines",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:22:41Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "tcct:official-rules-guidelines"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tcct",
+      "status": "failed",
+      "title": "สำนักงานคณะกรรมการการแข่งขันทางการค้า (TCCT)",
+      "topics": [
+        "competition",
+        "platforms"
+      ],
+      "url": "https://www.tcct.or.th/view/1/Secondary_Laws_and_Guidelines/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 24,
+      "attachment_checks": 2,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tcct-orders",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:22:41Z",
+      "last_count": 26,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:22:41Z",
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "tcct",
+      "status": "healthy",
+      "title": "TCCT orders",
+      "topics": [
+        "competition",
+        "orders"
+      ],
+      "url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 3,
+      "attachment_backlog": 131,
+      "attachment_checks": 3,
+      "authority_class": "official-publication",
+      "document_type": "ruling",
+      "enabled": true,
+      "id": "tcct-unfair",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 134,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:17:46Z",
+      "limitations": [
+        "Official unfair-rulings index; publication dates extracted from .text-red2. Current listing only; no completeness assertion or nested-detail traversal. PDF checks rotate under a per-run budget."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 300,
+      "max_pages": 1,
+      "origin_ids": [
+        "owner-initial-source-assessment"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "tcct",
+      "status": "healthy",
+      "title": "TCCT unfair-trade rulings",
+      "topics": [
+        "competition",
+        "rulings"
+      ],
+      "url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "self-regulatory-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "thaibma-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Suspicious empty/undersized parse; previous inventory retained",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:thaibma:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "thaibma",
+      "status": "failed",
+      "title": "สมาคมตลาดตราสารหนี้ไทย",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": 26,
+      "attachment_checks": 2,
+      "authority_class": "self-regulatory-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "thaibma-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 28,
+      "last_error": null,
+      "last_success_at": "2026-09-19T08:17:46Z",
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": 1,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:thaibma:2"
+      ],
+      "pagination_truncated": false,
+      "regulator_id": "thaibma",
+      "status": "healthy",
+      "title": "สมาคมตลาดตราสารหนี้ไทย",
+      "topics": [
+        "financial-markets"
+      ],
+      "url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "thaicert-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "thaicert",
+      "status": "pending",
+      "title": "ThaiCERT",
+      "topics": [
+        "cybersecurity"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "tisi-listing-01",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:1"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "pending",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://www.tisi.go.th/index.php/th/notice",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "tisi-listing-02",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:2"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "pending",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://www.tisi.go.th/index.php/th/news",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "tisi-listing-03",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:3"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "pending",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://www.tisi.go.th/index.php/th/standard-certification",
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tisi-listing-04",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:4"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "blocked",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tisi-listing-05",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation.",
+        "Candidate family filter; fixture tests engine behavior, not live source completeness."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:5"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "blocked",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": true,
+      "id": "tisi-listing-06",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": "2026-09-19T08:17:46Z",
+      "last_count": 0,
+      "last_error": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai",
+      "last_success_at": null,
+      "limitations": [
+        "Listing scope and recent-item completeness require live validation."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "enforcement:tisi:6"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tisi",
+      "status": "blocked",
+      "title": "สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม",
+      "topics": [
+        "product-safety",
+        "standards"
+      ],
+      "url": "https://pr.tisi.go.th/feed/",
+      "validation_status": "candidate"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "tsd-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "tsd",
+      "status": "pending",
+      "title": "Thailand Securities Depository",
+      "topics": [
+        "privacy",
+        "financial-markets"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    },
+    {
+      "asset_budget": 2,
+      "attachment_backlog": null,
+      "attachment_checks": null,
+      "authority_class": "official-publication",
+      "document_type": "publication",
+      "enabled": false,
+      "id": "wage-committee-watch",
+      "item_limit_reached": null,
+      "jurisdiction": "TH",
+      "language": "th",
+      "last_attempt_at": null,
+      "last_count": null,
+      "last_error": null,
+      "last_success_at": null,
+      "limitations": [
+        "Institution named in existing monitoring scope; exact public listing URL and adapter remain to be qualified."
+      ],
+      "listing_pages_checked": null,
+      "max_items": 100,
+      "max_pages": 1,
+      "origin_ids": [
+        "cloud-monitoring-lanes:institution-watch"
+      ],
+      "pagination_truncated": null,
+      "regulator_id": "wage-committee",
+      "status": "pending",
+      "title": "Official wage committees",
+      "topics": [
+        "employment"
+      ],
+      "url": null,
+      "validation_status": "pending"
+    }
+  ],
+  "schema_version": "1.0"
+}

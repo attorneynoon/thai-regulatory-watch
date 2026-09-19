@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "records": {
+      "items": {
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "not-run",
+              "pending",
+              "disabled",
+              "healthy",
+              "degraded",
+              "blocked",
+              "failed"
+            ]
+          },
+          "topics": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "validation_status": {
+            "enum": [
+              "candidate",
+              "pending",
+              "verified",
+              "disabled"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "regulator_id",
+          "title",
+          "url",
+          "topics",
+          "enabled",
+          "validation_status",
+          "status",
+          "limitations"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "generated_at",
+    "records"
+  ],
+  "title": "Regulatory Watch sources v1",
+  "type": "object"
+}

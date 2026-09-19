@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "records": {
+      "items": {
+        "additionalProperties": true,
+        "properties": {
+          "attachment_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "authority_class": {
+            "type": "string"
+          },
+          "canonical_url": {
+            "type": "string"
+          },
+          "changed_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "classification_basis": {
+            "type": "string"
+          },
+          "content_sha256": {
+            "type": "string"
+          },
+          "coverage_status": {
+            "type": "string"
+          },
+          "document_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "document_type": {
+            "type": "string"
+          },
+          "document_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effective_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "event_type": {
+            "enum": [
+              "BASELINE",
+              "NEW",
+              "UPDATED",
+              "UPDATED_ATTACHMENT"
+            ]
+          },
+          "extraction_confidence": {
+            "type": "string"
+          },
+          "extraction_method": {
+            "type": "string"
+          },
+          "first_observed_at": {
+            "type": "string"
+          },
+          "item_id": {
+            "type": "string"
+          },
+          "jurisdiction": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "legal_effect": {
+            "const": "Not assessed"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "listing_url": {
+            "type": "string"
+          },
+          "modified_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "observation_id": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string"
+          },
+          "official_url": {
+            "type": "string"
+          },
+          "pinpoint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "previous_event_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publication_date_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "published_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "regulator_id": {
+            "type": "string"
+          },
+          "review_status": {
+            "const": "unreviewed"
+          },
+          "revision": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "schema_version": {
+            "const": "1.0"
+          },
+          "signal_candidate": {
+            "enum": [
+              "Radar",
+              "Watch",
+              "Action",
+              null
+            ]
+          },
+          "signal_type": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_response_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "temporal_horizon": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "topics": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "event_id",
+          "observation_id",
+          "item_id",
+          "source_id",
+          "regulator_id",
+          "publisher",
+          "jurisdiction",
+          "document_type",
+          "authority_class",
+          "classification_basis",
+          "language",
+          "title",
+          "official_url",
+          "canonical_url",
+          "listing_url",
+          "first_observed_at",
+          "observed_at",
+          "content_sha256",
+          "extraction_method",
+          "extraction_confidence",
+          "coverage_status",
+          "signal_type",
+          "temporal_horizon",
+          "previous_event_id",
+          "summary",
+          "document_url",
+          "document_id",
+          "published_at",
+          "publication_date_raw",
+          "modified_at",
+          "effective_at",
+          "attachment_sha256",
+          "source_response_sha256",
+          "pinpoint",
+          "schema_version",
+          "event_type",
+          "revision",
+          "topics",
+          "limitations",
+          "changed_fields",
+          "review_status",
+          "legal_effect",
+          "signal_candidate"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "generated_at",
+    "records"
+  ],
+  "title": "Regulatory Watch events v1",
+  "type": "object"
+}

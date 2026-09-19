@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "records": {
+      "items": {
+        "properties": {
+          "canonical_url": {
+            "type": "string"
+          },
+          "item_id": {
+            "type": "string"
+          },
+          "observations": {
+            "items": {
+              "required": [
+                "source_id",
+                "event_id",
+                "title",
+                "revision"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "item_id",
+          "canonical_url",
+          "source_ids",
+          "observations"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "generated_at",
+    "records"
+  ],
+  "title": "Regulatory Watch items v1",
+  "type": "object"
+}
