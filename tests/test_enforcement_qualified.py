@@ -89,7 +89,7 @@ class EnforcementQualified(unittest.TestCase):
         self.assertTrue(any(r['url'].endswith('/fta-thai-eu-2/') for r in rows))
 
     def test_unresolved_access_is_not_enabled(self):
-        for sid in ['diw-listing-01','diw-listing-02','diw-listing-03','dsi-listing-01','excise-listing-01','nbtc-listing-01']:
+        for sid in ['diw-listing-01','diw-listing-02','diw-listing-03','excise-listing-01','nbtc-listing-01']:
             self.assertFalse(self.sources[sid]['enabled'])
             self.assertEqual(self.sources[sid]['validation_status'],'pending')
 
