@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-09-19T13:56:56Z",
+  "generated_at": "2026-09-19T15:17:14Z",
   "records": [
+    {
+      "event_id": "health-f11f9846d496b318ee4c5c1d7a432bc0",
+      "message": null,
+      "observed_at": "2026-09-19T15:17:14Z",
+      "official_url": "https://www.etda.or.th/th/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-932413c5a6e1aa150ee59c289ae1ea87",
+      "message": null,
+      "observed_at": "2026-09-19T15:17:14Z",
+      "official_url": "https://www.etda.or.th/en/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-7816bf397707a6337d004c2ec62a23f9",
+      "message": null,
+      "observed_at": "2026-09-19T15:17:14Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-2b0ce91cfe4ea43c42bdbe9467b96887",
       "message": "Access unavailable: HTTP 403",
