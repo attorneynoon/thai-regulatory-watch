@@ -118,3 +118,54 @@ The owner requested all25 failed/blocked and64 pending scopes be repaired. Every
 - Representative extracts and response hashes: `tests/fixtures/repairs/`.
 - Access-denied/invalid-policy sources require an official permitted alternative, working publisher policy/service, or an authorized supported API contract. Replaying blocked requests through an unofficial proxy is not a valid repair.
 - Missing metadata remains unknown; configured types/topics are not legal conclusions. [Feed sorting and metadata](../docs/FEED_READING.md) explains the reader-facing behavior.
+
+## Hosted verification — deployment completed
+
+This section is the current deployment result; the earlier table is local qualification. [PR1](https://github.com/attorneynoon/thai-regulatory-watch/pull/1) merged as `54b5a77`. [Linux CI35435439296](https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/35435439296) passed98 tests, registry validation, offline generation, recursive XML/JSON checks and deterministic rebuild. [Hosted run35435485662](https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/35435485662) passed collection and deployment; its separate health job remains red for the genuine blockers below.
+
+- Public generated-at: `2026-09-19T09:43:56Z`.
+- **52 healthy,21 blocked,23 pending**. Compared with7 previously healthy cloud scopes,45 more are operational;44 scopes still have coverage gaps.
+- **1,464 canonical items /1,831 observation events**. All575 original item IDs and event IDs remain present; every event remains unreviewed / legal effect Not assessed.
+- Hosted current-TCCT feed contains500 current entries with unique canonical links; its first entry is the official2026-09-17 ruling. The combined event feed also sorts by source date.
+- Readback validated current/all, current/tcct, tcct, changes and health RSS plus all four JSON endpoints; visible metadata, GUID uniqueness and baseline-history retention passed.
+- Desktop/mobile preview and expanded metadata were visually inspected; source filtering works without horizontal page overflow.
+
+### Enabled scopes still blocked from GitHub
+
+| Source ID | Cloud evidence |
+|---|---|
+| `dlpw-watch` | Robots unavailable: HTTPSConnectionPool(host='www.labour.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError("HTTPSConnection(host='www.labour.go.th', port=443): Failed to establis |
+| `doe-watch` | Robots unavailable: HTTPSConnectionPool(host='www.doe.go.th', port=443): Read timed out. (read timeout=20) |
+| `dopa-watch` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `etda-listing-01` | Robots unavailable: Response exceeds byte budget |
+| `etda-listing-02` | Robots unavailable: Response exceeds byte budget |
+| `etda-listing-03` | Robots unavailable: Response exceeds byte budget |
+| `labour-court-watch` | Robots unavailable: HTTPSConnectionPool(host='lbc.coj.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='lbc.coj.go.th', port=443) at 0x7fe9e6c0e300>, 'Con |
+| `labour-relations-watch` | Robots unavailable: HTTPSConnectionPool(host='relation.labour.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='relation.labour.go.th', port=443) at 0x7fe |
+| `moph-watch` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `nacc-watch` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `nhso-watch` | Robots unavailable: HTTPSConnectionPool(host='www.nhso.go.th', port=443): Read timed out. (read timeout=20) |
+| `parliament-repository-discovery` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-listing-01` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-listing-02` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-listing-03` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-official-consultations` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-official-home` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-official-office-orders` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-official-orders` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `pdpc-official-public-hearings` | Robots unavailable: Robots unavailable: HTTP 403 |
+| `sec-listing-01` | Robots unavailable: Robots unavailable: HTTP 403 |
+
+The23 pending scopes in the local table remain pending in cloud. A local success does not supersede a cloud denial. Denied sites were not proxied, impersonated, authenticated, or fetched with weakened TLS. Some are network failures rather than policy denials; any separate execution host would need a supported, authorized arrangement and fresh source-policy checks. Existing hourly collection retries enabled sources and preserves last-good records.
+
+### Public artifact fingerprints
+
+| Artifact | SHA-256 |
+|---|---|
+| `events` | `e4da9851e3567cbf98b3d725ced0c8f6247c3a7dbce2d78a5f53c55d29b3d029` |
+| `items` | `88463fd988495f5fbb90048ee03fa6cdc463af9d3dbbdf643402eb3914b6a516` |
+| `sources` | `a30c3ea0b0a106fd66e295e67d47720cbd004322f06083671cbaa33b01fc418a` |
+| `current/tcct` | `e9ccde786e6c8177271ccf5b949f543466f90f0bccd0b7ac83aacc05b44f396c` |
+| `current/all` | `64a4f2cf2d8078c786f59bd592a80b427b72d3c411a30d7ffe2afc9438078b27` |
+| `tcct` | `ddb3b7f799b5edf286b73bd3168936690ccf867db2fedce5d2fcc195622875a7` |
+| `changes` | `489fd03750cce3b6f30166146e4fc3f3482bfc8a3ed142666b118ceb63571965` |
