@@ -1,5 +1,7 @@
 # Source coverage
 
+Current remediation evidence supersedes the initial operational counts below: see [the per-source repair report](../reports/SOURCE_REMEDIATION.md) and the live hosted `api/v1/sources.json`. Inventory remains96 source scopes across53 groups; inclusion is not complete coverage.
+
 ## Reconciled inventory — 19 September 2026
 
 The initial inventory contains **96 distinct source scopes across 53 institution groups**. It reconciles the owner's enforcement watch list (21 agencies), GR/GA upstream scopes (12), legislative source groups (8), initial feed requests and additional institutions explicitly named in cloud monitoring lanes. Overlapping exact URLs are consolidated with `origin_ids`; different pages remain distinct. The fixed-instrument practice reference list is not treated as a changing discovery listing.
