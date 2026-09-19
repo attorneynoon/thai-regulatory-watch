@@ -22,7 +22,7 @@ COMMON_CSS='''
 a{color:#075b77;text-underline-offset:.16em}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #c26a00;outline-offset:3px;border-radius:3px}
 header{border-bottom:3px solid #22846c;padding:12px 0 24px}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:.3em 0;max-width:18ch}h2{margin-top:2em;line-height:1.15}h3{line-height:1.3}.eyebrow{letter-spacing:.15em;font-size:.8rem}.lede{font-size:clamp(1.05rem,2vw,1.3rem);max-width:72ch}
 nav{display:flex;flex-wrap:wrap;gap:4px 18px}nav a{display:inline-block;padding:10px 0;min-height:44px}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:#14312c;padding:10px;z-index:10}.skip-link:focus{left:8px}section{background:white;border:1px solid #d8e2dd;padding:20px;margin-top:22px;border-radius:8px}.table{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:850px}td,th{text-align:left;padding:10px;border-bottom:1px solid #e5eae6;vertical-align:top;font-size:.85rem}td:last-child{max-width:350px}
-li{padding:8px 0}small{display:block;color:#536a65}.tag{font-size:.72rem;background:#e4f1e9;padding:3px 6px;border-radius:3px}.status-line{padding:12px;background:#fff0ce;border-left:4px solid #c26a00}.status-line.complete{background:#e4f1e9;border-color:#22846c}.scope-list,.practice-list,.source-list{list-style:none;padding:0}.scope-list{display:flex;flex-wrap:wrap;gap:8px}.scope-list li{background:#edf3f0;border:1px solid #d8e2dd;border-radius:999px;padding:5px 10px}.practice-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 28px}.practice-list li{border-top:1px solid #e5eae6;padding:18px 0}.practice-list strong{display:block;font-size:1.05rem}.practice-list small{margin-top:4px}.source-list>li{border-bottom:1px solid #e5eae6;padding:14px 0}.source-list strong,.source-list small{display:block}
+li{padding:8px 0}small{display:block;color:#536a65}.tag{font-size:.72rem;background:#e4f1e9;padding:3px 6px;border-radius:3px}.status-line{padding:12px;background:#fff0ce;border-left:4px solid #c26a00}.status-line.complete{background:#e4f1e9;border-color:#22846c}.scope-list,.practice-list,.source-list,.manual-check-list{list-style:none;padding:0}.scope-list{display:flex;flex-wrap:wrap;gap:8px}.scope-list li{background:#edf3f0;border:1px solid #d8e2dd;border-radius:999px;padding:5px 10px}.practice-list,.manual-check-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 28px}.practice-list li,.manual-check-list li{border-top:1px solid #e5eae6;padding:18px 0}.practice-list strong,.manual-check-list strong{display:block;font-size:1.05rem}.practice-list small,.manual-check-list small{margin-top:4px}.manual-check-list .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:.7em 0}.manual-check-list .links a{min-height:44px;display:inline-flex;align-items:center}.source-list>li{border-bottom:1px solid #e5eae6;padding:14px 0}.source-list strong,.source-list small{display:block}
 #freshness{padding:12px;background:#fff0ce}#subscriptions{columns:3}#subscriptions>li{break-inside:avoid}input{padding:10px;max-width:90%;width:360px}footer{padding:30px 0;color:#536a65}.event-list{list-style:none;padding:0}.event-list>li{padding:18px 0;border-bottom:1px solid #e5eae6}.event-list h3{margin:.5em 0}details{margin-top:10px}summary{cursor:pointer;color:#075b77;min-height:32px}details[open]{padding:12px;background:#f5f7f4}dl{display:grid;grid-template-columns:minmax(140px,1fr) minmax(0,3fr);gap:8px 16px;font-size:.9rem}dt{font-weight:600}dd{margin:0;min-width:0}
 @media(max-width:600px){body{padding:16px}section{padding:14px}#subscriptions{columns:1}dl{grid-template-columns:1fr;gap:4px}dd{margin-bottom:8px}.practice-list{grid-template-columns:1fr}}
 '''
@@ -225,6 +225,20 @@ def public_sources(state,sources):
     return result
 
 
+def manual_check_section(sources,feed_prefix):
+    unavailable=sorted((source for source in sources if source.get('status')!='healthy'),key=lambda source:(source.get('regulator_id',''),source['id']))
+    if not unavailable:
+        return ''
+    rows=[]
+    for source in unavailable:
+        status=source.get('status','not-run')
+        problem=source.get('last_error') or '; '.join(source.get('limitations',[])) or 'No current limitation recorded.'
+        official='<a href="'+escape(source.get('url') or '#',quote=True)+'">Open official page</a>'
+        section_feed='<a href="'+escape(feed_prefix+source['id']+'.xml',quote=True)+'">Section RSS</a>'
+        rows.append('<li><strong>'+escape(source['title'])+'</strong><span class="tag">'+escape(status)+'</span><small>'+escape(source.get('regulator_id','Not available')+' · '+source['id'])+'</small><div class="links">'+official+section_feed+'</div><small>'+escape(problem)+'</small></li>')
+    return '<section id="manual-checks" aria-labelledby="manual-checks-title"><h2 id="manual-checks-title">Manual checks — unavailable or pending sources</h2><p>Open the official pages directly to check sources the GitHub collector could not retrieve or has not yet qualified. Manual availability does not establish automated coverage, and a collection failure is not evidence of no update.</p><ul class="manual-check-list">'+''.join(rows)+'</ul></section>'
+
+
 def practice_page(practice,sources,events,items,base,latest):
     selected=[source for source in sources if source['regulator_id'] in practice['regulator_ids']]
     source_ids={source['id'] for source in selected}
@@ -237,11 +251,12 @@ def practice_page(practice,sources,events,items,base,latest):
         coverage='<strong>Incomplete coverage:</strong> '+str(len(selected)-len(unavailable))+'/'+str(len(selected))+' configured source sections healthy. Unavailable or pending: '+', '.join(source['id'] for source in unavailable)+'. A missing item is not evidence that no update exists.'
     else:
         coverage='<strong>Coverage status:</strong> all '+str(len(selected))+' configured source sections are healthy for the latest collection.'
+    manual_checks=manual_check_section(selected,'../../feeds/')
     scope=''.join('<li>'+escape(regulator)+'</li>' for regulator in practice['regulator_ids'])
     source_rows=[]
     for source in selected:
         problem=source.get('last_error') or '; '.join(source.get('limitations',[])) or 'No current limitation recorded.'
-        source_rows.append('<li><details><summary><strong>'+escape(source.get('publisher_name') or source['title'])+'</strong> — '+escape(source['title'])+' <span class="tag">'+escape(source.get('status','not-run'))+'</span></summary><small>'+escape(source['id']+' · Last success: '+str(source.get('last_success_at') or 'Never'))+'</small><p>'+escape(problem)+'</p><a href="../../feeds/'+escape(source['id'],quote=True)+'.xml">Section RSS</a></details></li>')
+        source_rows.append('<li><details><summary><strong>'+escape(source.get('publisher_name') or source['title'])+'</strong> — '+escape(source['title'])+' <span class="tag">'+escape(source.get('status','not-run'))+'</span></summary><small>'+escape(source['id']+' · Last success: '+str(source.get('last_success_at') or 'Never'))+'</small><p>'+escape(problem)+'</p><a href="'+escape(source.get('url') or '#',quote=True)+'">Official page</a> · <a href="../../feeds/'+escape(source['id'],quote=True)+'.xml">Section RSS</a></details></li>')
     title=escape(practice['title'])
     summary=escape(practice['summary'])
     slug=practice['slug']
@@ -250,6 +265,7 @@ def practice_page(practice,sources,events,items,base,latest):
 <main id="main">
 <p id="freshness" data-time="'''+escape(latest or '')+'''">'''+escape('NOT RUN' if not latest else 'Last collection: '+latest)+'''</p>
 <p class="'''+status_class+'''">'''+coverage+''' Legal effect is Not assessed; every item requires review.</p>
+'''+manual_checks+'''
 <section aria-labelledby="scope-title"><h2 id="scope-title">Included regulator groups</h2><p>Regulators may appear in more than one practice view. This is a reading and subscription scope, not a legal classification.</p><ul class="scope-list">'''+scope+'''</ul></section>
 <section aria-labelledby="changes-title"><h2 id="changes-title">Recent changes</h2><p>Showing '''+str(min(15,len(changes)))+''' of '''+str(len(changes))+''' retained post-baseline detections, newest detection first. Use Changes RSS for the full feed window.</p>'''+event_list(changes[:15],source_map,detected=True)+'''</section>
 <section aria-labelledby="inventory-title"><h2 id="inventory-title">Current practice inventory</h2><p>Showing '''+str(min(30,len(current)))+''' of '''+str(len(current))+''' current items. Newest source publication first; undated items follow dated items. Use Current-items RSS for the full feed window.</p>'''+event_list(current[:30],source_map)+'''</section>
@@ -265,7 +281,8 @@ def dashboard(state,sources,events,items,base,practices=None):
     def link(url,text): return '<a href="'+escape(url or '#',quote=True)+'">'+escape(str(text))+'</a>'
     rows=[]
     for s in sources:
-        rows.append('<tr><td>'+link('feeds/'+s['id']+'.xml',s['id'])+'</td><td>'+escape(s['title'])+'</td><td>'+escape(s['status'])+'</td><td>'+escape(s['validation_status'])+'</td><td>'+escape(s.get('last_success_at') or 'Never')+'</td><td>'+escape(s.get('last_error') or '; '.join(s['limitations']))+'</td></tr>')
+        rows.append('<tr><td>'+link('feeds/'+s['id']+'.xml',s['id'])+'</td><td>'+link(s.get('url'),'Official page')+'</td><td>'+escape(s['title'])+'</td><td>'+escape(s['status'])+'</td><td>'+escape(s['validation_status'])+'</td><td>'+escape(s.get('last_success_at') or 'Never')+'</td><td>'+escape(s.get('last_error') or '; '.join(s['limitations']))+'</td></tr>')
+    manual_checks=manual_check_section(sources,'feeds/')
     source_map={s['id']:s for s in sources}
     priority_ids={s['id'] for s in sources if s.get('feed_priority')=='regulatory'}
     focused_changes=[e for e in events if e['event_type']!='BASELINE' and e['source_id'] in priority_ids]
@@ -290,10 +307,11 @@ def dashboard(state,sources,events,items,base,practices=None):
         escape(' · '.join(f'{k}: {v}' for k,v in sorted(counts.items())))+'</p><p>Candidate collection does not establish complete coverage. Pending scopes are included in the inventory but are not being collected. Publication dates may be unknown. All observations require review; legal effect is Not assessed.</p>'+
         '<section><h2>Regulatory focus</h2><p>Selected legal, decision, consultation and guidance sections. This is source-scope curation, not a finding of legal significance. General publicity stays in the full archive. '+link('feeds/regulatory.xml','Subscribe to regulatory inventory')+' · '+link('feeds/changes.xml','Regulatory changes only')+' · '+link('feeds/changes-all.xml','All changes including general news')+'</p></section>'+
         '<section id="practices"><h2>Practice focus</h2><p>Human-readable views that combine relevant regulators. A regulator can appear in more than one practice. Each page has current-items and changes RSS.</p>'+practice_directory+'</section>'+
+        manual_checks+
         '<section><h2>Recent changes</h2><p>Regulatory-focus detections first; an update to an old document appears here.</p>'+event_list(ordered_events(focused_changes,detected=True)[:100],source_map,detected=True)+'</section>'+
         '<section><h2>Current regulatory inventory</h2><p>Showing '+str(min(100,len(current)))+' of '+str(len(current))+' retained regulatory-focus items. One representative current observation per canonical item. Newest source publication first, then source modification as fallback; undated items follow dated items. '+link('feeds/regulatory.xml','Subscribe to regulatory items')+' · '+link('feeds/current/all.xml','Unfiltered current inventory')+' · Full JSON (all retained items): '+link('api/v1/items.json','items.json')+'</p>'+event_list(current[:100],source_map)+'</section>'+
         '<section><h2>Regulator subscriptions</h2><p>Choose all sections for a regulator, or subscribe to an individual configured source section.</p><ul id="subscriptions">'+subscriptions+'</ul></section>'+
-        '<section id="source-coverage"><h2>Source coverage</h2><input id="filter" aria-label="Filter sources" placeholder="Filter regulator, source or status"><div class="table"><table><thead><tr><th>Source RSS</th><th>Publisher / configured section</th><th>Run status</th><th>Validation</th><th>Last success</th><th>Limitations</th></tr></thead><tbody id="sources">'+''.join(rows)+'</tbody></table></div></section></main>'+
+        '<section id="source-coverage"><h2>Source coverage</h2><input id="filter" aria-label="Filter sources" placeholder="Filter regulator, source or status"><div class="table"><table><thead><tr><th>Source RSS</th><th>Official page</th><th>Publisher / configured section</th><th>Run status</th><th>Validation</th><th>Last success</th><th>Limitations</th></tr></thead><tbody id="sources">'+''.join(rows)+'</tbody></table></div></section></main>'+
         '<footer>RSS keeps up to 500 events per view by default in the order described above. JSON preserves the retained history. A source failure is a coverage limitation, not evidence of no regulatory change.</footer>'
     )+'''<script>const f=document.getElementById('freshness');const t=Date.parse(f.dataset.time);if(t&&Date.now()-t>10800000){f.textContent+=' — STALE: more than 3 hours';f.style.background='#ffd8ce'}document.getElementById('filter').addEventListener('input',e=>{for(const r of document.querySelectorAll('#sources tr'))r.hidden=!r.textContent.toLowerCase().includes(e.target.value.toLowerCase())});</script></body></html>'''
 
