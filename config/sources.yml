@@ -631,15 +631,15 @@ sources:
 - id: dsi-listing-01
   regulator_id: dsi
   title: กรมสอบสวนคดีพิเศษ
-  url: https://www.dsi.go.th/
+  url: https://www.dsi.go.th/th
   topics:
   - enforcement
   jurisdiction: TH
   language: th
   document_type: publication
   authority_class: official-publication
-  enabled: false
-  validation_status: pending
+  enabled: true
+  validation_status: candidate
   mode: html
   allowed_hosts:
   - www.dsi.go.th
@@ -648,8 +648,12 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - '2026-09-19: robots.txt returns HTML with HTTP200. Official Mission-News index discovered, but same-origin policy remains
-    unresolved; no bypass or unsupported enablement.'
+  - '2026-09-19: homepage publication cards only, not the complete archive; publication dates unavailable on these cards.'
+  link_selector: .dsi-home-news-slider-title a[title]
+  title_attribute: title
+  include_url: /th/Detail/
+  fixture: tests/fixtures/repairs/dsi-headlines.html
+  fixture_kind: representative-official-extract
   origin_ids:
   - enforcement:dsi:1
 - id: etda-listing-01
@@ -712,7 +716,7 @@ sources:
 - id: etda-listing-03
   regulator_id: etda
   title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
-  url: https://www.etda.or.th/th/Useful-Resource/knowledge-sharing.aspx
+  url: https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx
   topics: *id003
   jurisdiction: TH
   language: th
@@ -728,13 +732,16 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - ETDA knowledge articles share the malformed robots response. Catalogue datasets are not equivalent article coverage.
+  - 'First article page only; abbreviated two-digit Thai publication years retained raw, not guessed or replaced by scrape dates.'
   origin_ids:
   - enforcement:etda:3
-  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
-  link_selector: a[href]
-  fixture: tests/fixtures/listing.html
-  fixture_kind: synthetic-adapter-contract
+  include_url: (?i)/th/Useful-Resource/.+\.aspx$
+  link_selector: .title2f a[href]
+  item_selector: .box-thumbnail2f, .col-sm-5
+  summary_selector: .title2f p
+  date_selector: .list-inline > li:first-child
+  fixture: tests/fixtures/repairs/etda-articles.html
+  fixture_kind: representative-official-extract
   exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
 - id: etda-standards
   regulator_id: etda
@@ -1743,8 +1750,8 @@ sources:
   language: th
   document_type: publication
   authority_class: official-publication
-  enabled: false
-  validation_status: pending
+  enabled: true
+  validation_status: candidate
   mode: html
   allowed_hosts:
   - gppc.pdpc.or.th
@@ -1753,7 +1760,14 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - GPPC robots returns an HTML response. No equivalent permitted publication endpoint qualified.
+  - 'Homepage article cards only, not the complete archive. Advertised /feed/ returned HTML and is not used as RSS.'
+  link_selector: article.post .post-gallery a[title]
+  title_attribute: title
+  item_selector: article.post
+  date_selector: time[datetime]
+  summary_selector: .post-content
+  fixture: tests/fixtures/repairs/gppc-articles.html
+  fixture_kind: representative-official-extract
   origin_ids:
   - pdpc:official-gppc
   surface: implementation-program-and-consultation-signals
