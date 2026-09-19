@@ -1,0 +1,239 @@
+sources:
+- id: amlo-listing-01
+  url: https://www.amlo.go.th/index.php/th/
+  enabled: true
+  validation_status: verified
+  public_form: {intro_page: '1'}
+  public_form_url: https://www.amlo.go.th/index.php/th/
+  mode: html
+  link_selector: '.title-hilight2f a[href], .home-boxthumbnailnews2f a[href]'
+  item_selector: '.title-hilight2f, .home-boxthumbnailnews2f'
+  title_selector: '.title-caption, :scope > a:not(:has(.title-caption))'
+  include_url: '/index\.php/news/detail/\d+$'
+  fixture: tests/fixtures/repairs/enforcement-amlo-home.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - 'Public intro form POST intro_page=1 required; no cookies or authentication. Homepage headlines/recent cards only:5 unique publications. Split day/month dates remain unknown. Form contract and robots/TLS checks must pass before POST; this is not full AMLO archive coverage.'
+- id: amlo-listing-02
+  enabled: true
+  validation_status: verified
+  link_selector: 'td a[href*="/dpl/content/detail/"]'
+  include_url: '/dpl/content/detail/\d+$'
+  fixture: tests/fixtures/repairs/enforcement-amlo-dpl.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Designated-person announcement index; first20 rows only. Dates embedded in titles remain unparsed; no legal-effect inference.
+- id: amlo-listing-03
+  enabled: true
+  validation_status: verified
+  link_selector: '.col-md-4 > a[href*="/content/detail/"]'
+  item_selector: .col-md-4
+  title_selector: '.well > div:nth-of-type(3)'
+  date_selector: '.small'
+  include_url: '/content/detail/\d+$'
+  fixture: tests/fixtures/repairs/enforcement-amlo-sed.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - SED first9 publication cards only; raw date includes an author label and remains unparsed. No archive traversal.
+- id: bot-listing-01
+  url: https://www.bot.or.th/content/bot/th/news-and-media/news/jcr:content/root/container/newslisting.newsListingResults.20.p0.descending.2569.sk0.true.json
+  enabled: true
+  validation_status: verified
+  mode: json
+  json_rows: results
+  json_fields: {title: listingTitle, url: pagePath, published_at: issueDt}
+  include_url: '/news-and-media/news/'
+  fixture: tests/fixtures/repairs/enforcement-bot.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official AEM endpoint derived from public component model and JavaScript; first20 results only. The default-year path contains2569 and requires review at year rollover. No completeness claim.
+- id: customs-listing-01
+  enabled: true
+  validation_status: verified
+  link_selector: '.panel-news a[href]'
+  include_url: 'cont_strc_simple_with_date\.php\?current_id='
+  exclude_title: 'จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัคร|สมัครสอบ'
+  fixture: tests/fixtures/repairs/enforcement-customs.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Homepage public-news panel only; no submenu links. Image-tooltip dates are not interpreted as publication dates. No detail traversal or archive completeness claim.
+- id: dbd-listing-01
+  enabled: true
+  validation_status: verified
+  mode: json
+  json_rows: data.result
+  json_fields: {title: title, published_at: rawDate, document_id: id}
+  url_template: https://www.dbd.go.th/news/{slug}
+  fixture: tests/fixtures/repairs/enforcement-dbd.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Existing category is the English Press Release category, not complete Thai DBD news. API returns12 rows despite requested limit25 and total13. First page only; public frontend confirms news/slug route.
+- id: dip-listing-01
+  url: https://webnew.ipthailand.go.th/wp-json/wp/v2/news?per_page=20&orderby=date&order=desc&_fields=id,date,modified,link,title
+  enabled: true
+  validation_status: verified
+  mode: json
+  json_rows: ''
+  json_fields: {title: title.rendered, url: link, published_at: date, modified_at: modified, document_id: id}
+  exclude_title: 'จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัคร|สมัครสอบ|ผู้ชนะการเสนอราคา'
+  fixture: tests/fixtures/repairs/enforcement-dip.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official WordPress news custom-post route linked by type metadata.20 most recent rows before procurement/recruitment exclusions; no archive completeness claim. General RSS rejected because it contains organization/procurement posts rather than this news type.
+- id: diw-listing-01
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: robots.txt returns HTML with HTTP200; fail-closed transport prohibits content fetch. Homepage, news listing and REST share this unresolved policy.']
+- id: diw-listing-02
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: robots.txt returns HTML with HTTP200; fail-closed transport prohibits content fetch. Cannot qualify the same-host news fallback.']
+- id: diw-listing-03
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: robots.txt returns HTML with HTTP200; fail-closed transport prohibits content fetch. REST adapter cannot resolve an access-policy blocker.']
+- id: dsi-listing-01
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: robots.txt returns HTML with HTTP200. Official Mission-News index discovered, but same-origin policy remains unresolved; no bypass or unsupported enablement.']
+- id: excise-listing-01
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: root is disallowed by robots.txt. Separately allowed webdev enforcement publications are qualified under excise-listing-02; this does not establish complete Excise coverage.']
+- id: excise-listing-02
+  enabled: true
+  validation_status: verified
+  link_selector: 'td.list-title a[href]'
+  item_selector: tr
+  date_selector: td.list-date
+  include_url: '/suppress-news/79-2569/\d+'
+  fixture: tests/fixtures/repairs/enforcement-excise.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - First10 rows of official2569 enforcement-news archive; year-specific path needs annual review. Homepage robots denial remains separate.
+- id: fda-listing-01
+  enabled: true
+  validation_status: verified
+  mode: json
+  allowed_hosts: [api.oryor.com, oryor.com]
+  json_rows: data
+  json_fields: {title: title, published_at: publishDate, document_id: id}
+  json_filter: {is_show: '1'}
+  url_template: https://oryor.com/media/newsUpdate/{_table_name}/{id}
+  fixture: tests/fixtures/repairs/enforcement-fda.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - First-party newsUpdate API, published rows only; UI item route verified from public JavaScript. Returned window only, no historical completeness claim.
+- id: fda-listing-02
+  url: https://api.oryor.com/media/newsUpdate
+  enabled: true
+  validation_status: verified
+  mode: json
+  allowed_hosts: [api.oryor.com, oryor.com]
+  json_rows: data
+  json_fields: {title: title, published_at: publishDate, document_id: id}
+  json_filter: {is_show: '1'}
+  url_template: https://oryor.com/media/newsUpdate/{_table_name}/{id}
+  fixture: tests/fixtures/repairs/enforcement-fda.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - HTML shell replaced by its first-party public API. Same publications as fda-listing-01 with stable source ID and provenance retained; not independent coverage.
+- id: nbtc-listing-01
+  enabled: false
+  validation_status: pending
+  limitations: ['2026-09-19: original News.aspx, official root and independently discovered official Press-Center listing return HTTP403. No identity spoofing or access-control bypass.']
+- id: ncsa-listing-01
+  url: https://www.ncsa.or.th/data/output/news.json
+  enabled: true
+  validation_status: verified
+  mode: json
+  max_response_bytes: 32000000
+  json_rows: ''
+  json_fields: {title: title, published_at: showdate, document_id: _id}
+  json_filter: {_state: 1}
+  json_contains: {category: announcement}
+  json_sort: {field: showdate, descending: true}
+  url_template: https://www.ncsa.or.th/news/{_id}
+  fixture: tests/fixtures/repairs/enforcement-ncsa.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Client-rendered announcements replaced by public export filtered to published announcement category.27.5MB payload bounded at32MB; sort before100-item cap. Dates use explicit showdate, never database-created timestamp.
+- id: ncsa-listing-02
+  url: https://www.ncsa.or.th/data/output/news.json
+  enabled: true
+  validation_status: verified
+  mode: json
+  max_response_bytes: 32000000
+  json_rows: ''
+  json_fields: {title: title, published_at: showdate, document_id: _id}
+  json_filter: {_state: 1}
+  json_contains: {category: news}
+  json_sort: {field: showdate, descending: true}
+  url_template: https://www.ncsa.or.th/news/{_id}
+  fixture: tests/fixtures/repairs/enforcement-ncsa.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Published news category from official export;27.5MB payload bounded at32MB. Latest100 after explicit date sort; publication dates may reflect migrated metadata and are not inferred event dates.
+- id: ncsa-listing-03
+  enabled: true
+  validation_status: verified
+  mode: json
+  max_response_bytes: 32000000
+  json_rows: ''
+  json_fields: {title: title, published_at: showdate, document_id: _id}
+  json_filter: {_state: 1}
+  json_sort: {field: showdate, descending: true}
+  url_template: https://www.ncsa.or.th/news/{_id}
+  fixture: tests/fixtures/repairs/enforcement-ncsa.json
+  fixture_kind: representative-official-extract
+  limitations:
+  - Published entries across categories in official27.5MB export;32MB ceiling, latest100 after explicit date sort. Overlaps category-specific NCSA sources, not independent corroboration.
+- id: ocpb-home
+  url: https://www.ocpb.go.th/index.php?filename=index
+  enabled: true
+  validation_status: verified
+  link_selector: '.align-items-stretch > a[href*="news_view.php?nid="]'
+  item_selector: .align-items-stretch
+  title_selector: .h-news-index
+  date_selector: 'p.view-index-list:has(.fa-calendar-alt)'
+  date_pattern: '^\s*(\d{1,2}\s+[ก-๙.]+\s+\d{4})\s*(?:\||$)'
+  include_url: 'news_view\.php\?nid='
+  fixture: tests/fixtures/repairs/enforcement-ocpb-home.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official intro page links to this homepage. Only publication cards selected; menus and counts excluded from titles. Homepage highlights only; date_pattern excludes adjacent view counts before date parsing.
+- id: ocpb-listing-01
+  url: https://www.ocpb.go.th/more_news.php?cid=2
+  enabled: true
+  validation_status: verified
+  link_selector: '.blog-item-news h5 a[href]'
+  item_selector: .blog-item-news
+  date_selector: 'p:has(.fa-calendar)'
+  date_pattern: '^\s*(\d{1,2}\s+[ก-๙.]+\s+\d{4})\s*(?:\||$)'
+  include_url: 'news_view(?:_en)?\.php\?nid='
+  fixture: tests/fixtures/repairs/enforcement-ocpb-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Required category2 discovered from homepage; first9 news cards only. Site uses news_view_en.php for Thai titles; preserve exact links. date_pattern isolates displayed date and excludes changing view counts.
+- id: tcc-listing-01
+  url: https://www.tcc.or.th/feed/
+  enabled: true
+  validation_status: verified
+  mode: rss
+  include_url: null
+  fixture: tests/fixtures/repairs/enforcement-tcc.xml
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official advertised RSS replaces brittle dated-URL pattern; latest10 feed entries only, not a full archive.
+- id: thaibma-listing-01
+  enabled: true
+  validation_status: verified
+  max_items: 300
+  link_selector: 'tr a[href*="/pdf/"]'
+  item_selector: tr
+  title_selector: 'td[class]'
+  exclude_title: '^•?\s*พ\.ศ\.\s*\d+\s*$|จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ'
+  fixture: tests/fixtures/repairs/enforcement-thaibma.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Rule-document table labels resolve image-only PDF links;115 PDFs with cap300; one year-only row label excluded. Amendment links retain full parent rule text and amendment context. Includes historical and repealed entries; legal applicability Not assessed. No publication date inferred from filenames or titles.

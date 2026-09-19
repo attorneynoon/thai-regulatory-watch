@@ -1,0 +1,261 @@
+sources:
+- mode: html
+  link_selector: a:has(.box-detail)
+  item_selector: a:has(.box-detail)
+  title_selector: .sub-detail-40-2
+  date_selector: .date-box
+  include_url: null
+  limitations:
+  - Homepage press headline cards only; no full archive traversal. Dates are displayed
+    publication dates.
+  id: tcct-listing-01
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-01.html
+  fixture_kind: representative-official-extract
+- url: https://www.tcct.or.th/view/1/giveaway_news/TH-TH
+  mode: html
+  content_selector: '#col-content'
+  link_selector: li.list-news a[href]
+  title_attribute: title
+  include_url: null
+  max_items: 500
+  limitations:
+  - Empty year-specific legacy URL replaced with the current official press-release
+    index; overlaps existing press source. All year tabs present on the one listing
+    response, bounded500 items.
+  id: tcct-listing-02
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-02.html
+  fixture_kind: representative-official-extract
+- url: https://www.tcct.or.th/view/1/activity/TH-TH
+  mode: html
+  content_selector: '#col-content'
+  link_selector: .card-title a[href]
+  item_selector: .card
+  date_selector: .entry-date
+  include_url: /activity/
+  limitations:
+  - Official activity cards replace empty generic news page where applicable; duplicate
+    activity scope is explicit. Displayed day/month lacks year, so publication date
+    remains unknown.
+  id: tcct-listing-04
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-04.html
+  fixture_kind: representative-official-extract
+- url: https://www.tcct.or.th/view/1/activity/TH-TH
+  mode: html
+  content_selector: '#col-content'
+  link_selector: .card-title a[href]
+  item_selector: .card
+  date_selector: .entry-date
+  include_url: /activity/
+  limitations:
+  - Official activity cards replace empty generic news page where applicable; duplicate
+    activity scope is explicit. Displayed day/month lacks year, so publication date
+    remains unknown.
+  id: tcct-listing-05
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-05.html
+  fixture_kind: representative-official-extract
+- mode: html
+  content_selector: '#col-content'
+  link_selector: .style3Subtitle a[href]
+  include_url: /statistics/
+  limitations:
+  - First statistics page; years in titles are reporting periods, not inferred publication
+    dates.
+  id: tcct-listing-06
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-06.html
+  fixture_kind: representative-official-extract
+- mode: html
+  link_selector: .dataset-heading a[href]
+  title_attribute: title
+  include_url: /dataset/
+  document_type: dataset
+  limitations:
+  - Official CKAN datasets, not press releases; first organization page only.
+  id: tcct-listing-07
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-listing-07.html
+  fixture_kind: representative-official-extract
+- url: https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH
+  mode: html
+  content_selector: '#col-content'
+  link_selector: li.list-news a[href]
+  title_attribute: title
+  include_url: /readnews
+  limitations:
+  - Corrected official navigation destination; lists complaint/process instruments,
+    not individual enforcement outcomes.
+  id: tcct-official-complaints-prosecution
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-official-complaints-prosecution.html
+  fixture_kind: representative-official-extract
+- url: https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH
+  start_urls:
+  - https://www.tcct.or.th/view/1/Being_a_business_that_dominates_the_market/TH-TH
+  - https://www.tcct.or.th/view/1/business_combination/TH-TH
+  - https://www.tcct.or.th/view/1/unfair_manipulation_of_the_market/TH-TH
+  - https://www.tcct.or.th/view/1/consensus/TH-TH
+  - https://www.tcct.or.th/view/1/unfair_trade_practice/TH-TH
+  - https://www.tcct.or.th/view/1/requesting_an_advance_ruling/TH-TH
+  - https://www.tcct.or.th/view/1/listening_to_opinions_with_stakeholders_and_the_general_public/TH-TH
+  max_pages: 8
+  mode: html
+  content_selector: '#col-content'
+  link_selector: .detail a[href*="readnews"]
+  item_selector: .detail
+  date_selector: .text-red2
+  include_url: /readnews
+  limitations:
+  - Eight explicitly named official secondary-rule/guidance topics, bounded to their
+    current pages. No claim of all subordinate instruments; original dead URL retained
+    in import inventory.
+  id: tcct-official-rules-guidelines
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-tcct-official-rules-guidelines.html
+  fixture_kind: representative-official-extract
+- url: https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12
+  start_urls:
+  - https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=11
+  - https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=22
+  - https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=21
+  item_base_url: https://www.parliament.go.th/section77/
+  mode: html
+  link_selector: .title_discussion a[href]
+  item_selector: .item-77
+  max_pages: 4
+  include_url: survey_detail
+  limitations:
+  - Observed public AJAX first page for four consultation categories. Consultation
+    windows and changing vote/view counters are not publication dates or content revisions.
+  id: house-section-77-discovery
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-house-section-77-discovery.html
+  fixture_kind: representative-official-extract
+- url: https://prt.parliament.go.th/server/api/discover/search/objects?sort=dc.date.accessioned,DESC&size=20
+  mode: json
+  json_rows: _embedded.searchResult._embedded.objects
+  json_fields:
+    title: _embedded.indexableObject.name
+    url: _links.indexableObject.href
+    document_id: _embedded.indexableObject.uuid
+    published_at: /_embedded/indexableObject/metadata/dc.date.issued/0/value
+    modified_at: _embedded.indexableObject.lastModified
+  include_url: null
+  limitations:
+  - Public DSpace search API, latest20 accessions. Item links are official public
+    metadata endpoints. Issued dates retained as raw source values when only month/year;
+    accession date is never publication date. Historical documents newly accessioned
+    are not new laws.
+  id: parliament-repository-discovery
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-parliament-repository-discovery.json
+  fixture_kind: representative-official-extract
+- mode: json-script
+  json_script_selector: script#__NEXT_DATA__
+  json_rows: props.pageProps.result.rows
+  json_fields:
+    title: p_name
+    document_id: p_id
+    modified_at: p_last_update_date
+  url_template: https://einitiative.parliament.go.th/draftlaw-detail?id={p_id}&name={p_name}
+  date_calendar: buddhist
+  include_url: null
+  limitations:
+  - Initial server-rendered eight draft records only, parsed as inert JSON; public
+    reader route verified from frontend JS. Explicit BE last-update timestamp normalized,
+    never called publication date. No voting, login or personal-information fields
+    collected.
+  id: parliament-einitiative-discovery
+  enabled: true
+  validation_status: candidate
+  fixture: tests/fixtures/repairs/main-parliament-einitiative-discovery.html
+  fixture_kind: representative-official-extract
+- id: council-of-state-discovery
+  url: https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto
+  allowed_hosts:
+  - www.ocs.go.th
+  - law.go.th
+  mode: html
+  enabled: true
+  validation_status: candidate
+  title: OCS official law-news (partial discovery coverage)
+  link_selector: a[aria-label="gotocontent"][href]
+  item_selector: a[aria-label="gotocontent"]
+  title_selector: span[title]
+  title_attribute: title
+  tls_intermediates:
+    www.ocs.go.th: config/tls/globalsign-rsa-ov-2018.pem
+  fixture: tests/fixtures/repairs/main-ocs-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official law-news block is partial discovery coverage, not the SearchLaw corpus.
+    Legacy krisdika presents an unsafe self-signed certificate and is not trusted.
+    OCS missing intermediate validated to existing roots; no TLS verification bypass.
+    No dates inferred; view counters excluded.
+- id: ocs-council-of-state-law-search-discovery
+  url: https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto
+  allowed_hosts:
+  - www.ocs.go.th
+  - law.go.th
+  mode: html
+  enabled: true
+  validation_status: candidate
+  title: OCS official law-news (partial discovery coverage)
+  link_selector: a[aria-label="gotocontent"][href]
+  item_selector: a[aria-label="gotocontent"]
+  title_selector: span[title]
+  title_attribute: title
+  tls_intermediates:
+    www.ocs.go.th: config/tls/globalsign-rsa-ov-2018.pem
+  fixture: tests/fixtures/repairs/main-ocs-news.html
+  fixture_kind: representative-official-extract
+  limitations:
+  - Official law-news block is partial discovery coverage, not the SearchLaw corpus.
+    Legacy krisdika presents an unsafe self-signed certificate and is not trusted.
+    OCS missing intermediate validated to existing roots; no TLS verification bypass.
+    No dates inferred; view counters excluded.
+- id: cabinet-secretariat-discovery
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Robots request returns HTTP403; cannot establish permitted automated access.
+- id: law-go-th-api
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Robots request returns HTTP403; cannot establish permitted automated access.
+- id: law-go-th-public-hearings
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Robots request returns HTTP403; cannot establish permitted automated access.
+- id: ocs-council-of-state-law-search-api
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Public application is a JS shell and API base is not a data endpoint; authenticated/unknown
+    API operations not invoked. A verified public query contract is still required.
+- id: ocs-council-of-state-law-search-application
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Public application is a JS shell and API base is not a data endpoint; authenticated/unknown
+    API operations not invoked. A verified public query contract is still required.
+- id: royal-gazette-discovery
+  enabled: false
+  validation_status: pending
+  limitations:
+  - Robots request returns HTTP403; cannot establish permitted automated access.

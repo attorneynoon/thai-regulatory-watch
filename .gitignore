@@ -5,3 +5,4 @@ __pycache__/
 .regwatch.lock
 *.tmp
 .build-*/
+work/

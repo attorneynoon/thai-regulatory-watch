@@ -1,0 +1,140 @@
+[
+  {
+    "id": "tcct-listing-01",
+    "url": "https://www.tcct.or.th/",
+    "response_sha256": "ed49cc775f875cde4edde0f62e31545e29cdb32c5f269b6721d6c2e43c35ac79",
+    "parsed_count": 4
+  },
+  {
+    "id": "tcct-listing-02",
+    "url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+    "response_sha256": "85557a8f5424a51703d381fd5547a2fca005d30490644936117e73d7dafbdab6",
+    "parsed_count": 137
+  },
+  {
+    "id": "tcct-listing-04",
+    "url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+    "response_sha256": "5beb6bf3164da642dd841902369a9bd2529c7fd4ee975447017ff7ec8c6d93c4",
+    "parsed_count": 45
+  },
+  {
+    "id": "tcct-listing-05",
+    "url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+    "response_sha256": "5beb6bf3164da642dd841902369a9bd2529c7fd4ee975447017ff7ec8c6d93c4",
+    "parsed_count": 45
+  },
+  {
+    "id": "tcct-listing-06",
+    "url": "https://www.tcct.or.th/view/1/statistics/TH-TH",
+    "response_sha256": "d52a40ada7c60fc81cbbd15b28af11c071b1bb122f44c55a390a49a8f90af42f",
+    "parsed_count": 6
+  },
+  {
+    "id": "tcct-listing-07",
+    "url": "https://catalog.tcct.or.th/th/organization/tcct",
+    "response_sha256": "2d692fef2da9c2e5e679135f1ea54e9152fdc7221043e85196f7480ec6b7da7c",
+    "parsed_count": 30
+  },
+  {
+    "id": "tcct-official-complaints-prosecution",
+    "url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+    "response_sha256": "b0af1e47107b33d4a7f90c535789520051a35b1d9329d4fc993a7f9ea96d3e68",
+    "parsed_count": 7
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+    "response_sha256": "807fc1f7aa89122d8e858216c6f58dbc6732d92033b9c736d9ad6b463b95ec91",
+    "parsed_count": 1
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/Being_a_business_that_dominates_the_market/TH-TH",
+    "response_sha256": "d413757004d0ea23e4d031bb236bad50af9b2b1c8b4944aa9c0bf35fbd97dc50",
+    "parsed_count": 2
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/business_combination/TH-TH",
+    "response_sha256": "59a2401d7c0009aac2a6e0da6ac863ea0757ddcd70f631b2957e507883412aca",
+    "parsed_count": 0
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/unfair_manipulation_of_the_market/TH-TH",
+    "response_sha256": "ff3158e94f60d7287e3290fc46dbd0d392a990a22eb1a150b61d8b68eab4c8ef",
+    "parsed_count": 1
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/consensus/TH-TH",
+    "response_sha256": "f41e7b1427db51b3757ba83c47d87b7ad7fa43bf95f93d56fc325e42fb92288e",
+    "parsed_count": 1
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/unfair_trade_practice/TH-TH",
+    "response_sha256": "beeb798c9bc3d6f91b1731951fe60c557d8a4eedb93ffb919349bea681979532",
+    "parsed_count": 10
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/requesting_an_advance_ruling/TH-TH",
+    "response_sha256": "e872be7c9d45f64d3e2079a7043335f1ff28216124ed72f56a76542cc9692f75",
+    "parsed_count": 4
+  },
+  {
+    "id": "tcct-official-rules-guidelines",
+    "url": "https://www.tcct.or.th/view/1/listening_to_opinions_with_stakeholders_and_the_general_public/TH-TH",
+    "response_sha256": "b63c626fdf37a14909103349f1fde9d6337332c7e91035445f61d4e19b5b0492",
+    "parsed_count": 1
+  },
+  {
+    "id": "house-section-77-discovery",
+    "url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+    "response_sha256": "33c355caf644817d429fdfa347a25b8572e5e8b793718a205d679f1180317ef7",
+    "parsed_count": 10
+  },
+  {
+    "id": "house-section-77-discovery",
+    "url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=11",
+    "response_sha256": "20660622cc5ffcec106c0dedb6b0ae3843e966c548be967f2300bdf2d3f3bdf4",
+    "parsed_count": 9
+  },
+  {
+    "id": "house-section-77-discovery",
+    "url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=22",
+    "response_sha256": "dbdb03ccd105672197e212030309023d85b2dc307d8baf541f4cb796d562a57c",
+    "parsed_count": 10
+  },
+  {
+    "id": "house-section-77-discovery",
+    "url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=21",
+    "response_sha256": "da06a267c9b16118577b2827abef32ace53bee91a9a25d436f935ec92cd066b4",
+    "parsed_count": 10
+  },
+  {
+    "id": "parliament-repository-discovery",
+    "url": "https://prt.parliament.go.th/server/api/discover/search/objects?sort=dc.date.accessioned,DESC&size=20",
+    "response_sha256": "73adebfca6d6ae256af5043833de7bfe35c533f5867bd0d98ffde799624e0996",
+    "parsed_count": 20
+  },
+  {
+    "id": "parliament-einitiative-discovery",
+    "url": "https://einitiative.parliament.go.th/draft-law-more?type=0",
+    "response_sha256": "c047518ac2ba48215cd27b891168937786b8a3de7d92ed2ce32b5a4ede123712",
+    "parsed_count": 8
+  },
+  {
+    "id": "council-of-state-discovery",
+    "url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+    "response_sha256": "427114446542243d8fbf677d7f0e47f319c7bd659ffe3429b61d47a3647fa5b1",
+    "parsed_count": 4
+  },
+  {
+    "id": "ocs-council-of-state-law-search-discovery",
+    "url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+    "response_sha256": "427114446542243d8fbf677d7f0e47f319c7bd659ffe3429b61d47a3647fa5b1",
+    "parsed_count": 4
+  }
+]

@@ -22,6 +22,18 @@ class FakeTransport:
         return (200,{},value,url)
 
 class StateSafetyTests(unittest.TestCase):
+    def test_multiple_declared_discovery_pages_and_response_budget(self):
+        s=empty_state()
+        source={**SOURCE,'allowed_hosts':['example.org'],'mode':'html','max_pages':2,
+                'start_urls':['https://example.org/second'],'max_response_bytes':8_000_000}
+        class BoundedTransport:
+            def fetch(self,url,**kwargs):
+                if kwargs.get('max_bytes',4_000_000)<8_000_000: raise ValueError('response exceeds budget')
+                return 200,{},f'<a href="{url}/item">Article</a>'.encode(),url
+        collect_source(s,source,'2026-09-19T00:00:00Z',BoundedTransport())
+        self.assertEqual(s['sources'][SOURCE['id']]['status'],'healthy')
+        self.assertEqual(len(s['items']),2)
+
     def test_first_pdf_fingerprint_is_not_a_revision(self):
         s=empty_state()
         row={'url':'https://example.org/a.pdf','title':'A','document_url':'https://example.org/a.pdf'}
@@ -134,6 +146,24 @@ class StateSafetyTests(unittest.TestCase):
             self.assertFalse((Path(d)/'.regwatch.lock').exists())
 
 class NetworkSafetyTests(unittest.TestCase):
+    def test_robots_literal_query_does_not_become_blanket_denial(self):
+        policy=b'User-agent: *\nDisallow: /?\nDisallow: /download/\n'
+        t=Transport(['example.org'])
+        with patch.object(t,'_raw',side_effect=[(200,{},policy),(200,{},b'news')]):
+            self.assertEqual(t.fetch('https://example.org/more_news.php?cid=2')[2],b'news')
+        for url in ['https://example.org/?x=1','https://example.org/download/file.pdf']:
+            t=Transport(['example.org'])
+            with patch.object(t,'_raw',return_value=(200,{},policy)) as req:
+                with self.assertRaises(AccessBlocked):t.fetch(url)
+                self.assertEqual(req.call_count,1)
+
+    def test_robots_wildcards_longest_match_and_explicit_bot_group(self):
+        policy=b'User-agent: *\nDisallow: /private/*\nAllow: /private/public$\nUser-agent: ThaiRegulatoryWatch\nDisallow: /secret/\nDisallow: /*.pdf$'
+        t=Transport(['example.org'])
+        with patch.object(t,'_raw',return_value=(200,{},policy)):
+            with self.assertRaises(AccessBlocked):t.fetch('https://example.org/a.pdf')
+            with self.assertRaises(AccessBlocked):t.fetch('https://example.org/secret/a')
+
     def test_allowlist_exact_host(self):
         for url in ['https://example.org.evil.test/','https://evil.test/','http://example.org/','https://example.org:8443/']:
             with self.assertRaises(ValueError): allowed_url(url,['example.org'])
