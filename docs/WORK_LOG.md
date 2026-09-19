@@ -1,5 +1,9 @@
 # Work record
 
+## 2026-09-19 — public-repository research and remaining-source retry
+
+Owner clarified that comparison repositories must be public third-party projects. Inspected MIT Gazette projects `devruji/ratchakitcha-scraper` and `open-law-data-thailand/thai-legal-watch`; no external code copied or secondary data substituted. Their methods and limits are recorded in `docs/qualification/public-repository-recovery.md`. Retested all44 previously nonhealthy/pending scopes locally. Qualified GPPC article cards, DSI homepage headlines and ETDA's actual knowledge-article listing. Corrected malformed successful robots parsing, increased its bounded byte budget and added explicit Incapsula-incident rejection. Existing source IDs and retained history are unchanged. Regression validation:106 tests passed, registry75 enabled/21 pending, offline generation1,472 items/1,839 events, XML/JSON checks passed. These results do not establish hosted recovery. GitHub collection and deployment verification remain the next gate; unresolved genuine denials/challenges stay separate from no-update observations.
+
 ## 2026-09-19 — robots false-blocker correction
 
 Owner approved correcting false blockers after distinguishing robots unavailability from explicit restrictions. The previous blanket stop on robots HTTP 403 was a conservative implementation choice, not an explicit Disallow. Supersedes that part of the earlier fail-closed policy: RFC 9309 section 2.3.1.3 permits a public content request after robots 4xx. Apply that rule except 429 (rate limiting still stops). Content 401/403/429, challenges, explicit Disallow, unresolved HTML policies, network/server errors, TLS and host restrictions remain enforced. No authentication, proxy rotation or browser impersonation is introduced.

@@ -10,6 +10,7 @@ import requests
 from .registry import allowed_url
 
 AGENT = "ThaiRegulatoryWatch/1.0 (+https://github.com/attorneynoon/thai-regulatory-watch)"
+CHALLENGE_MARKERS = (b'cf-chl-', b'verify you are human', b'<title>just a moment', b'<title>access denied', b'incapsula incident id')
 
 
 class AccessBlocked(ValueError):
@@ -75,7 +76,7 @@ class Transport:
             policy = None
             try:
                 for _ in range(5):
-                    status, headers, body = self._raw(location, max_bytes=256_000)
+                    status, headers, body = self._raw(location, max_bytes=1_000_000)
                     if status in (301, 302, 303, 307, 308):
                         location = allowed_url(urljoin(location, headers.get("Location", "")), self.hosts)
                         continue
@@ -84,7 +85,12 @@ class Transport:
                     # independently in fetch. Respect rate limiting regardless.
                     if 400 <= status < 500 and status != 429:
                         policy = Protego.parse('')
-                    elif status == 200 and not body.lstrip().lower().startswith((b"<!doctype html", b"<html")):
+                    elif status == 200:
+                        # RFC 9309 2.3.1.5: keep parseable rules even when the
+                        # surrounding response is malformed. A challenge is
+                        # not a successful policy response.
+                        if any(marker in body.lower() for marker in CHALLENGE_MARKERS):
+                            raise AccessBlocked('Robots challenge page')
                         policy = Protego.parse(body.decode("utf-8", "replace"))
                     else:
                         reason = 'unexpected HTML' if status == 200 else 'HTTP ' + str(status)
@@ -132,7 +138,7 @@ class Transport:
             content_type = response_headers.get("Content-Type", "").lower()
             if "html" in content_type:
                 head = body[:20000].lower()
-                if any(x in head for x in (b"cf-chl-", b"verify you are human", b"<title>just a moment", b"<title>access denied")):
+                if any(x in head for x in CHALLENGE_MARKERS):
                     raise AccessBlocked("Challenge page")
             return status, response_headers, body, url
         raise AccessBlocked("Redirect limit exceeded")

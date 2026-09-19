@@ -146,6 +146,28 @@ class StateSafetyTests(unittest.TestCase):
             self.assertFalse((Path(d)/'.regwatch.lock').exists())
 
 class NetworkSafetyTests(unittest.TestCase):
+    def test_incapsula_incident_is_not_public_content_or_robots(self):
+        challenge=b'<html>Request unsuccessful. Incapsula incident ID: example</html>'
+        for responses in [[(200,{},challenge)],[(404,{},b''),(200,{'Content-Type':'text/html'},challenge)]]:
+            t=Transport(['example.org'])
+            with patch.object(t,'_raw',side_effect=responses):
+                with self.assertRaises(AccessBlocked): t.fetch('https://example.org/news')
+
+    def test_successful_malformed_robots_uses_all_parseable_lines(self):
+        body=b'<html>not a robots document</html>\nUser-agent: *\nDisallow: /private\n'
+        t=Transport(['example.org'])
+        with patch.object(t,'_raw',side_effect=[(200,{},body),(200,{},b'public news')]):
+            self.assertEqual(t.fetch('https://example.org/news')[2],b'public news')
+        t=Transport(['example.org'])
+        with patch.object(t,'_raw',return_value=(200,{},body)):
+            with self.assertRaisesRegex(AccessBlocked,'Disallowed'):
+                t.fetch('https://example.org/private')
+
+    def test_robots_challenge_does_not_become_empty_allow_policy(self):
+        t=Transport(['example.org'])
+        with patch.object(t,'_raw',return_value=(200,{},b'<html><title>Just a moment</title>verify you are human</html>')):
+            with self.assertRaises(AccessBlocked):t.fetch('https://example.org/news')
+
     def test_robots_4xx_unavailable_allows_public_content_not_content_denial(self):
         for status in (400,401,403,404,410,418):
             with self.subTest(status=status):
