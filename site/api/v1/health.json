@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-19T17:16:54Z",
+  "generated_at": "2026-09-19T18:02:57Z",
   "records": [
+    {
+      "event_id": "health-b755749cb703ca140da109e005f9f631",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='webdev.excise.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='webdev.excise.go.th', port=443) at 0x7f60ddd",
+      "observed_at": "2026-09-19T18:02:57Z",
+      "official_url": "https://webdev.excise.go.th/act2560/suppress-news/79-2569",
+      "previous_status": "healthy",
+      "regulator_id": "excise",
+      "source_id": "excise-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-4d4e0cc900b5819ebf98d52da752d139",
+      "message": "HTTPSConnectionPool(host='www.customs.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-19T18:02:57Z",
+      "official_url": "https://www.customs.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "customs",
+      "source_id": "customs-listing-01",
+      "status": "failed"
+    },
     {
       "event_id": "health-a93214897215c08194f2c693d28d0349",
       "message": null,
