@@ -9,7 +9,7 @@ The owner requested fewer institutional-publicity items and more substantive reg
 - `feeds/changes-all.xml` preserves the former unfiltered changes view.
 - `feeds/all.xml`, `feeds/current/all.xml`, agency/section feeds and full JSON retain general news and the full history. No historic items/events are deleted.
 
-Selection is declared by `feed_priority: regulatory` in the source registry. Unclassified sources default to `radar`; they are not asserted to be unimportant. The initial curated set includes PDPC order summaries, consultation opinions, laws and secondary announcements; TCCT orders, rulings, announcements and procedural/regulatory guidance; ETDA standards; OCS law-news discovery and wage-committee publications. Coverage is intentionally explicit, not a claim that every relevant article across all agencies has been classified.
+Selection is declared by `feed_priority: regulatory` in the source registry. Unclassified sources default to `radar`; they are not asserted to be unimportant. The curated set includes PDPC order summaries, consultation opinions, laws and secondary announcements; TCCT orders, rulings, announcements, procedural/regulatory guidance and the official press-release archive; ETDA standards; OCS law-news discovery and wage-committee publications. Coverage is intentionally explicit, not a claim that every relevant article across all agencies has been classified.
 
 PDPC general news and GPPC programme news remain in broad feeds. They include publicity, recruitment and award items. A regulatory source classification is a configured relevance preference, not legal analysis or automatic promotion to a GRC obligation. All records remain unreviewed and legal effect Not assessed.
 

@@ -15,6 +15,25 @@ class ParsingTests(unittest.TestCase):
         rows,_=parse_document({'mode':'rss','allowed_hosts':['example.org']},body,'https://example.org/rss')
         self.assertEqual(rows[0]['summary'],'Public excerpt & evidence')
 
+    def test_rss_rows_are_newest_first_before_collection_limits_apply(self):
+        body=b'''<rss><channel>
+          <item><title>Older</title><link>https://example.org/older</link><pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate></item>
+          <item><title>Newest</title><link>https://example.org/newest</link><pubDate>Fri, 18 Sep 2026 10:33:22 GMT</pubDate></item>
+          <item><title>Undated</title><link>https://example.org/undated</link></item>
+        </channel></rss>'''
+        rows,_=parse_document({'mode':'rss','allowed_hosts':['example.org']},body,'https://example.org/rss')
+        self.assertEqual([row['title'] for row in rows],['Newest','Older','Undated'])
+
+    def test_official_etda_rss_fixture_preserves_dates_and_excerpt(self):
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        body=(root/'tests/fixtures/repairs/etda-official-rss-th.xml').read_bytes()
+        source={'mode':'rss','allowed_hosts':['www.etda.or.th']}
+        rows,_=parse_document(source,body,'https://www.etda.or.th/th/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74')
+        self.assertEqual(rows[0]['published_at'],'2026-09-18T10:33:22+00:00')
+        self.assertIn('ค่าตอบแทนไรเดอร์',rows[0]['title'])
+        self.assertIn('วันที่ 17 กันยายน 2569',rows[0]['summary'])
+
     def test_full_title_attribute_on_selected_title_node_ignores_counter(self):
         source={'mode':'html','allowed_hosts':['example.org'],'item_selector':'a','title_selector':'span[title]','title_attribute':'title'}
         rows,_=parse_document(source,b'<a href="/item"><span title="Complete official headline">Complete...</span><b>Views 99</b></a>','https://example.org/')

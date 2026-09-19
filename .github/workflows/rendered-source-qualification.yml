@@ -1,7 +1,7 @@
 name: Rendered source qualification
 on:
   pull_request:
-    paths: ['scripts/probe_rendered_sources.py', 'scripts/probe_pdpc_alternates.py', 'regwatch/browser_transport.py', 'config/sources.yml', '.github/workflows/rendered-source-qualification.yml']
+    paths: ['scripts/probe_rendered_sources.py', 'scripts/probe_pdpc_alternates.py', 'scripts/probe_official_feeds.py', 'regwatch/browser_transport.py', 'config/sources.yml', '.github/workflows/rendered-source-qualification.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,5 +31,8 @@ jobs:
           retention-days: 1
           if-no-files-found: ignore
       - run: python scripts/probe_pdpc_alternates.py
+        env:
+          PYTHONIOENCODING: utf-8
+      - run: python scripts/probe_official_feeds.py
         env:
           PYTHONIOENCODING: utf-8
