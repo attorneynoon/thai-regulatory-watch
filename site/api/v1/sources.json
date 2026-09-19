@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T16:27:20Z",
+  "generated_at": "2026-09-19T17:16:54Z",
   "records": [
     {
       "asset_budget": 2,
@@ -13,10 +13,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -48,10 +48,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 5,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Public intro form POST intro_page=1 required; no cookies or authentication. Homepage headlines/recent cards only:5 unique publications. Split day/month dates remain unknown. Form contract and robots/TLS checks must pass before POST; this is not full AMLO archive coverage."
       ],
@@ -83,10 +83,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 20,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Designated-person announcement index; first20 rows only. Dates embedded in titles remain unparsed; no legal-effect inference."
       ],
@@ -118,10 +118,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 9,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "SED first9 publication cards only; explicit date extracted separately from author/view text. No archive traversal."
       ],
@@ -153,10 +153,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 18,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -188,10 +188,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 20,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official AEM endpoint derived from public component model and JavaScript; first20 results only. The default-year path contains2569 and requires review at year rollover. No completeness claim."
       ],
@@ -258,10 +258,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
         "131 raw links qualified on the page; collection is bounded to 100 items per run. First unlinked headline is not represented.",
@@ -295,10 +295,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -330,10 +330,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
-      "last_count": 1,
+      "last_attempt_at": "2026-09-19T17:16:54Z",
+      "last_count": 4,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official law-news block is partial discovery coverage, not the SearchLaw corpus. Legacy krisdika presents an unsafe self-signed certificate and is not trusted. OCS missing intermediate validated to existing roots; no TLS verification bypass. No dates inferred; view counters excluded."
       ],
@@ -365,10 +365,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 6,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "First six national court news cards only. Exact destination hosts observed in this response are allowed; newly appearing court hosts require explicit allowlist qualification. No historical completeness claim."
       ],
@@ -400,10 +400,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 24,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Homepage public-news panel only; no submenu links. Image-tooltip dates are not interpreted as publication dates. No detail traversal or archive completeness claim."
       ],
@@ -435,10 +435,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 12,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Existing category is the English Press Release category, not complete Thai DBD news. API returns12 rows despite requested limit25 and total13. First page only; public frontend confirms news/slug route."
       ],
@@ -470,10 +470,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 13,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official WordPress news custom-post route linked by type metadata.20 most recent rows before procurement/recruitment exclusions; no archive completeness claim. General RSS rejected because it contains organization/procurement posts rather than this news type."
       ],
@@ -610,7 +610,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Robots unavailable: HTTPSConnectionPool(host='www.labour.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='www.labour.go.th', port=443): Failed to establis",
       "last_success_at": null,
@@ -682,7 +682,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Robots unavailable: HTTPSConnectionPool(host='www.doe.go.th', port=443): Read timed out. (read timeout=20)",
       "last_success_at": null,
@@ -718,7 +718,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -753,10 +753,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 6,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "2026-09-19: homepage publication cards only, not the complete archive; publication dates unavailable on these cards."
       ],
@@ -788,10 +788,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 909,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official RSS advertised by the ETDA press page; 2026-09-19 qualification returned 909 records with explicit RFC publication timestamps.",
         "The feed mixes press releases, standards and other ETDA publications; relevance and legal effect remain unassessed."
@@ -826,10 +826,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "en",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 312,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official RSS advertised by the English ETDA press page; 2026-09-19 qualification returned 312 records, with the latest dated 2024-01-30.",
         "The English archive is stale relative to the Thai feed; absence of a newer English item is not evidence that ETDA made no update."
@@ -864,10 +864,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
-      "last_error": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
-      "last_success_at": "2026-09-19T15:17:14Z",
+      "last_error": null,
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "First article page only; abbreviated two-digit Thai publication years retained raw, not guessed or replaced by scrape dates."
       ],
@@ -879,7 +879,7 @@
       ],
       "pagination_truncated": false,
       "regulator_id": "etda",
-      "status": "failed",
+      "status": "healthy",
       "title": "สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์",
       "topics": [
         "platforms",
@@ -900,10 +900,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 41,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Partial alternate official ETDA Recommendation catalog, with 41 catalog datasets across two pages. This does not cover standards news, consultations or all standards. Dataset full titles come from anchor title attributes. Catalog update dates are not established publication dates and remain null. Original www.etda.or.th robots redirects to HTML and remains blocked; no bypass is used."
       ],
@@ -971,10 +971,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "First10 rows of official2569 enforcement-news archive; year-specific path needs annual review. Homepage robots denial remains separate."
       ],
@@ -1006,10 +1006,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "First-party newsUpdate API, published rows only; UI item route verified from public JavaScript. Returned window only, no historical completeness claim."
       ],
@@ -1042,10 +1042,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "HTML shell replaced by its first-party public API. Same publications as fda-listing-01 with stable source ID and provenance retained; not independent coverage."
       ],
@@ -1078,10 +1078,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 39,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Observed public AJAX first page for four consultation categories. Consultation windows and changing vote/view counters are not publication dates or content revisions."
       ],
@@ -1113,9 +1113,9 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
-      "last_error": "Robots unavailable: HTTPSConnectionPool(host='lbc.coj.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='lbc.coj.go.th', port=443) at 0x7f6bb17c5970>, 'Con",
+      "last_error": "Robots unavailable: HTTPSConnectionPool(host='lbc.coj.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='lbc.coj.go.th', port=443) at 0x7f6df86eb950>, 'Con",
       "last_success_at": null,
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
@@ -1149,7 +1149,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Robots unavailable: HTTPSConnectionPool(host='relation.labour.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='relation.labour.go.th', port=443) at 0x7f6",
       "last_success_at": null,
@@ -1293,10 +1293,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 21,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -1328,7 +1328,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -1437,7 +1437,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -1507,10 +1507,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 22,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Client-rendered announcements replaced by public export filtered to published announcement category.27.5MB payload bounded at32MB; sort before100-item cap. Dates use explicit showdate, never database-created timestamp."
       ],
@@ -1542,10 +1542,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Published news category from official export;27.5MB payload bounded at32MB. Latest100 after explicit date sort; publication dates may reflect migrated metadata and are not inferred event dates."
       ],
@@ -1577,10 +1577,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Published entries across categories in official27.5MB export;32MB ceiling, latest100 after explicit date sort. Overlaps category-specific NCSA sources, not independent corroboration."
       ],
@@ -1612,7 +1612,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Robots unavailable: HTTPSConnectionPool(host='www.nhso.go.th', port=443): Read timed out. (read timeout=20)",
       "last_success_at": null,
@@ -1648,10 +1648,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 4,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official intro page links to this homepage. Only publication cards selected; menus and counts excluded from titles. Homepage highlights only; date_pattern excludes adjacent view counts before date parsing."
       ],
@@ -1684,10 +1684,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 9,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Required category2 discovered from homepage; first9 news cards only. Site uses news_view_en.php for Thai titles; preserve exact links. date_pattern isolates displayed date and excludes changing view counts."
       ],
@@ -1789,10 +1789,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
-      "last_count": 2,
+      "last_attempt_at": "2026-09-19T17:16:54Z",
+      "last_count": 4,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official law-news block is partial discovery coverage, not the SearchLaw corpus. Legacy krisdika presents an unsafe self-signed certificate and is not trusted. OCS missing intermediate validated to existing roots; no TLS verification bypass. No dates inferred; view counters excluded."
       ],
@@ -1824,10 +1824,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 8,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Initial server-rendered eight draft records only, parsed as inert JSON; public reader route verified from frontend JS. Explicit BE last-update timestamp normalized, never called publication date. No voting, login or personal-information fields collected."
       ],
@@ -1859,7 +1859,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -1894,7 +1894,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -1930,7 +1930,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -1966,7 +1966,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2002,7 +2002,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2037,7 +2037,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2072,7 +2072,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2107,7 +2107,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 81,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": "2026-09-19T08:22:41Z",
@@ -2144,10 +2144,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 3,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Homepage article cards only, not the complete archive. Advertised /feed/ returned HTML and is not used as RSS."
       ],
@@ -2179,7 +2179,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2214,7 +2214,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2249,7 +2249,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2286,10 +2286,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 1,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Partial selected-content page watch of the public GPPC PLUS program description and four component descriptions. This is not individual-item publication collection. Excludes registration controls and menus; no registration or submission performed. Publication date unknown."
       ],
@@ -2321,7 +2321,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2356,10 +2356,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 12,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -2391,10 +2391,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 6,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -2462,7 +2462,7 @@
       "item_limit_reached": null,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
@@ -2497,10 +2497,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 1,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Partial selected-content page watch of the official recent-enforcement table, observed locally with 161 data rows on 2026-09-19. This is not individual enforcement-item collection; table dates are not assigned as the page publication date. News links repeat across entities, so URL deduplication cannot represent individual enforcement rows. No access to the blocked www.sec.or.th host is required. Legal effect remains Not assessed."
       ],
@@ -2640,10 +2640,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 9,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official advertised RSS replaces brittle dated-URL pattern; latest10 feed entries only, not a full archive."
       ],
@@ -2665,7 +2665,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 81,
+      "attachment_backlog": 79,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "announcement",
@@ -2675,10 +2675,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -2713,10 +2713,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 4,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Homepage press headline cards only; no full archive traversal. Dates are displayed publication dates."
       ],
@@ -2741,7 +2741,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 125,
+      "attachment_backlog": 123,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "press-release",
@@ -2751,10 +2751,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 137,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Empty year-specific legacy URL replaced with the current official press-release index; overlaps existing press source. All year tabs present on the one listing response, bounded500 items."
       ],
@@ -2778,7 +2778,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 84,
+      "attachment_backlog": 82,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "press-release",
@@ -2788,10 +2788,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -2826,10 +2826,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 45,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official activity cards replace empty generic news page where applicable; duplicate activity scope is explicit. Displayed day/month lacks year, so publication date remains unknown."
       ],
@@ -2863,10 +2863,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 45,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official activity cards replace empty generic news page where applicable; duplicate activity scope is explicit. Displayed day/month lacks year, so publication date remains unknown."
       ],
@@ -2900,10 +2900,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 6,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "First statistics page; years in titles are reporting periods, not inferred publication dates."
       ],
@@ -2937,10 +2937,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 30,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official CKAN datasets, not press releases; first organization page only."
       ],
@@ -2965,7 +2965,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 82,
+      "attachment_backlog": 80,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "ruling",
@@ -2975,10 +2975,10 @@
       "item_limit_reached": true,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 100,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -3013,10 +3013,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 7,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Corrected official navigation destination; lists complaint/process instruments, not individual enforcement outcomes."
       ],
@@ -3050,10 +3050,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 20,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Eight explicitly named official secondary-rule/guidance topics, bounded to their current pages. No claim of all subordinate instruments; original dead URL retained in import inventory."
       ],
@@ -3077,7 +3077,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 8,
+      "attachment_backlog": 6,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "order",
@@ -3087,10 +3087,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 26,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -3115,7 +3115,7 @@
     },
     {
       "asset_budget": 3,
-      "attachment_backlog": 107,
+      "attachment_backlog": 104,
       "attachment_checks": 3,
       "authority_class": "official-publication",
       "document_type": "ruling",
@@ -3125,10 +3125,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 134,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Official unfair-rulings index; publication dates extracted from .text-red2. Current listing only; no completeness assertion or nested-detail traversal. PDF checks rotate under a per-run budget."
       ],
@@ -3152,7 +3152,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 103,
+      "attachment_backlog": 101,
       "attachment_checks": 2,
       "authority_class": "self-regulatory-publication",
       "document_type": "publication",
@@ -3162,10 +3162,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 115,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Rule-document table labels resolve image-only PDF links;115 PDFs with cap300; one year-only row label excluded. Amendment links retain full parent rule text and amendment context. Includes historical and repealed entries; legal applicability Not assessed. No publication date inferred from filenames or titles."
       ],
@@ -3187,7 +3187,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 10,
+      "attachment_backlog": 8,
       "attachment_checks": 2,
       "authority_class": "self-regulatory-publication",
       "document_type": "publication",
@@ -3197,10 +3197,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 28,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Listing scope and recent-item completeness require live validation.",
         "Candidate family filter; fixture tests engine behavior, not live source completeness."
@@ -3233,10 +3233,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 12,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
       ],
@@ -3340,10 +3340,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 1,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Partial selected-content page watch of the official community-product standards table, first 50 standards only. This is not individual-item collection and does not replace general industrial standards or certification coverage. HTTP/backslash document links are not fetched or rewritten. Publication date unknown; legal effect remains Not assessed."
       ],
@@ -3376,10 +3376,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Current first-page PR archive cards with displayed Thai publication dates. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory. No completeness assertion."
       ],
@@ -3412,10 +3412,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Current first-page official document archive cards with displayed Thai publication dates; includes dual-category articles and no nested attachment traversal. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory."
       ],
@@ -3448,10 +3448,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 10,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Qualified public RSS with 10 latest items and explicit RFC publication timestamps. Requires host-scoped, trusted-root-validated missing GlobalSign intermediate; TLS hostname verification and robots remain mandatory. RSS is bounded and not full historical coverage."
       ],
@@ -3511,7 +3511,7 @@
     },
     {
       "asset_budget": 2,
-      "attachment_backlog": 43,
+      "attachment_backlog": 41,
       "attachment_checks": 2,
       "authority_class": "official-publication",
       "document_type": "publication",
@@ -3521,10 +3521,10 @@
       "item_limit_reached": false,
       "jurisdiction": "TH",
       "language": "th",
-      "last_attempt_at": "2026-09-19T16:27:20Z",
+      "last_attempt_at": "2026-09-19T17:16:54Z",
       "last_count": 54,
       "last_error": null,
-      "last_success_at": "2026-09-19T16:27:20Z",
+      "last_success_at": "2026-09-19T17:16:54Z",
       "limitations": [
         "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
         "Listing has entries without explicit publication dates; dates are not inferred from titles or URLs."
