@@ -659,8 +659,9 @@ sources:
   - enforcement:dsi:1
 - id: etda-listing-01
   regulator_id: etda
-  title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
-  url: https://www.etda.or.th/th/newsevents/pr-news.aspx
+  title: ETDA — Thai press and related publications
+  publisher_name: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์ (Electronic Transactions Development Agency — ETDA)
+  url: https://www.etda.or.th/th/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74
   topics: &id003
   - platforms
   - digital-services
@@ -670,49 +671,49 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: rss
   allowed_hosts:
   - www.etda.or.th
   max_pages: 1
-  max_items: 100
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - ETDA news robots redirects to an oversized HTML homepage, not a policy. The separate permitted standards catalogue is
-    not equivalent news coverage.
+  - 'Official RSS advertised by the ETDA press page; 2026-09-19 qualification returned 909 records with explicit RFC publication timestamps.'
+  - The feed mixes press releases, standards and other ETDA publications; relevance and legal effect remain unassessed.
   origin_ids:
   - enforcement:etda:1
-  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
-  link_selector: a[href]
-  fixture: tests/fixtures/listing.html
-  fixture_kind: synthetic-adapter-contract
+  include_url: null
+  fixture: tests/fixtures/repairs/etda-official-rss-th.xml
+  fixture_kind: representative-official-extract
   exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
 - id: etda-listing-02
   regulator_id: etda
-  title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
-  url: https://www.etda.or.th/en/newsevents/pr-news.aspx
+  title: ETDA — English press releases
+  publisher_name: Electronic Transactions Development Agency (ETDA)
+  url: https://www.etda.or.th/en/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74
   topics: *id003
   jurisdiction: TH
-  language: th
-  document_type: publication
+  language: en
+  document_type: press-release
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: rss
   allowed_hosts:
   - www.etda.or.th
   max_pages: 1
-  max_items: 100
+  max_items: 500
   min_items: 1
   asset_budget: 2
   limitations:
-  - ETDA English news shares the malformed robots response. No independent permitted English-news endpoint qualified.
+  - 'Official RSS advertised by the English ETDA press page; 2026-09-19 qualification returned 312 records, with the latest dated 2024-01-30.'
+  - The English archive is stale relative to the Thai feed; absence of a newer English item is not evidence that ETDA made no update.
   origin_ids:
   - enforcement:etda:2
-  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
-  link_selector: a[href]
-  fixture: tests/fixtures/listing.html
-  fixture_kind: synthetic-adapter-contract
+  include_url: null
+  fixture: tests/fixtures/repairs/etda-official-rss-en.xml
+  fixture_kind: representative-official-extract
   exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
 - id: etda-listing-03
   regulator_id: etda
@@ -2326,6 +2327,7 @@ sources:
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
   document_id_pattern: ฉบับที่\s*([0-9๐-๙]+/[0-9๐-๙]+)
 - id: tcct-listing-02
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Press releases — current official archive
   url: https://www.tcct.or.th/view/1/giveaway_news/TH-TH

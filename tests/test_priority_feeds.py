@@ -6,6 +6,13 @@ from regwatch.publish import build_site
 from test_engine import SOURCE
 
 class PriorityFeeds(unittest.TestCase):
+    def test_tcct_press_archive_is_in_regulatory_priority(self):
+        from regwatch.registry import load_registry
+        root=Path(__file__).resolve().parents[1]
+        sources=load_registry(root/'config/sources.yml')
+        source=next(s for s in sources if s['id']=='tcct-listing-02')
+        self.assertEqual(source.get('feed_priority'),'regulatory')
+
     def test_priority_dedup_uses_regulatory_observation_even_if_news_is_newer(self):
         law={**SOURCE,'id':'pdpc-law','feed_priority':'regulatory'}
         news={**SOURCE,'id':'pdpc-news','feed_priority':'radar'}

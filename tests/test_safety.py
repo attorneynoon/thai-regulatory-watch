@@ -274,3 +274,15 @@ class RegistryTests(unittest.TestCase):
                 s={**SOURCE,'id':sid,'enabled':False,'allowed_hosts':['example.org']}
                 (p/'sources.yml').write_text(yaml.safe_dump({'schema_version':'1.0','sources':[s]}),'utf-8')
                 with self.assertRaises(ValueError): load_registry(p/'sources.yml')
+
+    def test_registry_rejects_browser_rendering_for_non_html_or_forms(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'config'; p.mkdir()
+            for extra in [
+                {'render':'browser','mode':'rss'},
+                {'render':'browser','mode':'html','public_form':{'q':'x'}},
+                {'render':'stealth','mode':'html'},
+            ]:
+                source={**SOURCE,'enabled':False,'allowed_hosts':['example.org'],**extra}
+                (p/'sources.yml').write_text(yaml.safe_dump({'schema_version':'1.0','sources':[source]}),'utf-8')
+                with self.assertRaises(ValueError): load_registry(p/'sources.yml')

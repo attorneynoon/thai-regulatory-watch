@@ -69,7 +69,11 @@ def parse_document(source, body, final_url):
                     rows.append(record(source, urljoin(final_url, e.findtext("link")), e.findtext("title", ""), e.findtext("pubDate"),summary=source_excerpt(e.findtext('description'))))
                 except ValueError:
                     continue
-        return [r for r in rows if accepted(source, r["url"], r["title"])], []
+        rows = [r for r in rows if accepted(source, r["url"], r["title"])]
+        # Some official feeds publish oldest-first. Sort before the collector's
+        # item bound so a large archive cannot crowd out current publications.
+        rows.sort(key=lambda row: (row.get("published_at") is not None, row.get("published_at") or ""), reverse=True)
+        return rows, []
     soup = BeautifulSoup(body, "html.parser")
     for node in soup.select("script, style, noscript, nav, header, footer, .menu-root, #sitemap"):
         node.decompose()
