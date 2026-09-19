@@ -1,0 +1,2458 @@
+schema_version: '1.0'
+sources:
+- id: administrative-court-watch
+  regulator_id: administrative-court
+  title: Administrative Court
+  url: null
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: amlo-listing-01
+  regulator_id: amlo
+  title: สำนักงานป้องกันและปราบปรามการฟอกเงิน
+  url: https://www.amlo.go.th/
+  topics: &id001
+  - aml
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.amlo.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:amlo:1
+- id: amlo-listing-02
+  regulator_id: amlo
+  title: สำนักงานป้องกันและปราบปรามการฟอกเงิน
+  url: https://www.amlo.go.th/dpl/content/index/3
+  topics: *id001
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.amlo.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:amlo:2
+- id: amlo-listing-03
+  regulator_id: amlo
+  title: สำนักงานป้องกันและปราบปรามการฟอกเงิน
+  url: https://sed.amlo.go.th/content/index/44?page=1
+  topics: *id001
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - sed.amlo.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:amlo:3
+- id: bora-watch
+  regulator_id: bora
+  title: Bureau of Registration Administration
+  url: null
+  topics:
+  - privacy
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: bot-listing-01
+  regulator_id: bot
+  title: ธนาคารแห่งประเทศไทย
+  url: https://www.bot.or.th/th/news-and-media/news.html
+  topics:
+  - financial-markets
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.bot.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live HTML contained no article URLs; likely client-rendered listing. Requires
+    an explicit tested adapter.
+  origin_ids:
+  - enforcement:bot:1
+  include_url: (?i)/news-and-media/news/news-\d{8}[^/]*\.html
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: cabinet-secretariat-discovery
+  regulator_id: cabinet-secretariat
+  title: สำนักเลขาธิการคณะรัฐมนตรี
+  url: https://www.soc.go.th/?page_id=28201
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.soc.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - cabinet-secretariat:discovery_url
+  surface: cabinet-resolution-recorded, cabinet-principle-approved
+- id: ccib-watch
+  regulator_id: ccib
+  title: Cyber Crime Investigation Bureau
+  url: null
+  topics:
+  - cybersecurity
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: cifs-watch
+  regulator_id: cifs
+  title: Central Institute of Forensic Science
+  url: null
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: council-of-state-discovery
+  regulator_id: council-of-state
+  title: สำนักงานคณะกรรมการกฤษฎีกา
+  url: https://www.krisdika.go.th/
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.krisdika.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - council-of-state:discovery_url
+  surface: council-of-state-review-started, council-of-state-draft-published
+- id: courts-watch
+  regulator_id: courts
+  title: Official court publications
+  url: null
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: customs-listing-01
+  regulator_id: customs
+  title: กรมศุลกากร
+  url: https://www.customs.go.th/
+  topics:
+  - trade
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.customs.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:customs:1
+- id: dbd-listing-01
+  regulator_id: dbd
+  title: กรมพัฒนาธุรกิจการค้า
+  url: https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544
+  topics:
+  - corporate
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - www.dbd.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - enforcement:dbd:1
+- id: dip-listing-01
+  regulator_id: dip
+  title: กรมทรัพย์สินทางปัญญา
+  url: https://webnew.ipthailand.go.th/
+  topics:
+  - intellectual-property
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - webnew.ipthailand.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:dip:1
+- id: diw-listing-01
+  regulator_id: diw
+  title: กรมโรงงานอุตสาหกรรม
+  url: https://www.diw.go.th/
+  topics: &id002
+  - industry
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.diw.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:diw:1
+- id: diw-listing-02
+  regulator_id: diw
+  title: กรมโรงงานอุตสาหกรรม
+  url: https://www.diw.go.th/webdiw/news/
+  topics: *id002
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.diw.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:diw:2
+- id: diw-listing-03
+  regulator_id: diw
+  title: กรมโรงงานอุตสาหกรรม
+  url: https://www.diw.go.th/webdiw/wp-json/wp/v2/posts?per_page=100&orderby=modified&order=desc&_fields=id,date,modified,slug,link,title,excerpt,categories
+  topics: *id002
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.diw.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:diw:3
+- id: dlpw-watch
+  regulator_id: dlpw
+  title: Department of Labour Protection and Welfare
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: dlt-watch
+  regulator_id: dlt
+  title: Department of Land Transport
+  url: null
+  topics:
+  - privacy
+  - transport
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: doe-watch
+  regulator_id: doe
+  title: Department of Employment
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: dopa-watch
+  regulator_id: dopa
+  title: Department of Provincial Administration
+  url: null
+  topics:
+  - privacy
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: dsi-listing-01
+  regulator_id: dsi
+  title: กรมสอบสวนคดีพิเศษ
+  url: https://www.dsi.go.th/
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.dsi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:dsi:1
+- id: etda-listing-01
+  regulator_id: etda
+  title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
+  url: https://www.etda.or.th/th/newsevents/pr-news.aspx
+  topics: &id003
+  - platforms
+  - digital-services
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.etda.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:etda:1
+  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: etda-listing-02
+  regulator_id: etda
+  title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
+  url: https://www.etda.or.th/en/newsevents/pr-news.aspx
+  topics: *id003
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.etda.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:etda:2
+  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: etda-listing-03
+  regulator_id: etda
+  title: สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์
+  url: https://www.etda.or.th/th/Useful-Resource/knowledge-sharing.aspx
+  topics: *id003
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.etda.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:etda:3
+  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: etda-standards
+  regulator_id: etda
+  title: ETDA standards
+  url: https://www.etda.or.th/th/StandardNews.aspx
+  topics:
+  - standards
+  - digital-services
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.etda.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: excise-listing-01
+  regulator_id: excise
+  title: กรมสรรพสามิต
+  url: https://www.excise.go.th/
+  topics: &id004
+  - tax
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.excise.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:excise:1
+- id: excise-listing-02
+  regulator_id: excise
+  title: กรมสรรพสามิต
+  url: https://webdev.excise.go.th/act2560/suppress-news/79-2569
+  topics: *id004
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - webdev.excise.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:excise:2
+- id: fda-listing-01
+  regulator_id: fda
+  title: สำนักงานคณะกรรมการอาหารและยา
+  url: https://api.oryor.com/media/newsUpdate
+  topics: &id005
+  - consumer
+  - product-safety
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - api.oryor.com
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - enforcement:fda:1
+- id: fda-listing-02
+  regulator_id: fda
+  title: สำนักงานคณะกรรมการอาหารและยา
+  url: https://oryor.com/media/newsUpdate
+  topics: *id005
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - oryor.com
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:fda:2
+- id: house-section-77-discovery
+  regulator_id: house-section-77
+  title: สำนักงานเลขาธิการสภาผู้แทนราษฎร
+  url: https://www.parliament.go.th/section77/survey_list77.php
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.parliament.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - house-section-77:discovery_url
+  surface: house-section-77-hearing-opened, house-section-77-hearing-closed, house-hearing-report-published
+  include_url: (?i)(survey_detail|detail|\.pdf)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: labour-court-watch
+  regulator_id: labour-court
+  title: Labour courts and official judgments
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: labour-relations-watch
+  regulator_id: labour-relations
+  title: Official labour-relations bodies
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: law-go-th-api
+  regulator_id: law-go-th
+  title: สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน) / ศูนย์กลางข้อมูลกฎหมาย
+  url: https://apig.law.go.th/dga-user-service-survey/surveys
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - apig.law.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - law-go-th:public-hearings:api
+  - law-go-th:api_url
+  surface: draft-in-public-hearing, subordinate-instrument-hearing, post-enactment-effectiveness-review
+- id: law-go-th-public-hearings
+  regulator_id: law-go-th
+  title: สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน) / ศูนย์กลางข้อมูลกฎหมาย
+  url: https://law.go.th/
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - law.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - law-go-th:public-hearings
+  - law-go-th:discovery_url
+  surface: draft-in-public-hearing, subordinate-instrument-hearing, post-enactment-effectiveness-review
+- id: mdes-watch
+  regulator_id: mdes
+  title: Ministry of Digital Economy and Society
+  url: null
+  topics:
+  - digital-services
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: mol-listing-01
+  regulator_id: mol
+  title: กระทรวงแรงงาน
+  url: https://www.mol.go.th/news_group/news/
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.mol.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:mol:1
+- id: moph-watch
+  regulator_id: moph
+  title: Ministry of Public Health
+  url: null
+  topics:
+  - privacy
+  - health
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: morprom-watch
+  regulator_id: morprom
+  title: MorProm official publications
+  url: null
+  topics:
+  - privacy
+  - health
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: mot-watch
+  regulator_id: mot
+  title: Ministry of Transport
+  url: null
+  topics:
+  - transport
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: nacc-watch
+  regulator_id: nacc
+  title: National Anti-Corruption Commission
+  url: null
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: nbtc-listing-01
+  regulator_id: nbtc
+  title: สำนักงาน กสทช.
+  url: https://www.nbtc.go.th/News.aspx
+  topics:
+  - telecom
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.nbtc.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:nbtc:1
+- id: ncsa-listing-01
+  regulator_id: ncsa
+  title: สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ
+  url: https://www.ncsa.or.th/news?category=announcement
+  topics: &id006
+  - cybersecurity
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.ncsa.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:ncsa:1
+- id: ncsa-listing-02
+  regulator_id: ncsa
+  title: สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ
+  url: https://www.ncsa.or.th/news?category=news
+  topics: *id006
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.ncsa.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:ncsa:2
+- id: ncsa-listing-03
+  regulator_id: ncsa
+  title: สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ
+  url: https://www.ncsa.or.th/data/output/news.json
+  topics: *id006
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - www.ncsa.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - enforcement:ncsa:3
+- id: nhso-watch
+  regulator_id: nhso
+  title: National Health Security Office
+  url: null
+  topics:
+  - privacy
+  - health
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: ocpb-home
+  regulator_id: ocpb
+  title: OCPB news
+  url: https://www.ocpb.go.th/
+  topics:
+  - consumer
+  - news
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.ocpb.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(news_view\.php\?nid=|\.pdf(?:\?|$))
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: ocpb-listing-01
+  regulator_id: ocpb
+  title: สำนักงานคณะกรรมการคุ้มครองผู้บริโภค
+  url: https://www.ocpb.go.th/more_news.php
+  topics:
+  - consumer
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.ocpb.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Live generic more_news.php response contained navigation links only. A category-specific
+    listing must be qualified.
+  origin_ids:
+  - enforcement:ocpb:1
+  include_url: (?i)(news_view\.php\?nid=|\.pdf(?:\?|$))
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: ocs-council-of-state-law-search-api
+  regulator_id: ocs-council-of-state-law-search
+  title: สำนักงานคณะกรรมการกฤษฎีกา
+  url: https://searchlaw.ocs.go.th/ocs-api
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - searchlaw.ocs.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - ocs-council-of-state-law-search:api_url
+  surface: act-version-record, council-of-state-law-text
+- id: ocs-council-of-state-law-search-application
+  regulator_id: ocs-council-of-state-law-search
+  title: สำนักงานคณะกรรมการกฤษฎีกา
+  url: https://searchlaw.ocs.go.th/council-of-state/
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - searchlaw.ocs.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Upstream registry explicitly has watch_enabled false; retained as pending scope.
+  origin_ids:
+  - ocs-council-of-state-law-search:application_url
+  surface: act-version-record, council-of-state-law-text
+- id: ocs-council-of-state-law-search-discovery
+  regulator_id: ocs-council-of-state-law-search
+  title: สำนักงานคณะกรรมการกฤษฎีกา
+  url: https://www.ocs.go.th/searchlaw-law
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.ocs.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Upstream registry explicitly has watch_enabled false; retained as pending scope.
+  origin_ids:
+  - ocs-council-of-state-law-search:discovery_url
+  surface: act-version-record, council-of-state-law-text
+- id: parliament-einitiative-discovery
+  regulator_id: parliament-einitiative
+  title: สำนักงานเลขาธิการสภาผู้แทนราษฎร
+  url: https://einitiative.parliament.go.th/draft-law-more?type=0
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - einitiative.parliament.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - parliament-einitiative:discovery_url
+  surface: public-initiative-filed, public-initiative-status
+- id: parliament-repository-discovery
+  regulator_id: parliament-repository
+  title: รัฐสภา
+  url: https://prt.parliament.go.th/
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - prt.parliament.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - parliament-repository:discovery_url
+  surface: parliament-document-published, committee-document-published
+- id: pdpc-listing-01
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://www.pdpc.or.th/
+  topics: &id007
+  - privacy
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:pdpc:1
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: pdpc-listing-02
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://lawcenter-service.pdpc.or.th/api/v1/consult/getAllConsultTopic
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - lawcenter-service.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - enforcement:pdpc:2
+- id: pdpc-listing-03
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://lawcenter-service.pdpc.or.th/api/v1/public/knowledge/getLastKnowledge?limit=1000&offset=0&from=&to=&type=0&orderBy=DESC
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: pending-api
+  allowed_hosts:
+  - lawcenter-service.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Known first-party API endpoint; payload and pagination adapter need qualification.
+  origin_ids:
+  - enforcement:pdpc:3
+- id: pdpc-official-consultations
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://www.pdpc.or.th/consultation/
+  topics:
+  - privacy
+  - consultation-opinions
+  jurisdiction: TH
+  language: th
+  document_type: consultation-opinion
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 300
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Attachment-box title, explicit displayed publication date and direct PDF URL.
+    Consultation opinions are not public hearings. PDF hashes rotate; no legal effect
+    assessed.
+  origin_ids:
+  - pdpc:official-consultations
+  surface: consultation-publications
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: .pdpc-attachment-box button[data-href]
+  fixture: tests/fixtures/pdpc-attachment.html
+  fixture_kind: representative-official-extract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+  href_attribute: data-href
+  item_selector: .pdpc-attachment-box
+  title_selector: h3.title
+  date_selector: .meta .date
+- id: pdpc-official-gppc
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://gppc.pdpc.or.th/
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - gppc.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - pdpc:official-gppc
+  surface: implementation-program-and-consultation-signals
+- id: pdpc-official-home
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://www.pdpc.or.th/front-page/
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - pdpc:official-home
+  surface: news-and-official-publications
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: pdpc-official-office-orders
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://www.pdpc.or.th/category/pdpc-law/announce/writ/
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - pdpc:official-office-orders
+  surface: office-orders
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: pdpc-official-orders
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://www.pdpc.or.th/adjudication-panel-decisionsummary/
+  topics:
+  - privacy
+  - orders
+  jurisdiction: TH
+  language: th
+  document_type: expert-committee-order-summary
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 300
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Attachment-box title, explicit displayed publication date and direct PDF URL.
+    Consultation opinions are not public hearings. PDF hashes rotate; no legal effect
+    assessed.
+  origin_ids:
+  - pdpc:official-orders
+  surface: expert-committee-order-summaries
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: .pdpc-attachment-box button[data-href]
+  fixture: tests/fixtures/pdpc-attachment.html
+  fixture_kind: representative-official-extract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+  href_attribute: data-href
+  item_selector: .pdpc-attachment-box
+  title_selector: h3.title
+  date_selector: .meta .date
+- id: pdpc-official-private-sector
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://register-gppc-plus.pdpc.or.th/
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - register-gppc-plus.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - pdpc:official-private-sector
+  surface: private-sector-compliance-program
+- id: pdpc-official-public-hearings
+  regulator_id: pdpc
+  title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
+  url: https://www.pdpc.or.th/contact-us/public_hearing/
+  topics: *id007
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.pdpc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - pdpc:official-public-hearings
+  surface: public-hearings
+  include_url: (?i)(/wp-content/uploads/.*\.pdf(?:\?|$)|/\d{4}/\d{2}/[^/]+)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: prosecutors-watch
+  regulator_id: prosecutors
+  title: Official prosecution publications
+  url: null
+  topics:
+  - enforcement
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: rd-listing-01
+  regulator_id: rd
+  title: กรมสรรพากร
+  url: https://www.rd.go.th/21.html
+  topics:
+  - tax
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.rd.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:rd:1
+  include_url: (?i)/fileadmin/.*\.pdf(?:\?|$)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: royal-gazette-discovery
+  regulator_id: royal-gazette
+  title: สำนักเลขาธิการคณะรัฐมนตรี / ราชกิจจานุเบกษา
+  url: https://ratchakitcha.soc.go.th/
+  topics:
+  - legislation
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - ratchakitcha.soc.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - royal-gazette:discovery_url
+  surface: gazette-publication-candidate
+- id: sec-listing-01
+  regulator_id: sec
+  title: สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์
+  url: https://www.sec.or.th/TH/Pages/News.aspx
+  topics: &id008
+  - financial-markets
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.sec.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:sec:1
+  include_url: (?i)News_Detail\.aspx\?SECID=
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: sec-listing-02
+  regulator_id: sec
+  title: สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์
+  url: https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL
+  topics: *id008
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - market.sec.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:sec:2
+- id: sepo-watch
+  regulator_id: sepo
+  title: State Enterprise Policy Office
+  url: null
+  topics:
+  - competition
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: set-watch
+  regulator_id: set
+  title: Stock Exchange of Thailand
+  url: null
+  topics:
+  - financial-markets
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: sso-watch
+  regulator_id: sso
+  title: Social Security Office
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: tcc-listing-01
+  regulator_id: tcc
+  title: สภาองค์กรของผู้บริโภค
+  url: https://www.tcc.or.th/
+  topics:
+  - consumer
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: statutory-consumer-advocacy
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcc.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcc:1
+  include_url: (?i)/\d{4}/\d{2}/|/\d{4}-|/news-
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: tcct-announcements
+  regulator_id: tcct
+  title: TCCT announcements
+  url: https://www.tcct.or.th/view/1/announce/TH-TH
+  topics:
+  - competition
+  - announcements
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-01
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/
+  topics: &id009
+  - competition
+  - platforms
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:1
+  - tcct:official-home
+  surface: news-and-work-program
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-02
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/view/1/Press_release_2026/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:2
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-03
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/view/1/giveaway_news/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:3
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-04
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/view/1/news_and_events/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:4
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-05
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/view/1/activity/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:5
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-06
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://www.tcct.or.th/view/1/statistics/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tcct:6
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-listing-07
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการแข่งขันทางการค้า
+  url: https://catalog.tcct.or.th/th/organization/tcct
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - catalog.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:tcct:7
+  - tcct:official-catalog
+  surface: publication-catalog
+- id: tcct-merger
+  regulator_id: tcct
+  title: TCCT merger rulings
+  url: https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH
+  topics:
+  - competition
+  - mergers
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-official-complaints-prosecution
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการการแข่งขันทางการค้า (TCCT)
+  url: https://www.tcct.or.th/view/1/fact_finding_and_prosecution_process/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - tcct:official-complaints-prosecution
+  surface: fact-finding-and-prosecution-work
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-official-rules-guidelines
+  regulator_id: tcct
+  title: สำนักงานคณะกรรมการการแข่งขันทางการค้า (TCCT)
+  url: https://www.tcct.or.th/view/1/Secondary_Laws_and_Guidelines/TH-TH
+  topics: *id009
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - tcct:official-rules-guidelines
+  surface: rules-guidelines-and-consultation
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-orders
+  regulator_id: tcct
+  title: TCCT orders
+  url: https://www.tcct.or.th/view/1/order/TH-TH
+  topics:
+  - competition
+  - orders
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+- id: tcct-unfair
+  regulator_id: tcct
+  title: TCCT unfair-trade rulings
+  url: https://www.tcct.or.th/view/1/verdict/TH-TH
+  topics:
+  - competition
+  - rulings
+  jurisdiction: TH
+  language: th
+  document_type: ruling
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.tcct.or.th
+  max_pages: 1
+  max_items: 300
+  min_items: 1
+  asset_budget: 3
+  limitations:
+  - Official unfair-rulings index; publication dates extracted from .text-red2. Current
+    listing only; no completeness assertion or nested-detail traversal. PDF checks
+    rotate under a per-run budget.
+  origin_ids:
+  - owner-initial-source-assessment
+  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
+  link_selector: .detail a[href], li.list-news a[href]
+  fixture: tests/fixtures/tcct-ruling.html
+  fixture_kind: representative-official-extract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
+  item_selector: .detail, li.list-news
+  date_selector: .text-red2
+  include_title: คำวินิจฉัย
+- id: thaibma-listing-01
+  regulator_id: thaibma
+  title: สมาคมตลาดตราสารหนี้ไทย
+  url: https://www.thaibma.or.th/EN/Rule/Rules.aspx
+  topics: &id010
+  - financial-markets
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: self-regulatory-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.thaibma.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:thaibma:1
+  include_url: (?i)\.pdf(?:\?|$)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: thaibma-listing-02
+  regulator_id: thaibma
+  title: สมาคมตลาดตราสารหนี้ไทย
+  url: https://www.thaibma.or.th/EN/Rule/Hearing.aspx
+  topics: *id010
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: self-regulatory-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - www.thaibma.or.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:thaibma:2
+  include_url: (?i)\.pdf(?:\?|$)
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: thaicert-watch
+  regulator_id: thaicert
+  title: ThaiCERT
+  url: null
+  topics:
+  - cybersecurity
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: tisi-listing-01
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://www.tisi.go.th/index.php/th/notice
+  topics: &id011
+  - product-safety
+  - standards
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:tisi:1
+- id: tisi-listing-02
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://www.tisi.go.th/index.php/th/news
+  topics: *id011
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:tisi:2
+- id: tisi-listing-03
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://www.tisi.go.th/index.php/th/standard-certification
+  topics: *id011
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts:
+  - www.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:tisi:3
+- id: tisi-listing-04
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/
+  topics: *id011
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - pr.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tisi:4
+  include_url: (?i)/\d{4}/\d{2}/|\?p=\d+
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: tisi-listing-05
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://pr.tisi.go.th/category/เอกสารเผยแพร่/
+  topics: *id011
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts:
+  - pr.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  origin_ids:
+  - enforcement:tisi:5
+  include_url: (?i)/\d{4}/\d{2}/|\?p=\d+
+  link_selector: a[href]
+  fixture: tests/fixtures/listing.html
+  fixture_kind: synthetic-adapter-contract
+  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
+- id: tisi-listing-06
+  regulator_id: tisi
+  title: สำนักงานมาตรฐานผลิตภัณฑ์อุตสาหกรรม
+  url: https://pr.tisi.go.th/feed/
+  topics: *id011
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: rss
+  allowed_hosts:
+  - pr.tisi.go.th
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Listing scope and recent-item completeness require live validation.
+  origin_ids:
+  - enforcement:tisi:6
+  fixture: tests/fixtures/rss.xml
+- id: tsd-watch
+  regulator_id: tsd
+  title: Thailand Securities Depository
+  url: null
+  topics:
+  - privacy
+  - financial-markets
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch
+- id: wage-committee-watch
+  regulator_id: wage-committee
+  title: Official wage committees
+  url: null
+  topics:
+  - employment
+  jurisdiction: TH
+  language: th
+  document_type: publication
+  authority_class: official-publication
+  enabled: false
+  validation_status: pending
+  mode: html
+  allowed_hosts: []
+  max_pages: 1
+  max_items: 100
+  min_items: 1
+  asset_budget: 2
+  limitations:
+  - Institution named in existing monitoring scope; exact public listing URL and adapter
+    remain to be qualified.
+  origin_ids:
+  - cloud-monitoring-lanes:institution-watch

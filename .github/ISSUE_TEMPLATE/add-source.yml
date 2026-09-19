@@ -1,0 +1,32 @@
+name: Add a government source
+description: Request a new public portal, listing or feed for review.
+title: 'Source request: '
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Official URL
+      description: Public government, regulator or identified public institution URL. No credentials.
+    validations:
+      required: true
+  - type: input
+    id: regulator
+    attributes:
+      label: Regulator or publisher and jurisdiction
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Expected example publication
+      description: Include a title, direct URL and visible publication date if available.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Topics and intended coverage
+      description: News, consultations, opinions, orders, standards, speeches or another explicit scope.
+  - type: markdown
+    attributes:
+      value: 'Submitting this request does not activate the source. A reviewed configuration, fixture and permitted live validation are required. GRC outputs remain review-only.'

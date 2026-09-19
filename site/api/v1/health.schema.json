@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "records": {
+      "items": {
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "message": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "official_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "healthy",
+              "degraded",
+              "blocked",
+              "failed"
+            ]
+          }
+        },
+        "required": [
+          "event_id",
+          "source_id",
+          "regulator_id",
+          "observed_at",
+          "status",
+          "previous_status",
+          "message",
+          "official_url"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "generated_at",
+    "records"
+  ],
+  "title": "Regulatory Watch health v1",
+  "type": "object"
+}
