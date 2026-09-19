@@ -8,6 +8,7 @@ from .registry import load_registry
 from .storage import load_state,writer_lock,write_changed,encode
 from .models import utcnow,canonical_url
 from .collector import collect_source
+from .browser_transport import RenderedTransport
 from .publish import build_site,check_site
 from .contracts import SCHEMAS
 
@@ -44,11 +45,26 @@ def main():
     with writer_lock(root):
         if args.command=='collect':
             now=utcnow()
-            for s in sources:
-                if s['enabled'] and (not args.source or s['id'] in args.source):
-                    print('Collecting '+s['id'],flush=True)
-                    result=collect_source(state,s,now,root=root)
-                    print(result['status']+': '+str(result.get('last_count',0))+' items; '+str(result.get('last_error') or ''),flush=True)
+            playwright=browser=None
+            try:
+                for s in sources:
+                    if s['enabled'] and (not args.source or s['id'] in args.source):
+                        transport=None
+                        print('Collecting '+s['id'],flush=True)
+                        try:
+                            if s.get('render')=='browser':
+                                if browser is None:
+                                    from playwright.sync_api import sync_playwright
+                                    playwright=sync_playwright().start()
+                                    browser=playwright.chromium.launch(headless=True)
+                                transport=RenderedTransport(s,browser)
+                            result=collect_source(state,s,now,transport=transport,root=root)
+                            print(result['status']+': '+str(result.get('last_count',0))+' items; '+str(result.get('last_error') or ''),flush=True)
+                        finally:
+                            if transport is not None: transport.close()
+            finally:
+                if browser is not None: browser.close()
+                if playwright is not None: playwright.stop()
         # All artifacts validate before promotion. Git commits are the atomic
         # externally visible generation boundary; no remote push occurs here.
         with tempfile.TemporaryDirectory(prefix='.build-',dir=root) as temp:

@@ -671,6 +671,7 @@ sources:
   enabled: true
   validation_status: candidate
   mode: html
+  render: browser
   allowed_hosts:
   - www.etda.or.th
   max_pages: 1
@@ -678,8 +679,8 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - ETDA news robots redirects to an oversized HTML homepage, not a policy. The separate permitted standards catalogue is
-    not equivalent news coverage.
+  - '2026-09-19 GitHub Chromium qualification recovered 6 current Thai publication records after the ordinary robots gate.'
+  - Browser rendering is operational collection, not verified historical or legal-effect completeness.
   origin_ids:
   - enforcement:etda:1
   include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
@@ -699,6 +700,7 @@ sources:
   enabled: true
   validation_status: candidate
   mode: html
+  render: browser
   allowed_hosts:
   - www.etda.or.th
   max_pages: 1
@@ -706,7 +708,8 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - ETDA English news shares the malformed robots response. No independent permitted English-news endpoint qualified.
+  - '2026-09-19 GitHub Chromium qualification recovered 8 current English publication records after the ordinary robots gate.'
+  - Browser rendering is operational collection, not verified historical or legal-effect completeness.
   origin_ids:
   - enforcement:etda:2
   include_url: (?i)(\.pdf(?:\?|$)|/newsevents/(?:pr-news|standard-news|News-Announce)/[^/]+\.aspx|/Useful-Resource/[^/]+/[^/]+\.aspx)
