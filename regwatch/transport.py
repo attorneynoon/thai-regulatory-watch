@@ -79,12 +79,16 @@ class Transport:
                     if status in (301, 302, 303, 307, 308):
                         location = allowed_url(urljoin(location, headers.get("Location", "")), self.hosts)
                         continue
-                    if status in (404, 410):
+                    # RFC 9309 2.3.1.3: unavailable robots (4xx) is not
+                    # an explicit disallow. Content authorization is checked
+                    # independently in fetch. Respect rate limiting regardless.
+                    if 400 <= status < 500 and status != 429:
                         policy = Protego.parse('')
                     elif status == 200 and not body.lstrip().lower().startswith((b"<!doctype html", b"<html")):
                         policy = Protego.parse(body.decode("utf-8", "replace"))
                     else:
-                        raise AccessBlocked("Robots unavailable: HTTP " + str(status))
+                        reason = 'unexpected HTML' if status == 200 else 'HTTP ' + str(status)
+                        raise AccessBlocked("Robots policy unresolved: " + reason)
                     break
                 if policy is None:
                     raise AccessBlocked("Robots redirect limit")
@@ -97,6 +101,8 @@ class Transport:
                 if delay > 20:
                     raise AccessBlocked("Request rate exceeds supported budget")
                 self.robots[origin] = (policy, delay)
+            except AccessBlocked as exc:
+                self.robots[origin] = exc
             except Exception as exc:
                 self.robots[origin] = AccessBlocked("Robots unavailable: " + str(exc)[:200])
         result = self.robots[origin]
