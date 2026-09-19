@@ -1,5 +1,11 @@
 # Work record
 
+## 2026-09-19 — robots false-blocker correction
+
+Owner approved correcting false blockers after distinguishing robots unavailability from explicit restrictions. The previous blanket stop on robots HTTP 403 was a conservative implementation choice, not an explicit Disallow. Supersedes that part of the earlier fail-closed policy: RFC 9309 section 2.3.1.3 permits a public content request after robots 4xx. Apply that rule except 429 (rate limiting still stops). Content 401/403/429, challenges, explicit Disallow, unresolved HTML policies, network/server errors, TLS and host restrictions remain enforced. No authentication, proxy rotation or browser impersonation is introduced.
+
+Regression reproduced the old stop for robots 400/401/403/418 before implementation. All 100 tests pass after correction, including content-level denial, rate limits, network errors and existing explicit restriction cases. Error messages no longer double-prefix robots failures and distinguish unexpected HTML. Hosted results are not yet verified at this checkpoint; metadata/state history are unchanged by this code edit.
+
 ## 2026-09-19 — implementation authorized
 
 Owner approved RSS plus JSON, review-only GRC integration, extensible government URLs, automatic hosting and collection, and cloud maintenance. The latest instruction expands the seed inventory to all GRC regulator watch lists.

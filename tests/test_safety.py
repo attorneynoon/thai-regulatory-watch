@@ -146,6 +146,24 @@ class StateSafetyTests(unittest.TestCase):
             self.assertFalse((Path(d)/'.regwatch.lock').exists())
 
 class NetworkSafetyTests(unittest.TestCase):
+    def test_robots_4xx_unavailable_allows_public_content_not_content_denial(self):
+        for status in (400,401,403,404,410,418):
+            with self.subTest(status=status):
+                t=Transport(['example.org'])
+                with patch.object(t,'_raw',side_effect=[(status,{},b''),(200,{},b'public news')]):
+                    self.assertEqual(t.fetch('https://example.org/news')[2],b'public news')
+                t=Transport(['example.org'])
+                with patch.object(t,'_raw',side_effect=[(status,{},b''),(403,{},b'denied')]):
+                    with self.assertRaisesRegex(AccessBlocked,'Access unavailable: HTTP 403'):
+                        t.fetch('https://example.org/news')
+
+    def test_robots_rate_limit_and_network_errors_still_stop_content(self):
+        for response in [(429,{},b''),(503,{},b''),TimeoutError('timeout')]:
+            t=Transport(['example.org'])
+            with patch.object(t,'_raw',side_effect=[response]) as req:
+                with self.assertRaises(AccessBlocked):t.fetch('https://example.org/news')
+                self.assertEqual(req.call_count,1)
+
     def test_robots_literal_query_does_not_become_blanket_denial(self):
         policy=b'User-agent: *\nDisallow: /?\nDisallow: /download/\n'
         t=Transport(['example.org'])
