@@ -2,6 +2,7 @@ import unittest
 from regwatch.engine import empty_state, apply_observations
 
 SOURCE = dict(id="example-news", regulator_id="example", title="Example", url="https://example.org/news", topics=["news"], jurisdiction="TH", language="th", document_type="publication", authority_class="official-publication", validation_status="candidate", enabled=True, limitations=[])
+SOURCE['feed_priority']='regulatory'
 
 class EngineTests(unittest.TestCase):
     def test_baseline_unchanged_revision_reversion(self):

@@ -19,13 +19,15 @@ def load_registry(path):
     if not isinstance(data, dict) or data.get("schema_version") != "1.0" or not isinstance(data.get("sources"), list):
         raise ValueError("Unsupported source registry")
     sources = data["sources"]
-    used = {"all", "changes", "baseline", "health"}
+    used = {"all", "changes", "changes-all", "regulatory", "baseline", "health"}
     regulators = {s["regulator_id"] for s in sources}
     topics = {"topic-" + t for s in sources for t in s["topics"]}
     if regulators & used or regulators & topics:
         raise ValueError("Reserved regulator feed name")
     used |= regulators | topics
     for s in sources:
+        if s.get('feed_priority','radar') not in {'regulatory','radar'}:
+            raise ValueError('Invalid feed priority')
         for name in [s["id"], s["regulator_id"], *s["topics"]]:
             if not re.fullmatch(r"[a-z][a-z0-9-]{1,79}", name):
                 raise ValueError("Invalid identifier: " + name)
