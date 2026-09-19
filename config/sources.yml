@@ -274,6 +274,7 @@ sources:
   fixture: tests/fixtures/repairs/institution-cifs.html
   fixture_kind: representative-official-extract
 - id: council-of-state-discovery
+  feed_priority: regulatory
   regulator_id: council-of-state
   title: OCS official law-news (partial discovery coverage)
   url: https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto
@@ -744,6 +745,7 @@ sources:
   fixture_kind: representative-official-extract
   exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
 - id: etda-standards
+  feed_priority: regulatory
   regulator_id: etda
   title: ETDA standards
   url: https://opendata.etda.or.th/th/group/etda-recommendation
@@ -1502,6 +1504,7 @@ sources:
   - ocs-council-of-state-law-search:application_url
   surface: act-version-record, council-of-state-law-text
 - id: ocs-council-of-state-law-search-discovery
+  feed_priority: regulatory
   regulator_id: ocs-council-of-state-law-search
   title: OCS official law-news (partial discovery coverage)
   url: https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto
@@ -1609,6 +1612,90 @@ sources:
   include_url: null
   fixture: tests/fixtures/repairs/main-parliament-repository-discovery.json
   fixture_kind: representative-official-extract
+- id: pdpc-laws
+  regulator_id: pdpc
+  title: 'PDPC — Laws'
+  publisher_name: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://www.pdpc.or.th/category/pdpc-law/
+  feed_priority: regulatory
+  topics: [privacy]
+  jurisdiction: TH
+  language: th
+  document_type: legal-publication
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts: [www.pdpc.or.th]
+  max_pages: 3
+  max_items: 100
+  min_items: 1
+  asset_budget: 0
+  limitations:
+  - Three-page archive window; displayed publication dates are not decision or effective dates. Hosted access must be verified separately.
+  origin_ids: [owner-pdpc-watchlist]
+  link_selector: .post-list .post-item h3.title a[href]
+  item_selector: .post-item
+  date_selector: .date
+  pagination_selector: a.next.page-numbers
+  fixture: tests/fixtures/repairs/pdpc-law-card.html
+  fixture_kind: representative-official-extract
+- id: pdpc-announcements
+  regulator_id: pdpc
+  title: 'PDPC — Secondary legislation and announcements'
+  publisher_name: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://www.pdpc.or.th/category/pdpc-law/announce/
+  feed_priority: regulatory
+  topics: [privacy]
+  jurisdiction: TH
+  language: th
+  document_type: legal-announcement
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts: [www.pdpc.or.th]
+  max_pages: 3
+  max_items: 100
+  min_items: 1
+  asset_budget: 0
+  limitations:
+  - Three-page archive window; displayed publication dates are not decision or effective dates. Hosted access must be verified separately.
+  origin_ids: [owner-pdpc-watchlist]
+  link_selector: .post-list .post-item h3.title a[href]
+  item_selector: .post-item
+  date_selector: .date
+  pagination_selector: a.next.page-numbers
+  fixture: tests/fixtures/repairs/pdpc-law-card.html
+  fixture_kind: representative-official-extract
+- id: pdpc-news
+  regulator_id: pdpc
+  title: 'PDPC — News and activities'
+  publisher_name: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
+  url: https://www.pdpc.or.th/category/pdpc-news/
+  feed_priority: radar
+  topics: [privacy]
+  jurisdiction: TH
+  language: th
+  document_type: activity-news
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  mode: html
+  allowed_hosts: [www.pdpc.or.th]
+  max_pages: 3
+  max_items: 100
+  min_items: 1
+  asset_budget: 0
+  limitations:
+  - Three-page archive window; displayed publication dates are not decision or effective dates. Hosted access must be verified separately.
+  origin_ids: [owner-pdpc-watchlist]
+  link_selector: .post-list .post-item h3.title a[href]
+  item_selector: .post-item
+  date_selector: .date
+  pagination_selector: a.next.page-numbers
+  fixture: tests/fixtures/repairs/pdpc-news-card.html
+  fixture_kind: representative-official-extract
 - id: pdpc-listing-01
   regulator_id: pdpc
   title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล
@@ -1707,6 +1794,7 @@ sources:
   fixture: tests/fixtures/repairs/blocked-pdpc-knowledge.json
   fixture_kind: representative-official-extract
 - id: pdpc-official-consultations
+  feed_priority: regulatory
   regulator_id: pdpc
   title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
   url: https://www.pdpc.or.th/consultation/
@@ -1834,6 +1922,7 @@ sources:
   item_selector: .detail
   date_selector: .date
 - id: pdpc-official-orders
+  feed_priority: regulatory
   regulator_id: pdpc
   title: สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)
   url: https://www.pdpc.or.th/adjudication-panel-decisionsummary/
@@ -2165,6 +2254,7 @@ sources:
   fixture_kind: representative-official-extract
   exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ
 - id: tcct-announcements
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Announcements
   url: https://www.tcct.or.th/view/1/announce/TH-TH
@@ -2439,6 +2529,7 @@ sources:
   item_selector: .dataset-item
   summary_selector: .dataset-content p
 - id: tcct-merger
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Merger rulings
   url: https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH
@@ -2472,6 +2563,7 @@ sources:
   date_selector: .text-red2
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
 - id: tcct-official-complaints-prosecution
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Complaint and prosecution procedures
   url: https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH
@@ -2507,6 +2599,7 @@ sources:
   title_attribute: title
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
 - id: tcct-official-rules-guidelines
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Secondary rules and guidelines
   url: https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH
@@ -2550,6 +2643,7 @@ sources:
   content_selector: '#col-content'
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
 - id: tcct-orders
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Orders
   url: https://www.tcct.or.th/view/1/order/TH-TH
@@ -2583,6 +2677,7 @@ sources:
   date_selector: .text-red2
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
 - id: tcct-unfair
+  feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Unfair-trade rulings
   url: https://www.tcct.or.th/view/1/verdict/TH-TH
@@ -2902,6 +2997,7 @@ sources:
   origin_ids:
   - cloud-monitoring-lanes:institution-watch
 - id: wage-committee-watch
+  feed_priority: regulatory
   regulator_id: wage-committee
   title: Official wage committees
   url: https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ
