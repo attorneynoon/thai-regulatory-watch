@@ -1,0 +1,38 @@
+schema_version: "1.0"
+practices:
+- slug: privacy-digital-regulation
+  title: Privacy & Digital Regulation
+  summary: Data protection, electronic transactions, digital services, identity and privacy-sensitive public systems.
+  regulator_ids: [pdpc, etda, mdes, dopa, bora, dlt, moph, morprom, nhso, tsd]
+- slug: cybersecurity-technology
+  title: Cybersecurity & Technology
+  summary: Cybersecurity requirements, threat intelligence, digital infrastructure, telecommunications and technology governance.
+  regulator_ids: [ncsa, thaicert, ccib, mdes, etda, nbtc]
+- slug: competition-consumer-protection
+  title: Competition & Consumer Protection
+  summary: Competition rulings, mergers, unfair practices, consumer rights, product standards and market-facing enforcement.
+  regulator_ids: [tcct, ocpb, tcc, sepo, fda, tisi]
+- slug: financial-markets-aml
+  title: Financial Services, Markets & AML
+  summary: Banking, securities, capital markets, settlement, bonds and anti-money-laundering regulatory signals.
+  regulator_ids: [bot, sec, set, tsd, thaibma, amlo]
+- slug: employment-workplace
+  title: Employment & Workplace
+  summary: Labour standards, employment administration, social security, wages, labour relations and workplace disputes.
+  regulator_ids: [mol, dlpw, doe, sso, wage-committee, labour-court, labour-relations]
+- slug: healthcare-product-safety
+  title: Healthcare & Product Safety
+  summary: Health administration, digital-health privacy, medicines, food, industrial products and safety standards.
+  regulator_ids: [moph, morprom, nhso, fda, tisi, diw]
+- slug: corporate-trade-tax-ip
+  title: Corporate, Trade, Tax & IP
+  summary: Company administration, customs, excise, revenue, intellectual property and industrial regulation.
+  regulator_ids: [dbd, customs, excise, rd, dip, diw]
+- slug: public-law-legislation-enforcement
+  title: Public Law, Legislation & Enforcement
+  summary: Legislation, public consultation, official gazette material, administrative law, courts, prosecution and public enforcement.
+  regulator_ids: [royal-gazette, cabinet-secretariat, council-of-state, ocs-council-of-state-law-search, law-go-th, house-section-77, parliament-repository, parliament-einitiative, courts, administrative-court, prosecutors, nacc, dsi]
+- slug: tech-lawyer-digital-platforms
+  title: Tech Lawyer & Digital Platforms
+  summary: A cross-cutting view for platform counsel spanning privacy, digital regulation, competition, consumer protection, cybersecurity and telecommunications.
+  regulator_ids: [pdpc, etda, mdes, nbtc, tcct, ocpb, tcc, ncsa, thaicert, ccib]
