@@ -41,7 +41,7 @@ def rss(name,events,base,limit):
         element(item,'description',description)
         for topic in e.get('topics',[]): element(item,'category',topic)
         # All contract fields are available in the extension; arrays are JSON.
-        for key,value in e.items():
+        for key,value in sorted(e.items()):
             if value is not None:
                 element(item,'{'+NS+'}'+key,json.dumps(value,ensure_ascii=False) if isinstance(value,(list,dict)) else value)
         element(item,'{'+NS+'}record_url',base+'/api/v1/events.json#'+e['event_id'] if not health else base+'/api/v1/health.json#'+e['event_id'])
@@ -67,6 +67,8 @@ def dashboard(state,sources,events,items,base):
     for s in sources:
         rows.append('<tr><td>'+link('feeds/'+s['id']+'.xml',s['id'])+'</td><td>'+escape(s['title'])+'</td><td>'+escape(s['status'])+'</td><td>'+escape(s['validation_status'])+'</td><td>'+escape(s.get('last_success_at') or 'Never')+'</td><td>'+escape(s.get('last_error') or '; '.join(s['limitations']))+'</td></tr>')
     def event_list(es):
+        if not es:
+            return '<p>No post-baseline events recorded. Check source coverage before interpreting this as no change.</p>'
         return '<ul>'+''.join('<li><span class="tag">'+escape(e.get('event_type','ITEM'))+'</span> '+link(e['official_url'],e['title'])+' <small>'+escape(e['regulator_id']+' · '+e['observed_at'])+'</small></li>' for e in es)+'</ul>'
     current=[]
     event_map={e['event_id']:e for e in events}
