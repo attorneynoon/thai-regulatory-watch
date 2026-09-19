@@ -1,6 +1,6 @@
 # Practice-focus pages
 
-Practice pages are human-readable views over the same retained observations used by regulator, topic and source feeds. They do not create, rewrite or promote events. Every page shows current items, post-baseline changes, included regulator groups and source health. Legal effect and applicability remain Not assessed.
+Practice pages are human-readable views over the same retained observations used by regulator, topic and source feeds. They do not create, rewrite or promote events. Every page shows current items, post-baseline changes, included regulator groups and source health. When a source is unavailable or pending, the page shows a manual-check card with the configured official URL, source status, collection limitation and section RSS. Legal effect and applicability remain Not assessed.
 
 The configured pages are:
 

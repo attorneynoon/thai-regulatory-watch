@@ -67,6 +67,31 @@ class PracticeFocusTests(unittest.TestCase):
             self.assertEqual(home.find('a',string='Tech Lawyer & Digital Platforms')['href'],'practice/tech-lawyer-digital-platforms/')
             self.assertEqual(result['practices'],1)
 
+    def test_unavailable_sources_have_manual_check_links_on_dashboard_and_practice(self):
+        blocked={**SOURCE,'id':'pdpc-law','regulator_id':'pdpc','title':'PDPC laws','publisher_name':'PDPC','url':'https://example.org/pdpc?section=law&lang=th'}
+        healthy={**SOURCE,'id':'tcct-orders','regulator_id':'tcct','title':'TCCT orders','publisher_name':'TCCT','url':'https://example.org/tcct'}
+        state=empty_state()
+        set_health(state,blocked,'blocked','2026-09-19T05:00:00Z','HTTP 403')
+        set_health(state,healthy,'healthy','2026-09-19T05:00:00Z')
+        practice={'slug':'tech-lawyer-digital-platforms','title':'Tech Lawyer & Digital Platforms','summary':'Cross-cutting digital practice view.','regulator_ids':['pdpc','tcct']}
+        with tempfile.TemporaryDirectory() as d:
+            out=Path(d)
+            build_site(state,[blocked,healthy],out,'https://example.org/watch',practices=[practice])
+            for page_path,feed_prefix in (
+                (out/'index.html','feeds/'),
+                (out/'practice/tech-lawyer-digital-platforms/index.html','../../feeds/'),
+            ):
+                page=BeautifulSoup(page_path.read_text('utf-8'),'html.parser')
+                manual=page.find(id='manual-checks')
+                self.assertIsNotNone(manual)
+                self.assertIn('PDPC laws',manual.get_text(' ',strip=True))
+                self.assertNotIn('TCCT orders',manual.get_text(' ',strip=True))
+                self.assertEqual(manual.find('a',string='Open official page')['href'],'https://example.org/pdpc?section=law&lang=th')
+                self.assertEqual(manual.find('a',string='Section RSS')['href'],feed_prefix+'pdpc-law.xml')
+            home=BeautifulSoup((out/'index.html').read_text('utf-8'),'html.parser')
+            source_row=home.find(id='sources').find('a',href='feeds/pdpc-law.xml').find_parent('tr')
+            self.assertEqual(source_row.find('a',string='Official page')['href'],'https://example.org/pdpc?section=law&lang=th')
+
 
 if __name__=='__main__':
     unittest.main()
