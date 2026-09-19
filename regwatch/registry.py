@@ -28,6 +28,10 @@ def load_registry(path):
     for s in sources:
         if s.get('feed_priority','radar') not in {'regulatory','radar'}:
             raise ValueError('Invalid feed priority')
+        if s.get('render') not in {None, 'browser'}:
+            raise ValueError('Invalid render mode')
+        if s.get('render') == 'browser' and (s.get('mode') not in {'html', 'page'} or s.get('public_form')):
+            raise ValueError('Browser rendering requires an HTML GET source')
         for name in [s["id"], s["regulator_id"], *s["topics"]]:
             if not re.fullmatch(r"[a-z][a-z0-9-]{1,79}", name):
                 raise ValueError("Invalid identifier: " + name)
