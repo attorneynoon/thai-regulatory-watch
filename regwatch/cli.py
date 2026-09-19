@@ -5,6 +5,7 @@ import tempfile
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
 from .registry import load_registry
+from .practices import load_practices
 from .storage import load_state,writer_lock,write_changed,encode
 from .models import utcnow,canonical_url
 from .collector import collect_source
@@ -24,11 +25,12 @@ def main():
     args=parser.parse_args()
     root=args.root.resolve()
     sources=load_registry(root/'config/sources.yml')
+    practices=load_practices(root/'config/practices.yml',sources)
     if args.source and set(args.source)-{s['id'] for s in sources}:
         parser.error('Unknown source id')
     state=load_state(root/'state/monitor.json')
     if args.command=='validate':
-        print(encode({'sources':len(sources),'regulators':len({s['regulator_id'] for s in sources}),'enabled':sum(s['enabled'] for s in sources),'pending':sum(not s['enabled'] for s in sources)}))
+        print(encode({'sources':len(sources),'regulators':len({s['regulator_id'] for s in sources}),'practices':len(practices),'enabled':sum(s['enabled'] for s in sources),'pending':sum(not s['enabled'] for s in sources)}))
         return 0
     if args.command=='check':
         check_site(root/'site'); print('XML and JSON contracts passed'); return 0
@@ -68,7 +70,7 @@ def main():
         # All artifacts validate before promotion. Git commits are the atomic
         # externally visible generation boundary; no remote push occurs here.
         with tempfile.TemporaryDirectory(prefix='.build-',dir=root) as temp:
-            counts=build_site(state,sources,Path(temp),args.base_url)
+            counts=build_site(state,sources,Path(temp),args.base_url,practices=practices)
             check_site(Path(temp))
             for path in Path(temp).rglob('*'):
                 if path.is_file(): write_changed(root/'site'/path.relative_to(temp),path.read_bytes())
