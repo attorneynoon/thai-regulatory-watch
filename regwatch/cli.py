@@ -47,7 +47,7 @@ def main():
             for s in sources:
                 if s['enabled'] and (not args.source or s['id'] in args.source):
                     print('Collecting '+s['id'],flush=True)
-                    result=collect_source(state,s,now)
+                    result=collect_source(state,s,now,root=root)
                     print(result['status']+': '+str(result.get('last_count',0))+' items; '+str(result.get('last_error') or ''),flush=True)
         # All artifacts validate before promotion. Git commits are the atomic
         # externally visible generation boundary; no remote push occurs here.

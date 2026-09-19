@@ -1,4 +1,5 @@
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 from .adapters import parse_document
 from .models import canonical_url, digest
 from .engine import apply_observations, set_health, source_state
@@ -11,24 +12,30 @@ def age_days(stamp, now):
     return (datetime.fromisoformat(now.replace('Z','+00:00')) - datetime.fromisoformat(stamp.replace('Z','+00:00'))).total_seconds() / 86400
 
 
-def collect_source(state, source, now, transport=None):
-    transport = transport or Transport(source['allowed_hosts'])
+def collect_source(state, source, now, transport=None, root=None):
     ss = source_state(state, source['id'])
     ss['last_attempt_at'] = now
-    queue, visited, rows, seen = [source['url']], set(), [], set()
+    queue, visited, rows, seen = [source['url'],*source.get('start_urls',[])], set(), [], set()
     try:
+        certificates={host:str(Path(root or Path.cwd())/path) for host,path in source.get('tls_intermediates',{}).items()}
+        transport = transport or Transport(source['allowed_hosts'],tls_intermediates=certificates)
         while queue and len(visited) < source.get('max_pages', 1):
             url = queue.pop(0)
             if url in visited:
                 continue
             visited.add(url)
-            status, headers, body, final = transport.fetch(url)
+            status, headers, body, final = transport.fetch(url,max_bytes=source.get('max_response_bytes',4_000_000))
+            if source.get('public_form'):
+                from .publicform import validate_public_form
+                form=validate_public_form(source,body,final)
+                status,headers,body,final=transport.fetch(source['public_form_url'],max_bytes=source.get('max_response_bytes',4_000_000),form=form)
             if status != 200:
                 raise ValueError('Listing requires a full response')
             candidates, more = parse_document(source, body, final)
+            response_hash=digest(body)
             for candidate in candidates:
                 if candidate['url'] not in seen:
-                    candidate['source_response_sha256'] = digest(body)
+                    candidate['source_response_sha256'] = response_hash
                     rows.append(candidate)
                     seen.add(candidate['url'])
             queue.extend(p for p in more if p not in visited)

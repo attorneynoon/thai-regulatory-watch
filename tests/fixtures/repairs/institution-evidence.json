@@ -1,0 +1,536 @@
+[
+  {
+    "id": "administrative-court-watch",
+    "url": "https://www.admincourt.go.th/public-relations/public-relations-news",
+    "outcome": "live-qualified candidate",
+    "live_count": 10,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.admincourt.go.th/public-relations/public-relations-news/46820fb5-dd4b-49e8-8d27-732e3ce41fcd",
+      "title": "ตุลาการศาลรัฐธรรมนูญและคณะ เข้าศึกษาดูงานศาลปกครองด้านระบบบริหารจัดการงานคดี การใช้เทคโนโลยีสารสนเทศสนับสนุนการปฏิบัติงาน และเทคโนโลยีปัญญาประดิษฐ์ (AI)",
+      "published_at": "2026-09-18T06:26:18+00:00",
+      "publication_date_raw": "2026-09-18T06:26:18.000Z",
+      "document_url": null,
+      "modified_at": "2026-09-18T08:33:00+00:00",
+      "summary": null,
+      "document_id": "46820fb5-dd4b-49e8-8d27-732e3ce41fcd",
+      "pinpoint": "json:3.content.list.data"
+    },
+    "fixture_example": {
+      "url": "https://www.admincourt.go.th/public-relations/public-relations-news/46820fb5-dd4b-49e8-8d27-732e3ce41fcd",
+      "title": "ตุลาการศาลรัฐธรรมนูญและคณะ เข้าศึกษาดูงานศาลปกครองด้านระบบบริหารจัดการงานคดี การใช้เทคโนโลยีสารสนเทศสนับสนุนการปฏิบัติงาน และเทคโนโลยีปัญญาประดิษฐ์ (AI)",
+      "published_at": "2026-09-18T06:26:18+00:00",
+      "publication_date_raw": "2026-09-18T06:26:18.000Z",
+      "document_url": null,
+      "modified_at": "2026-09-18T08:33:00+00:00",
+      "summary": null,
+      "document_id": "46820fb5-dd4b-49e8-8d27-732e3ce41fcd",
+      "pinpoint": "json:3.content.list.data"
+    },
+    "sha256": "80c3da591fd16268479b1d677af36a0b1b999493efa79f6f020811debc0b2968",
+    "mode": "next-data",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "bora-watch",
+    "url": "https://www.bora.dopa.go.th/menu-news/",
+    "outcome": "live-qualified candidate",
+    "live_count": 18,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.bora.dopa.go.th/information/activity-news/49446/",
+      "title": "รายละเอียดการให้บริการงานทะเบียนและบัตรประจำตัวประชาชน ณ จุดเคาน์เตอร์บริการอำเภอ..ยิ้ม ณ วันที่ 1 กันยายน 2569",
+      "published_at": "2026-07-06",
+      "publication_date_raw": "ก.ค. 6, 2026",
+      "document_url": null,
+      "pinpoint": ".ultp-block-title a"
+    },
+    "fixture_example": {
+      "url": "https://www.bora.dopa.go.th/information/activity-news/49446/",
+      "title": "รายละเอียดการให้บริการงานทะเบียนและบัตรประจำตัวประชาชน ณ จุดเคาน์เตอร์บริการอำเภอ..ยิ้ม ณ วันที่ 1 กันยายน 2569",
+      "published_at": "2026-07-06",
+      "publication_date_raw": "ก.ค. 6, 2026",
+      "document_url": null,
+      "pinpoint": ".ultp-block-title a"
+    },
+    "sha256": "4f9d0b02640a074ae0ceebd20f9f57ae52c3fa0e54eaae3709c323d8db49174d",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "ccib-watch",
+    "url": "https://www.ccib.go.th/ประชาสมพนธ/ขาวจบกม",
+    "outcome": "live-qualified candidate",
+    "live_count": 131,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.ccib.go.th/2026-september-2-ตร-ไซเบอรควงสาธารณสขบกคลนคเสรมสวยยานหนองแขม",
+      "title": "ตร.ไซเบอร์ควงสาธารณสุขบุกคลินิคเสริมสวยย่านหนองแขม โดนร้องดูดภาพคนอื่นมารีวิว เข้าค้นเจอปิดประตูหนี ขังตัวเองพร้อมลูกค้ากว่า 2 ชั่วโมง",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".jXK9ad-SmKAyb a[href]"
+    },
+    "fixture_example": {
+      "url": "https://www.ccib.go.th/2026-september-2-ตร-ไซเบอรควงสาธารณสขบกคลนคเสรมสวยยานหนองแขม",
+      "title": "ตร.ไซเบอร์ควงสาธารณสุขบุกคลินิคเสริมสวยย่านหนองแขม โดนร้องดูดภาพคนอื่นมารีวิว เข้าค้นเจอปิดประตูหนี ขังตัวเองพร้อมลูกค้ากว่า 2 ชั่วโมง",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".jXK9ad-SmKAyb a[href]"
+    },
+    "sha256": "5ffcb50d0917320b35a30503fde4671086fe59e71ff32e81206888dc57d9f157",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
+      "131 raw links qualified on the page; collection is bounded to 100 items per run. First unlinked headline is not represented.",
+      "Listing has entries without explicit publication dates; dates are not inferred from titles or URLs."
+    ]
+  },
+  {
+    "id": "cifs-watch",
+    "url": "https://www.cifs.go.th/index.php?mod=news",
+    "outcome": "live-qualified candidate",
+    "live_count": 10,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.cifs.go.th/index.php?mod=news&route=news_detail&v=VkZaU1dtVkZOVlZVVkRBOStS",
+      "title": "วันที่ 18 กันยายน 2569 สถาบันนิติวิทยาศาสตร์เข้าร่วมพิธีบำเพ็ญกุศลสตมวาร (100 วัน) เพื่ออุทิศถวายเป็นพระกุศลแด่ สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าพัชรกิติยาภาฯ",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2026 16:35",
+      "document_url": null,
+      "pinpoint": ".card-news h3 a"
+    },
+    "fixture_example": {
+      "url": "https://www.cifs.go.th/index.php?mod=news&route=news_detail&v=VkZaU1dtVkZOVlZVVkRBOStS",
+      "title": "วันที่ 18 กันยายน 2569 สถาบันนิติวิทยาศาสตร์เข้าร่วมพิธีบำเพ็ญกุศลสตมวาร (100 วัน) เพื่ออุทิศถวายเป็นพระกุศลแด่ สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าพัชรกิติยาภาฯ",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2026 16:35",
+      "document_url": null,
+      "pinpoint": ".card-news h3 a"
+    },
+    "sha256": "e49e0f81414838f8cc49e1109b95061eee323ac6642d0cb97fc4c0879a3e84b0",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "courts-watch",
+    "url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+    "outcome": "live-qualified candidate",
+    "live_count": 6,
+    "fixture_count": 1,
+    "example": {
+      "url": "https://nknjc.coj.go.th/content/page/index/id/584362",
+      "title": "ศาลเยาวชนและครอบครัวจังหวัดนครนายก มอบประกาศเกียรติบัตรนักศึกษาที่สำเร็จการฝึกประสบการณ์",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "2026-09-18 15:40",
+      "document_url": null,
+      "pinpoint": ".detail-title a"
+    },
+    "fixture_example": {
+      "url": "https://nknjc.coj.go.th/content/page/index/id/584362",
+      "title": "ศาลเยาวชนและครอบครัวจังหวัดนครนายก มอบประกาศเกียรติบัตรนักศึกษาที่สำเร็จการฝึกประสบการณ์",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "2026-09-18 15:40",
+      "document_url": null,
+      "pinpoint": ".detail-title a"
+    },
+    "sha256": "52fc63a9179310e53cb544d4f261821ba9a04851572c65fef5fc144705fda4f4",
+    "mode": "json-html",
+    "limitations": [
+      "First six national court news cards only. Exact destination hosts observed in this response are allowed; newly appearing court hosts require explicit allowlist qualification. No historical completeness claim."
+    ]
+  },
+  {
+    "id": "dlpw-watch",
+    "url": "https://www.labour.go.th/",
+    "outcome": "live-qualified candidate",
+    "live_count": 4,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.labour.go.th/index.php/77685-2026-09-19-05-00-11",
+      "title": "อธิบดี กสร. เปิดโครงการอบรมการจัดเก็บเงินสะสมและเงินสมทบกองทุนสงเคราะห์ลูกจ้าง ณ จังหวัดสมุทรปราการ",
+      "published_at": "2026-09-19T12:00:11+07:00",
+      "publication_date_raw": "2026-09-19T12:00:11+07:00",
+      "document_url": null,
+      "pinpoint": "article h2 a"
+    },
+    "fixture_example": {
+      "url": "https://www.labour.go.th/index.php/77685-2026-09-19-05-00-11",
+      "title": "อธิบดี กสร. เปิดโครงการอบรมการจัดเก็บเงินสะสมและเงินสมทบกองทุนสงเคราะห์ลูกจ้าง ณ จังหวัดสมุทรปราการ",
+      "published_at": "2026-09-19T12:00:11+07:00",
+      "publication_date_raw": "2026-09-19T12:00:11+07:00",
+      "document_url": null,
+      "pinpoint": "article h2 a"
+    },
+    "sha256": "82a50d4957229ccbe6c011e1795b93d3c1cd524e896a4ecaaccf7346147b708b",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "dlt-watch",
+    "url": "https://www.dlt.go.th/",
+    "outcome": "pending",
+    "error": "Public HTML is an empty Nuxt application shell with no publication anchors. Its advertised API origin https://dltweb-main-api.dlt.go.th/ returned HTTP 401 through robots-respecting Transport. No credential flow or authentication bypass attempted."
+  },
+  {
+    "id": "doe-watch",
+    "url": "https://www.doe.go.th/prd/main/index?page=home",
+    "outcome": "live-qualified candidate",
+    "live_count": 10,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.doe.go.th/prd/main/news/param/site/1/cat/7/sub/0/pull/detail/view/detail/object_id/105616",
+      "title": "โครงการส่งเสริมคุณธรรมจริยธรรมแก่บุคลากรในสังกัดกรมการจัดหางาน ประจำปีงบประมาณ พ.ศ. ๒๕๖๙",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".rst-shortcodeslist a[href], h6 a[href]"
+    },
+    "fixture_example": {
+      "url": "https://www.doe.go.th/prd/main/news/param/site/1/cat/7/sub/0/pull/detail/view/detail/object_id/105616",
+      "title": "โครงการส่งเสริมคุณธรรมจริยธรรมแก่บุคลากรในสังกัดกรมการจัดหางาน ประจำปีงบประมาณ พ.ศ. ๒๕๖๙",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".rst-shortcodeslist a[href], h6 a[href]"
+    },
+    "sha256": "df243d6dcded7f64a2cb43e3421e592c6c3f682d6b8e3453d7be015a12db8570",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
+      "Listing has entries without explicit publication dates; dates are not inferred from titles or URLs."
+    ]
+  },
+  {
+    "id": "dopa-watch",
+    "url": "https://www.dopa.go.th/news/cate1",
+    "outcome": "live-qualified candidate",
+    "live_count": 8,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.dopa.go.th/news/cate1/view12154",
+      "title": "รายงานประจำเดือนจากระบบ New GFMIS Thai เดือนสิงหาคม 2569",
+      "published_at": "2026-09-11",
+      "publication_date_raw": "11 กันยายน 2569",
+      "document_url": null,
+      "pinpoint": "article.news-list > a"
+    },
+    "fixture_example": {
+      "url": "https://www.dopa.go.th/news/cate1/view12154",
+      "title": "รายงานประจำเดือนจากระบบ New GFMIS Thai เดือนสิงหาคม 2569",
+      "published_at": "2026-09-11",
+      "publication_date_raw": "11 กันยายน 2569",
+      "document_url": null,
+      "pinpoint": "article.news-list > a"
+    },
+    "sha256": "30cf39b376601e488d85d8fb12b58ae8e93e2c3a903b84f682b6c685c0ebb813",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "labour-court-watch",
+    "url": "https://lbc.coj.go.th/th/content/category/getarticles/id/10?pageIndex=1",
+    "outcome": "live-qualified candidate",
+    "live_count": 6,
+    "fixture_count": 1,
+    "example": {
+      "url": "https://lbc.coj.go.th/th/content/category/detail/id/10/iid/460576",
+      "title": "ประกาศศาลแรงงานกลาง เรื่อง อัตราค่าใช้จ่ายในการนำส่งเอกสารทางไปรษณีย์ด่วนพิเศษในประเทศไทย (EMS)",
+      "published_at": "2024-12-26",
+      "publication_date_raw": "26/12/2567",
+      "document_url": null,
+      "pinpoint": ".detail-title a"
+    },
+    "fixture_example": {
+      "url": "https://lbc.coj.go.th/th/content/category/detail/id/10/iid/460576",
+      "title": "ประกาศศาลแรงงานกลาง เรื่อง อัตราค่าใช้จ่ายในการนำส่งเอกสารทางไปรษณีย์ด่วนพิเศษในประเทศไทย (EMS)",
+      "published_at": "2024-12-26",
+      "publication_date_raw": "26/12/2567",
+      "document_url": null,
+      "pinpoint": ".detail-title a"
+    },
+    "sha256": "ec17ebf6491f817104cddf3f5d31de2a859d177899774dc838c303ee6a16373c",
+    "mode": "json-html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
+      "This official general-news category currently starts with a 2024 item; recentness across other categories is not established."
+    ]
+  },
+  {
+    "id": "labour-relations-watch",
+    "url": "https://relation.labour.go.th/คณะกรรมการแรงงานสัมพันธ์",
+    "outcome": "live-qualified candidate",
+    "live_count": 8,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://relation.labour.go.th/คณะกรรมการแรงงานสัมพันธ์/1675-การใช้สิทธิโดยสุจริตของนายจ้างกับการตีความมาตรา-121-แห่งพระราชบัญญัติแรงงานสัมพันธ์-พ-ศ-2518-ศึกษาพัฒนาการของแนวคำพิพากษาศาลไทย",
+      "title": "การใช้สิทธิโดยสุจริตของนายจ้างกับการตีความมาตรา 121 แห่งพระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518 : ศึกษาพัฒนาการของแนวคำพิพากษาศาลไทย",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".category-list td.list-title a"
+    },
+    "fixture_example": {
+      "url": "https://relation.labour.go.th/คณะกรรมการแรงงานสัมพันธ์/1675-การใช้สิทธิโดยสุจริตของนายจ้างกับการตีความมาตรา-121-แห่งพระราชบัญญัติแรงงานสัมพันธ์-พ-ศ-2518-ศึกษาพัฒนาการของแนวคำพิพากษาศาลไทย",
+      "title": "การใช้สิทธิโดยสุจริตของนายจ้างกับการตีความมาตรา 121 แห่งพระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518 : ศึกษาพัฒนาการของแนวคำพิพากษาศาลไทย",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": null,
+      "pinpoint": ".category-list td.list-title a"
+    },
+    "sha256": "1f4f435f2a11083113e86db16b2847eb34ed31214b311008191014ae5948af40",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
+      "Listing has entries without explicit publication dates; dates are not inferred from titles or URLs."
+    ]
+  },
+  {
+    "id": "mdes-watch",
+    "url": "https://www.mdes.go.th/rss",
+    "outcome": "pending",
+    "error": "AccessBlocked: Access unavailable: HTTP 403"
+  },
+  {
+    "id": "moph-watch",
+    "url": "https://pr.moph.go.th/",
+    "outcome": "live-qualified candidate",
+    "live_count": 8,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://pr.moph.go.th/online/index/news/348131",
+      "title": "รพ.เสนา ร่วมโครงการอบรมให้ความรู้ การฝึกทักษะการว่ายน้ำ และทักษะการเอาชีวิตรอด จากอุบัติเหตุทางน้ำ",
+      "published_at": "2026-09-19",
+      "publication_date_raw": "2026-09-19",
+      "document_url": null,
+      "pinpoint": "article h3 a"
+    },
+    "fixture_example": {
+      "url": "https://pr.moph.go.th/online/index/news/348131",
+      "title": "รพ.เสนา ร่วมโครงการอบรมให้ความรู้ การฝึกทักษะการว่ายน้ำ และทักษะการเอาชีวิตรอด จากอุบัติเหตุทางน้ำ",
+      "published_at": "2026-09-19",
+      "publication_date_raw": "2026-09-19",
+      "document_url": null,
+      "pinpoint": "article h3 a"
+    },
+    "sha256": "68e3b06d50f1348f3e47882922a0ad5aaae28a1729d2c1ade8e134e9e5978168",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "morprom-watch",
+    "url": "https://mohpromt.moph.go.th/",
+    "outcome": "pending",
+    "error": "AccessBlocked: Access unavailable: HTTP 403"
+  },
+  {
+    "id": "mot-watch",
+    "url": "https://www.mot.go.th/news",
+    "outcome": "pending",
+    "error": "AccessBlocked: Robots unavailable: Robots unavailable: HTTP 418"
+  },
+  {
+    "id": "nacc-watch",
+    "url": "https://nacc.go.th/category/2018083118464105/list",
+    "outcome": "live-qualified candidate",
+    "live_count": 9,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://nacc.go.th/categorydetail/2018083118464105/20260911165158",
+      "title": "ป.ป.ช. สนธิกำลังปฏิบัติการร่วมกับตำรวจ บก.ป.ป.ป. และป.ป.ท. จับกุมเจ้าหน้าที่ DSI 2 ราย โยงคดีเรียกรับเงินสอบท้องถิ่น",
+      "published_at": "2026-09-11",
+      "publication_date_raw": "11/09/2569",
+      "document_url": null,
+      "pinpoint": ".t-list2f a"
+    },
+    "fixture_example": {
+      "url": "https://nacc.go.th/categorydetail/2018083118464105/20260911165158",
+      "title": "ป.ป.ช. สนธิกำลังปฏิบัติการร่วมกับตำรวจ บก.ป.ป.ป. และป.ป.ท. จับกุมเจ้าหน้าที่ DSI 2 ราย โยงคดีเรียกรับเงินสอบท้องถิ่น",
+      "published_at": "2026-09-11",
+      "publication_date_raw": "11/09/2569",
+      "document_url": null,
+      "pinpoint": ".t-list2f a"
+    },
+    "sha256": "b3e8fee3bb94d8c741d5a98acc0f25ebae6bf92ffbdf0f625f1af15952ab0750",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "nhso-watch",
+    "url": "https://www.nhso.go.th/th/communicate-th/thnewsforperson",
+    "outcome": "live-qualified candidate",
+    "live_count": 12,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.nhso.go.th/th/communicate-th/thnewsforperson/cg-6",
+      "title": "อบต.ปากจั่น จ้าง CG ดูแลผู้สูงอายุถึงบ้าน แบ่งเบาภาระครอบครัว–สร้างงานในชุมชน",
+      "published_at": "2026-09-18T13:43:57+07:00",
+      "publication_date_raw": "2026-09-18T13:43:57+07:00",
+      "document_url": null,
+      "pinpoint": ".article-title h2 a"
+    },
+    "fixture_example": {
+      "url": "https://www.nhso.go.th/th/communicate-th/thnewsforperson/cg-6",
+      "title": "อบต.ปากจั่น จ้าง CG ดูแลผู้สูงอายุถึงบ้าน แบ่งเบาภาระครอบครัว–สร้างงานในชุมชน",
+      "published_at": "2026-09-18T13:43:57+07:00",
+      "publication_date_raw": "2026-09-18T13:43:57+07:00",
+      "document_url": null,
+      "pinpoint": ".article-title h2 a"
+    },
+    "sha256": "8af0ed883fe729c067533c3eb2ece32d0bf8757cd664c9268204d591edbf5af7",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "prosecutors-watch",
+    "url": "https://www.ago.go.th/feed/",
+    "outcome": "live-qualified candidate",
+    "live_count": 12,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.ago.go.th/690919-618/",
+      "title": "สำนักงานคณะกรรมการอัยการ จัดพิธียกย่องเชิดชูเกียรติคุณบุคลากรผู้มีคุณธรรมและเป็นแบบอย่างที่ดีของสำนักงานอัยการสูงสุด ประจำปี 2569",
+      "published_at": "2026-09-18T08:56:10+00:00",
+      "publication_date_raw": "Fri, 18 Sep 2026 08:56:10 +0000",
+      "document_url": null
+    },
+    "fixture_example": {
+      "url": "https://www.ago.go.th/690919-618/",
+      "title": "สำนักงานคณะกรรมการอัยการ จัดพิธียกย่องเชิดชูเกียรติคุณบุคลากรผู้มีคุณธรรมและเป็นแบบอย่างที่ดีของสำนักงานอัยการสูงสุด ประจำปี 2569",
+      "published_at": "2026-09-18T08:56:10+00:00",
+      "publication_date_raw": "Fri, 18 Sep 2026 08:56:10 +0000",
+      "document_url": null
+    },
+    "sha256": "5cd0566800e71be36362940857e9912a8e0c4b8f99cae7cebc85ee2f9005fb0b",
+    "mode": "rss",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "sepo-watch",
+    "url": "https://www.sepo.go.th/news/index",
+    "outcome": "pending",
+    "error": "AccessBlocked: Robots unavailable: Robots unavailable: HTTP 200"
+  },
+  {
+    "id": "set-watch",
+    "url": "https://www.set.or.th/th/about/mediacenter/news-release/main",
+    "outcome": "pending",
+    "error": "News Releases HTML contains no article anchors. Exact public GET /api/cms/v1/knowledge/cards endpoint and news category IDs were recovered from the linked page component; its robots-permitted request returned HTTP 403. No bypass attempted."
+  },
+  {
+    "id": "sso-watch",
+    "url": "https://www.sso.go.th/",
+    "outcome": "pending",
+    "error": "AccessBlocked: Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "id": "thaicert-watch",
+    "url": "https://www.thaicert.or.th/cyber-threat-news-th/",
+    "outcome": "live-qualified candidate",
+    "live_count": 12,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.thaicert.or.th/2026/09/18/isc-%e0%b9%81%e0%b8%81%e0%b9%89%e0%b9%84%e0%b8%82%e0%b8%8a%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%82%e0%b8%ab%e0%b8%a7%e0%b9%88%e0%b9%83%e0%b8%99-bind-9-%e0%b9%80%e0%b8%aa%e0%b8%b5%e0%b9%88%e0%b8%a2/",
+      "title": "ISC แก้ไขช่องโหว่ใน BIND 9 เสี่ยงกระทบการให้บริการและความถูกต้องของข้อมูล DNS",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2026",
+      "document_url": null,
+      "pinpoint": ".tc-cn-post-title a"
+    },
+    "fixture_example": {
+      "url": "https://www.thaicert.or.th/2026/09/18/isc-%e0%b9%81%e0%b8%81%e0%b9%89%e0%b9%84%e0%b8%82%e0%b8%8a%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%82%e0%b8%ab%e0%b8%a7%e0%b9%88%e0%b9%83%e0%b8%99-bind-9-%e0%b9%80%e0%b8%aa%e0%b8%b5%e0%b9%88%e0%b8%a2/",
+      "title": "ISC แก้ไขช่องโหว่ใน BIND 9 เสี่ยงกระทบการให้บริการและความถูกต้องของข้อมูล DNS",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2026",
+      "document_url": null,
+      "pinpoint": ".tc-cn-post-title a"
+    },
+    "sha256": "feb01c1dd9d72094170938e0e777817bc8c42debb0d96b01c12ab7b864688c3d",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  },
+  {
+    "id": "tsd-watch",
+    "url": "https://www.set.or.th/th/tsd/overview",
+    "outcome": "pending",
+    "error": "Official TSD overview is accessible, but is institutional/service content, not a publication listing. TSD announcement discovery uses SET News Releases; its advertised public knowledge/cards API returned HTTP 403. No operational article collection qualified."
+  },
+  {
+    "id": "wage-committee-watch",
+    "url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+    "outcome": "live-qualified candidate",
+    "live_count": 54,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.mol.go.th/wp-content/uploads/sites/2/2025/08/แปลประกาศ-ฉบับที่-14-_1_-1.pdf",
+      "title": "ประกาศคณะกรรมการค่าจ้าง เรื่อง อัตราค่าจ้างขั้นต่ำ (ฉบับที่ 14) และคำชี้แจงประกาศคณะกรรมการค่าจ้าง เรื่อง อัตราขั้นต่ำ (ฉบับที่ 14) พร้อมตารางแสดงอัตราค่าจ้างขั้นต่ำ ฉบับภาษาอังกฤษ",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": "https://www.mol.go.th/wp-content/uploads/sites/2/2025/08/แปลประกาศ-ฉบับที่-14-_1_-1.pdf",
+      "pinpoint": ".mecontent td:nth-child(3) a"
+    },
+    "fixture_example": {
+      "url": "https://www.mol.go.th/wp-content/uploads/sites/2/2025/08/แปลประกาศ-ฉบับที่-14-_1_-1.pdf",
+      "title": "ประกาศคณะกรรมการค่าจ้าง เรื่อง อัตราค่าจ้างขั้นต่ำ (ฉบับที่ 14) และคำชี้แจงประกาศคณะกรรมการค่าจ้าง เรื่อง อัตราขั้นต่ำ (ฉบับที่ 14) พร้อมตารางแสดงอัตราค่าจ้างขั้นต่ำ ฉบับภาษาอังกฤษ",
+      "published_at": null,
+      "publication_date_raw": null,
+      "document_url": "https://www.mol.go.th/wp-content/uploads/sites/2/2025/08/แปลประกาศ-ฉบับที่-14-_1_-1.pdf",
+      "pinpoint": ".mecontent td:nth-child(3) a"
+    },
+    "sha256": "243871298f95536e1d86912ce966557687cb2be601335a76deda55d706886a88",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null.",
+      "Listing has entries without explicit publication dates; dates are not inferred from titles or URLs."
+    ]
+  },
+  {
+    "id": "mol-listing-01",
+    "url": "https://www.mol.go.th/",
+    "outcome": "live-qualified candidate",
+    "live_count": 21,
+    "fixture_count": 2,
+    "example": {
+      "url": "https://www.mol.go.th/news/%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%97%e0%b8%a3%e0%b8%a7%e0%b8%87%e0%b9%81%e0%b8%a3%e0%b8%87%e0%b8%87%e0%b8%b2%e0%b8%99-%e0%b8%a3%e0%b9%88%e0%b8%a7%e0%b8%a1%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b9%80%e0%b8%89%e0%b8%a5%e0%b8%b4%e0%b8%a1%e0%b8%89%e0%b8%a5%e0%b8%ad%e0%b8%87%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%8a%e0%b8%b2%e0%b8%95%e0%b8%b4%e0%b8%aa%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%90%e0%b9%80%e0%b8%a1%e0%b9%87%e0%b8%81%e0%b8%8b%e0%b8%b4%e0%b9%82%e0%b8%81-%e0%b8%84%e0%b8%a3%e0%b8%9a%e0%b8%a3%e0%b8%ad%e0%b8%9a-216-%e0%b8%9b%e0%b8%b5%e0%b9%81%e0%b8%ab%e0%b9%88%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%80%e0%b8%ad%e0%b8%81%e0%b8%a3%e0%b8%b2%e0%b8%8a",
+      "title": "กระทรวงแรงงาน ร่วมงานเฉลิมฉลองวันชาติสหรัฐเม็กซิโก ครบรอบ 216 ปีแห่งการประกาศเอกราช",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2569",
+      "document_url": null,
+      "pinpoint": ".blog-entry h4 a"
+    },
+    "fixture_example": {
+      "url": "https://www.mol.go.th/news/%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%97%e0%b8%a3%e0%b8%a7%e0%b8%87%e0%b9%81%e0%b8%a3%e0%b8%87%e0%b8%87%e0%b8%b2%e0%b8%99-%e0%b8%a3%e0%b9%88%e0%b8%a7%e0%b8%a1%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b9%80%e0%b8%89%e0%b8%a5%e0%b8%b4%e0%b8%a1%e0%b8%89%e0%b8%a5%e0%b8%ad%e0%b8%87%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%8a%e0%b8%b2%e0%b8%95%e0%b8%b4%e0%b8%aa%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%90%e0%b9%80%e0%b8%a1%e0%b9%87%e0%b8%81%e0%b8%8b%e0%b8%b4%e0%b9%82%e0%b8%81-%e0%b8%84%e0%b8%a3%e0%b8%9a%e0%b8%a3%e0%b8%ad%e0%b8%9a-216-%e0%b8%9b%e0%b8%b5%e0%b9%81%e0%b8%ab%e0%b9%88%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%80%e0%b8%ad%e0%b8%81%e0%b8%a3%e0%b8%b2%e0%b8%8a",
+      "title": "กระทรวงแรงงาน ร่วมงานเฉลิมฉลองวันชาติสหรัฐเม็กซิโก ครบรอบ 216 ปีแห่งการประกาศเอกราช",
+      "published_at": "2026-09-18",
+      "publication_date_raw": "18 ก.ย. 2569",
+      "document_url": null,
+      "pinpoint": ".blog-entry h4 a"
+    },
+    "sha256": "154b35a75e4d2c362964a5f7694991dcfda3b10c1d96da5f2d7dc36ab15d19dd",
+    "mode": "html",
+    "limitations": [
+      "Live-qualified first-page publication metadata only; no historical, full-document, or legal-effect completeness claim. Unknown publication dates remain null."
+    ]
+  }
+]
