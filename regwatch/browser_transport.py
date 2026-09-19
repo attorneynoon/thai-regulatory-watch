@@ -61,13 +61,21 @@ class RenderedTransport:
         page = self.context.new_page()
         try:
             try:
-                response = page.goto(url, wait_until='domcontentloaded', timeout=30_000)
+                # Commit proves the top-level response without making a broken
+                # third-party frame a 30-second source failure. The bounded
+                # load waits below still give first-party JavaScript time to
+                # populate the publication cards.
+                response = page.goto(url, wait_until='commit', timeout=30_000)
             except Exception as exc:
                 if self._navigation_block is not None:
                     raise AccessBlocked('Rendered navigation blocked: ' + str(self._navigation_block)) from exc
                 raise
             if response is None:
                 raise AccessBlocked('Browser navigation returned no document response')
+            try:
+                page.wait_for_load_state('domcontentloaded', timeout=15_000)
+            except Exception:
+                pass
             try:
                 page.wait_for_load_state('networkidle', timeout=10_000)
             except Exception:

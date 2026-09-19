@@ -38,7 +38,15 @@ def main():
                 transport = RenderedTransport(test_source,browser)
                 try:
                     result = collect_source(state,test_source,now,transport=transport,root=ROOT)
-                    print(json.dumps({'source':source['id'],'url':source['url'],'status':result['status'],'records':result['last_count'],'pages':result.get('listing_pages_checked'),'error':result.get('last_error')},ensure_ascii=False),flush=True)
+                    examples = [
+                        {
+                            'title': row.get('title'),
+                            'url': row.get('canonical_url'),
+                            'published_at': row.get('published_at'),
+                        }
+                        for row in list(result.get('observations', {}).values())[:5]
+                    ]
+                    print(json.dumps({'source':source['id'],'url':source['url'],'status':result['status'],'records':result['last_count'],'pages':result.get('listing_pages_checked'),'examples':examples,'error':result.get('last_error')},ensure_ascii=False),flush=True)
                 finally:
                     transport.close()
         finally:

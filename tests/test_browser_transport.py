@@ -11,7 +11,7 @@ class Page:
     def __init__(self,html='<html><article>News</article></html>',url='https://example.org/news',status=200):
         self.html,self.url=html,url
         self.response=Response();self.response.status=status
-    def goto(self,*a,**k):return self.response
+    def goto(self,*a,**k):self.goto_options=k;return self.response
     def wait_for_load_state(self,*a,**k):pass
     def content(self):return self.html
     def close(self):pass
@@ -45,6 +45,7 @@ class BrowserTransportTests(unittest.TestCase):
         transport=RenderedTransport(self.source(),Browser(Page()),safety=safety)
         self.assertIn(b'<article>News</article>',transport.fetch('https://example.org/news')[2])
         safety._policy.assert_called_once_with('https://example.org/news')
+        self.assertEqual(transport.context.page.goto_options['wait_until'],'commit')
 
     @patch('regwatch.browser_transport.public_address')
     def test_redirect_outside_allowlist_and_challenge_are_blocked(self,_):
