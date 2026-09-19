@@ -95908,6 +95908,36 @@
       "regulator_id": "wage-committee",
       "source_id": "wage-committee-watch",
       "status": "degraded"
+    },
+    {
+      "event_id": "health-2a196bf93218b08eb068774de9619f10",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-19T13:56:56Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/",
+      "previous_status": "not-run",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-laws",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-252051f66850ab4fd9ae40493829955c",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-19T13:56:56Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/announce/",
+      "previous_status": "not-run",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-announcements",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-2b0ce91cfe4ea43c42bdbe9467b96887",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-19T13:56:56Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-news/",
+      "previous_status": "not-run",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-news",
+      "status": "blocked"
     }
   ],
   "items": {
@@ -109744,7 +109774,7 @@
       ]
     }
   },
-  "last_run_at": "2026-09-19T13:12:12Z",
+  "last_run_at": "2026-09-19T13:56:56Z",
   "schema_version": "1.0",
   "sources": {
     "administrative-court-watch": {
@@ -123654,6 +123684,24 @@
       "observations": {},
       "status": "blocked"
     },
+    "pdpc-announcements": {
+      "baseline_complete": false,
+      "last_attempt_at": "2026-09-19T13:56:56Z",
+      "last_count": 0,
+      "last_error": "Access unavailable: HTTP 403",
+      "last_success_at": null,
+      "observations": {},
+      "status": "blocked"
+    },
+    "pdpc-laws": {
+      "baseline_complete": false,
+      "last_attempt_at": "2026-09-19T13:56:56Z",
+      "last_count": 0,
+      "last_error": "Access unavailable: HTTP 403",
+      "last_success_at": null,
+      "observations": {},
+      "status": "blocked"
+    },
     "pdpc-listing-01": {
       "baseline_complete": false,
       "last_attempt_at": "2026-09-19T13:12:12Z",
@@ -123681,11 +123729,20 @@
       "observations": {},
       "status": "blocked"
     },
+    "pdpc-news": {
+      "baseline_complete": false,
+      "last_attempt_at": "2026-09-19T13:56:56Z",
+      "last_count": 0,
+      "last_error": "Access unavailable: HTTP 403",
+      "last_success_at": null,
+      "observations": {},
+      "status": "blocked"
+    },
     "pdpc-official-consultations": {
       "attachment_backlog": 79,
       "attachment_checks": 2,
       "baseline_complete": true,
-      "last_attempt_at": "2026-09-19T13:12:12Z",
+      "last_attempt_at": "2026-09-19T13:56:56Z",
       "last_count": 81,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": "2026-09-19T08:22:41Z",
@@ -125426,7 +125483,7 @@
     },
     "pdpc-official-orders": {
       "baseline_complete": false,
-      "last_attempt_at": "2026-09-19T13:12:12Z",
+      "last_attempt_at": "2026-09-19T13:56:56Z",
       "last_count": 0,
       "last_error": "Access unavailable: HTTP 403",
       "last_success_at": null,
