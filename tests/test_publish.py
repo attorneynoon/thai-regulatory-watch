@@ -36,10 +36,10 @@ class PublishTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             build_site(s,[source],Path(d),'https://example.org/watch')
             page=BeautifulSoup((Path(d)/'index.html').read_text('utf-8'),'html.parser')
-            current=page.find('h2',string='Current inventory').parent
+            current=page.find('h2',string='Current regulatory inventory').parent
             self.assertEqual(len(current.select('li')),100)
             self.assertIn('Showing 100 of 102',current.get_text())
-            self.assertIn('RSS up to 500',current.get_text())
+            self.assertIn('retained regulatory-focus items',current.get_text())
             self.assertIsNotNone(current.find('a',href='api/v1/items.json'))
             entry=current.find('li')
             self.assertIsNotNone(entry.find('h3').find('a'))
@@ -117,7 +117,7 @@ class PublishTests(unittest.TestCase):
             self.assertEqual(row.findtext('guid'),s['events'][0]['event_id'])
             self.assertEqual(row.findtext('{*}publisher'),'Original publisher')
             page=BeautifulSoup((Path(d)/'index.html').read_text('utf-8'),'html.parser')
-            current=page.find('h2',string='Current inventory').parent
+            current=page.find('h2',string='Current regulatory inventory').parent
             self.assertIn('Full agency name',current.get_text())
             self.assertIsNone(current.find(['script','img','b']))
         self.assertEqual(before,s)
@@ -145,7 +145,7 @@ class PublishTests(unittest.TestCase):
             self.assertEqual(changes[0].findtext('pubDate'),'Sat, 19 Sep 2026 04:00:00 GMT')
             self.assertEqual(changes[0].findtext('{*}rss_date_basis'),'observed_at')
             self.assertEqual(ET.parse(Path(d)/'feeds/baseline.xml').findtext('./channel/item/pubDate'),'Fri, 18 Sep 2026 00:00:00 GMT')
-            current=(Path(d)/'index.html').read_text('utf-8').split('<h2>Current inventory</h2>')[1].split('</section>')[0]
+            current=(Path(d)/'index.html').read_text('utf-8').split('<h2>Current regulatory inventory</h2>')[1].split('</section>')[0]
             self.assertLess(current.index('Newest official'),current.index('Modified only'))
             self.assertLess(current.index('Old official revised'),current.index('Undated'))
 
