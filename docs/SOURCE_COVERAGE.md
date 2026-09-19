@@ -26,6 +26,8 @@ The initial local failures include empty/undersized results from candidate selec
 
 ## Pending and partial coverage
 
+**First hosted-run amendment:** The GitHub run retained 575 initial items/events after collecting 100 TCCT press-release PDFs (`tcct-listing-03`). Hosted status was 7 healthy, 11 failed, 14 blocked and 64 pending. PDPC returned robots HTTP 403 from GitHub, preserving the 81 local observations without asserting continued access. The historical local counts above are not overwritten; use live sources JSON for current status.
+
 - Known API endpoints are preserved as pending until payload, pagination and access policy have a tested adapter.
 - Institutions named without a qualified discovery URL remain visible with a null URL, not an invented endpoint.
 - BOT's listing returned no article links in plain HTML; OCPB's generic index returned navigation rather than publications. Those paths remain pending.
