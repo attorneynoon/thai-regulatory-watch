@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-19T18:02:57Z",
+  "generated_at": "2026-09-19T19:20:42Z",
   "records": [
+    {
+      "event_id": "health-b2cffa7bb75ca523cca62267d4476272",
+      "message": null,
+      "observed_at": "2026-09-19T19:20:42Z",
+      "official_url": "https://www.customs.go.th/",
+      "previous_status": "failed",
+      "regulator_id": "customs",
+      "source_id": "customs-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-929988ca34add41c13a5617a4188a555",
+      "message": null,
+      "observed_at": "2026-09-19T19:20:42Z",
+      "official_url": "https://webdev.excise.go.th/act2560/suppress-news/79-2569",
+      "previous_status": "blocked",
+      "regulator_id": "excise",
+      "source_id": "excise-listing-02",
+      "status": "healthy"
+    },
     {
       "event_id": "health-b755749cb703ca140da109e005f9f631",
       "message": "Robots unavailable: HTTPSConnectionPool(host='webdev.excise.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='webdev.excise.go.th', port=443) at 0x7f60ddd",
