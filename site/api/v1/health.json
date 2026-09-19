@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-19T19:20:42Z",
+  "generated_at": "2026-09-19T22:20:47Z",
   "records": [
+    {
+      "event_id": "health-d837a60838c6c52a4cace9c7ec19907e",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-19T22:20:47Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-b0e9a4ecf644f61c379bb47ab0242afd",
+      "message": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "observed_at": "2026-09-19T22:20:47Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-laws",
+      "status": "failed"
+    },
     {
       "event_id": "health-b2cffa7bb75ca523cca62267d4476272",
       "message": null,
