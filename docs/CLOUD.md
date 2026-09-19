@@ -4,7 +4,7 @@ The scheduler is GitHub Actions; it keeps running independently of a chat sessio
 
 1. Open Codex cloud using the intended ChatGPT account.
 2. Connect GitHub and grant the application access to `attorneynoon/thai-regulatory-watch`.
-3. Create an environment selecting this repository. Setup: `python -m pip install -r requirements.txt` using Python 3.12.
+3. Create an environment selecting this repository. Using Python 3.12, set up with `python -m pip install --upgrade pip==26.2.1` and then `python -m pip install -r requirements.txt`.
 4. Allow the official source hosts only when a task needs live collection. Offline parser tests/builds need no runtime network.
 5. Ask for changes on a branch and review the resulting PR. The root `AGENTS.md` states invariants and verification commands.
 

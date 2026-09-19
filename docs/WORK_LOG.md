@@ -1,5 +1,11 @@
 # Work record
 
+## 2026-09-20 — dependency and commit-identity privacy remediation
+
+Owner authorized the security upgrade and privacy cleanup. Requests is upgraded from 2.32.5 to 2.33.0, which contains the upstream fix for CVE-2026-25645 / GHSA-gc5v-m9x4-r6x2. The project and every GitHub workflow also upgrade pip to 26.2.1 before installing the pinned runtime requirements, clearing the environment-tooling advisories found by the broad OSV check. Repository guidance now requires GitHub-provided noreply commit addresses, and the maintainer checkout is configured locally to follow that rule for future commits. No credential, token, private key or password was found in the tracked tree or generated public artifacts during the preceding audit.
+
+Owner then explicitly approved replacing the two personal Gmail addresses embedded in existing public commit objects. The approved full-history rewrite and force-push changes affected commit hashes; verification must confirm no Gmail author or committer address remains in reachable history. Before that rewrite, local verification passed all 122 tests, registry validation, deterministic site generation (2,744 current items, 3,112 observation events and 262 feeds), XML/JSON contract checks, Python compilation, dependency consistency and diff hygiene. The OSV query returned zero matches across the upgraded isolated environment. Hosted CI, deployment and public readback remain pending.
+
 ## 2026-09-20 — manual-check links for incomplete coverage
 
 Owner clarified that direct official-page links for unavailable or pending sections must appear in the rendered dashboard, not only in chat or feed metadata. This is a bounded preservation change to the existing operational dashboard: the main page lists every nonhealthy source with regulator, source ID, explicit status, current limitation, official page and section RSS; each practice page shows the same list filtered to its regulator scope. The complete source-health table also links every configured source to its official page. Manual reachability does not establish automated coverage, and access failure remains separate from a no-update finding.

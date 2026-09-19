@@ -12,9 +12,10 @@ This is an independent public-source monitor. Run on Python 3.12 or newer.
 
 ## Development
 
-Install `python -m pip install -r requirements.txt`.
+Install `python -m pip install --upgrade pip==26.2.1` and then `python -m pip install -r requirements.txt`.
 Run `python -m unittest discover -s tests -v`, `python -m regwatch validate`, `python -m regwatch build`, and `python -m regwatch check`.
 Use branches and PRs for maintenance. Never hand-edit generated RSS/JSON. Update the source registry or engine and rebuild.
+Use a GitHub-provided noreply address for commits to this public repository; do not expose personal email addresses in Git history.
 
 ## Source additions
 

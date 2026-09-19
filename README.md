@@ -60,6 +60,7 @@ The public RSS/JSON links can be supplied to ChatGPT for retrieval and analysis,
 ## Development
 
 ```sh
+python -m pip install --upgrade pip==26.2.1
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python -m regwatch validate
