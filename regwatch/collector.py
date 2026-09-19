@@ -81,7 +81,7 @@ def collect_source(state, source, now, transport=None):
         # Don't let attachment-only rechecks distort observed listing counts.
         listing_count=len(rows)
         extras=[r for _,url,r,_,_ in due[:budget] if url not in current_by_url]
-        apply_observations(state,source,rows+extras,now)
+        apply_observations(state,source,rows+extras,now,mark_healthy=False)
         for r in extras:
             old=old_by_url[r['url']]
             ss['observations'][old['item_id']]['last_seen_at']=old['last_seen_at']
@@ -89,6 +89,8 @@ def collect_source(state, source, now, transport=None):
         ss.update(last_count=listing_count,listing_pages_checked=len(visited),pagination_truncated=bool(queue),item_limit_reached=item_limit_reached,attachment_backlog=max(0,len(due)-budget),attachment_checks=min(len(due),budget))
         if errors:
             set_health(state,source,'degraded',now,'Attachment checks: '+'; '.join(sorted(set(errors))))
+        else:
+            set_health(state,source,'healthy',now)
     except Exception as exc:
         set_health(state,source,'blocked' if isinstance(exc,AccessBlocked) else 'failed',now,str(exc)[:350])
     state['last_run_at']=now
