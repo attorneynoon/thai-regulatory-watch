@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-19T22:20:47Z",
+  "generated_at": "2026-09-20T01:13:04Z",
   "records": [
+    {
+      "event_id": "health-b5d113dd03006e5e4a33cb8fca7a6ae9",
+      "message": null,
+      "observed_at": "2026-09-20T01:13:04Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-910091ab11ef0588db570da0280d3e5b",
+      "message": "Robots unavailable: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "observed_at": "2026-09-20T01:13:04Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "healthy",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-4faeca70e37830c21c3548af05432e34",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-20T01:13:04Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-laws",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-04285d550833555efef522e314c31d18",
+      "message": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "observed_at": "2026-09-20T01:13:04Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/announce/writ/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-office-orders",
+      "status": "failed"
+    },
     {
       "event_id": "health-d837a60838c6c52a4cace9c7ec19907e",
       "message": "Access unavailable: HTTP 403",
