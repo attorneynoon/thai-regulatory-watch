@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-20T01:13:04Z",
+  "generated_at": "2026-09-20T06:21:41Z",
   "records": [
+    {
+      "event_id": "health-9ad9337d023f0f9b1ce87ec588ac69f6",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-20T06:21:41Z",
+      "official_url": "https://www.pdpc.or.th/category/pdpc-law/announce/writ/",
+      "previous_status": "failed",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-office-orders",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-533c2fcfa4db785cdf93702adc9c78e3",
+      "message": null,
+      "observed_at": "2026-09-20T06:21:41Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-b5d113dd03006e5e4a33cb8fca7a6ae9",
       "message": null,
