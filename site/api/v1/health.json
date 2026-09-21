@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-20T22:29:26Z",
+  "generated_at": "2026-09-21T01:10:30Z",
   "records": [
+    {
+      "event_id": "health-44854cf7025137ea6a117fc54e768324",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-21T01:10:30Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-1cf517331e155a245cb332b12173139d",
       "message": null,
