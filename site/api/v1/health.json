@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-21T19:32:58Z",
+  "generated_at": "2026-09-21T23:19:43Z",
   "records": [
+    {
+      "event_id": "health-f4a81596d06367c4f93a459451afe285",
+      "message": null,
+      "observed_at": "2026-09-21T23:19:43Z",
+      "official_url": "https://www.ccib.go.th/ประชาสมพนธ/ขาวจบกม",
+      "previous_status": "blocked",
+      "regulator_id": "ccib",
+      "source_id": "ccib-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-673a467552a3bdd40ecee9dce7235d88",
       "message": null,
