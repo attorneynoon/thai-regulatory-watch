@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-21T14:14:14Z",
+  "generated_at": "2026-09-21T19:32:58Z",
   "records": [
+    {
+      "event_id": "health-673a467552a3bdd40ecee9dce7235d88",
+      "message": null,
+      "observed_at": "2026-09-21T19:32:58Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4c7d5eec4866020778d7432f256f86fa",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-21T19:32:58Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-224427cc8d69ff396ebfed6f831b9c0c",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ccib.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-21T19:32:58Z",
+      "official_url": "https://www.ccib.go.th/ประชาสมพนธ/ขาวจบกม",
+      "previous_status": "healthy",
+      "regulator_id": "ccib",
+      "source_id": "ccib-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-145af6daef4a20b1727a34ff336d0885",
+      "message": null,
+      "observed_at": "2026-09-21T19:32:58Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-9465d8431bf4bd98a2f147ecefe247e9",
       "message": null,
