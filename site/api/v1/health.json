@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-09-22T05:01:45Z",
+  "generated_at": "2026-09-22T10:00:52Z",
   "records": [
+    {
+      "event_id": "health-c4a2802a4f522cc8ea52bce31e7225ed",
+      "message": null,
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-bcbc49a653bdd71b5347ed862e72ff7d",
+      "message": null,
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-a4ee6b3163ab7b6ca647a85ca0dc22b5",
+      "message": "HTTPSConnectionPool(host='www.ocpb.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-8ecfd45f76d0c493d6f43e9e4bda93f2",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ocs.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "council-of-state",
+      "source_id": "council-of-state-discovery",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7c2f840f9c292b87e8171e4775593776",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ocs.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "ocs-council-of-state-law-search",
+      "source_id": "ocs-council-of-state-law-search-discovery",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7b873f30bb283d98f3a31e50b69bbb7a",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "healthy",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-37df333c09903e879ab6150cb4da0f99",
+      "message": null,
+      "observed_at": "2026-09-22T10:00:52Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-d5f4630bf79d58a7d7d375a2198faba1",
       "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
