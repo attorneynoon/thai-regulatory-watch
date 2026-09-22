@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-09-22T10:00:52Z",
+  "generated_at": "2026-09-22T14:58:11Z",
   "records": [
+    {
+      "event_id": "health-f944b8a35451246c43b28025d15fb6a2",
+      "message": null,
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "blocked",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-920d3e50a90b3bd2ee4dde39903e63b5",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "healthy",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6c0fd1051aa90b7de3300c7e5a9efe87",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-1f41647965e9e8d9f8a4531078821851",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-1e05772f65b4ffcd45eab8d5beb1139e",
+      "message": null,
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "blocked",
+      "regulator_id": "ocs-council-of-state-law-search",
+      "source_id": "ocs-council-of-state-law-search-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1218d3a20b2e31686eb847122b7d0b29",
+      "message": null,
+      "observed_at": "2026-09-22T14:58:11Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "blocked",
+      "regulator_id": "council-of-state",
+      "source_id": "council-of-state-discovery",
+      "status": "healthy"
+    },
     {
       "event_id": "health-c4a2802a4f522cc8ea52bce31e7225ed",
       "message": null,
