@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-22T14:58:11Z",
+  "generated_at": "2026-09-22T18:57:52Z",
   "records": [
+    {
+      "event_id": "health-85d8e7cf6df599b95d4d7661896cb693",
+      "message": null,
+      "observed_at": "2026-09-22T18:57:52Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-7843b656ffbf3e142aa2ad8558959e73",
+      "message": null,
+      "observed_at": "2026-09-22T18:57:52Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "blocked",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f944b8a35451246c43b28025d15fb6a2",
       "message": null,
