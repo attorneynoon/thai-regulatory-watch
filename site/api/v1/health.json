@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-23T06:01:44Z",
+  "generated_at": "2026-09-23T11:42:42Z",
   "records": [
+    {
+      "event_id": "health-e60108312870823a7ef9518d31eb7171",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-09-23T11:42:42Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "healthy",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-c4e844989e73ba1dbf26cc20956d5655",
+      "message": null,
+      "observed_at": "2026-09-23T11:42:42Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "failed",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
     {
       "event_id": "health-b4078d2d203fa69a8943cbc647755035",
       "message": null,
