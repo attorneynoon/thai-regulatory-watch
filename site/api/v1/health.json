@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-09-23T11:42:42Z",
+  "generated_at": "2026-09-23T17:06:19Z",
   "records": [
+    {
+      "event_id": "health-eece895a58369feceeaff8726c767868",
+      "message": null,
+      "observed_at": "2026-09-23T17:06:19Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4b123968962af7c39495fa31eb9a9bfa",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-09-23T17:06:19Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-058efba65fdef1b6a4e189c0879b5bd6",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-09-23T17:06:19Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
     {
       "event_id": "health-e60108312870823a7ef9518d31eb7171",
       "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
