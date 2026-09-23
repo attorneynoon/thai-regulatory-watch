@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-23T20:26:04Z",
+  "generated_at": "2026-09-23T23:44:50Z",
   "records": [
+    {
+      "event_id": "health-e4c32ef359639b6e61b7dc0dd6050083",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-09-23T23:44:50Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "healthy",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0e07dac8ea4a870bc5a9f07ee07e27ef",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-09-23T23:44:50Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "degraded"
+    },
     {
       "event_id": "health-705c34a63a086109805825b75a5905be",
       "message": null,
