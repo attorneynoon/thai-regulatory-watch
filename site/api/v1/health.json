@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-09-24T04:56:41Z",
+  "generated_at": "2026-09-24T10:05:13Z",
   "records": [
+    {
+      "event_id": "health-8d9288c5a5252315280f375e1724ca65",
+      "message": null,
+      "observed_at": "2026-09-24T10:05:13Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-85f8c12cdb910122aaa869f550a553d5",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-24T10:05:13Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-5d4e232d055445dc342b34d104cd7d68",
+      "message": null,
+      "observed_at": "2026-09-24T10:05:13Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0f1dc8334df6bf0936156c774dca6cb0",
+      "message": null,
+      "observed_at": "2026-09-24T10:05:13Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-000406ddfa835695f1720234dd2542f3",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-09-24T10:05:13Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
     {
       "event_id": "health-eba0b68243e914a8e23b538d16120136",
       "message": null,
