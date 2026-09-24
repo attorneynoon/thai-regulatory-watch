@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-09-24T10:05:13Z",
+  "generated_at": "2026-09-24T15:10:17Z",
   "records": [
+    {
+      "event_id": "health-8292fc76d608ca19372992139c8c91ce",
+      "message": null,
+      "observed_at": "2026-09-24T15:10:17Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6f0bf2e784fdfca78eb66f0345f737b4",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-24T15:10:17Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-561f42e58cc4b153a5410775509eeb21",
+      "message": null,
+      "observed_at": "2026-09-24T15:10:17Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-8d9288c5a5252315280f375e1724ca65",
       "message": null,
