@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-09-23T23:44:50Z",
+  "generated_at": "2026-09-24T04:56:41Z",
   "records": [
+    {
+      "event_id": "health-eba0b68243e914a8e23b538d16120136",
+      "message": null,
+      "observed_at": "2026-09-24T04:56:41Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-d3a1f1518b8d5147c58effe9354ac236",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-24T04:56:41Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6f7d85b5ff98903c1cb3b43d0e74ab11",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-24T04:56:41Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-63af8ad665631ac75f313296130937ba",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-24T04:56:41Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0e99ac914b5f95558b01b7f64fad29f2",
+      "message": null,
+      "observed_at": "2026-09-24T04:56:41Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "blocked",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e4c32ef359639b6e61b7dc0dd6050083",
       "message": "Robots policy unresolved: HTTP 503",
