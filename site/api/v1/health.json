@@ -1,6 +1,166 @@
 {
-  "generated_at": "2026-09-25T13:52:35Z",
+  "generated_at": "2026-09-25T18:39:59Z",
   "records": [
+    {
+      "event_id": "health-f822a997d8cd20069b01137d61c85380",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-complaints-prosecution",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-f6896a8c8c5163c8bb21185053b4f73d",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "failed",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-d46fd65627446efa2c856779b411fa29",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-c7ec03846ab7ef120bc0c8ce05d27229",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-bb67f499716b51e5279683603ed86380",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-b94cfbbd2c4dded8a6b8d1a5036fde26",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-a7492b52f4a625a947555c3c49149e7a",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-a6f900a275bba415e3317112b7fc4034",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-758ec3ab1e26bc69ee4e86b736375f19",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-743b9f43451931927d87dc9cdc2a3732",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-04",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-69af93a6061b8dd87bb0575f886e668d",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "failed",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5278ad6157c8fa217df05bab1221aee1",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "failed",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3ce869e5cbf8c15e1b0dadc4eb26a131",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-389bd3fe1b0275b6eef34e69a038d606",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3660d6078b31f85f0033ed74a02357df",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "failed",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-19beab2921c58fa109eff95973ad8b8f",
+      "message": null,
+      "observed_at": "2026-09-25T18:39:59Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "failed",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f738f9c2c96a86befc2b4fe6281a2683",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
