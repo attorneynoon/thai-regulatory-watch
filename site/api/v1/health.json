@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-25T01:33:54Z",
+  "generated_at": "2026-09-25T07:53:18Z",
   "records": [
+    {
+      "event_id": "health-e0fde19090a7bcdd386a284a6e9666fa",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-25T07:53:18Z",
+      "official_url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-complaints-prosecution",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-47c05ce921333f95007c1a1fd5f7ce5f",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-25T07:53:18Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-6275b4916bf5924a622c41908afc3178",
       "message": null,
