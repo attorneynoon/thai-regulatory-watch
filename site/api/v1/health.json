@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-26T17:14:12Z",
+  "generated_at": "2026-09-26T19:55:09Z",
   "records": [
+    {
+      "event_id": "health-aa3c860fa5a4a5d7408c84685bc458a7",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-09-26T19:55:09Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-511a74dcab45aaf8c35179e29f5ddf78",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-09-26T19:55:09Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
     {
       "event_id": "health-8a29dd104d45a9fc9c9056948c055bf1",
       "message": null,
