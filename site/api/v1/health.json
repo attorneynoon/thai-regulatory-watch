@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-09-26T19:55:09Z",
+  "generated_at": "2026-09-26T22:54:49Z",
   "records": [
+    {
+      "event_id": "health-ca618c548f3f3a166daf23ffdab9fe26",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='webdev.excise.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='webdev.excise.go.th', port=443) at 0x7f7b410",
+      "observed_at": "2026-09-26T22:54:49Z",
+      "official_url": "https://webdev.excise.go.th/act2560/suppress-news/79-2569",
+      "previous_status": "healthy",
+      "regulator_id": "excise",
+      "source_id": "excise-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-9ebcb3d50ee1c81c52d158ab29927c14",
+      "message": "HTTPSConnectionPool(host='www.mol.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-26T22:54:49Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "blocked",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-605bd2a2cc8d9511e7abed3a609e7131",
+      "message": null,
+      "observed_at": "2026-09-26T22:54:49Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-2c97def7b365472f76fec2992a7c8eb5",
+      "message": null,
+      "observed_at": "2026-09-26T22:54:49Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0e3185bd1069ba89757f54f3397eb93a",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-26T22:54:49Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-aa3c860fa5a4a5d7408c84685bc458a7",
       "message": "Attachment checks: Response exceeds byte budget",
