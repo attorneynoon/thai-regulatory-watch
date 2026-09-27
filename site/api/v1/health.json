@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-27T14:03:50Z",
+  "generated_at": "2026-09-27T18:27:52Z",
   "records": [
+    {
+      "event_id": "health-9b3bce2fd3e902de2f9ab7c5dcf2f5b9",
+      "message": null,
+      "observed_at": "2026-09-27T18:27:52Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-7ab9b934165064affe80a71a28582fd2",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-09-27T18:27:52Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-3c714dd50a6ee20ab19ecba72cdf7183",
+      "message": null,
+      "observed_at": "2026-09-27T18:27:52Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1ee1e85b305fdd43f5ede90861a1fafc",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-27T18:27:52Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-c5c0d142e554a929de56d7f1b3e70d9f",
       "message": null,
