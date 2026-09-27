@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-09-27T01:30:44Z",
+  "generated_at": "2026-09-27T08:15:19Z",
   "records": [
+    {
+      "event_id": "health-d69bfab36f2edbd03637a68feaf3c51d",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.mol.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-ce02704047c79fec5e92168aaa2105b7",
+      "message": null,
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9ee5d5fc403dcef78a13d0fa347d3a6f",
+      "message": null,
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://www.etda.or.th/th/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6559b4099d34a422a3e3148adf9058ae",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-2c5d4a734ec428b3b75708ac8823f4b0",
+      "message": null,
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://www.etda.or.th/en/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0e64ca1461fdc2208a57dbfb89ef3f21",
+      "message": null,
+      "observed_at": "2026-09-27T08:15:19Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f7f61fabd6e9be41c3d18fd59cff109d",
       "message": null,
