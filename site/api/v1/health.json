@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-09-26T22:54:49Z",
+  "generated_at": "2026-09-27T01:30:44Z",
   "records": [
+    {
+      "event_id": "health-f7f61fabd6e9be41c3d18fd59cff109d",
+      "message": null,
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://webdev.excise.go.th/act2560/suppress-news/79-2569",
+      "previous_status": "blocked",
+      "regulator_id": "excise",
+      "source_id": "excise-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-f67233ee2aa040a2252522c810126d56",
+      "message": null,
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "failed",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-a22a56b5cd44b621f518760d304eb39d",
+      "message": "Robots policy unresolved: HTTP 429",
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://www.etda.or.th/en/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-992199a1f5d2c6c052657d483acef387",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-613f6abdafac3f71956987db3370fa9d",
+      "message": "Robots policy unresolved: HTTP 429",
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://www.etda.or.th/th/newsevents/pr-news.aspx?rss=590fb9ad-c550-4bc5-9a56-459ad4891d74",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-2a14643bfff120fef77f90a27fb38362",
+      "message": "Robots policy unresolved: HTTP 429",
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-1ad667ec55c9584ac2ae4d892403be68",
+      "message": "Robots policy unresolved: HTTP 429",
+      "observed_at": "2026-09-27T01:30:44Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "blocked"
+    },
     {
       "event_id": "health-ca618c548f3f3a166daf23ffdab9fe26",
       "message": "Robots unavailable: HTTPSConnectionPool(host='webdev.excise.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='webdev.excise.go.th', port=443) at 0x7f7b410",
