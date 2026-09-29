@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-09-29T08:35:30Z",
+  "generated_at": "2026-09-29T15:56:04Z",
   "records": [
+    {
+      "event_id": "health-46495fb6d7fb769171d239b172555325",
+      "message": "Response exceeds byte budget",
+      "observed_at": "2026-09-29T15:56:04Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-24a9601c75ad5dc29119fdbdada790aa",
+      "message": "Response exceeds byte budget",
+      "observed_at": "2026-09-29T15:56:04Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-13f6ae929b60b6a53526148c6b0f5cc3",
+      "message": "Response exceeds byte budget",
+      "observed_at": "2026-09-29T15:56:04Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-7a86a01e938277c605724bdf062e125c",
       "message": "Access unavailable: HTTP 403",
