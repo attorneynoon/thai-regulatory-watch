@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-29T15:56:04Z",
+  "generated_at": "2026-09-29T20:51:20Z",
   "records": [
+    {
+      "event_id": "health-d720075f1f7d8f25c42d46e41f08d74f",
+      "message": null,
+      "observed_at": "2026-09-29T20:51:20Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
     {
       "event_id": "health-46495fb6d7fb769171d239b172555325",
       "message": "Response exceeds byte budget",
