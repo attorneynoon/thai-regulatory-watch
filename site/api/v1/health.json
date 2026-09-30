@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-30T06:46:58Z",
+  "generated_at": "2026-09-30T13:48:14Z",
   "records": [
+    {
+      "event_id": "health-909d008501c935eea7fedf627578a145",
+      "message": null,
+      "observed_at": "2026-09-30T13:48:14Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-2b80349beed1077c3bd9212bd7f0da54",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-09-30T13:48:14Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
     {
       "event_id": "health-f4316ad9209c2addf7b0895816be5ab0",
       "message": "Access unavailable: HTTP 403",
