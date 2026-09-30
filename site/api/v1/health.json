@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-30T13:48:14Z",
+  "generated_at": "2026-09-30T19:24:43Z",
   "records": [
+    {
+      "event_id": "health-052e0fa8c5bccd3c8cff4f648e378cc8",
+      "message": null,
+      "observed_at": "2026-09-30T19:24:43Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-909d008501c935eea7fedf627578a145",
       "message": null,
