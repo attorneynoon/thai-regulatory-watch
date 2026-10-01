@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-01T06:00:56Z",
+  "generated_at": "2026-10-01T13:22:54Z",
   "records": [
+    {
+      "event_id": "health-90a702f753225b76e263a4be68084412",
+      "message": null,
+      "observed_at": "2026-10-01T13:22:54Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "blocked",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e20069ab7a0dd892d40362bf75fb1c7a",
       "message": "Robots policy unresolved: HTTP 503",
