@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-09-30T23:54:15Z",
+  "generated_at": "2026-10-01T06:00:56Z",
   "records": [
+    {
+      "event_id": "health-e20069ab7a0dd892d40362bf75fb1c7a",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-01T06:00:56Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "healthy",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-dbb8a1c75957c5a004cd670688a9b75f",
+      "message": null,
+      "observed_at": "2026-10-01T06:00:56Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4e575edc253f58b2e789eb3f667d34ef",
+      "message": null,
+      "observed_at": "2026-10-01T06:00:56Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
     {
       "event_id": "health-c5cf1ee88137f970a4a9987c488544b6",
       "message": "Robots policy unresolved: HTTP 503",
