@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-01T13:22:54Z",
+  "generated_at": "2026-10-01T19:34:40Z",
   "records": [
+    {
+      "event_id": "health-96072d119a5da71b9cd03731500904c5",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-01T19:34:40Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-6c06ee7ec61e319a2ad2ae7e1c595844",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-01T19:34:40Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "healthy",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6766cead251ffc851d37c61c050f06dd",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-01T19:34:40Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-90a702f753225b76e263a4be68084412",
       "message": null,
