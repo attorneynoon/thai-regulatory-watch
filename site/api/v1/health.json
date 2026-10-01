@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-30T19:24:43Z",
+  "generated_at": "2026-09-30T23:54:15Z",
   "records": [
+    {
+      "event_id": "health-c5cf1ee88137f970a4a9987c488544b6",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-09-30T23:54:15Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-556c2027a65c503bbe1fe5978f3b7183",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-09-30T23:54:15Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "blocked"
+    },
     {
       "event_id": "health-052e0fa8c5bccd3c8cff4f648e378cc8",
       "message": null,
