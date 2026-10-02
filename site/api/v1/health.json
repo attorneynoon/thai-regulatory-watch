@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-02T12:41:28Z",
+  "generated_at": "2026-10-02T18:27:56Z",
   "records": [
+    {
+      "event_id": "health-9259ea94035b584f46ee882ca17e9a84",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-02T18:27:56Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-26d1d1716d7c1c923369ff6ed175e8f0",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-02T18:27:56Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
     {
       "event_id": "health-4972035467472856a0133d03685d2faa",
       "message": null,
