@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-01T19:34:40Z",
+  "generated_at": "2026-10-01T23:55:13Z",
   "records": [
+    {
+      "event_id": "health-61743ab06adc8e38021413773b352910",
+      "message": null,
+      "observed_at": "2026-10-01T23:55:13Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5de18c738df83693dd474f084de2f438",
+      "message": null,
+      "observed_at": "2026-10-01T23:55:13Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-214df25ed6129724313e497c59423415",
+      "message": null,
+      "observed_at": "2026-10-01T23:55:13Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "healthy"
+    },
     {
       "event_id": "health-96072d119a5da71b9cd03731500904c5",
       "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
