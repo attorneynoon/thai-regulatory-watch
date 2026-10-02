@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-02T18:27:56Z",
+  "generated_at": "2026-10-02T23:00:17Z",
   "records": [
+    {
+      "event_id": "health-2882254fe1eeeab3abdb6f0d0dc9c486",
+      "message": null,
+      "observed_at": "2026-10-02T23:00:17Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
     {
       "event_id": "health-9259ea94035b584f46ee882ca17e9a84",
       "message": "Access unavailable: HTTP 403",
