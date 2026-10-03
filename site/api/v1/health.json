@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-03T02:01:49Z",
+  "generated_at": "2026-10-03T08:11:31Z",
   "records": [
+    {
+      "event_id": "health-c908da187ef9cede83aca9e243e01d1f",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-03T08:11:31Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-88c985fd3e225c98d70a5655e65d0058",
+      "message": null,
+      "observed_at": "2026-10-03T08:11:31Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4caaa1f36f0538874966379c80ab2c0a",
+      "message": null,
+      "observed_at": "2026-10-03T08:11:31Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-34f0d18d7f7238f3d982ca64934c7c4c",
+      "message": null,
+      "observed_at": "2026-10-03T08:11:31Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-10f5174408d7c636772bf77f7efa8ee7",
+      "message": null,
+      "observed_at": "2026-10-03T08:11:31Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "healthy"
+    },
     {
       "event_id": "health-6c7a89d33ff39b3defdf896c6249e143",
       "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=8)",
