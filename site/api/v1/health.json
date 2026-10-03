@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-02T23:00:17Z",
+  "generated_at": "2026-10-03T02:01:49Z",
   "records": [
+    {
+      "event_id": "health-6c7a89d33ff39b3defdf896c6249e143",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-03T02:01:49Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-60da08ec9b27b99f816e871f18976fc5",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-03T02:01:49Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0684b7a0e385eb58cd005e9d0ce5ca7e",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-03T02:01:49Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "blocked"
+    },
     {
       "event_id": "health-2882254fe1eeeab3abdb6f0d0dc9c486",
       "message": null,
