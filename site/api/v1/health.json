@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-03T17:59:14Z",
+  "generated_at": "2026-10-03T21:21:01Z",
   "records": [
+    {
+      "event_id": "health-3c3a7e3bcb6738efda7678f206fb7802",
+      "message": null,
+      "observed_at": "2026-10-03T21:21:01Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-39673762992d9359f52ce5db11dd12df",
+      "message": null,
+      "observed_at": "2026-10-03T21:21:01Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-a0c384180a0d099aaa5997f05d36e7bb",
       "message": "Attachment checks: Response exceeds byte budget",
