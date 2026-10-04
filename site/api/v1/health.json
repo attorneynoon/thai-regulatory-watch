@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-04T17:38:06Z",
+  "generated_at": "2026-10-04T21:31:48Z",
   "records": [
+    {
+      "event_id": "health-9b1d7ccb98e742b009137f6e5076ead7",
+      "message": null,
+      "observed_at": "2026-10-04T21:31:48Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5a9856d5daa15424bf479614e0f7e316",
+      "message": null,
+      "observed_at": "2026-10-04T21:31:48Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5532f4a7ff1fc3e150a10a8e35624ef6",
+      "message": null,
+      "observed_at": "2026-10-04T21:31:48Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-03a0d108615d5ddb47a3c0514902b900",
+      "message": null,
+      "observed_at": "2026-10-04T21:31:48Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "blocked",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "healthy"
+    },
     {
       "event_id": "health-cd3c09d8a4208d952c81b9fd679ca7d8",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
