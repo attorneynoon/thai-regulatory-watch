@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-04T13:14:17Z",
+  "generated_at": "2026-10-04T17:38:06Z",
   "records": [
+    {
+      "event_id": "health-cd3c09d8a4208d952c81b9fd679ca7d8",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-04T17:38:06Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6b380adadbedfb216fc73534e9289805",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-04T17:38:06Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-2da47f15d0a409b616278cd5a09d5a73",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-04T17:38:06Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-1fa028c6d417c6a6f023cca0685f9924",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-04T17:38:06Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "blocked"
+    },
     {
       "event_id": "health-7c6c37a2c98b49a33dfce59b4f148039",
       "message": null,
