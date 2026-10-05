@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-05T16:05:31Z",
+  "generated_at": "2026-10-05T22:41:17Z",
   "records": [
+    {
+      "event_id": "health-f2d83774dc5e1c8ea1b4f42d73518a08",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-05T22:41:17Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-55a6301669dcb88522cca2cd3386b0b7",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-10-05T22:41:17Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "ocs-council-of-state-law-search",
+      "source_id": "ocs-council-of-state-law-search-discovery",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-4e4dfd126b7a0e11e8392b6bf0625844",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-10-05T22:41:17Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "council-of-state",
+      "source_id": "council-of-state-discovery",
+      "status": "failed"
+    },
     {
       "event_id": "health-773c3d3e321aff69f40f24b04ec4b1a8",
       "message": null,
