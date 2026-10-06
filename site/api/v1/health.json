@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-06T10:24:13Z",
+  "generated_at": "2026-10-06T17:14:19Z",
   "records": [
+    {
+      "event_id": "health-e46aa332041d21db4c9bac4d338fa405",
+      "message": null,
+      "observed_at": "2026-10-06T17:14:19Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-49e805d77df09965d24b7c31dcf2845d",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-10-06T17:14:19Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-342f2703f9efd36275d8d3e0971848cd",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-06T17:14:19Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-f2bce2b5e6a57787c3663c442ca8474c",
       "message": null,
