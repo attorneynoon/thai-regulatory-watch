@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-06T17:14:19Z",
+  "generated_at": "2026-10-06T21:41:11Z",
   "records": [
+    {
+      "event_id": "health-d30a8cbc0eb579f8dc3f6d88fd372e5f",
+      "message": null,
+      "observed_at": "2026-10-06T21:41:11Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-863f9118cb548798d1eb9f3392c1a8f1",
+      "message": null,
+      "observed_at": "2026-10-06T21:41:11Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e46aa332041d21db4c9bac4d338fa405",
       "message": null,
