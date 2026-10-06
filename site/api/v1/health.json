@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-05T22:41:17Z",
+  "generated_at": "2026-10-06T03:02:13Z",
   "records": [
+    {
+      "event_id": "health-f2bce2b5e6a57787c3663c442ca8474c",
+      "message": null,
+      "observed_at": "2026-10-06T03:02:13Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "failed",
+      "regulator_id": "council-of-state",
+      "source_id": "council-of-state-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9f25ec8a6ff17ee86741d6b036a05f81",
+      "message": null,
+      "observed_at": "2026-10-06T03:02:13Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "failed",
+      "regulator_id": "ocs-council-of-state-law-search",
+      "source_id": "ocs-council-of-state-law-search-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6928bdaddb3d9d15c243bf75698c1e34",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-06T03:02:13Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-f2d83774dc5e1c8ea1b4f42d73518a08",
       "message": "Access unavailable: HTTP 403",
