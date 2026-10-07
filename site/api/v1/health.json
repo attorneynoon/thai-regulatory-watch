@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-07T01:35:41Z",
+  "generated_at": "2026-10-07T08:44:25Z",
   "records": [
+    {
+      "event_id": "health-bee52b77e896d0b23f4b02b6f929778e",
+      "message": null,
+      "observed_at": "2026-10-07T08:44:25Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-456f1ae7e9f9dbcdcef8679f559539cd",
+      "message": "Robots policy unresolved: HTTP 522",
+      "observed_at": "2026-10-07T08:44:25Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-d30a8cbc0eb579f8dc3f6d88fd372e5f",
       "message": null,
