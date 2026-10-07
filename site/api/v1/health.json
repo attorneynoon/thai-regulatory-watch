@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-07T08:44:25Z",
+  "generated_at": "2026-10-07T16:33:55Z",
   "records": [
+    {
+      "event_id": "health-ecc90ffa72dce6bef4428fa2b40302a4",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-07T16:33:55Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-e7736d3e03cf6161f10c61b91b95646f",
+      "message": null,
+      "observed_at": "2026-10-07T16:33:55Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-bee52b77e896d0b23f4b02b6f929778e",
       "message": null,
