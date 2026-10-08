@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-08T09:02:48Z",
+  "generated_at": "2026-10-08T16:40:03Z",
   "records": [
+    {
+      "event_id": "health-f9d9da1014b8090c4243d37bd14502c9",
+      "message": null,
+      "observed_at": "2026-10-08T16:40:03Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "failed",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-a3678b1984904b9b4f2014f41a0d0b8e",
+      "message": null,
+      "observed_at": "2026-10-08T16:40:03Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
     {
       "event_id": "health-a945e3741136b637851d936a8f794199",
       "message": "HTTPSConnectionPool(host='www.mol.go.th', port=443): Read timed out. (read timeout=20)",
