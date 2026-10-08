@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-08T16:40:03Z",
+  "generated_at": "2026-10-08T22:07:30Z",
   "records": [
+    {
+      "event_id": "health-6973c8c0ebd8e867038759fe3144d5d4",
+      "message": null,
+      "observed_at": "2026-10-08T22:07:30Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f9d9da1014b8090c4243d37bd14502c9",
       "message": null,
