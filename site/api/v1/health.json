@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-08T01:59:22Z",
+  "generated_at": "2026-10-08T09:02:48Z",
   "records": [
+    {
+      "event_id": "health-a945e3741136b637851d936a8f794199",
+      "message": "HTTPSConnectionPool(host='www.mol.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-08T09:02:48Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-50b647ec6dd8cb52169af593095ab633",
+      "message": null,
+      "observed_at": "2026-10-08T09:02:48Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-24f17cdc69d206c84f22e8d78eec8121",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-08T09:02:48Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "degraded"
+    },
     {
       "event_id": "health-e8d6a233300aeb447dba2ce60860d1b9",
       "message": "Access unavailable: HTTP 403",
