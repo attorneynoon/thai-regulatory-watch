@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-07T22:01:32Z",
+  "generated_at": "2026-10-08T01:59:22Z",
   "records": [
+    {
+      "event_id": "health-e8d6a233300aeb447dba2ce60860d1b9",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-08T01:59:22Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-9db8d2a30b5298e14378b4b506976e53",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-08T01:59:22Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-f64d5bee434d1a3e1bbeeeef7cbbef5e",
       "message": null,
