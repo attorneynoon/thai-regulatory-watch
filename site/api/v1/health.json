@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-10-09T09:11:03Z",
+  "generated_at": "2026-10-09T16:16:36Z",
   "records": [
+    {
+      "event_id": "health-de234df353577fecbfc36b1e1fd9cd96",
+      "message": "HTTP 503",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "blocked",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-6a14cfd898260892f4f37cf170a2d864",
+      "message": "HTTP 522",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "healthy",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-6125043a0e0e4cda4a7f5ee1a7ed5f84",
+      "message": null,
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://www.nhso.go.th/th/communicate-th/thnewsforperson",
+      "previous_status": "blocked",
+      "regulator_id": "nhso",
+      "source_id": "nhso-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-455f47b2d5726cab0b67148e3f2992c1",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.customs.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='www.customs.go.th', port=443): Failed to establ",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://www.customs.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "customs",
+      "source_id": "customs-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-25cea0a4b86de287fbc33c9d88f8327c",
+      "message": "HTTP 522",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "healthy",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-0aacb25fa64ecf9b00eebbc51d551211",
+      "message": "Selected content missing",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "previous_status": "healthy",
+      "regulator_id": "sec",
+      "source_id": "sec-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-00165baaba2dfb291a9979b5fc23ee50",
+      "message": "HTTPSConnectionPool(host='www.ocpb.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-09T16:16:36Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "failed"
+    },
     {
       "event_id": "health-b2d03653aae01b703c36c44e6edd55dd",
       "message": "Access unavailable: HTTP 403",
