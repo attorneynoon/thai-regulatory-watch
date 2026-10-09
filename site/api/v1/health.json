@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-09T02:13:31Z",
+  "generated_at": "2026-10-09T09:11:03Z",
   "records": [
+    {
+      "event_id": "health-b2d03653aae01b703c36c44e6edd55dd",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-09T09:11:03Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-b09c0febb1b6cec371b658294ccadfd2",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-09T09:11:03Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "healthy",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-41fe37fb30e6daa09af6ef1e7092e14a",
+      "message": null,
+      "observed_at": "2026-10-09T09:11:03Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-1176d3ab55aa467ee0614106365bc1d0",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
