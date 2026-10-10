@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-10T13:46:41Z",
+  "generated_at": "2026-10-10T18:39:55Z",
   "records": [
+    {
+      "event_id": "health-0d0c9d6332038cb907842158f7afe9c7",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-10T18:39:55Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0ab4d024d7c4422fe2e1160822652566",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-10T18:39:55Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-f3851a20fc730b6807778114031691e3",
       "message": null,
