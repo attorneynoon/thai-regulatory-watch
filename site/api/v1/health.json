@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-09T21:03:38Z",
+  "generated_at": "2026-10-10T00:55:26Z",
   "records": [
+    {
+      "event_id": "health-f61e560c27385d058f8b8b0d740b77ee",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-10T00:55:26Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "failed",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-baf5b760c671b45cf5451990fdb76b2d",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-10T00:55:26Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-b246452609c9827676ff81a913c7bc83",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-10T00:55:26Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
     {
       "event_id": "health-eef06643806ade9c85639b4e06e7c3ed",
       "message": null,
