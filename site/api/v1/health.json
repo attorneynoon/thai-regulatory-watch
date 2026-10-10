@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-10T18:39:55Z",
+  "generated_at": "2026-10-10T22:36:50Z",
   "records": [
+    {
+      "event_id": "health-3bfe567dbda5a6bc58c916b75afc084e",
+      "message": null,
+      "observed_at": "2026-10-10T22:36:50Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-06fd71014971ac03d28803432aad2dda",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-10T22:36:50Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-0d0c9d6332038cb907842158f7afe9c7",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
