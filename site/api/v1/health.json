@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-11T15:45:26Z",
+  "generated_at": "2026-10-11T20:20:49Z",
   "records": [
+    {
+      "event_id": "health-b22f303fa91cf58214b98d7d59096b97",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-11T20:20:49Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6158447972fb7e4bc47412658603d1eb",
+      "message": null,
+      "observed_at": "2026-10-11T20:20:49Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-986f49386e6975c6c9cedc21706eb542",
       "message": null,
