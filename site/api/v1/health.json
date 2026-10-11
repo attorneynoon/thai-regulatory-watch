@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-11T08:57:35Z",
+  "generated_at": "2026-10-11T15:45:26Z",
   "records": [
+    {
+      "event_id": "health-986f49386e6975c6c9cedc21706eb542",
+      "message": null,
+      "observed_at": "2026-10-11T15:45:26Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6391a95aca46e4c9ce71f3fd93110fe0",
+      "message": null,
+      "observed_at": "2026-10-11T15:45:26Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3e03cba79ad8940633fae5465b92bf89",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-11T15:45:26Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-8257b5fb1d9e66f310862330cc9769cb",
       "message": "Robots policy unresolved: HTTP 503",
