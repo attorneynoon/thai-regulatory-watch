@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-11T01:57:15Z",
+  "generated_at": "2026-10-11T08:57:35Z",
   "records": [
+    {
+      "event_id": "health-8257b5fb1d9e66f310862330cc9769cb",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-11T08:57:35Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-6e29f806157a16c0257abdf1f525742c",
       "message": null,
