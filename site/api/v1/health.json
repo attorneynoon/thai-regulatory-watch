@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-12T07:25:13Z",
+  "generated_at": "2026-10-12T17:59:05Z",
   "records": [
+    {
+      "event_id": "health-e96fcebfaef720e1ec70564d586f9a22",
+      "message": null,
+      "observed_at": "2026-10-12T17:59:05Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "failed",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9b6b1ded454f7268497a9a7b1ec770be",
+      "message": null,
+      "observed_at": "2026-10-12T17:59:05Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6994ddcb37b7d1adbf272f3c8c8065dd",
+      "message": null,
+      "observed_at": "2026-10-12T17:59:05Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "failed",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3d869f2bbf096fbf06416a7cb0bff613",
+      "message": null,
+      "observed_at": "2026-10-12T17:59:05Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0ed5004545635fc227a116e0ab3d4f01",
+      "message": "HTTP 503",
+      "observed_at": "2026-10-12T17:59:05Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "blocked",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "failed"
+    },
     {
       "event_id": "health-ec0440afe98a199c26e40557c1685dcf",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
