@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-12T17:59:05Z",
+  "generated_at": "2026-10-13T00:45:14Z",
   "records": [
+    {
+      "event_id": "health-98d7a6d0bdfd3e183d7e1f9bb2b9e17a",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-13T00:45:14Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "failed",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-38a68fdfdff9c67f354033c2561582a9",
+      "message": "Robots policy unresolved: HTTP 522",
+      "observed_at": "2026-10-13T00:45:14Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-e96fcebfaef720e1ec70564d586f9a22",
       "message": null,
