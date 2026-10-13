@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-13T16:03:26Z",
+  "generated_at": "2026-10-13T21:18:40Z",
   "records": [
+    {
+      "event_id": "health-ecbcba52f854825935c1b36a00da6f52",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-13T21:18:40Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-dfefa1c2ac8a59d9a6ac71b825c6388e",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
