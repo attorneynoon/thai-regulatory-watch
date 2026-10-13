@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-13T00:45:14Z",
+  "generated_at": "2026-10-13T07:46:15Z",
   "records": [
+    {
+      "event_id": "health-8ffa4a75a5ae622092ced1a1f4b0b43a",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-13T07:46:15Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-8414a77f6eabfe9719297cebabe80b78",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-10-13T07:46:15Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-56babfe5e271f16256fbb4568e49b22d",
+      "message": null,
+      "observed_at": "2026-10-13T07:46:15Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0668b8dbeb597f63992fcf11a3d1711d",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-10-13T07:46:15Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "blocked",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "failed"
+    },
     {
       "event_id": "health-98d7a6d0bdfd3e183d7e1f9bb2b9e17a",
       "message": "Robots policy unresolved: HTTP 503",
