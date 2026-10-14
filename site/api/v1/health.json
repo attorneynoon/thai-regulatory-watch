@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-14T01:15:51Z",
+  "generated_at": "2026-10-14T06:14:09Z",
   "records": [
+    {
+      "event_id": "health-b8d2e1fc83f33e3e47f8e1efacf4ff32",
+      "message": null,
+      "observed_at": "2026-10-14T06:14:09Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3a3eea54cf7f5d976cd80e98f2f754b1",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.parliament.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T06:14:09Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-e73e1242003d48a51c2b7784596dc588",
       "message": null,
