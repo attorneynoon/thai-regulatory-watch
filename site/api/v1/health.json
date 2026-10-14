@@ -1,6 +1,176 @@
 {
-  "generated_at": "2026-10-14T06:14:09Z",
+  "generated_at": "2026-10-14T12:01:07Z",
   "records": [
+    {
+      "event_id": "health-df6190daa5415ece9f752e18c1ac943c",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-c6305ba5bd0e67105f8d8f469e888dbb",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-bcef5ccba336d0d5fa9f46c63fa80e4e",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-acd51767830c155c1b97299a0f90c89b",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-ac56378ae6e6ed212c1d6c78b9a38267",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-complaints-prosecution",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-a74d48b2825a6bc4957170f6ab0c9a8b",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-822c49d857db179230bac17229993907",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7b7eeeb965f2342c4798b5ec24ff230b",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-04",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7264cb95789e6e2cbe688716e91dceb0",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.amlo.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of pr",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.amlo.go.th/dpl/content/index/3",
+      "previous_status": "healthy",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-4fa9efb973a8c86d55f3eb75fcd86454",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/statistics/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-06",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-494765924f140eb2a31311e7499be8d1",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-3c467c72326e9952dc224a10de23ed90",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-358d77eee4af5a29b3bcfe18b4dc0f73",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.amlo.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of pr",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.amlo.go.th/index.php/th/",
+      "previous_status": "healthy",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-33d201e0c9f98a5d524e218fb599037e",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-1e73f357114b2e6f826cc3f102547d81",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0e7bdba079754cb41016a046ca809f48",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-02485f34e90798928e6f76799596c64c",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-14T12:01:07Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-05",
+      "status": "blocked"
+    },
     {
       "event_id": "health-b8d2e1fc83f33e3e47f8e1efacf4ff32",
       "message": null,
