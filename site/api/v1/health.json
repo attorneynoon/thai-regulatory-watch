@@ -1,6 +1,166 @@
 {
-  "generated_at": "2026-10-14T12:01:07Z",
+  "generated_at": "2026-10-14T17:15:42Z",
   "records": [
+    {
+      "event_id": "health-d940635dc4248ba366f10ded62a78ade",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-a268091b67b1f35c4427400fa62043de",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-96a58ae0013cad5ff2c20ce170b1bda7",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-04",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9267a3eb117a3c29d4495b9ba48aa09a",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-complaints-prosecution",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-81126bd22d5be0acd1e30ee80030c4da",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/statistics/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-06",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-7aad8b426929f6c70acc25f249358235",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-75b46da9cc53be3ed0caf63d164c4f02",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.amlo.go.th/dpl/content/index/3",
+      "previous_status": "blocked",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6900c77c0c8694503a8d64c182904cfb",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6485a3c74a05963127b393d7aa2b4f89",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.amlo.go.th/index.php/th/",
+      "previous_status": "blocked",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-63463201793e6d75ce1defd2a8635896",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5c536fd4a5d45c035af3032a45ea7295",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-55a4e3d26f1f0643186ab587eeeb63ff",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4c2238d229255dd2130e9667a6f007ef",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-459b0eb40fa81a7a5d8758f374c34888",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "blocked",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-2afb6644488d697281e45b27d623df2c",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1c12df85ceece6ec950bf7b98c861715",
+      "message": null,
+      "observed_at": "2026-10-14T17:15:42Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "healthy"
+    },
     {
       "event_id": "health-df6190daa5415ece9f752e18c1ac943c",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
