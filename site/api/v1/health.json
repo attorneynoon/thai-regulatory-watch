@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-13T21:18:40Z",
+  "generated_at": "2026-10-14T01:15:51Z",
   "records": [
+    {
+      "event_id": "health-e73e1242003d48a51c2b7784596dc588",
+      "message": null,
+      "observed_at": "2026-10-14T01:15:51Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9863069a98c25ab1cf0a174086e8702a",
+      "message": null,
+      "observed_at": "2026-10-14T01:15:51Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
     {
       "event_id": "health-ecbcba52f854825935c1b36a00da6f52",
       "message": "Access unavailable: HTTP 403",
