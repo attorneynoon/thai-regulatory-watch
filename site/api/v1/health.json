@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-15T09:59:20Z",
+  "generated_at": "2026-10-15T15:05:18Z",
   "records": [
+    {
+      "event_id": "health-de5156ef659b64735c0238e8182a0404",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.amlo.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-15T15:05:18Z",
+      "official_url": "https://www.amlo.go.th/dpl/content/index/3",
+      "previous_status": "healthy",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-80debc6b465bf868fd1e49f853b2c8b1",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.amlo.go.th', port=443): Read timed out. (read timeout=8)",
+      "observed_at": "2026-10-15T15:05:18Z",
+      "official_url": "https://www.amlo.go.th/index.php/th/",
+      "previous_status": "healthy",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-59e7957cb57cf76f4437a70769a5c4e9",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-15T15:05:18Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-8b5200016784ac85b98bffb21963d241",
       "message": null,
