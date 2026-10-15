@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-14T20:46:05Z",
+  "generated_at": "2026-10-14T23:57:42Z",
   "records": [
+    {
+      "event_id": "health-e6b631b2e9728e9b432b7205a8722418",
+      "message": null,
+      "observed_at": "2026-10-14T23:57:42Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-79fec4eadede2a6a78c09c946a0d2aa8",
+      "message": null,
+      "observed_at": "2026-10-14T23:57:42Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
     {
       "event_id": "health-17538ad540b431884b90e3b31fd0bfbd",
       "message": null,
