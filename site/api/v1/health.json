@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-15T15:05:18Z",
+  "generated_at": "2026-10-15T19:12:12Z",
   "records": [
+    {
+      "event_id": "health-e85347e1232c5557696e6b4b6fc5b28c",
+      "message": null,
+      "observed_at": "2026-10-15T19:12:12Z",
+      "official_url": "https://www.amlo.go.th/dpl/content/index/3",
+      "previous_status": "blocked",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1702d187bbd6b2ceaed3f79b2ded81f1",
+      "message": null,
+      "observed_at": "2026-10-15T19:12:12Z",
+      "official_url": "https://www.amlo.go.th/index.php/th/",
+      "previous_status": "blocked",
+      "regulator_id": "amlo",
+      "source_id": "amlo-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-03debef46822e7e1095e62c8bb21f500",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-15T19:12:12Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-de5156ef659b64735c0238e8182a0404",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.amlo.go.th', port=443): Read timed out. (read timeout=8)",
