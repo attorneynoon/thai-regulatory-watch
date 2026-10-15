@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-15T19:12:12Z",
+  "generated_at": "2026-10-15T22:23:16Z",
   "records": [
+    {
+      "event_id": "health-fede5bcb1129e0720f8fb16846660d36",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-15T22:23:16Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-c0a65e699380f4e3b9e4c00753b3867c",
+      "message": null,
+      "observed_at": "2026-10-15T22:23:16Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "blocked",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-7bf50fe53dc38f52a631203f2f5285de",
+      "message": null,
+      "observed_at": "2026-10-15T22:23:16Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0d602978394febbe8de717d504d22bbc",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-15T22:23:16Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-e85347e1232c5557696e6b4b6fc5b28c",
       "message": null,
