@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-16T07:14:46Z",
+  "generated_at": "2026-10-16T12:30:47Z",
   "records": [
+    {
+      "event_id": "health-e7687694e3d39f93c241057ecd85e582",
+      "message": null,
+      "observed_at": "2026-10-16T12:30:47Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-95d174d84b3e0e6e607c468b3ca79d5b",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-16T12:30:47Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-292ed762d1781d116597f663673d66f1",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-10-16T12:30:47Z",
+      "official_url": "https://gppc.pdpc.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "pdpc",
+      "source_id": "pdpc-official-gppc",
+      "status": "blocked"
+    },
     {
       "event_id": "health-fee1ea50c48762015866094161960653",
       "message": "Attachment checks: Response exceeds byte budget",
