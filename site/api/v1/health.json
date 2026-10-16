@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-16T01:25:58Z",
+  "generated_at": "2026-10-16T07:14:46Z",
   "records": [
+    {
+      "event_id": "health-fee1ea50c48762015866094161960653",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-16T07:14:46Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-ec07143ffd88159b82aef531ba73293c",
+      "message": null,
+      "observed_at": "2026-10-16T07:14:46Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4b788a2b1bcd77c47da3f01cf0759dea",
+      "message": null,
+      "observed_at": "2026-10-16T07:14:46Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-fede5bcb1129e0720f8fb16846660d36",
       "message": "Robots policy unresolved: HTTP 503",
