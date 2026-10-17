@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-17T13:46:09Z",
+  "generated_at": "2026-10-17T17:14:59Z",
   "records": [
+    {
+      "event_id": "health-4d476b6284f6e45782f91b32de8b1b41",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-17T17:14:59Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-285202cad611be12e9070c4d6ee9d50b",
+      "message": null,
+      "observed_at": "2026-10-17T17:14:59Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "blocked",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-435ca17159e1c0c0336edc508b1194c1",
       "message": "Robots policy unresolved: HTTP 530",
