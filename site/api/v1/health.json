@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-17T09:25:36Z",
+  "generated_at": "2026-10-17T13:46:09Z",
   "records": [
+    {
+      "event_id": "health-435ca17159e1c0c0336edc508b1194c1",
+      "message": "Robots policy unresolved: HTTP 530",
+      "observed_at": "2026-10-17T13:46:09Z",
+      "official_url": "https://www.tcc.or.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tcc",
+      "source_id": "tcc-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-16a524409fec0e1c70699c48febb68ba",
+      "message": "Robots policy unresolved: HTTP 502",
+      "observed_at": "2026-10-17T13:46:09Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-649e1af7c17eb94814aaee49c7c8265d",
       "message": null,
