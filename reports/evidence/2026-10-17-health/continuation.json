@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "repository": "attorneynoon/thai-regulatory-watch",
+  "scope": "Continuation only; original investigation evidence is retained separately.",
+  "repository_refresh": {
+    "checkpoint": "2026-10-17T05:14:12Z",
+    "last_main_and_latest_run_recheck": "2026-10-17T06:40:34Z",
+    "main": "c57493285ec3c7abee6df1adf5217916d1b746e9",
+    "run": {
+      "id": 39002923821,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/39002923821",
+      "created_at": "2026-10-17T04:32:03Z",
+      "run_started_at": "2026-10-17T04:32:03Z",
+      "updated_at": "2026-10-17T04:41:54Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "head_sha": "3de47486b2ec93cc48820708f881967c265737c5"
+    },
+    "persisted_commit": {
+      "sha": "c57493285ec3c7abee6df1adf5217916d1b746e9",
+      "parent_sha": "3de47486b2ec93cc48820708f881967c265737c5",
+      "committed_at": "2026-10-17T04:41:18Z",
+      "changed_top_level_paths": [
+        "site",
+        "state"
+      ],
+      "health_checked_out_this_commit": true
+    },
+    "jobs": [
+      {
+        "id": 117309434255,
+        "name": "collect",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": null,
+        "completed_at": null,
+        "first_log_timestamp": "2026-10-17T04:32:08.0892755Z",
+        "last_log_timestamp": "2026-10-17T04:41:28.5129528Z"
+      },
+      {
+        "id": 117311164974,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": null,
+        "completed_at": null,
+        "first_log_timestamp": null,
+        "last_log_timestamp": null
+      },
+      {
+        "id": 117311165020,
+        "name": "health",
+        "status": "completed",
+        "conclusion": "failure",
+        "started_at": null,
+        "completed_at": null,
+        "first_log_timestamp": "2026-10-17T04:41:34.6272947Z",
+        "last_log_timestamp": "2026-10-17T04:41:52.2125628Z",
+        "command": "python -m regwatch health",
+        "exit_code": 1,
+        "issues": 26
+      }
+    ],
+    "snapshot": {
+      "generated_at": "2026-10-17T04:33:56Z",
+      "items": 3977,
+      "events": 4502,
+      "health_transitions": 442,
+      "enabled_source_statuses": {
+        "healthy": 52,
+        "blocked": 22,
+        "failed": 4
+      },
+      "effective_stale_count_at_checkpoint": 0
+    },
+    "unfinished_runs_at_checkpoint": {
+      "queued": 0,
+      "in_progress": 0
+    },
+    "previous_run_start_gap_seconds": 17598,
+    "limits": [
+      "Per-job started_at and completed_at were absent from the jobs summary.",
+      "First and last log timestamps are coverage bounds, not authoritative job start/completion times.",
+      "Run updated_at is the API's last-update timestamp.",
+      "No causal explanation for schedule gaps is established."
+    ]
+  },
+  "integration": {
+    "base": "c57493285ec3c7abee6df1adf5217916d1b746e9",
+    "head": "075dfe71bea0b2a67f89cf29c988d2e76e6ce6a1",
+    "branch": "fix/health-diagnostics-20261017-hosted",
+    "protected_files_unchanged": 287,
+    "state_sha256": "80d28e7666d70612115227e6bdd8d74bf330a33759cd4b3810d497fd0edfa013",
+    "last_run_at": "2026-10-17T04:33:56Z",
+    "counts": {
+      "items": 3977,
+      "events": 4502,
+      "health_transitions": 442
+    },
+    "previous_snapshot_preservation": {
+      "all_previous_item_ids_retained": true,
+      "previous_events_exact_prefix": true,
+      "previous_health_events_exact_prefix": true
+    },
+    "public_noreply_identity": true,
+    "reviewed_implementation_commit": "8b2c3bff42bf70fe3f2240bce8f4e90749c30280",
+    "reviewed_implementation_unchanged": true,
+    "protected_paths": [
+      "state",
+      "site",
+      "schemas"
+    ],
+    "previous_counts": {
+      "items": 3974,
+      "events": 4499,
+      "health_transitions": 442
+    },
+    "independent_review": "No findings in read-only integration review."
+  },
+  "verification": {
+    "tested_commit": "075dfe71bea0b2a67f89cf29c988d2e76e6ce6a1",
+    "environment": "Python 3.12 with repository-pinned dependencies; disposable git export.",
+    "commands": [
+      {
+        "command": "python -B -m unittest discover -s tests -v",
+        "exit_code": 0,
+        "elapsed_seconds": 6.211,
+        "result": "152 tests passed; unittest runner reported 5.938 seconds."
+      },
+      {
+        "command": "python -B -m regwatch validate",
+        "exit_code": 0,
+        "elapsed_seconds": 0.534,
+        "result": "99 scopes; 78 enabled; 21 pending; 53 regulators; 9 practices."
+      },
+      {
+        "command": "python -B -m regwatch build",
+        "exit_code": 0,
+        "elapsed_seconds": 9.448,
+        "result": "3977 items; 4502 events; 262 feeds."
+      },
+      {
+        "command": "python -B -m regwatch check",
+        "exit_code": 0,
+        "elapsed_seconds": 3.483,
+        "result": "XML and JSON contracts passed."
+      }
+    ],
+    "deterministic_site_files": 282,
+    "deterministic_build_passed": true,
+    "state_unchanged": true,
+    "protected_files_unchanged": 287,
+    "fresh_health_read": {
+      "checked_at": "2026-10-17T06:46:20.223618+00:00",
+      "state_sha256": "80d28e7666d70612115227e6bdd8d74bf330a33759cd4b3810d497fd0edfa013",
+      "state_unchanged": true,
+      "results": [
+        {
+          "mode": "default",
+          "exit_code": 1,
+          "issue_count": 26,
+          "status_validation_counts": {
+            "failed/candidate": 1,
+            "blocked/candidate": 22,
+            "failed/verified": 3
+          }
+        },
+        {
+          "mode": "strict",
+          "exit_code": 1,
+          "issue_count": 85,
+          "status_validation_counts": {
+            "healthy/candidate": 38,
+            "not-run/pending": 21,
+            "failed/candidate": 1,
+            "blocked/candidate": 22,
+            "failed/verified": 3
+          }
+        }
+      ]
+    }
+  },
+  "local_ncsa_attempt": {
+    "retained_state_base": "3de47486b2ec93cc48820708f881967c265737c5",
+    "implementation_commit": "8b2c3bff42bf70fe3f2240bce8f4e90749c30280",
+    "command": "python -B scripts/qualify_ncsa.py",
+    "started_at": "2026-10-17T05:14:55.518051+00:00",
+    "finished_at": "2026-10-17T05:14:56.882415+00:00",
+    "helper_exit_code": 1,
+    "qualification": {
+      "checked_at": "2026-10-17T05:14:56Z",
+      "url": "https://www.ncsa.or.th/data/output/news.json",
+      "status": "blocked",
+      "error": "Robots unavailable: [Errno -3] Temporary failure in name resolution",
+      "bytes": null,
+      "content_type": null,
+      "http_status": null,
+      "sha256": null,
+      "max_response_bytes": 64000000,
+      "history_preserved": true,
+      "sources": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "blocked",
+          "validation": "verified",
+          "count": 23,
+          "count_basis": "retained-state",
+          "previous_count": 23,
+          "observations": 25,
+          "prior_observations": 25,
+          "max_response_bytes": 64000000,
+          "last_error": "Robots unavailable: [Errno -3] Temporary failure in name resolution"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "blocked",
+          "validation": "verified",
+          "count": 100,
+          "count_basis": "retained-state",
+          "previous_count": 100,
+          "observations": 132,
+          "prior_observations": 132,
+          "max_response_bytes": 64000000,
+          "last_error": "Robots unavailable: [Errno -3] Temporary failure in name resolution"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "blocked",
+          "validation": "verified",
+          "count": 100,
+          "count_basis": "retained-state",
+          "previous_count": 100,
+          "observations": 132,
+          "prior_observations": 132,
+          "max_response_bytes": 64000000,
+          "last_error": "Robots unavailable: [Errno -3] Temporary failure in name resolution"
+        }
+      ]
+    },
+    "protection": {
+      "paths": [
+        "state",
+        "site"
+      ],
+      "tracked_files": 283,
+      "changed_paths": [],
+      "manifest_sha256_before": "6af4d62392191ee9bff0dfca2891d71018886b493d9825c8aaa8eefb7f1f863c",
+      "manifest_sha256_after": "6af4d62392191ee9bff0dfca2891d71018886b493d9825c8aaa8eefb7f1f863c",
+      "state_sha256_before": "922a6a0655395b8b16b5b38279dcf6634f8e581ac7ecda4a36d01081c0182ce9",
+      "state_sha256_after": "922a6a0655395b8b16b5b38279dcf6634f8e581ac7ecda4a36d01081c0182ce9",
+      "manifest_definition": "SHA-256 of concatenated sorted relative_path + NUL + hexadecimal_file_sha256 + newline for tracked state/site files."
+    },
+    "interpretation": "Local environment DNS failed at the robots check before any content response. Temporary statuses were not persisted. This is neither an observed publisher denial nor live/hosted qualification of the 64 MB cap."
+  },
+  "publication": {
+    "remote_branch_created": false,
+    "remote_commit_pushed": false,
+    "pull_request_created": false,
+    "hosted_ci_run": false,
+    "qualification_workflow_dispatched": false,
+    "merged": false,
+    "deployed": false,
+    "live_ncsa_qualified": false,
+    "required_route": "Authenticated maintenance branch/PR with verified public GitHub noreply author and committer.",
+    "remaining": [
+      "Remote maintenance publication and CI.",
+      "Current live NCSA response measurement and permitted hosted qualification.",
+      "Post-application monitoring verification.",
+      "Remaining publisher-access failures and independent scheduling-gap diagnosis."
+    ]
+  }
+}
