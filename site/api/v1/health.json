@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-18T11:12:57Z",
+  "generated_at": "2026-10-18T14:38:21Z",
   "records": [
+    {
+      "event_id": "health-b6f66a7952d15207739e66b474695b2d",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-10-18T14:38:21Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
     {
       "event_id": "health-d836a6d476689da50d085b3b102cae56",
       "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='pr.tisi.go.th', port=443) at 0x7f9755d26300>, 'Con",
