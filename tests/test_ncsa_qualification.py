@@ -5,6 +5,7 @@ import io
 import json
 import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -245,11 +246,13 @@ class NcsaQualificationTests(unittest.TestCase):
 
 
 class NcsaQualificationWorkflowTests(unittest.TestCase):
-    def test_workflow_is_manual_read_only_and_runs_only_qualification(self):
+    def test_workflow_qualifies_exact_pr_head_with_read_only_permissions(self):
         path = ROOT / '.github/workflows/ncsa-qualification.yml'
         self.assertTrue(path.is_file(), 'Manual read-only NCSA qualification workflow is missing')
         workflow = yaml.load(path.read_text('utf-8'), Loader=yaml.BaseLoader)
-        self.assertEqual(set(workflow['on']), {'workflow_dispatch'})
+        self.assertEqual(set(workflow['on']), {'workflow_dispatch', 'pull_request'})
+        self.assertIn('.github/workflows/ncsa-qualification.yml', workflow['on']['pull_request']['paths'])
+        self.assertIn('config/sources.yml', workflow['on']['pull_request']['paths'])
         self.assertEqual(workflow['permissions'], {'contents': 'read'})
         self.assertEqual(len(workflow['jobs']), 1)
         job = next(iter(workflow['jobs'].values()))
@@ -259,15 +262,65 @@ class NcsaQualificationWorkflowTests(unittest.TestCase):
         checkout = next(s for s in steps if s.get('uses', '').startswith('actions/checkout@'))
         self.assertEqual(checkout['uses'], 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262')
         self.assertEqual(checkout['with']['persist-credentials'], 'false')
+        self.assertEqual(checkout['with']['ref'], '${{ github.event.pull_request.head.sha || github.sha }}')
         setup = next(s for s in steps if s.get('uses', '').startswith('actions/setup-python@'))
         self.assertEqual(setup['uses'], 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065')
         self.assertEqual(setup['with']['python-version'], '3.12')
         commands = [s['run'] for s in steps if 'run' in s]
-        self.assertEqual(commands, [
+        self.assertEqual(commands[:2], [
             'python -m pip install --upgrade pip==26.2.1',
             'python -m pip install -r requirements.txt',
-            'python scripts/qualify_ncsa.py',
         ])
+        qualification = next(s for s in steps if s.get('id') == 'qualification')
+        self.assertEqual(qualification['run'], 'python scripts/qualify_ncsa.py')
+        self.assertNotIn('continue-on-error', qualification)
+        verification = next(s for s in steps if s.get('id') == 'verify')
+        self.assertEqual(verification['if'], "${{ always() && steps.baseline.outcome == 'success' }}")
+        self.assertLess(steps.index(qualification), steps.index(verification))
+        self.assertNotIn('continue-on-error', job)
+
+    def test_workflow_file_comparison_detects_changed_added_and_deleted_files(self):
+        workflow = yaml.load(
+            (ROOT / '.github/workflows/ncsa-qualification.yml').read_text('utf-8'),
+            Loader=yaml.BaseLoader,
+        )
+        steps = workflow['jobs']['qualify']['steps']
+        baseline = next((s for s in steps if s.get('id') == 'baseline'), None)
+        verification = next((s for s in steps if s.get('id') == 'verify'), None)
+        self.assertIsNotNone(baseline, 'Live qualification needs a protected-file baseline')
+        self.assertIsNotNone(verification, 'Live qualification needs a file comparison')
+        for mutation in ('none', 'changed', 'added', 'deleted', 'registry'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                for name in ('state', 'site', 'schemas', 'config', 'runner-temp'):
+                    (root / name).mkdir()
+                for name in ('state/monitor.json', 'site/index.html', 'schemas/monitor.json', 'config/sources.yml'):
+                    (root / name).write_text('retained\n')
+                env = {**os.environ, 'RUNNER_TEMP': str(root / 'runner-temp')}
+
+                def run(step):
+                    self.assertEqual(step['shell'], 'bash')
+                    return subprocess.run(
+                        ['bash', '-e', '-o', 'pipefail', '-c', step['run']],
+                        cwd=root, env=env, capture_output=True, text=True,
+                    )
+
+                before = run(baseline)
+                self.assertEqual(before.returncode, 0, before.stdout + before.stderr)
+                if mutation == 'changed':
+                    (root / 'state/monitor.json').write_text('changed\n')
+                elif mutation == 'added':
+                    (root / 'site/new.json').write_text('new\n')
+                elif mutation == 'deleted':
+                    (root / 'schemas/monitor.json').unlink()
+                elif mutation == 'registry':
+                    (root / 'config/sources.yml').write_text('changed\n')
+                after = run(verification)
+                if mutation == 'none':
+                    self.assertEqual(after.returncode, 0, after.stdout + after.stderr)
+                    self.assertIn('protected_files_unchanged=true', after.stdout)
+                else:
+                    self.assertNotEqual(after.returncode, 0, after.stdout + after.stderr)
 
 
 if __name__ == '__main__':
