@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-18T05:58:00Z",
+  "generated_at": "2026-10-18T11:12:57Z",
   "records": [
+    {
+      "event_id": "health-d836a6d476689da50d085b3b102cae56",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='pr.tisi.go.th', port=443) at 0x7f9755d26300>, 'Con",
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://pr.tisi.go.th/category/เอกสารเผยแพร่/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-05",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-c9c1f4b2830da210ea09e0b6f5c2aaad",
+      "message": null,
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-aa4c4ecdb6fd7253535f01c62c3f80f4",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='tcps.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tcps.tisi.go.th', port=443) at 0x7f9755d277a0>, ",
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://tcps.tisi.go.th/public/StandardList.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-03",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-a85ac4282e967e364074a8cbae60349e",
+      "message": null,
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-9d1f90c0e168b3f2937b4bf52b290cb5",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='pr.tisi.go.th', port=443) at 0x7f9755d25190>, 'Con",
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://pr.tisi.go.th/category/ข่าวประชาสัมพันธ์/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-04",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6fd6206da55813519c9b370829426f07",
+      "message": null,
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "blocked",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-28bbfb05414316539b4243d912ec5e2e",
+      "message": null,
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://www.admincourt.go.th/public-relations/public-relations-news",
+      "previous_status": "blocked",
+      "regulator_id": "administrative-court",
+      "source_id": "administrative-court-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0395a0fe7203454d9807a323a07cd8f4",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='pr.tisi.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='pr.tisi.go.th', port=443) at 0x7f9755d25e80>, 'Con",
+      "observed_at": "2026-10-18T11:12:57Z",
+      "official_url": "https://pr.tisi.go.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "tisi",
+      "source_id": "tisi-listing-06",
+      "status": "blocked"
+    },
     {
       "event_id": "health-f42b5275fd2287d705f81e4a12640b29",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
