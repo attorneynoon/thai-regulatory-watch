@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-18T01:06:58Z",
+  "generated_at": "2026-10-18T05:58:00Z",
   "records": [
+    {
+      "event_id": "health-f42b5275fd2287d705f81e4a12640b29",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-18T05:58:00Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-d350f6cf6901ed0f558f23477dafddda",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-18T05:58:00Z",
+      "official_url": "https://www.admincourt.go.th/public-relations/public-relations-news",
+      "previous_status": "healthy",
+      "regulator_id": "administrative-court",
+      "source_id": "administrative-court-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-8a002c133bb4ed24aba7c3dd58177722",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-18T05:58:00Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-73e3cd5aa2e221a37173e46921dfc585",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-18T05:58:00Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
     {
       "event_id": "health-7f0a773aa52834b0a2e32319d9a7bd25",
       "message": null,
