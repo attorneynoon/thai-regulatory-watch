@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-18T14:38:21Z",
+  "generated_at": "2026-10-18T18:09:16Z",
   "records": [
+    {
+      "event_id": "health-a0e8dd95cf169331eb96cbfa1521c31e",
+      "message": null,
+      "observed_at": "2026-10-18T18:09:16Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-83dabea252847752f866519902ae0261",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ocs.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai",
+      "observed_at": "2026-10-18T18:09:16Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "ocs-council-of-state-law-search",
+      "source_id": "ocs-council-of-state-law-search-discovery",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-544a69d3951998336836a8a4b4e3acfe",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ocs.go.th', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai",
+      "observed_at": "2026-10-18T18:09:16Z",
+      "official_url": "https://www.ocs.go.th/indexs/block/8?mode=frontend&screen=auto",
+      "previous_status": "healthy",
+      "regulator_id": "council-of-state",
+      "source_id": "council-of-state-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-b6f66a7952d15207739e66b474695b2d",
       "message": "Attachment checks: Document is not a PDF",
