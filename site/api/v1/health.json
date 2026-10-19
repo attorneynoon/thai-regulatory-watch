@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-19T15:40:41Z",
+  "generated_at": "2026-10-19T21:06:55Z",
   "records": [
+    {
+      "event_id": "health-f7d882338ffded847e60ef0297a44ecd",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-19T21:06:55Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-ca9c99b1e6dc693dd873a5d5018ec0e6",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-19T21:06:55Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-8b26d9aaf752e7edf29518d39c9bbc07",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-19T21:06:55Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-ef110ec925e8691e89b8bf13c30d2f97",
       "message": null,
