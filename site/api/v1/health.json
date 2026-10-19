@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-18T23:17:11Z",
+  "generated_at": "2026-10-19T01:23:38Z",
   "records": [
+    {
+      "event_id": "health-439346a7a636c9cbd1e256c4c5a08c59",
+      "message": null,
+      "observed_at": "2026-10-19T01:23:38Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
     {
       "event_id": "health-02872514dde9476c346089830b7f5aca",
       "message": "Attachment checks: Response exceeds byte budget",
