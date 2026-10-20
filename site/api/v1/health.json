@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-20T17:13:10Z",
+  "generated_at": "2026-10-20T20:39:19Z",
   "records": [
+    {
+      "event_id": "health-6edb9f9668ea43f6c7c87fe65890dd0b",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-20T20:39:19Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-287563c9d613087e6dd37754c05cfdec",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-20T20:39:19Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-217e63a771ac48388c2b43ce7b96aaf0",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-20T20:39:19Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "blocked"
+    },
     {
       "event_id": "health-fc9f9d49e9d33ca056accf0ed15f68da",
       "message": null,
