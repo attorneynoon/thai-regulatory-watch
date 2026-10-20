@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-19T21:06:55Z",
+  "generated_at": "2026-10-20T00:24:04Z",
   "records": [
+    {
+      "event_id": "health-efba262f6de53c13c645bf0b062b6ca1",
+      "message": null,
+      "observed_at": "2026-10-20T00:24:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-cd30a77c2415d306e33c4298c7a5f2a1",
+      "message": null,
+      "observed_at": "2026-10-20T00:24:04Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-97027d00bd4142375eb7b1710b520cc6",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-20T00:24:04Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-81827f39dc6b1d047027f18a7a1cb6fc",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-10-20T00:24:04Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-19fe1f552cb5e150783841dc94884fff",
+      "message": null,
+      "observed_at": "2026-10-20T00:24:04Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f7d882338ffded847e60ef0297a44ecd",
       "message": "Robots policy unresolved: HTTP 503",
