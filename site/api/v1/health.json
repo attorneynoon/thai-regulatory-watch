@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-21T04:54:46Z",
+  "generated_at": "2026-10-21T10:14:01Z",
   "records": [
+    {
+      "event_id": "health-69ae2768b4bb7dec046baf31f8a2b749",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-21T10:14:01Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-3c9726d07a90d00d7dbd0f61bf68c591",
+      "message": null,
+      "observed_at": "2026-10-21T10:14:01Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "healthy"
+    },
     {
       "event_id": "health-cfa90ed0df225e33f656570580e0eb5d",
       "message": null,
