@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-21T10:14:01Z",
+  "generated_at": "2026-10-21T15:20:01Z",
   "records": [
+    {
+      "event_id": "health-e7b3d646d63c4378ff54212785226848",
+      "message": null,
+      "observed_at": "2026-10-21T15:20:01Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-33612dd59248a72dedad779c6fde40d6",
+      "message": "Robots unavailable: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "observed_at": "2026-10-21T15:20:01Z",
+      "official_url": "https://einitiative.parliament.go.th/draft-law-more?type=0",
+      "previous_status": "healthy",
+      "regulator_id": "parliament-einitiative",
+      "source_id": "parliament-einitiative-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-69ae2768b4bb7dec046baf31f8a2b749",
       "message": "Attachment checks: Response exceeds byte budget",
