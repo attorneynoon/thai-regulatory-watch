@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-20T23:55:53Z",
+  "generated_at": "2026-10-21T04:54:46Z",
   "records": [
+    {
+      "event_id": "health-cfa90ed0df225e33f656570580e0eb5d",
+      "message": null,
+      "observed_at": "2026-10-21T04:54:46Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-808c0a984fb2d5c562fdce008593ee99",
+      "message": null,
+      "observed_at": "2026-10-21T04:54:46Z",
+      "official_url": "https://www.ocpb.go.th/more_news.php?cid=2",
+      "previous_status": "blocked",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6c18dfe0d67545fe3473f54cbe5ba201",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-21T04:54:46Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "failed"
+    },
     {
       "event_id": "health-20ad35c3fdd45f6d45e0bdccf8a90867",
       "message": null,
