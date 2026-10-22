@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-21T23:24:24Z",
+  "generated_at": "2026-10-22T04:54:35Z",
   "records": [
+    {
+      "event_id": "health-6b58130aa70c07735279289546668d73",
+      "message": null,
+      "observed_at": "2026-10-22T04:54:35Z",
+      "official_url": "https://einitiative.parliament.go.th/draft-law-more?type=0",
+      "previous_status": "blocked",
+      "regulator_id": "parliament-einitiative",
+      "source_id": "parliament-einitiative-discovery",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e7b3d646d63c4378ff54212785226848",
       "message": null,
