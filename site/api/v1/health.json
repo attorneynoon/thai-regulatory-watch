@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-22T15:22:09Z",
+  "generated_at": "2026-10-22T20:10:30Z",
   "records": [
+    {
+      "event_id": "health-ea947d07a242a3e8632d01effa70bc87",
+      "message": null,
+      "observed_at": "2026-10-22T20:10:30Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-e1180e0e8cb1baf072706994be4dd68d",
+      "message": "HTTP 404",
+      "observed_at": "2026-10-22T20:10:30Z",
+      "official_url": "https://www.ago.go.th/feed/",
+      "previous_status": "healthy",
+      "regulator_id": "prosecutors",
+      "source_id": "prosecutors-watch",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-03957d960abf54deff38b266e3fb595d",
+      "message": null,
+      "observed_at": "2026-10-22T20:10:30Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
     {
       "event_id": "health-f298f6e7f86c40c80bb1a470cb6eb28e",
       "message": "Attachment checks: ('Connection broken: IncompleteRead(5392585 bytes read, 30697669 more expected)', IncompleteRead(5392585 bytes read, 30697669 more expected))",
