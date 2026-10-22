@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-22T04:54:35Z",
+  "generated_at": "2026-10-22T10:15:30Z",
   "records": [
+    {
+      "event_id": "health-ed8dfe18cfa2451fb9816e6543f2715d",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-22T10:15:30Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-0f1051f44d9346f6aac3fcdc62f4058b",
+      "message": null,
+      "observed_at": "2026-10-22T10:15:30Z",
+      "official_url": "https://lbc.coj.go.th/th/content/category/getarticles/id/10?pageIndex=1",
+      "previous_status": "blocked",
+      "regulator_id": "labour-court",
+      "source_id": "labour-court-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-6b58130aa70c07735279289546668d73",
       "message": null,
