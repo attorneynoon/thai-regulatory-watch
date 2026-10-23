@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-23T19:18:16Z",
+  "generated_at": "2026-10-23T23:11:44Z",
   "records": [
+    {
+      "event_id": "health-e3d660a1cec75c1d712c06e7fddd7022",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-23T23:11:44Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-c1fa83f84a25045534acda7706cebbdf",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-23T23:11:44Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-345530edc23baef6fcf88c7bf71b4d52",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-10-23T23:11:44Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "blocked"
+    },
     {
       "event_id": "health-d71ba0ab6bbae2c9f4fdc362b5e925c1",
       "message": null,
