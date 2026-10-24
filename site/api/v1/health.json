@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-24T07:21:09Z",
+  "generated_at": "2026-10-24T12:43:31Z",
   "records": [
+    {
+      "event_id": "health-2d2e7f6662d95a3ca75aa7688d220553",
+      "message": null,
+      "observed_at": "2026-10-24T12:43:31Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-02187bdd70443445e265bb852272fec3",
+      "message": null,
+      "observed_at": "2026-10-24T12:43:31Z",
+      "official_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "previous_status": "failed",
+      "regulator_id": "sec",
+      "source_id": "sec-listing-02",
+      "status": "healthy"
+    },
     {
       "event_id": "health-ae32e8f38e48bee8ae3012b6789139e0",
       "message": "Attachment checks: Document is not a PDF",
