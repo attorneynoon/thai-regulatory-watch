@@ -1,6 +1,58 @@
 {
-  "generated_at": "2026-10-24T16:38:32Z",
+  "generated_at": "2026-10-24T19:31:39Z",
   "records": [
+    {
+      "attachment_sha256": null,
+      "authority_class": "official-publication",
+      "canonical_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "changed_fields": [
+        "selected_text_sha256"
+      ],
+      "classification_basis": "source-configuration; item legal authority not assessed",
+      "content_sha256": "d012c27ef8f4667b422d05e6e7e8069893bb29a699ee02f1adb13603c5b1d045",
+      "coverage_status": "candidate",
+      "document_id": null,
+      "document_type": "publication",
+      "document_url": null,
+      "effective_at": null,
+      "event_id": "event-05f5a583576fa734cfc584b3b3d0e285",
+      "event_type": "UPDATED",
+      "extraction_confidence": "unassessed",
+      "extraction_method": "page",
+      "first_observed_at": "2026-09-19T09:43:56Z",
+      "item_id": "item-86ffe9e51cd7894d045132246e5471f4",
+      "jurisdiction": "TH",
+      "language": "th",
+      "legal_effect": "Not assessed",
+      "limitations": [
+        "Partial selected-content page watch of the official recent-enforcement table, observed locally with 161 data rows on 2026-09-19. This is not individual enforcement-item collection; table dates are not assigned as the page publication date. News links repeat across entities, so URL deduplication cannot represent individual enforcement rows. No access to the blocked www.sec.or.th host is required. Legal effect remains Not assessed.",
+        "Publication date unavailable"
+      ],
+      "listing_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "modified_at": null,
+      "observation_id": "obs-05f5a583576fa734cfc584b3b3d0e285",
+      "observed_at": "2026-10-24T19:31:39Z",
+      "official_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "pinpoint": "#gPP26T02",
+      "previous_event_id": "event-d784afe1c85f7afe053090f124795daf",
+      "publication_date_raw": null,
+      "published_at": null,
+      "publisher": "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+      "regulator_id": "sec",
+      "review_status": "unreviewed",
+      "revision": 13,
+      "schema_version": "1.0",
+      "signal_candidate": "Radar",
+      "signal_type": "public_source_observation",
+      "source_id": "sec-listing-02",
+      "source_response_sha256": "d7af54dc5e0f914e5d801137a2dc19dd8af56b1ac15d20e7b2e18b977ee1a3da",
+      "summary": null,
+      "temporal_horizon": "Not assessed",
+      "title": "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+      "topics": [
+        "financial-markets"
+      ]
+    },
     {
       "attachment_sha256": null,
       "authority_class": "official-publication",
