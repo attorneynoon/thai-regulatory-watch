@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-23T23:11:44Z",
+  "generated_at": "2026-10-24T01:43:38Z",
   "records": [
+    {
+      "event_id": "health-d39685f3c8149d670bbe07fd247b4013",
+      "message": null,
+      "observed_at": "2026-10-24T01:43:38Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e3d660a1cec75c1d712c06e7fddd7022",
       "message": "Robots policy unresolved: HTTP 503",
