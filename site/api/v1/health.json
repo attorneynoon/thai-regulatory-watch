@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-24T01:43:38Z",
+  "generated_at": "2026-10-24T07:21:09Z",
   "records": [
+    {
+      "event_id": "health-ae32e8f38e48bee8ae3012b6789139e0",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-10-24T07:21:09Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "blocked",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-74674378432c7e86b46cb303463202de",
+      "message": null,
+      "observed_at": "2026-10-24T07:21:09Z",
+      "official_url": "https://www.mol.go.th/",
+      "previous_status": "blocked",
+      "regulator_id": "mol",
+      "source_id": "mol-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4269807117bd39bbc5258407828a255f",
+      "message": "Selected content missing",
+      "observed_at": "2026-10-24T07:21:09Z",
+      "official_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "previous_status": "healthy",
+      "regulator_id": "sec",
+      "source_id": "sec-listing-02",
+      "status": "failed"
+    },
     {
       "event_id": "health-d39685f3c8149d670bbe07fd247b4013",
       "message": null,
