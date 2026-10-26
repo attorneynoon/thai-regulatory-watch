@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-26T06:22:42Z",
+  "generated_at": "2026-10-26T14:19:59Z",
   "records": [
+    {
+      "event_id": "health-c25bb63eec365b4076db6be10b05e164",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='webnew.ipthailand.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-26T14:19:59Z",
+      "official_url": "https://webnew.ipthailand.go.th/wp-json/wp/v2/news?per_page=20&orderby=date&order=desc&_fields=id,date,modified,link,title",
+      "previous_status": "healthy",
+      "regulator_id": "dip",
+      "source_id": "dip-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-ad928892809be657eb5138492db03e9d",
       "message": null,
