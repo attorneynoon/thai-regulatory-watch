@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-27T00:29:32Z",
+  "generated_at": "2026-10-27T06:20:42Z",
   "records": [
+    {
+      "event_id": "health-ddb38fc1c843be6f2b55156873328968",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-10-27T06:20:42Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-1818a21841424491407c8e0e1e4e06c5",
+      "message": null,
+      "observed_at": "2026-10-27T06:20:42Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-9d6ff33ec55f9b0717bc50727431382b",
       "message": "Attachment checks: Response exceeds byte budget",
