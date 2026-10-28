@@ -65,7 +65,11 @@ class Transport:
             for chunk in r.iter_content(65536):
                 data.extend(chunk)
                 if len(data) > max_bytes:
-                    raise ValueError("Response exceeds byte budget")
+                    content_type = ' '.join(r.headers.get('Content-Type', 'unknown').split())[:100]
+                    raise ValueError(
+                        f"Response exceeds byte budget (limit={max_bytes}; "
+                        f"received_at_least={len(data)}; HTTP={r.status_code}; content_type={content_type})"
+                    )
             return r.status_code, requests.structures.CaseInsensitiveDict(r.headers), bytes(data)
 
     def _policy(self, url):

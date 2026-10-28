@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 import tempfile
-from datetime import datetime,timezone,timedelta
+from datetime import datetime,timezone
 from pathlib import Path
 from .registry import load_registry
 from .practices import load_practices
@@ -12,6 +12,7 @@ from .collector import collect_source
 from .browser_transport import RenderedTransport
 from .publish import build_site,check_site
 from .contracts import SCHEMAS
+from .health import health_problems
 
 
 def main():
@@ -35,13 +36,7 @@ def main():
     if args.command=='check':
         check_site(root/'site'); print('XML and JSON contracts passed'); return 0
     if args.command=='health':
-        problems=[]
-        for s in sources:
-            status=state['sources'].get(s['id'],{}).get('status','not-run')
-            success=state['sources'].get(s['id'],{}).get('last_success_at')
-            if status=='healthy' and success and datetime.now(timezone.utc)-datetime.fromisoformat(success.replace('Z','+00:00'))>timedelta(hours=3):
-                status='stale'
-            if s['enabled'] and status!='healthy' or args.strict_coverage and s['validation_status']!='verified': problems.append({'source':s['id'],'status':status,'validation':s['validation_status']})
+        problems=health_problems(sources,state,strict_coverage=args.strict_coverage,now=datetime.now(timezone.utc))
         print(encode(problems)); return 1 if problems else 0
     canonical_url(args.base_url)
     with writer_lock(root):
