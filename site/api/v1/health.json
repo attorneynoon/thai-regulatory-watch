@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-28T21:41:26Z",
+  "generated_at": "2026-10-29T01:50:22Z",
   "records": [
+    {
+      "event_id": "health-de351e7f415453917ff8eed2d0a22e7c",
+      "message": "Robots unavailable: [Errno -3] Temporary failure in name resolution",
+      "observed_at": "2026-10-29T01:50:22Z",
+      "official_url": "https://www.dsi.go.th/th",
+      "previous_status": "healthy",
+      "regulator_id": "dsi",
+      "source_id": "dsi-listing-01",
+      "status": "blocked"
+    },
     {
       "event_id": "health-fd088e09df0bf4eebcd28a6510af41a5",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
