@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-29T16:11:39Z",
+  "generated_at": "2026-10-29T21:11:08Z",
   "records": [
+    {
+      "event_id": "health-adbf8488e0502e4bae9beecc7348fcf7",
+      "message": null,
+      "observed_at": "2026-10-29T21:11:08Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6e11484477e188b3c321f225fbf5f0ae",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out.",
+      "observed_at": "2026-10-29T21:11:08Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "failed"
+    },
     {
       "event_id": "health-9e52af14882f3ef76432929ca647c4f7",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
