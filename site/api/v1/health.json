@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-30T01:05:02Z",
+  "generated_at": "2026-10-30T07:12:13Z",
   "records": [
+    {
+      "event_id": "health-dd0fd5cb3325b871e2b88280885cf310",
+      "message": null,
+      "observed_at": "2026-10-30T07:12:13Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6ee60ea21b9a29b51fde2d26cab2a6fb",
+      "message": null,
+      "observed_at": "2026-10-30T07:12:13Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-5344407de7a8dbda16204cc2ac137252",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-10-30T07:12:13Z",
+      "official_url": "https://www.coj.go.th/th/newsmanagement/page/getarticles?id=1&pageIndex=1&isWidget=Y&ArticlePerPage=6&ArticleSortType=created&ArticleSortDirection=desc&ArticleAmountColumn=3&ArticleShowImage=Y&ArticleShowTitle=Y&ArticleShowIntroText=N",
+      "previous_status": "healthy",
+      "regulator_id": "courts",
+      "source_id": "courts-watch",
+      "status": "failed"
+    },
     {
       "event_id": "health-cf5e06d204be63a637d62a935b186cda",
       "message": "Attachment checks: Response exceeds byte budget",
