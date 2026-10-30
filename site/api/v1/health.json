@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-29T21:11:08Z",
+  "generated_at": "2026-10-30T01:05:02Z",
   "records": [
+    {
+      "event_id": "health-cf5e06d204be63a637d62a935b186cda",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-10-30T01:05:02Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-2b45a02f4267d7a477d126d0d6917d2e",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-10-30T01:05:02Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-2712febeeb102c2f6579c0299e55ac46",
+      "message": null,
+      "observed_at": "2026-10-30T01:05:02Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
     {
       "event_id": "health-adbf8488e0502e4bae9beecc7348fcf7",
       "message": null,
