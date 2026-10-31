@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-31T17:46:56Z",
+  "generated_at": "2026-10-31T21:39:44Z",
   "records": [
+    {
+      "event_id": "health-8d790d0b353b1e7758058a36ea9d91d6",
+      "message": null,
+      "observed_at": "2026-10-31T21:39:44Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-69383eb53fb9c2ac4bc8af4cd22aab45",
+      "message": null,
+      "observed_at": "2026-10-31T21:39:44Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-6657c12096947084fc63981fdffeb225",
       "message": "Robots policy unresolved: HTTP 502",
