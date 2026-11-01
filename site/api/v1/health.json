@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-01T19:45:18Z",
+  "generated_at": "2026-11-01T23:39:05Z",
   "records": [
+    {
+      "event_id": "health-744ee58383bab08a55f0fa9453ec0cb4",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ncsa.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-01T23:39:05Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "failed",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-5d559f5f18cf9743de096d8bb496270f",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.ncsa.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-01T23:39:05Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "failed",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-25b8da1373b8841689b29bd8d3f121b2",
+      "message": null,
+      "observed_at": "2026-11-01T23:39:05Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "degraded",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
     {
       "event_id": "health-eccba328290e4d1b7ee5c60430294322",
       "message": null,
