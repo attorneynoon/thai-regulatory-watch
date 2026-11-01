@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-11-01T07:38:15Z",
+  "generated_at": "2026-11-01T15:14:29Z",
   "records": [
+    {
+      "event_id": "health-e1fc8a32b51c334c4c6a286dec4d5a5a",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out.",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-d6478e0851edc55a29a7deceec7df51b",
+      "message": "HTTP 522",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-4ec9c16994f62c0490e2c20d672b2b69",
+      "message": "Robots policy unresolved: HTTP 522",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "healthy",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-3c2efae794b4f8fb39753f2279b16a78",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='api.oryor.com', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "healthy",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-2b8052fb8690af4a6bdceceb30a9fb89",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out.",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-0abffad2797b5038ebad3afea6fa1e06",
+      "message": "HTTPSConnectionPool(host='catalog.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-01T15:14:29Z",
+      "official_url": "https://catalog.tcct.or.th/th/organization/tcct",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-07",
+      "status": "failed"
+    },
     {
       "event_id": "health-2b94c5c744f9657ed4fdd869aea4024a",
       "message": null,
