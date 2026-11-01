@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-11-01T15:14:29Z",
+  "generated_at": "2026-11-01T19:45:18Z",
   "records": [
+    {
+      "event_id": "health-eccba328290e4d1b7ee5c60430294322",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "blocked",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-d9f0c2206c94ca9a5830c80c056fd3e3",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-d5151fb9e51d64460908e4ce253c91e4",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-951a52b1cd65a33e573070a30b4dfa64",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://catalog.tcct.or.th/th/organization/tcct",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-07",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-570bec9e3439e33dbc1fa8bd01f2a8f0",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-5459811322eb02f243d572ff4b1168ae",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://api.oryor.com/media/newsUpdate",
+      "previous_status": "blocked",
+      "regulator_id": "fda",
+      "source_id": "fda-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-17af1d3a4f15e51de753aefe65dfcca8",
+      "message": null,
+      "observed_at": "2026-11-01T19:45:18Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e1fc8a32b51c334c4c6a286dec4d5a5a",
       "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out.",
