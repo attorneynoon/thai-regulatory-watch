@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-01T23:39:05Z",
+  "generated_at": "2026-11-02T06:13:36Z",
   "records": [
+    {
+      "event_id": "health-a094c849fb3050231ace574ceb473ba9",
+      "message": "Response exceeds byte budget",
+      "observed_at": "2026-11-02T06:13:36Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "blocked",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-7ecaa45e08b9541bab599d60cadf7c3e",
+      "message": "Attachment checks: Response exceeds byte budget",
+      "observed_at": "2026-11-02T06:13:36Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-09eb0d918d0835c48b25cc3b65d8a873",
+      "message": "HTTP 522",
+      "observed_at": "2026-11-02T06:13:36Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "blocked",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "failed"
+    },
     {
       "event_id": "health-744ee58383bab08a55f0fa9453ec0cb4",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.ncsa.or.th', port=443): Read timed out. (read timeout=20)",
