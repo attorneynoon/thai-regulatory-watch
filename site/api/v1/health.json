@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-06T18:01:23Z",
+  "generated_at": "2026-11-06T23:13:11Z",
   "records": [
+    {
+      "event_id": "health-ecabfb7d2e14126fe2a416692bb90ff4",
+      "message": null,
+      "observed_at": "2026-11-06T23:13:11Z",
+      "official_url": "https://www.customs.go.th/",
+      "previous_status": "failed",
+      "regulator_id": "customs",
+      "source_id": "customs-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-44a8be4118c65634c2078a3405a740db",
       "message": "HTTPSConnectionPool(host='www.customs.go.th', port=443): Read timed out. (read timeout=20)",
