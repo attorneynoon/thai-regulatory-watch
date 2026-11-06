@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-06T10:58:50Z",
+  "generated_at": "2026-11-06T18:01:23Z",
   "records": [
+    {
+      "event_id": "health-44a8be4118c65634c2078a3405a740db",
+      "message": "HTTPSConnectionPool(host='www.customs.go.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-06T18:01:23Z",
+      "official_url": "https://www.customs.go.th/",
+      "previous_status": "healthy",
+      "regulator_id": "customs",
+      "source_id": "customs-listing-01",
+      "status": "failed"
+    },
     {
       "event_id": "health-f1c497441518ba77169dc0fb8d266ac3",
       "message": "Suspicious count drop greater than 50%; previous inventory retained",
