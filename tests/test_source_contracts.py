@@ -5,7 +5,8 @@ from pathlib import Path
 import yaml
 
 from scripts.probe_source_contracts import (
-    inspect_amlo_form, inspect_dip_json, inspect_dip_public_listing
+    inspect_amlo_form, inspect_dip_json, inspect_dip_public_listing,
+    extended_dip_source
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,6 +47,16 @@ class SourceContractTests(unittest.TestCase):
         self.assertTrue(result["mentions_november_2569"])
         self.assertEqual(result["same_host_link_count"], 1)
         self.assertFalse(result["feed_contract_qualified"])
+
+    def test_extended_dip_probe_is_scoped_to_exact_official_api(self):
+        sources = yaml.safe_load((ROOT / "config/sources.yml").read_text("utf-8"))["sources"]
+        dip = next(s for s in sources if s["id"] == "dip-listing-01")
+        expanded = extended_dip_source(dip)
+        self.assertIn("per_page=100", expanded["url"])
+        self.assertEqual(expanded["allowed_hosts"], dip["allowed_hosts"])
+        self.assertTrue(expanded["url"].startswith("https://webnew.ipthailand.go.th/wp-json/wp/v2/news?"))
+        self.assertEqual(dip["url"].count("per_page=20"), 1)
+        self.assertRaises(ValueError, extended_dip_source, {**dip, "url": "https://example.org/wp-json/wp/v2/news?per_page=20"})
 
     def test_new_qualification_workflow_is_read_only(self):
         s = (ROOT / ".github/workflows/source-contract-qualification.yml").read_text("utf-8")

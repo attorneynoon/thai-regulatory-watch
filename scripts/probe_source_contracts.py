@@ -4,7 +4,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 from regwatch.adapters import parse_document
@@ -92,11 +92,28 @@ def fetch_summary(url, hosts, budget, parser):
         transport.session.close()
 
 
+
+def extended_dip_source(source):
+    """Read-only 100-row alternative of the exact existing official API."""
+    parts = urlsplit(source["url"])
+    if (parts.scheme != "https" or parts.hostname != "webnew.ipthailand.go.th"
+            or parts.path != "/wp-json/wp/v2/news"):
+        raise ValueError("Unexpected DIP API host or path")
+    query = parse_qsl(parts.query, keep_blank_values=True)
+    if [v for k, v in query if k == "per_page"] != ["20"]:
+        raise ValueError("Expected the configured 20-row DIP API")
+    candidate = [(k, "100" if k == "per_page" else v) for k, v in query]
+    return {**source, "url": urlunsplit(
+        (parts.scheme, parts.netloc, parts.path, urlencode(candidate), parts.fragment)
+    )}
+
+
 def main():
     registry = {s["id"]: s for s in load_registry(ROOT / "config/sources.yml")}
     state = load_state(ROOT / "state/monitor.json")
     amlo, dip = registry["amlo-listing-01"], registry["dip-listing-01"]
     previous = state["sources"].get(dip["id"], {}).get("last_count", 0)
+    expanded = extended_dip_source(dip)
     outcome = {
         "purpose": "read_only_contract_qualification_not_source_recovery",
         "checked_at": datetime.now(timezone.utc).isoformat(),
@@ -106,6 +123,9 @@ def main():
         "dip_existing_api_get": fetch_summary(
             dip["url"], dip["allowed_hosts"], 2_000_000,
             lambda body: inspect_dip_json(body, dip, previous)),
+        "dip_extended_api_get": fetch_summary(
+            expanded["url"], dip["allowed_hosts"], 2_000_000,
+            lambda body: inspect_dip_json(body, expanded, previous)),
         "dip_public_news_get": fetch_summary(
             DIP_NEWS, ["www.ipthailand.go.th"], 2_000_000,
             inspect_dip_public_listing),

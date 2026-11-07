@@ -21,3 +21,9 @@ Date: 2026-11-08 (Asia/Bangkok). **Draft only. No production write, merge or dep
 2. DIP: compare JSON API response and relevant official listing, identify item/date/URL/pagination semantics, and prove a safe baseline count against retained state. Do not suppress or lower the 50% count-drop guard.
 3. Replay synthetic/source fixtures against candidate parsing rules; show no lost item IDs, observation events or health transitions and no promotion of candidate sources. Live hosted collector recovery remains a separate owner-approved validation.
 4. A merge, production monitoring dispatch, site deployment or modification of production data requires explicit new approval.
+
+## Hosted baseline and bounded 100-row diagnostic (2026-11-08)
+
+Read-only [run 42400739385](https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/42400739385) at 2026-11-07 18:20 UTC established: AMLO HTTP 200 with exact hidden names `intro_page` and `csrf_token`; no values logged or form submitted. Existing DIP API HTTP 200, 20 raw JSON rows and **3 accepted rows**, versus retained previous count **13**; the strict >50% count-drop guard correctly triggers. A separate publisher HTML GET returned only 212 bytes; no usable listing markup was qualified from GitHub. These results are observations, not source recovery.
+
+This draft adds one additional read-only GET to the *same configured DIP WordPress endpoint*, changing only `per_page=20` to `per_page=100` in memory for qualification. No production URL or source rule is changed. The bounded probe must establish accepted rows, dates/identities and counts before any proposed config modification; no source status is promoted.
