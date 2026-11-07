@@ -24,7 +24,7 @@ jobs:
       - name: Test diagnostics offline
         run: python -m unittest discover -s tests -p test_source_contracts.py -v
       - name: Inspect official public GET endpoints
-        run: python scripts/probe_source_contracts.py
+        run: python -m scripts.probe_source_contracts
         env:
           PYTHONIOENCODING: utf-8
           PYTHONDONTWRITEBYTECODE: '1'
