@@ -1260,11 +1260,12 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - Client-rendered announcements replaced by public export filtered to published announcement category.27.5MB payload bounded
-    at32MB; sort before100-item cap. Dates use explicit showdate, never database-created timestamp.
+  - Public export filtered to published announcement category; bounded at64MB after the32MB guard repeatedly failed.
+    Current payload size and hosted recovery require live qualification. Sort before100-item cap; dates use explicit
+    showdate, never database-created timestamp.
   origin_ids:
   - enforcement:ncsa:1
-  max_response_bytes: 32000000
+  max_response_bytes: 64000000
   json_rows: ''
   json_fields:
     title: title
@@ -1299,11 +1300,12 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - Published news category from official export;27.5MB payload bounded at32MB. Latest100 after explicit date sort; publication
-    dates may reflect migrated metadata and are not inferred event dates.
+  - Published news category from official export; bounded at64MB after the32MB guard repeatedly failed. Current payload
+    size and hosted recovery require live qualification. Latest100 after explicit date sort; publication dates may
+    reflect migrated metadata and are not inferred event dates.
   origin_ids:
   - enforcement:ncsa:2
-  max_response_bytes: 32000000
+  max_response_bytes: 64000000
   json_rows: ''
   json_fields:
     title: title
@@ -1338,11 +1340,12 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - Published entries across categories in official27.5MB export;32MB ceiling, latest100 after explicit date sort. Overlaps
+  - Published entries across categories in the official export;64MB ceiling after the32MB guard repeatedly failed.
+    Current payload size and hosted recovery require live qualification. Latest100 after explicit date sort. Overlaps
     category-specific NCSA sources, not independent corroboration.
   origin_ids:
   - enforcement:ncsa:3
-  max_response_bytes: 32000000
+  max_response_bytes: 64000000
   json_rows: ''
   json_fields:
     title: title

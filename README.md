@@ -73,4 +73,22 @@ python -m regwatch health --strict-coverage
 
 `build` is offline. `collect` performs permitted public requests, writes public state and builds artifacts; `--allow-source-errors` allows last-good publication without hiding failed status. `health --strict-coverage` also fails on unverified/pending scopes. State and source IDs must be preserved. Source fixtures distinguish synthetic tests from representative official extracts.
 
+### Interpreting a failed health job
+
+`health` reads the tracked source registry and monitoring state without fetching websites or changing history. It is a source-health gate, not a test of the deployed Pages site. The workflow checks the exact commit persisted by its collection job; deployment continues to depend on collection independently of health.
+
+| Source condition | Default `health` | `health --strict-coverage` |
+|---|---|---|
+| Enabled, verified, healthy with a valid success timestamp within three hours | Pass | Pass |
+| Enabled, candidate, healthy with a valid success timestamp within three hours | Pass; still candidate | Fail: unverified coverage |
+| Any enabled source failed, blocked, degraded, never run or stale | Fail, including candidates | Fail |
+| Enabled source marked healthy but success time is missing, invalid, without a timezone or in the future | Fail: freshness cannot be verified | Fail |
+| Disabled pending or otherwise unverified scope | Does not fail the runtime gate | Fail: unverified coverage |
+
+The JSON output remains a list with `source`, `status` and `validation`. Additional fields identify the stored status, enabled flag, original `last_error`, last attempt/success, configured response budget and reasons for the result. `status: stale` or `invalid` is a read-time assessment; `stored_status` preserves what the collector recorded. Neither rewrites the source's health history. A candidate is not a lower-priority source: for example, blocked PDPC scopes remain fatal when enabled.
+
+Use `site/api/v1/sources.json` for the published latest source snapshot. `site/api/v1/health.json` records health **transitions**, so a repeated failure need not add a new event. Last-good item counts after failure are retained observations, not a successful current collection or proof of no update.
+
+For the NCSA response-budget investigation and a single-fetch, read-only verification command, see [the October 2026 investigation](reports/HEALTH_FAILURE_INVESTIGATION_2026-10-17.md). The proposed NCSA 64 MB limit remains finite; hosted recovery must be checked separately from offline tests.
+
 See [verification](reports/VERIFICATION.md), [source coverage](docs/SOURCE_COVERAGE.md), and [work record](docs/WORK_LOG.md) for actual validation and remaining work.

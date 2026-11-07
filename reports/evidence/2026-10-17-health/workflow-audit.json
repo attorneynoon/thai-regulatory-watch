@@ -1,0 +1,2130 @@
+{
+  "schema_version": 1,
+  "repository": "attorneynoon/thai-regulatory-watch",
+  "collected_at": "2026-10-17T03:44:34Z",
+  "current_main_sha": "3de47486b2ec93cc48820708f881967c265737c5",
+  "scope": {
+    "read_only_github": true,
+    "source_graph": "Ancestors of current main SHA; no removed branches or removed commit graph requested",
+    "content_policy": "Allowlisted public operational metadata only; no author identities, emails, credentials, full raw logs, or raw commit payloads"
+  },
+  "api_queries": {
+    "recent_runs": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/actions/runs?per_page=50",
+    "queued": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/actions/runs?status=queued&per_page=100",
+    "in_progress": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/actions/runs?status=in_progress&per_page=100",
+    "current_main": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/branches/main"
+  },
+  "latest_observed_run": {
+    "id": 38982519301,
+    "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38982519301",
+    "created_at": "2026-10-16T23:38:45Z",
+    "started_at": "2026-10-16T23:38:45Z",
+    "updated_at": "2026-10-16T23:46:52Z",
+    "head_sha": "8f9b6404627eeb41b35936b17413fc9bb1699319",
+    "status": "completed",
+    "conclusion": "failure"
+  },
+  "unfinished_runs": {
+    "queued_count": 0,
+    "in_progress_count": 0
+  },
+  "run_windows": {
+    "utc_october_13_through_16": {
+      "from_inclusive": "2026-10-13T00:00:00Z",
+      "to_exclusive": "2026-10-17T00:00:00Z",
+      "run_count": 21,
+      "all_collect_success": true,
+      "all_deploy_success": true,
+      "all_health_failure": true,
+      "within_window_interval_count": 20,
+      "intervals_over_3_hours": 19,
+      "min_gap_seconds": 8729,
+      "max_gap_seconds": 29827,
+      "intervals": [
+        {
+          "from_run": 38328723328,
+          "to_run": 38364712216,
+          "from": "2026-10-13T00:44:23Z",
+          "to": "2026-10-13T07:45:28Z",
+          "gap_seconds": 25265
+        },
+        {
+          "from_run": 38364712216,
+          "to_run": 38427217943,
+          "from": "2026-10-13T07:45:28Z",
+          "to": "2026-10-13T16:02:35Z",
+          "gap_seconds": 29827
+        },
+        {
+          "from_run": 38427217943,
+          "to_run": 38469515802,
+          "from": "2026-10-13T16:02:35Z",
+          "to": "2026-10-13T21:17:51Z",
+          "gap_seconds": 18916
+        },
+        {
+          "from_run": 38469515802,
+          "to_run": 38494671966,
+          "from": "2026-10-13T21:17:51Z",
+          "to": "2026-10-14T01:14:59Z",
+          "gap_seconds": 14228
+        },
+        {
+          "from_run": 38494671966,
+          "to_run": 38520939167,
+          "from": "2026-10-14T01:14:59Z",
+          "to": "2026-10-14T06:13:17Z",
+          "gap_seconds": 17898
+        },
+        {
+          "from_run": 38520939167,
+          "to_run": 38560578136,
+          "from": "2026-10-14T06:13:17Z",
+          "to": "2026-10-14T12:00:12Z",
+          "gap_seconds": 20815
+        },
+        {
+          "from_run": 38560578136,
+          "to_run": 38604992514,
+          "from": "2026-10-14T12:00:12Z",
+          "to": "2026-10-14T17:14:41Z",
+          "gap_seconds": 18869
+        },
+        {
+          "from_run": 38604992514,
+          "to_run": 38634718725,
+          "from": "2026-10-14T17:14:41Z",
+          "to": "2026-10-14T20:45:15Z",
+          "gap_seconds": 12634
+        },
+        {
+          "from_run": 38634718725,
+          "to_run": 38657143039,
+          "from": "2026-10-14T20:45:15Z",
+          "to": "2026-10-14T23:56:57Z",
+          "gap_seconds": 11502
+        },
+        {
+          "from_run": 38657143039,
+          "to_run": 38683052385,
+          "from": "2026-10-14T23:56:57Z",
+          "to": "2026-10-15T04:44:30Z",
+          "gap_seconds": 17253
+        },
+        {
+          "from_run": 38683052385,
+          "to_run": 38716887471,
+          "from": "2026-10-15T04:44:30Z",
+          "to": "2026-10-15T09:58:28Z",
+          "gap_seconds": 18838
+        },
+        {
+          "from_run": 38716887471,
+          "to_run": 38757073743,
+          "from": "2026-10-15T09:58:28Z",
+          "to": "2026-10-15T15:04:22Z",
+          "gap_seconds": 18354
+        },
+        {
+          "from_run": 38757073743,
+          "to_run": 38791833822,
+          "from": "2026-10-15T15:04:22Z",
+          "to": "2026-10-15T19:11:21Z",
+          "gap_seconds": 14819
+        },
+        {
+          "from_run": 38791833822,
+          "to_run": 38816649551,
+          "from": "2026-10-15T19:11:21Z",
+          "to": "2026-10-15T22:22:24Z",
+          "gap_seconds": 11463
+        },
+        {
+          "from_run": 38816649551,
+          "to_run": 38834910793,
+          "from": "2026-10-15T22:22:24Z",
+          "to": "2026-10-16T01:24:05Z",
+          "gap_seconds": 10901
+        },
+        {
+          "from_run": 38834910793,
+          "to_run": 38865882609,
+          "from": "2026-10-16T01:24:05Z",
+          "to": "2026-10-16T07:13:46Z",
+          "gap_seconds": 20981
+        },
+        {
+          "from_run": 38865882609,
+          "to_run": 38900917654,
+          "from": "2026-10-16T07:13:46Z",
+          "to": "2026-10-16T12:29:54Z",
+          "gap_seconds": 18968
+        },
+        {
+          "from_run": 38900917654,
+          "to_run": 38939783388,
+          "from": "2026-10-16T12:29:54Z",
+          "to": "2026-10-16T17:27:07Z",
+          "gap_seconds": 17833
+        },
+        {
+          "from_run": 38939783388,
+          "to_run": 38967834550,
+          "from": "2026-10-16T17:27:07Z",
+          "to": "2026-10-16T21:13:16Z",
+          "gap_seconds": 13569
+        },
+        {
+          "from_run": 38967834550,
+          "to_run": 38982519301,
+          "from": "2026-10-16T21:13:16Z",
+          "to": "2026-10-16T23:38:45Z",
+          "gap_seconds": 8729
+        }
+      ]
+    },
+    "bangkok_october_13_through_16": {
+      "from_inclusive": "2026-10-12T17:00:00Z",
+      "to_exclusive": "2026-10-16T17:00:00Z",
+      "run_count": 19,
+      "all_collect_success": true,
+      "all_deploy_success": true,
+      "all_health_failure": true,
+      "within_window_interval_count": 18,
+      "intervals_over_3_hours": 18,
+      "min_gap_seconds": 10901,
+      "max_gap_seconds": 29827,
+      "intervals": [
+        {
+          "from_run": 38287769269,
+          "to_run": 38328723328,
+          "from": "2026-10-12T17:58:19Z",
+          "to": "2026-10-13T00:44:23Z",
+          "gap_seconds": 24364
+        },
+        {
+          "from_run": 38328723328,
+          "to_run": 38364712216,
+          "from": "2026-10-13T00:44:23Z",
+          "to": "2026-10-13T07:45:28Z",
+          "gap_seconds": 25265
+        },
+        {
+          "from_run": 38364712216,
+          "to_run": 38427217943,
+          "from": "2026-10-13T07:45:28Z",
+          "to": "2026-10-13T16:02:35Z",
+          "gap_seconds": 29827
+        },
+        {
+          "from_run": 38427217943,
+          "to_run": 38469515802,
+          "from": "2026-10-13T16:02:35Z",
+          "to": "2026-10-13T21:17:51Z",
+          "gap_seconds": 18916
+        },
+        {
+          "from_run": 38469515802,
+          "to_run": 38494671966,
+          "from": "2026-10-13T21:17:51Z",
+          "to": "2026-10-14T01:14:59Z",
+          "gap_seconds": 14228
+        },
+        {
+          "from_run": 38494671966,
+          "to_run": 38520939167,
+          "from": "2026-10-14T01:14:59Z",
+          "to": "2026-10-14T06:13:17Z",
+          "gap_seconds": 17898
+        },
+        {
+          "from_run": 38520939167,
+          "to_run": 38560578136,
+          "from": "2026-10-14T06:13:17Z",
+          "to": "2026-10-14T12:00:12Z",
+          "gap_seconds": 20815
+        },
+        {
+          "from_run": 38560578136,
+          "to_run": 38604992514,
+          "from": "2026-10-14T12:00:12Z",
+          "to": "2026-10-14T17:14:41Z",
+          "gap_seconds": 18869
+        },
+        {
+          "from_run": 38604992514,
+          "to_run": 38634718725,
+          "from": "2026-10-14T17:14:41Z",
+          "to": "2026-10-14T20:45:15Z",
+          "gap_seconds": 12634
+        },
+        {
+          "from_run": 38634718725,
+          "to_run": 38657143039,
+          "from": "2026-10-14T20:45:15Z",
+          "to": "2026-10-14T23:56:57Z",
+          "gap_seconds": 11502
+        },
+        {
+          "from_run": 38657143039,
+          "to_run": 38683052385,
+          "from": "2026-10-14T23:56:57Z",
+          "to": "2026-10-15T04:44:30Z",
+          "gap_seconds": 17253
+        },
+        {
+          "from_run": 38683052385,
+          "to_run": 38716887471,
+          "from": "2026-10-15T04:44:30Z",
+          "to": "2026-10-15T09:58:28Z",
+          "gap_seconds": 18838
+        },
+        {
+          "from_run": 38716887471,
+          "to_run": 38757073743,
+          "from": "2026-10-15T09:58:28Z",
+          "to": "2026-10-15T15:04:22Z",
+          "gap_seconds": 18354
+        },
+        {
+          "from_run": 38757073743,
+          "to_run": 38791833822,
+          "from": "2026-10-15T15:04:22Z",
+          "to": "2026-10-15T19:11:21Z",
+          "gap_seconds": 14819
+        },
+        {
+          "from_run": 38791833822,
+          "to_run": 38816649551,
+          "from": "2026-10-15T19:11:21Z",
+          "to": "2026-10-15T22:22:24Z",
+          "gap_seconds": 11463
+        },
+        {
+          "from_run": 38816649551,
+          "to_run": 38834910793,
+          "from": "2026-10-15T22:22:24Z",
+          "to": "2026-10-16T01:24:05Z",
+          "gap_seconds": 10901
+        },
+        {
+          "from_run": 38834910793,
+          "to_run": 38865882609,
+          "from": "2026-10-16T01:24:05Z",
+          "to": "2026-10-16T07:13:46Z",
+          "gap_seconds": 20981
+        },
+        {
+          "from_run": 38865882609,
+          "to_run": 38900917654,
+          "from": "2026-10-16T07:13:46Z",
+          "to": "2026-10-16T12:29:54Z",
+          "gap_seconds": 18968
+        }
+      ]
+    }
+  },
+  "workflow": {
+    "url": "https://github.com/attorneynoon/thai-regulatory-watch/blob/b15afdf15813e21d8132ccee9a0b9fae8656292e/.github/workflows/monitor.yml",
+    "scheduled_cron": "17 * * * *",
+    "concurrency_group": "regulatory-watch-writer",
+    "cancel_in_progress": false,
+    "health_needs": [
+      "collect"
+    ],
+    "deploy_needs": [
+      "collect"
+    ],
+    "health_checkout_ref": "main",
+    "health_gate_command": "python -m regwatch health",
+    "collect_allows_source_errors": true,
+    "unchanged_at_current_main": true
+  },
+  "health_semantics": {
+    "url": "https://github.com/attorneynoon/thai-regulatory-watch/blob/b15afdf15813e21d8132ccee9a0b9fae8656292e/regwatch/cli.py",
+    "snapshot_paths": [
+      "config/sources.yml",
+      "state/monitor.json"
+    ],
+    "checks_deployed_site": false,
+    "all_enabled_nonhealthy_fatal": true,
+    "strict_additionally_includes_nonverified": true,
+    "healthy_last_success_stale_after_seconds": 10800,
+    "unchanged_at_current_main": true
+  },
+  "primary_run": {
+    "id": 38967834550,
+    "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550",
+    "trigger_head_sha": "b15afdf15813e21d8132ccee9a0b9fae8656292e",
+    "persisted_sha": "8f9b6404627eeb41b35936b17413fc9bb1699319",
+    "push_completed_at": "2026-10-16T21:21:00.1193604Z",
+    "health_checkout_sha": "8f9b6404627eeb41b35936b17413fc9bb1699319",
+    "health_checkout_reported_at": "2026-10-16T21:21:23.4869048Z",
+    "health_exit_code": 1,
+    "health_issue_count": 26,
+    "health_issue_breakdown": {
+      "verified_failed": 3,
+      "candidate_failed": 1,
+      "candidate_blocked": 22
+    },
+    "unit_tests_passed": 122,
+    "generated_xml_json_contracts": "passed",
+    "deployment": {
+      "artifact_id": 12075153782,
+      "artifact_source": "same workflow run",
+      "pages_build_version": "b15afdf15813e21d8132ccee9a0b9fae8656292e",
+      "reported_success_at": "2026-10-16T21:21:23.2980499Z"
+    },
+    "jobs": [
+      {
+        "id": 117198615415,
+        "name": "collect",
+        "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117198615415",
+        "started_at": "2026-10-16T21:13:20Z",
+        "completed_at": "2026-10-16T21:21:06Z",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 117201654637,
+        "name": "deploy",
+        "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117201654637",
+        "started_at": "2026-10-16T21:21:10Z",
+        "completed_at": "2026-10-16T21:21:24Z",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 117201654719,
+        "name": "health",
+        "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117201654719",
+        "started_at": "2026-10-16T21:21:09Z",
+        "completed_at": "2026-10-16T21:21:32Z",
+        "status": "completed",
+        "conclusion": "failure"
+      }
+    ],
+    "conclusion": "Health checked the same-run persisted snapshot; no stale trigger-head checkout observed."
+  },
+  "runs": [
+    {
+      "id": 38287769269,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38287769269",
+      "run_number": 120,
+      "event": "schedule",
+      "created_at": "2026-10-12T17:58:19Z",
+      "started_at": "2026-10-12T17:58:19Z",
+      "updated_at": "2026-10-12T18:09:36Z",
+      "head_sha": "716dbc5e9b703ded53c41b6eb7da261900497c7d",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "93cf1088e4a3274ef151609b0b56d5ccdf54773e",
+      "health_issue_count": 25,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 114940142074,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38287769269/job/114940142074",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 114944142373,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38287769269/job/114944142373",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 114944142515,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38287769269/job/114944142515",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38328723328,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38328723328",
+      "run_number": 121,
+      "event": "schedule",
+      "created_at": "2026-10-13T00:44:23Z",
+      "started_at": "2026-10-13T00:44:23Z",
+      "updated_at": "2026-10-13T00:53:25Z",
+      "head_sha": "93cf1088e4a3274ef151609b0b56d5ccdf54773e",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "a61d85df707966a701e97f49cf2a4cf1abbeb114",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "tcc-listing-01",
+          "status": "blocked",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115073327943,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38328723328/job/115073327943",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115075535166,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38328723328/job/115075535166",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115075535224,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38328723328/job/115075535224",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38364712216,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38364712216",
+      "run_number": 122,
+      "event": "schedule",
+      "created_at": "2026-10-13T07:45:28Z",
+      "started_at": "2026-10-13T07:45:28Z",
+      "updated_at": "2026-10-13T07:54:28Z",
+      "head_sha": "a61d85df707966a701e97f49cf2a4cf1abbeb114",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "6d014b06149a956541d5b41c63440f79827df4e3",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115186950448,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38364712216/job/115186950448",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115190007001,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38364712216/job/115190007001",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115190007098,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38364712216/job/115190007098",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38427217943,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38427217943",
+      "run_number": 123,
+      "event": "schedule",
+      "created_at": "2026-10-13T16:02:35Z",
+      "started_at": "2026-10-13T16:02:35Z",
+      "updated_at": "2026-10-13T16:11:38Z",
+      "head_sha": "6d014b06149a956541d5b41c63440f79827df4e3",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "325e8f33b944d17f4f82ad1f8bf329b19d1c0707",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115399637306,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38427217943/job/115399637306",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115403822605,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38427217943/job/115403822605",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115403822697,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38427217943/job/115403822697",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38469515802,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38469515802",
+      "run_number": 124,
+      "event": "schedule",
+      "created_at": "2026-10-13T21:17:51Z",
+      "started_at": "2026-10-13T21:17:51Z",
+      "updated_at": "2026-10-13T21:27:03Z",
+      "head_sha": "325e8f33b944d17f4f82ad1f8bf329b19d1c0707",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "4b6c0aaa0af711a728086dea999484745f4a0d08",
+      "health_issue_count": 28,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115544637314,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38469515802/job/115544637314",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115548475438,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38469515802/job/115548475438",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115548475624,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38469515802/job/115548475624",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38494671966,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38494671966",
+      "run_number": 125,
+      "event": "schedule",
+      "created_at": "2026-10-14T01:14:59Z",
+      "started_at": "2026-10-14T01:14:59Z",
+      "updated_at": "2026-10-14T01:24:04Z",
+      "head_sha": "4b6c0aaa0af711a728086dea999484745f4a0d08",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "3ba45c011c373295bcfe46db35c234bb8b96bbd0",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115627614039,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38494671966/job/115627614039",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115630109787,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38494671966/job/115630109787",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115630109906,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38494671966/job/115630109906",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38520939167,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38520939167",
+      "run_number": 126,
+      "event": "schedule",
+      "created_at": "2026-10-14T06:13:17Z",
+      "started_at": "2026-10-14T06:13:17Z",
+      "updated_at": "2026-10-14T06:22:09Z",
+      "head_sha": "3ba45c011c373295bcfe46db35c234bb8b96bbd0",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "a2323ed474d0b73614a825a4ab551475dda8505c",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115710223667,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38520939167/job/115710223667",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115712828146,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38520939167/job/115712828146",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115712828261,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38520939167/job/115712828261",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38560578136,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38560578136",
+      "run_number": 127,
+      "event": "schedule",
+      "created_at": "2026-10-14T12:00:12Z",
+      "started_at": "2026-10-14T12:00:12Z",
+      "updated_at": "2026-10-14T12:12:03Z",
+      "head_sha": "a2323ed474d0b73614a825a4ab551475dda8505c",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "9c8d5ce0f0dc4bc6ce7ba347c8336ed58cf69d32",
+      "health_issue_count": 43,
+      "verified_health_issues": [
+        {
+          "source": "amlo-listing-01",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "amlo-listing-02",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115840355971,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38560578136/job/115840355971",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115845059148,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38560578136/job/115845059148",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115845059248,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38560578136/job/115845059248",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38604992514,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38604992514",
+      "run_number": 128,
+      "event": "schedule",
+      "created_at": "2026-10-14T17:14:41Z",
+      "started_at": "2026-10-14T17:14:41Z",
+      "updated_at": "2026-10-14T17:24:02Z",
+      "head_sha": "9c8d5ce0f0dc4bc6ce7ba347c8336ed58cf69d32",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "1378f2867a9022360aa0d3a15e3f0b7154c6ca83",
+      "health_issue_count": 28,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 115993476932,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38604992514/job/115993476932",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 115997805459,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38604992514/job/115997805459",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 115997805969,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38604992514/job/115997805969",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38634718725,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38634718725",
+      "run_number": 129,
+      "event": "schedule",
+      "created_at": "2026-10-14T20:45:15Z",
+      "started_at": "2026-10-14T20:45:15Z",
+      "updated_at": "2026-10-14T20:54:30Z",
+      "head_sha": "1378f2867a9022360aa0d3a15e3f0b7154c6ca83",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "1209d0a60c632a5a885ed6e22e675f8fdb9cddf2",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116094822075,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38634718725/job/116094822075",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116098992782,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38634718725/job/116098992782",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 116098993026,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38634718725/job/116098993026",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38657143039,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38657143039",
+      "run_number": 130,
+      "event": "schedule",
+      "created_at": "2026-10-14T23:56:57Z",
+      "started_at": "2026-10-14T23:56:57Z",
+      "updated_at": "2026-10-15T00:05:34Z",
+      "head_sha": "1209d0a60c632a5a885ed6e22e675f8fdb9cddf2",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "d4670c7afb369e9dce7c67e065e53d23df58359a",
+      "health_issue_count": 25,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116169478293,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38657143039/job/116169478293",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116172070379,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38657143039/job/116172070379",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116172070489,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38657143039/job/116172070489",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38683052385,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38683052385",
+      "run_number": 131,
+      "event": "schedule",
+      "created_at": "2026-10-15T04:44:30Z",
+      "started_at": "2026-10-15T04:44:30Z",
+      "updated_at": "2026-10-15T04:53:25Z",
+      "head_sha": "d4670c7afb369e9dce7c67e065e53d23df58359a",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "90023b6be9fff0af27e6b13e12bf2b921334f50d",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116251660045,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38683052385/job/116251660045",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116253987693,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38683052385/job/116253987693",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 116253987828,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38683052385/job/116253987828",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38716887471,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38716887471",
+      "run_number": 132,
+      "event": "schedule",
+      "created_at": "2026-10-15T09:58:28Z",
+      "started_at": "2026-10-15T09:58:28Z",
+      "updated_at": "2026-10-15T10:07:13Z",
+      "head_sha": "90023b6be9fff0af27e6b13e12bf2b921334f50d",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "3545363a6a2320a00dbf1ac7e096c7cd92856484",
+      "health_issue_count": 25,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116361650743,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38716887471/job/116361650743",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116365035343,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38716887471/job/116365035343",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116365035361,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38716887471/job/116365035361",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38757073743,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38757073743",
+      "run_number": 133,
+      "event": "schedule",
+      "created_at": "2026-10-15T15:04:22Z",
+      "started_at": "2026-10-15T15:04:22Z",
+      "updated_at": "2026-10-15T15:14:21Z",
+      "head_sha": "3545363a6a2320a00dbf1ac7e096c7cd92856484",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "0f8c9a7e18eeba951ccdb8800874b2955ebcdc26",
+      "health_issue_count": 28,
+      "verified_health_issues": [
+        {
+          "source": "amlo-listing-01",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "amlo-listing-02",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116498200082,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38757073743/job/116498200082",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116502757877,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38757073743/job/116502757877",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116502757957,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38757073743/job/116502757957",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38791833822,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38791833822",
+      "run_number": 134,
+      "event": "schedule",
+      "created_at": "2026-10-15T19:11:21Z",
+      "started_at": "2026-10-15T19:11:21Z",
+      "updated_at": "2026-10-15T19:19:57Z",
+      "head_sha": "0f8c9a7e18eeba951ccdb8800874b2955ebcdc26",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "744797ecfa608e876582d5f23c6f754be1642e0a",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116618073668,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38791833822/job/116618073668",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116621934814,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38791833822/job/116621934814",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116621935253,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38791833822/job/116621935253",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38816649551,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38816649551",
+      "run_number": 135,
+      "event": "schedule",
+      "created_at": "2026-10-15T22:22:24Z",
+      "started_at": "2026-10-15T22:22:24Z",
+      "updated_at": "2026-10-15T22:31:24Z",
+      "head_sha": "744797ecfa608e876582d5f23c6f754be1642e0a",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "cabfafe4409c41ab674a4ca00616459a2aaeabc5",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ocpb-home",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "ocpb-listing-01",
+          "status": "blocked",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116702894131,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38816649551/job/116702894131",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116706189202,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38816649551/job/116706189202",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116706189432,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38816649551/job/116706189432",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38834910793,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38834910793",
+      "run_number": 136,
+      "event": "schedule",
+      "created_at": "2026-10-16T01:24:05Z",
+      "started_at": "2026-10-16T01:24:05Z",
+      "updated_at": "2026-10-16T01:34:28Z",
+      "head_sha": "cabfafe4409c41ab674a4ca00616459a2aaeabc5",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "00cbcaa99d33e0beab535b1ef585860580a021b1",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ocpb-home",
+          "status": "blocked",
+          "validation": "verified"
+        },
+        {
+          "source": "ocpb-listing-01",
+          "status": "blocked",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116761744467,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38834910793/job/116761744467",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116764562082,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38834910793/job/116764562082",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 116764562125,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38834910793/job/116764562125",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38865882609,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38865882609",
+      "run_number": 137,
+      "event": "schedule",
+      "created_at": "2026-10-16T07:13:46Z",
+      "started_at": "2026-10-16T07:13:46Z",
+      "updated_at": "2026-10-16T07:23:00Z",
+      "head_sha": "00cbcaa99d33e0beab535b1ef585860580a021b1",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "cddf22fd41d540fb37e0a6039afdb9f40496cdc0",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116858480721,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38865882609/job/116858480721",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116861399647,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38865882609/job/116861399647",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116861399686,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38865882609/job/116861399686",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38900917654,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38900917654",
+      "run_number": 138,
+      "event": "schedule",
+      "created_at": "2026-10-16T12:29:54Z",
+      "started_at": "2026-10-16T12:29:54Z",
+      "updated_at": "2026-10-16T12:38:15Z",
+      "head_sha": "cddf22fd41d540fb37e0a6039afdb9f40496cdc0",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "de6fe9c67defa3fa5662ce60964f6dfcdd4e4065",
+      "health_issue_count": 27,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 116972666388,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38900917654/job/116972666388",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 116975804837,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38900917654/job/116975804837",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 116975805097,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38900917654/job/116975805097",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    },
+    {
+      "id": 38939783388,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38939783388",
+      "run_number": 139,
+      "event": "schedule",
+      "created_at": "2026-10-16T17:27:07Z",
+      "started_at": "2026-10-16T17:27:07Z",
+      "updated_at": "2026-10-16T17:36:32Z",
+      "head_sha": "de6fe9c67defa3fa5662ce60964f6dfcdd4e4065",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "b15afdf15813e21d8132ccee9a0b9fae8656292e",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 117104210796,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38939783388/job/117104210796",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 117108057933,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38939783388/job/117108057933",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 117108058115,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38939783388/job/117108058115",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38967834550,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550",
+      "run_number": 140,
+      "event": "schedule",
+      "created_at": "2026-10-16T21:13:16Z",
+      "started_at": "2026-10-16T21:13:16Z",
+      "updated_at": "2026-10-16T21:21:33Z",
+      "head_sha": "b15afdf15813e21d8132ccee9a0b9fae8656292e",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "8f9b6404627eeb41b35936b17413fc9bb1699319",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 117198615415,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117198615415",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 117201654637,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117201654637",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 117201654719,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117201654719",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38982519301,
+      "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38982519301",
+      "run_number": 141,
+      "event": "schedule",
+      "created_at": "2026-10-16T23:38:45Z",
+      "started_at": "2026-10-16T23:38:45Z",
+      "updated_at": "2026-10-16T23:46:52Z",
+      "head_sha": "8f9b6404627eeb41b35936b17413fc9bb1699319",
+      "status": "completed",
+      "conclusion": "failure",
+      "health_checkout_sha": "3de47486b2ec93cc48820708f881967c265737c5",
+      "health_issue_count": 26,
+      "verified_health_issues": [
+        {
+          "source": "ncsa-listing-01",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "status": "failed",
+          "validation": "verified"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "status": "failed",
+          "validation": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "id": 117246411752,
+          "name": "collect",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38982519301/job/117246411752",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        },
+        {
+          "id": 117248476355,
+          "name": "health",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38982519301/job/117248476355",
+          "status": "completed",
+          "conclusion": "failure",
+          "failed_steps": [
+            "Run python -m regwatch health"
+          ]
+        },
+        {
+          "id": 117248476377,
+          "name": "deploy",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38982519301/job/117248476377",
+          "status": "completed",
+          "conclusion": "success",
+          "failed_steps": []
+        }
+      ]
+    }
+  ],
+  "sampled_collection_errors": [
+    {
+      "run_id": 38328723328,
+      "run_created_at": "2026-10-13T00:44:23Z",
+      "job_id": 115073327943,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38328723328/job/115073327943",
+      "errors": [
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-13T00:48:13.0284521Z",
+          "result_at": "2026-10-13T00:48:19.4999872Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-13T00:48:19.5000329Z",
+          "result_at": "2026-10-13T00:48:27.4091805Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-13T00:48:27.4092145Z",
+          "result_at": "2026-10-13T00:48:34.5845593Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "tcc-listing-01",
+          "started_at": "2026-10-13T00:49:39.7583728Z",
+          "result_at": "2026-10-13T00:49:59.9282495Z",
+          "status": "blocked",
+          "log_reported_count": 9,
+          "error": "Robots policy unresolved: HTTP 522"
+        }
+      ]
+    },
+    {
+      "run_id": 38560578136,
+      "run_created_at": "2026-10-14T12:00:12Z",
+      "job_id": 115840355971,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38560578136/job/115840355971",
+      "errors": [
+        {
+          "source": "amlo-listing-01",
+          "started_at": "2026-10-14T12:01:10.2070242Z",
+          "result_at": "2026-10-14T12:01:11.7595265Z",
+          "status": "blocked",
+          "log_reported_count": 6,
+          "error": "Robots unavailable: TLS SSLEOFError"
+        },
+        {
+          "source": "amlo-listing-02",
+          "started_at": "2026-10-14T12:01:11.7596371Z",
+          "result_at": "2026-10-14T12:01:12.8687549Z",
+          "status": "blocked",
+          "log_reported_count": 20,
+          "error": "Robots unavailable: TLS SSLEOFError"
+        },
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-14T12:04:26.2002404Z",
+          "result_at": "2026-10-14T12:04:32.2033431Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-14T12:04:32.2036071Z",
+          "result_at": "2026-10-14T12:04:38.1974201Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-14T12:04:38.1974516Z",
+          "result_at": "2026-10-14T12:04:43.8022379Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        }
+      ]
+    },
+    {
+      "run_id": 38757073743,
+      "run_created_at": "2026-10-15T15:04:22Z",
+      "job_id": 116498200082,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38757073743/job/116498200082",
+      "errors": [
+        {
+          "source": "amlo-listing-01",
+          "started_at": "2026-10-15T15:05:20.9354750Z",
+          "result_at": "2026-10-15T15:05:29.9457649Z",
+          "status": "blocked",
+          "log_reported_count": 5,
+          "error": "Robots unavailable: read timeout=8"
+        },
+        {
+          "source": "amlo-listing-02",
+          "started_at": "2026-10-15T15:05:29.9459304Z",
+          "result_at": "2026-10-15T15:05:38.9519751Z",
+          "status": "blocked",
+          "log_reported_count": 20,
+          "error": "Robots unavailable: read timeout=8"
+        },
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-15T15:08:19.5732535Z",
+          "result_at": "2026-10-15T15:08:25.6257227Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-15T15:08:25.6258114Z",
+          "result_at": "2026-10-15T15:08:31.3010140Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-15T15:08:31.3010843Z",
+          "result_at": "2026-10-15T15:08:38.6580137Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        }
+      ]
+    },
+    {
+      "run_id": 38816649551,
+      "run_created_at": "2026-10-15T22:22:24Z",
+      "job_id": 116702894131,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38816649551/job/116702894131",
+      "errors": [
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-15T22:25:51.9573985Z",
+          "result_at": "2026-10-15T22:25:57.9534737Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-15T22:26:02.1086886Z",
+          "result_at": "2026-10-15T22:26:02.1087222Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-15T22:26:02.1087480Z",
+          "result_at": "2026-10-15T22:26:08.9866970Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ocpb-home",
+          "started_at": "2026-10-15T22:26:29.9385345Z",
+          "result_at": "2026-10-15T22:26:45.7113979Z",
+          "status": "blocked",
+          "log_reported_count": 3,
+          "error": "Robots policy unresolved: HTTP 503"
+        },
+        {
+          "source": "ocpb-listing-01",
+          "started_at": "2026-10-15T22:26:45.7114237Z",
+          "result_at": "2026-10-15T22:27:00.7329379Z",
+          "status": "blocked",
+          "log_reported_count": 7,
+          "error": "Robots policy unresolved: HTTP 503"
+        }
+      ]
+    },
+    {
+      "run_id": 38834910793,
+      "run_created_at": "2026-10-16T01:24:05Z",
+      "job_id": 116761744467,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38834910793/job/116761744467",
+      "errors": [
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-16T01:28:39.0143891Z",
+          "result_at": "2026-10-16T01:28:46.2101863Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-16T01:28:46.2102443Z",
+          "result_at": "2026-10-16T01:28:53.8741703Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-16T01:28:53.8742343Z",
+          "result_at": "2026-10-16T01:29:00.9527482Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ocpb-home",
+          "started_at": "2026-10-16T01:29:21.9813374Z",
+          "result_at": "2026-10-16T01:29:37.7992213Z",
+          "status": "blocked",
+          "log_reported_count": 3,
+          "error": "Robots policy unresolved: HTTP 503"
+        },
+        {
+          "source": "ocpb-listing-01",
+          "started_at": "2026-10-16T01:29:37.7992689Z",
+          "result_at": "2026-10-16T01:29:52.7992631Z",
+          "status": "blocked",
+          "log_reported_count": 7,
+          "error": "Robots policy unresolved: HTTP 503"
+        }
+      ]
+    },
+    {
+      "run_id": 38967834550,
+      "run_created_at": "2026-10-16T21:13:16Z",
+      "job_id": 117198615415,
+      "job_url": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/38967834550/job/117198615415",
+      "errors": [
+        {
+          "source": "ncsa-listing-01",
+          "started_at": "2026-10-16T21:16:44.6965275Z",
+          "result_at": "2026-10-16T21:16:51.7221729Z",
+          "status": "failed",
+          "log_reported_count": 23,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-02",
+          "started_at": "2026-10-16T21:16:51.7222552Z",
+          "result_at": "2026-10-16T21:16:57.9972928Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        },
+        {
+          "source": "ncsa-listing-03",
+          "started_at": "2026-10-16T21:16:57.9973539Z",
+          "result_at": "2026-10-16T21:17:03.7571863Z",
+          "status": "failed",
+          "log_reported_count": 100,
+          "error": "Response exceeds byte budget"
+        }
+      ]
+    }
+  ],
+  "path_histories": [
+    {
+      "path": "config/sources.yml",
+      "history": [
+        {
+          "sha": "205bc176ebe3bb8ebfb3c6ff097217781c65310e",
+          "date": "2026-09-19T15:16:07Z",
+          "subject": "Add bounded GitHub source recovery and TCCT priority (#9)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/205bc176ebe3bb8ebfb3c6ff097217781c65310e"
+        },
+        {
+          "sha": "84f855dfe8199b1ffd4b0ac3c6fb2974a0770b69",
+          "date": "2026-09-19T13:56:35Z",
+          "subject": "Focus regulatory updates and repair PDPC cloud collection (#7)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/84f855dfe8199b1ffd4b0ac3c6fb2974a0770b69"
+        },
+        {
+          "sha": "2138d3890d37611a68c715493e890148bc0a1d79",
+          "date": "2026-09-19T11:07:12Z",
+          "subject": "Qualify GPPC DSI ETDA sources and correct malformed robots handling (#5)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/2138d3890d37611a68c715493e890148bc0a1d79"
+        },
+        {
+          "sha": "61ebadf7c61e62dfc2261fde328679883614f553",
+          "date": "2026-09-19T09:39:04Z",
+          "subject": "fix: recover public source coverage and enrich chronological RSS views",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/61ebadf7c61e62dfc2261fde328679883614f553"
+        },
+        {
+          "sha": "e866a188bebf8354967682e70a6bfee83c9a58e2",
+          "date": "2026-09-19T08:31:56Z",
+          "subject": "feat: independent regulatory RSS and review-only GRC monitor",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/e866a188bebf8354967682e70a6bfee83c9a58e2"
+        }
+      ],
+      "query_url": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/commits?sha=3de47486b2ec93cc48820708f881967c265737c5&path=config%2Fsources.yml&per_page=100",
+      "is_error": false
+    },
+    {
+      "path": "regwatch/transport.py",
+      "history": [
+        {
+          "sha": "2138d3890d37611a68c715493e890148bc0a1d79",
+          "date": "2026-09-19T11:07:12Z",
+          "subject": "Qualify GPPC DSI ETDA sources and correct malformed robots handling (#5)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/2138d3890d37611a68c715493e890148bc0a1d79"
+        },
+        {
+          "sha": "9920bd998afb581e11d1ca1881bdf017bc4d239a",
+          "date": "2026-09-19T10:10:48Z",
+          "subject": "fix: distinguish unavailable robots from content access denial",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/9920bd998afb581e11d1ca1881bdf017bc4d239a"
+        },
+        {
+          "sha": "61ebadf7c61e62dfc2261fde328679883614f553",
+          "date": "2026-09-19T09:39:04Z",
+          "subject": "fix: recover public source coverage and enrich chronological RSS views",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/61ebadf7c61e62dfc2261fde328679883614f553"
+        },
+        {
+          "sha": "e866a188bebf8354967682e70a6bfee83c9a58e2",
+          "date": "2026-09-19T08:31:56Z",
+          "subject": "feat: independent regulatory RSS and review-only GRC monitor",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/e866a188bebf8354967682e70a6bfee83c9a58e2"
+        }
+      ],
+      "query_url": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/commits?sha=3de47486b2ec93cc48820708f881967c265737c5&path=regwatch%2Ftransport.py&per_page=100",
+      "is_error": false
+    },
+    {
+      "path": "regwatch/cli.py",
+      "history": [
+        {
+          "sha": "d6b3dede36ea52f8e061ae7e83df2d8bf57d3fdf",
+          "date": "2026-09-19T16:26:16Z",
+          "subject": "Add configurable practice focus pages (#11)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/d6b3dede36ea52f8e061ae7e83df2d8bf57d3fdf"
+        },
+        {
+          "sha": "205bc176ebe3bb8ebfb3c6ff097217781c65310e",
+          "date": "2026-09-19T15:16:07Z",
+          "subject": "Add bounded GitHub source recovery and TCCT priority (#9)",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/205bc176ebe3bb8ebfb3c6ff097217781c65310e"
+        },
+        {
+          "sha": "61ebadf7c61e62dfc2261fde328679883614f553",
+          "date": "2026-09-19T09:39:04Z",
+          "subject": "fix: recover public source coverage and enrich chronological RSS views",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/61ebadf7c61e62dfc2261fde328679883614f553"
+        },
+        {
+          "sha": "e866a188bebf8354967682e70a6bfee83c9a58e2",
+          "date": "2026-09-19T08:31:56Z",
+          "subject": "feat: independent regulatory RSS and review-only GRC monitor",
+          "url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/e866a188bebf8354967682e70a6bfee83c9a58e2"
+        }
+      ],
+      "query_url": "https://api.github.com/repos/attorneynoon/thai-regulatory-watch/commits?sha=3de47486b2ec93cc48820708f881967c265737c5&path=regwatch%2Fcli.py&per_page=100",
+      "is_error": false
+    }
+  ],
+  "interpretation_limits": [
+    "Run intervals use workflow creation/start timestamps, not per-source last_success_at timestamps.",
+    "The list shows actual runs arriving less often than the declared hourly cron but does not establish why runs were delayed or absent.",
+    "Freshness calculations at audit time are separate from source status stored in each run snapshot.",
+    "Log-reported item counts on failed attempts may refer to preserved state and do not prove new successful observations.",
+    "pages_build_version identifies triggering workflow metadata; uploaded artifact content was generated in the same collection job.",
+    "No stale-threshold increase is recommended by this evidence.",
+    "The path histories show last code edits predate September 29; failure onset itself is established by separate source-history evidence."
+  ]
+}

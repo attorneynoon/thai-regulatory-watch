@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "base_sha": "3de47486b2ec93cc48820708f881967c265737c5",
+  "base_url": "https://github.com/attorneynoon/thai-regulatory-watch/commit/3de47486b2ec93cc48820708f881967c265737c5",
+  "audit_checkpoint": "2026-10-17T03:44:34Z",
+  "verification_scope": "Offline validation and builds in a disposable export; no production collection, deployment, or retained-data rewrite.",
+  "independent_full_suite": {
+    "runner": "unittest discovery across tests",
+    "python_version": "3.12",
+    "dependencies": "Pinned requirements.txt versions",
+    "result": "passed",
+    "exit_code": 0,
+    "tests_passed": 152,
+    "baseline_tests": 122,
+    "new_tests": 30,
+    "elapsed_seconds": 5.898,
+    "evidence_origin": "Independent full-suite verification result supplied for this repair"
+  },
+  "offline_commands": [
+    {
+      "command": "python -B -m regwatch validate",
+      "exit_code": 0,
+      "elapsed_seconds": 0.666,
+      "summary": {
+        "enabled": 78,
+        "pending": 21,
+        "practices": 9,
+        "regulators": 53,
+        "sources": 99
+      }
+    },
+    {
+      "command": "python -B -m regwatch build",
+      "exit_code": 0,
+      "elapsed_seconds": 10.555,
+      "summary": {
+        "events": 4499,
+        "feeds": 262,
+        "items": 3974,
+        "practices": 9,
+        "sources": 99
+      }
+    },
+    {
+      "command": "python -B -m regwatch check",
+      "exit_code": 0,
+      "elapsed_seconds": 3.512,
+      "summary": "XML and JSON contracts passed"
+    }
+  ],
+  "retained_state": {
+    "sha256_before": "922a6a0655395b8b16b5b38279dcf6634f8e581ac7ecda4a36d01081c0182ce9",
+    "sha256_after": "922a6a0655395b8b16b5b38279dcf6634f8e581ac7ecda4a36d01081c0182ce9",
+    "items": 3974,
+    "events": 4499,
+    "health_transitions": 442
+  },
+  "tracked_protected_files": 287,
+  "tracked_protected_files_unchanged": true,
+  "protected_diff_exit_code": 0,
+  "deterministic_rebuild": {
+    "exit_code": 0,
+    "elapsed_seconds": 9.052,
+    "site_file_count": 282,
+    "all_site_bytes_identical": true
+  },
+  "limits": [
+    "These are local verification results, not evidence of hosted NCSA recovery.",
+    "The protected-file comparison covers the 287 tracked retained/generated files.",
+    "State counts describe preserved base data, not newly collected observations."
+  ]
+}
