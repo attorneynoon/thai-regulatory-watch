@@ -53,7 +53,11 @@ def inspect_dip_json(body, source, previous_count=0):
         raise ValueError("DIP JSON root must be an array")
     rows, pages = parse_document(source, body, source["url"])
     count = len(rows)
+    dates = sorted(r["published_at"] for r in rows if r.get("published_at"))
     return {"raw_rows": len(raw), "accepted_rows": count,
+            "earliest_publication_date": dates[0] if dates else None,
+            "latest_publication_date": dates[-1] if dates else None,
+            "sample_urls": [r["url"] for r in rows[:3]],
             "unique_urls": len({r["url"] for r in rows}),
             "previous_count": previous_count,
             "count_drop_guard_would_trigger": previous_count >= 10
@@ -100,8 +104,11 @@ def extended_dip_source(source):
             or parts.path != "/wp-json/wp/v2/news"):
         raise ValueError("Unexpected DIP API host or path")
     query = parse_qsl(parts.query, keep_blank_values=True)
-    if [v for k, v in query if k == "per_page"] != ["20"]:
-        raise ValueError("Expected the configured 20-row DIP API")
+    observed = [v for k, v in query if k == "per_page"]
+    if observed == ["100"]:
+        return source
+    if observed != ["20"]:
+        raise ValueError("Expected exact 20 or 100-row DIP API")
     candidate = [(k, "100" if k == "per_page" else v) for k, v in query]
     return {**source, "url": urlunsplit(
         (parts.scheme, parts.netloc, parts.path, urlencode(candidate), parts.fragment)
@@ -113,16 +120,19 @@ def main():
     state = load_state(ROOT / "state/monitor.json")
     amlo, dip = registry["amlo-listing-01"], registry["dip-listing-01"]
     previous = state["sources"].get(dip["id"], {}).get("last_count", 0)
-    expanded = extended_dip_source(dip)
+    if dip["url"].count("per_page=100") != 1:
+        raise ValueError("DIP config must target the qualified 100-row API")
+    historical = {**dip, "url": dip["url"].replace("per_page=100", "per_page=20")}
+    expanded = extended_dip_source(historical)
     outcome = {
         "purpose": "read_only_contract_qualification_not_source_recovery",
         "checked_at": datetime.now(timezone.utc).isoformat(),
         "production_files_written": False,
         "amlo_intro_get": fetch_summary(
             amlo["url"], amlo["allowed_hosts"], 1_000_000, inspect_amlo_form),
-        "dip_existing_api_get": fetch_summary(
-            dip["url"], dip["allowed_hosts"], 2_000_000,
-            lambda body: inspect_dip_json(body, dip, previous)),
+        "dip_legacy_20_api_get": fetch_summary(
+            historical["url"], dip["allowed_hosts"], 2_000_000,
+            lambda body: inspect_dip_json(body, historical, previous)),
         "dip_extended_api_get": fetch_summary(
             expanded["url"], dip["allowed_hosts"], 2_000_000,
             lambda body: inspect_dip_json(body, expanded, previous)),

@@ -51,11 +51,13 @@ class SourceContractTests(unittest.TestCase):
     def test_extended_dip_probe_is_scoped_to_exact_official_api(self):
         sources = yaml.safe_load((ROOT / "config/sources.yml").read_text("utf-8"))["sources"]
         dip = next(s for s in sources if s["id"] == "dip-listing-01")
-        expanded = extended_dip_source(dip)
-        self.assertIn("per_page=100", expanded["url"])
+        self.assertIn("per_page=100", dip["url"])
+        previous = {**dip, "url": dip["url"].replace("per_page=100", "per_page=20")}
+        expanded = extended_dip_source(previous)
+        self.assertEqual(expanded["url"], dip["url"])
+        self.assertEqual(extended_dip_source(dip)["url"], dip["url"])
         self.assertEqual(expanded["allowed_hosts"], dip["allowed_hosts"])
         self.assertTrue(expanded["url"].startswith("https://webnew.ipthailand.go.th/wp-json/wp/v2/news?"))
-        self.assertEqual(dip["url"].count("per_page=20"), 1)
         self.assertRaises(ValueError, extended_dip_source, {**dip, "url": "https://example.org/wp-json/wp/v2/news?per_page=20"})
 
     def test_new_qualification_workflow_is_read_only(self):
@@ -73,6 +75,7 @@ class SourceContractTests(unittest.TestCase):
         self.assertEqual(by_id["amlo-listing-01"]["public_form"], {"intro_page": "1"})
         self.assertEqual(by_id["dip-listing-01"]["mode"], "json")
         self.assertEqual(by_id["dip-listing-01"]["validation_status"], "verified")
+        self.assertIn("per_page=100", by_id["dip-listing-01"]["url"])
 
 
 if __name__ == "__main__":

@@ -415,7 +415,7 @@ sources:
 - id: dip-listing-01
   regulator_id: dip
   title: กรมทรัพย์สินทางปัญญา
-  url: https://webnew.ipthailand.go.th/wp-json/wp/v2/news?per_page=20&orderby=date&order=desc&_fields=id,date,modified,link,title
+  url: https://webnew.ipthailand.go.th/wp-json/wp/v2/news?per_page=100&orderby=date&order=desc&_fields=id,date,modified,link,title
   topics:
   - intellectual-property
   jurisdiction: TH
@@ -432,9 +432,10 @@ sources:
   min_items: 1
   asset_budget: 2
   limitations:
-  - Official WordPress news custom-post route linked by type metadata.20 most recent rows before procurement/recruitment exclusions;
+  - Official WordPress news custom-post route linked by type metadata.100 most recent rows before procurement/recruitment exclusions;
     no archive completeness claim. General RSS rejected because it contains organization/procurement posts rather than this
     news type.
+  - 'Read-only hosted qualification 2026-11-08: 100 raw API rows yielded 78 accepted vs 3 from 20; no archive completeness claim or unverified feed promotion.'
   origin_ids:
   - enforcement:dip:1
   json_rows: ''
