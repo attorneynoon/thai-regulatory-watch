@@ -323,6 +323,11 @@ sources:
   validation_status: candidate
   mode: json-html
   allowed_hosts:
+  - lbrmc.coj.go.th
+  - cmic.coj.go.th
+  - crmc.coj.go.th
+  - pttc.coj.go.th
+  - crimsb.coj.go.th
   - nbljc.coj.go.th
   - nknjc.coj.go.th
   - nnkc.coj.go.th
