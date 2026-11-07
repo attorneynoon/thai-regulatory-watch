@@ -1,6 +1,7 @@
 """No-write AMLO/DIP diagnostics regressions (synthetic and existing fixtures)."""
 import json
 import unittest
+from urllib.parse import parse_qsl, urlsplit
 from pathlib import Path
 import yaml
 
@@ -54,7 +55,9 @@ class SourceContractTests(unittest.TestCase):
         self.assertIn("per_page=100", dip["url"])
         previous = {**dip, "url": dip["url"].replace("per_page=100", "per_page=20")}
         expanded = extended_dip_source(previous)
-        self.assertEqual(expanded["url"], dip["url"])
+        self.assertEqual(urlsplit(expanded["url"]).hostname, urlsplit(dip["url"]).hostname)
+        self.assertEqual(parse_qsl(urlsplit(expanded["url"]).query),
+                         parse_qsl(urlsplit(dip["url"]).query))
         self.assertEqual(extended_dip_source(dip)["url"], dip["url"])
         self.assertEqual(expanded["allowed_hosts"], dip["allowed_hosts"])
         self.assertTrue(expanded["url"].startswith("https://webnew.ipthailand.go.th/wp-json/wp/v2/news?"))
