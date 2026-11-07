@@ -147,3 +147,14 @@ Prepared a narrow PR trigger for the existing read-only NCSA workflow, with chec
 Independent review found no material findings. In a disposable export of the retained local patch with the exact workflow/test overlays, all 153 tests passed in 6.038 seconds, registry validation and build/check passed, and a second build reproduced all 282 site files byte for byte. The export retained 3,977 items / 4,502 observation events. All 287 protected files in the working repository also remained identical. These are offline checks; the hosted run will use the actual PR head's retained snapshot and report its exact checkout SHA.
 
 Live NCSA results remain pending until the hosted run completes. No source request, production state write, merge or deployment was performed at this preparation checkpoint. The actual run, checkout revision, response metadata, per-scope results and before/after preservation evidence will be recorded in PR #15 when available; this preparation entry does not assert source recovery.
+
+
+## 2026-11-04 — courts listing host rotation (draft)
+
+Recovered runner production run 41806560563 collected and deployed successfully. Separate courts empty-parse failure traced to six official API cards targeting five previously unlisted court hosts. Added only those exact hostnames, a representative public fixture and regression tests; selectors, candidate status, safety gates and history remain unchanged. Destination robots checks passed; two article titles were verified directly, while three destination hosts returned HTTP 503, so only national-listing metadata is qualified. No production transport bypass, collection, generated-data commit or merge is part of this draft. See `docs/qualification/courts-host-rotation-2026-11-04.md` for evidence and remaining AMLO/prosecutor limitations.
+
+## 2026-11-08 — scoped draft PR #15 integration against current main
+
+Owner authorized only integration of existing draft PR #15, read-only CI and a separate evidence-led source-repair proposal. Integrated against main `d371dc0b765dbb1b83a38622324a4696346b0e3c` while preserving the collected production state, generated site, PR #16's pinned Ubuntu 24.04 collector and PR #17's five exact court hosts and host-qualification tests. The PR's persisted-commit-SHA health handoff, scoped NCSA headroom and diagnostic tests are retained. No production monitoring dispatch, PR merge, deployment or modification to `state/`, `site/` or `schemas/` is authorized.
+
+On scheduled run [42391739725](https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/42391739725), all three NCSA scopes were healthy even with the current main's 32 MB budget; source health still failed for other enabled sources. The NCSA 64 MB proposal is bounded preventive headroom supported by prior read-only qualifications, not an asserted current cause of the health failure. Hosted read-only CI of the integrated draft head is required before requesting merge approval.

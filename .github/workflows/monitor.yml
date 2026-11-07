@@ -18,7 +18,7 @@ env:
   FEED_BASE_URL: ${{ vars.FEED_BASE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
 jobs:
   collect:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     permissions:
       contents: write
