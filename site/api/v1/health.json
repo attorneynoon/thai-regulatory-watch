@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-08T07:25:45Z",
+  "generated_at": "2026-11-08T15:16:52Z",
   "records": [
+    {
+      "event_id": "health-e5d329ca8a7fed4bbcf96671e2ca3a2e",
+      "message": "HTTPSConnectionPool(host='www.ncsa.or.th', port=443): Read timed out.",
+      "observed_at": "2026-11-08T15:16:52Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-a6ed64182440bca969cad2b3ca541709",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-08T15:16:52Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-293b4a8d4e758f69827724c3dee8549f",
+      "message": "HTTPSConnectionPool(host='www.ncsa.or.th', port=443): Read timed out.",
+      "observed_at": "2026-11-08T15:16:52Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-01",
+      "status": "failed"
+    },
     {
       "event_id": "health-c33fb29137f8e9f079793c3699eb8093",
       "message": null,
