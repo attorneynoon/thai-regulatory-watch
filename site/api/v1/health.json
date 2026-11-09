@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-08T23:46:02Z",
+  "generated_at": "2026-11-09T06:41:18Z",
   "records": [
+    {
+      "event_id": "health-f6d03a39e74d0ffe193dd887c72f3822",
+      "message": "HTTPSConnectionPool(host='opendata.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-09T06:41:18Z",
+      "official_url": "https://opendata.etda.or.th/th/group/etda-recommendation",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-standards",
+      "status": "failed"
+    },
     {
       "event_id": "health-dad9f5f1786dae7b959fa887ac0d32e3",
       "message": null,
