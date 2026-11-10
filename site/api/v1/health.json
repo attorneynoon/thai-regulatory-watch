@@ -1,6 +1,126 @@
 {
-  "generated_at": "2026-11-10T09:55:48Z",
+  "generated_at": "2026-11-10T17:54:04Z",
   "records": [
+    {
+      "event_id": "health-f826288c5208c506ab2e47e3d12f347a",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-f3cba7932129b059bcb70d616f39893a",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/announce/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-announcements",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-e497bc9aa30d5885e63cfc258884543d",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-05",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-a748090c689453cce43ad1156e31c2cf",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/Market_scope_and_market_share_determination/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-rules-guidelines",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-9b9169f55fd114906e85dbfa0893ec00",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/order/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-orders",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-71c9535f6702215d39e36a5931834cdf",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/activity/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-04",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-6a427aa9326899e029286f83cffdacd3",
+      "message": "Suspicious empty/undersized parse; previous inventory retained",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-01",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-61b812f71c4d0e1513c28e238e00d9d9",
+      "message": "Robots policy unresolved: HTTP 521",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://catalog.tcct.or.th/th/organization/tcct",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-07",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6038e5a0de861b826772dcf0953dd1c7",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/verdict/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-41b2dfaac3a30ffa70e1fd22636a96f8",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/Complaints_and_fact_finding_and_litigation/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-official-complaints-prosecution",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-3d81189327925a0be078bf25c05e14d0",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/giveaway_news/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-3129d82faf17b943b9149053945ec71d",
+      "message": "HTTP 404",
+      "observed_at": "2026-11-10T17:54:04Z",
+      "official_url": "https://www.tcct.or.th/view/1/statistics/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-06",
+      "status": "failed"
+    },
     {
       "event_id": "health-f0ce4a8f4ce61c1782eb09590517db05",
       "message": null,
