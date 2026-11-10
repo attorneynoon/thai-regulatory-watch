@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-10T01:36:21Z",
+  "generated_at": "2026-11-10T09:55:48Z",
   "records": [
+    {
+      "event_id": "health-f0ce4a8f4ce61c1782eb09590517db05",
+      "message": null,
+      "observed_at": "2026-11-10T09:55:48Z",
+      "official_url": "https://webnew.ipthailand.go.th/wp-json/wp/v2/news?per_page=20&orderby=date&order=desc&_fields=id,date,modified,link,title",
+      "previous_status": "failed",
+      "regulator_id": "dip",
+      "source_id": "dip-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0b206832464624fc76a183c60b3a9b62",
+      "message": "HTTPSConnectionPool(host='www.tcct.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-10T09:55:48Z",
+      "official_url": "https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "failed"
+    },
     {
       "event_id": "health-d041b124ea3f339cb09acab85ae77817",
       "message": null,
