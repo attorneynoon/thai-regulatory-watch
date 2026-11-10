@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-10T17:54:04Z",
+  "generated_at": "2026-11-10T23:26:34Z",
   "records": [
+    {
+      "event_id": "health-ea856c01555ea052fef405e3f0ebd181",
+      "message": "Selected content missing",
+      "observed_at": "2026-11-10T23:26:34Z",
+      "official_url": "https://market.sec.or.th/public/idisc/th/ViewMore/enforce-recent?QueryType=ALL",
+      "previous_status": "healthy",
+      "regulator_id": "sec",
+      "source_id": "sec-listing-02",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-7a9d691dbb0af93aaef3f9915e61161b",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-10T23:26:34Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-f826288c5208c506ab2e47e3d12f347a",
       "message": "HTTP 404",
