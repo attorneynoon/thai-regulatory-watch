@@ -124,3 +124,8 @@ Hosted closeout: PR7 merged; run35447234736 completed collection and Pages deplo
 ## 2026-11-04 — courts listing host rotation (draft)
 
 Recovered runner production run 41806560563 collected and deployed successfully. Separate courts empty-parse failure traced to six official API cards targeting five previously unlisted court hosts. Added only those exact hostnames, a representative public fixture and regression tests; selectors, candidate status, safety gates and history remain unchanged. Destination robots checks passed; two article titles were verified directly, while three destination hosts returned HTTP 503, so only national-listing metadata is qualified. No production transport bypass, collection, generated-data commit or merge is part of this draft. See `docs/qualification/courts-host-rotation-2026-11-04.md` for evidence and remaining AMLO/prosecutor limitations.
+
+
+## 2026-11-11 — PR #18 verification-only follow-up
+
+Added DIP-only copied-state acceptance replay, regression coverage and workflow dependency triggers. Current main reviewed: ca272ab6df6dafdb79acce6be377f9370ef5aad1. Preserved production collector, AMLO contract, source-health gate, count-drop threshold, court hosts and production runner. Local 141-test suite, validation, build/contracts and deterministic rebuild passed; live comparison hit DNS at robots lookup and correctly failed acceptance. See reports/SOURCE_CONTRACT_TRIAGE_2026-11-08.md. No merge, production dispatch/deploy or persisted state changes.
