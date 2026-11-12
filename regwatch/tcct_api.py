@@ -216,7 +216,8 @@ def normalize_record(record, category_key):
     record = _object(record, "record")
     # These fields occur in every captured record. Explicit null is allowed
     # where documented below; omission is a changed contract, not missing data.
-    # Top-level sub_category is genuinely absent in the captured hearing rows.
+    # The top-level expanded sub_category is optional in hearing/archive rows;
+    # its raw ID remains required, and expansion presence is preserved below.
     _require_fields(record, (
         "id", "code", "document_number", "title", "content", "description",
         "category_id", "sub_category_id", "file_list", "is_active", "is_draft",
@@ -232,8 +233,8 @@ def normalize_record(record, category_key):
     primary = _category(record.get("category"), "record.category")
     category_id = _string(record["category_id"], "record.category_id")
     sub_category_id = _string(record["sub_category_id"], "record.sub_category_id", nullable=True)
-    if sub_category_id is not None:
-        _require_fields(record, ("sub_category",), "record with a subcategory ID")
+    sub_category_relation_state = ("omitted" if "sub_category" not in record else
+                                   "null" if record["sub_category"] is None else "resolved")
     sub = None if record.get("sub_category") is None else _category(record["sub_category"], "record.sub_category")
     if category_id != primary["id"] or (sub and sub_category_id != sub["id"]):
         raise ValueError("Primary category identifier mismatch")
@@ -286,6 +287,7 @@ def normalize_record(record, category_key):
         "source_end_date": _date(record.get("end_date"), "record.end_date"),
         "category_years_buddhist": years,
         "category_id": category_id, "sub_category_id": sub_category_id,
+        "sub_category_relation_state": sub_category_relation_state,
         "category": primary, "sub_category": sub, "categories": categories,
         "body_text": body, "description_text": description,
         "downloads": downloads, "is_reference_link": record["is_reference_link"],

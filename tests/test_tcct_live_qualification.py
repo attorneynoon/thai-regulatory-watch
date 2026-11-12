@@ -26,6 +26,26 @@ def successful_collector(state, selected, now, **kwargs):
 
 
 class LiveQualificationTests(unittest.TestCase):
+    def test_unresolved_receipt_retains_relation_state_and_only_public_ids(self):
+        observations = {}
+        for state in ("omitted", "null", "resolved"):
+            observations[state] = {"source_metadata": {
+                "id": "public-" + state, "category_id": "parent", "sub_category_id": "child",
+                "sub_category_relation_state": state,
+                "warnings": ["source_subcategory_unresolved"],
+                "body_text": "PRIVATE_BODY", "owner": "PRIVATE_OWNER",
+                "categories": [{"category_id": "parent", "sub_category_id": "child",
+                                "sub_category": None, "owner": "PRIVATE_MEMBERSHIP"}],
+            }}
+        before = deepcopy(observations)
+        receipt = MODULE.unresolved_subcategory_receipt(observations)
+        self.assertEqual({row["sub_category_relation_state"] for row in receipt},
+                         {"omitted", "null", "resolved"})
+        self.assertTrue(all(row["sub_category_id"] == "child" for row in receipt))
+        self.assertTrue(all(row["memberships"][0]["sub_category_relation_state"] == "null" for row in receipt))
+        self.assertNotIn("PRIVATE_", json.dumps(receipt))
+        self.assertEqual(observations, before)
+
     def test_missing_or_unknown_scope_fails_before_network(self):
         calls = []
         for sources, keys in [([], ["verdict"]), ([source("verdict")], ["unverified-key"])]:
@@ -110,6 +130,22 @@ def parent_source(**changes):
 
 
 class TaxonomyDiagnosticTests(unittest.TestCase):
+    def test_projection_distinguishes_omitted_relations_from_explicit_null(self):
+        payloads = parent_pages(1)
+        row = payloads[1]['data']['contents'][0]
+        row['sub_category'] = None
+        row['categories'][0]['sub_category'] = None
+        explicit = MODULE.taxonomy_projection(payloads[1], 'activity-news', 1)['records'][0]
+        self.assertTrue(explicit['relation_field_presence']['sub_category'])
+        self.assertTrue(explicit['categories'][0]['relation_field_presence']['sub_category'])
+        row.pop('sub_category')
+        row['categories'][0].pop('sub_category')
+        omitted = MODULE.taxonomy_projection(payloads[1], 'activity-news', 1)['records'][0]
+        self.assertFalse(omitted['relation_field_presence']['sub_category'])
+        self.assertFalse(omitted['categories'][0]['relation_field_presence']['sub_category'])
+        self.assertEqual(omitted['sub_category_id'], explicit['sub_category_id'])
+        self.assertIsNone(omitted['sub_category'])
+
     def factory(self, source):
         self.assertTrue(hasattr(MODULE, 'DiagnosticTransport'), 'Taxonomy diagnostics are not implemented')
         return MODULE.DiagnosticTransport(source)

@@ -76,6 +76,7 @@ def taxonomy_projection(payload, category_key, page_number):
             continue
         row = _public_fields(raw, ("id", "title", "code", "category_id", "sub_category_id"))
         row.update(category=_taxonomy(raw.get("category")), sub_category=_taxonomy(raw.get("sub_category")),
+                   relation_field_presence={key: key in raw for key in ("category", "sub_category")},
                    categories=[], issues=[])
         primary = raw.get("category") if isinstance(raw.get("category"), dict) else {}
         sub = raw.get("sub_category") if isinstance(raw.get("sub_category"), dict) else {}
@@ -99,6 +100,7 @@ def taxonomy_projection(payload, category_key, page_number):
                 continue
             selected = _public_fields(member, ("id", "category_id", "sub_category_id", "sequence"))
             selected.update(category=_taxonomy(member.get("category")), sub_category=_taxonomy(member.get("sub_category")))
+            selected["relation_field_presence"] = {key: key in member for key in ("category", "sub_category")}
             row["categories"].append(selected)
             category = member.get("category") if isinstance(member.get("category"), dict) else {}
             child = member.get("sub_category") if isinstance(member.get("sub_category"), dict) else {}
@@ -217,6 +219,23 @@ class DiagnosticTransport(Transport):
                 "anomalies": deepcopy(self.anomalies), "continuation_error": self.continuation_error}
 
 
+def unresolved_subcategory_receipt(observations):
+    """Retain field-presence evidence without exporting bodies or other metadata."""
+    rows = []
+    for observation in observations.values():
+        metadata = observation.get("source_metadata", {})
+        if "source_subcategory_unresolved" not in metadata.get("warnings", []):
+            continue
+        row = _public_fields(metadata, ("id", "category_id", "sub_category_id", "sub_category_relation_state"))
+        row["memberships"] = []
+        for member in metadata.get("categories", []):
+            selected = _public_fields(member, ("category_id", "sub_category_id"))
+            selected["sub_category_relation_state"] = "null" if member["sub_category"] is None else "resolved"
+            row["memberships"].append(selected)
+        rows.append(row)
+    return sorted(rows, key=lambda row: row.get("id", ""))
+
+
 def qualify_sources(sources, category_keys, *, collector=collect_source, root=ROOT,
                     diagnose_taxonomy=False, transport_factory=None):
     keys = list(dict.fromkeys(category_keys))
@@ -268,6 +287,7 @@ def qualify_sources(sources, category_keys, *, collector=collect_source, root=RO
             "records": count, "distinct_observations": len(observations),
             "pages": pages, "error": error,
             "listing_warnings": deepcopy(source_result.get("tcct_listing_warnings", {})),
+            "unresolved_subcategories": unresolved_subcategory_receipt(observations),
         }
         if diagnose_taxonomy and not complete:
             scope["taxonomy_diagnostic"] = transport.diagnose_failure()

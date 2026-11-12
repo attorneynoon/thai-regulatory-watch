@@ -17,10 +17,10 @@
       "category_id",
       "sub_category_id",
       "category identifiers and visibility",
-      "sub_category",
       "categories identifiers and visibility"
     ],
     "reconstructed_fields": [
+      "top-level sub_category:null placeholder; original field presence was not captured",
       "document_number",
       "content",
       "description",
@@ -32,7 +32,10 @@
       "is_reference_link",
       "url_link"
     ],
-    "note": "Taxonomy IDs, keys, parents, flags, explicit null relations, titles and codes are the actual sanitized CI projection. Missing category names are joined only from the matching official first-page parent category. Other required record fields are synthetic scaffolding, not official values or evidence of absent content. This is not a complete API response or a 401-record capture."
+    "top_level_sub_category_presence_captured": false,
+    "followup_ci_run": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/43197495029",
+    "followup_head_sha": "bbadbdb478f2ab11361f2fd55ab509c1f5506494",
+    "note": "Taxonomy IDs, keys, parents, flags, titles and codes are from the sanitized CI projection. That diagnostic used get() for expanded relations and could not distinguish an omitted field from explicit null. The top-level sub_category:null in these reconstructed records is therefore a placeholder, not observed field presence. A subsequent live parser failure confirmed an omitted top-level relation, but this first projection cannot establish the original presence for each of the five rows. Membership relation presence remains a mandatory parser contract. Missing category names are joined only from the matching official first-page parent category. Other required record fields are synthetic scaffolding, not official values or evidence of absent content. This is not a complete API response or a 401-record capture."
   },
   "listing_category": {
     "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",

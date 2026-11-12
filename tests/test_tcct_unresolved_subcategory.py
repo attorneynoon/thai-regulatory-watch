@@ -19,7 +19,7 @@ def unresolved_fixture():
     return json.loads(FIXTURE.read_text('utf-8'))
 
 
-def reconstructed_parent_pages():
+def reconstructed_parent_pages(omit_top_level_relation=False):
     """25-record synthetic pagination; five taxonomy records came from CI pages2/3."""
     fixture = unresolved_fixture()
     payloads = api_pages(25, key='activity-news-2569')
@@ -27,13 +27,20 @@ def reconstructed_parent_pages():
         page['data']['category'] = deepcopy(fixture['listing_category'])
     payloads[2]['data']['contents'][:4] = [deepcopy(row['record']) for row in fixture['records'][:4]]
     payloads[3]['data']['contents'][0] = deepcopy(fixture['records'][4]['record'])
+    if omit_top_level_relation:
+        projected_ids = {row['record']['id'] for row in fixture['records']}
+        for page in payloads.values():
+            for row in page['data']['contents']:
+                if row['id'] in projected_ids:
+                    row.pop('sub_category')
     return payloads
 
 
 class UnresolvedSubcategoryParserTests(unittest.TestCase):
-    def test_actual_five_projections_preserve_ids_nulls_and_explicit_warning(self):
+    def test_actual_five_projected_ids_and_reconstructed_nulls_preserve_warning(self):
         fixture = unresolved_fixture()
         self.assertEqual(fixture['provenance']['observed_unresolved_records'], 5)
+        self.assertIs(fixture['provenance']['top_level_sub_category_presence_captured'], False)
         for entry in fixture['records']:
             raw = entry['record']
             before = deepcopy(raw)
@@ -50,23 +57,43 @@ class UnresolvedSubcategoryParserTests(unittest.TestCase):
                 self.assertNotIn('deleted', record['warnings'])
                 self.assertEqual(raw, before)
 
+    def test_top_level_omitted_null_and_resolved_relation_states_remain_distinct(self):
+        null_row = unresolved_fixture()['records'][0]['record']
+        omitted_row = deepcopy(null_row)
+        omitted_row.pop('sub_category')
+        resolved_row = api_pages(1, key='activity-news-2569')[1]['data']['contents'][0]
+        for state, raw in (('omitted', omitted_row), ('null', null_row), ('resolved', resolved_row)):
+            with self.subTest(state=state):
+                record = tcct_api.normalize_record(raw, 'activity-news')
+                self.assertEqual(record['sub_category_relation_state'], state)
+                self.assertEqual(record['sub_category_id'], raw['sub_category_id'])
+                if state == 'resolved':
+                    self.assertEqual(record['sub_category']['id'], raw['sub_category_id'])
+                    self.assertNotIn('source_subcategory_unresolved', record['warnings'])
+                else:
+                    self.assertIsNone(record['sub_category'])
+                    self.assertIn('source_subcategory_unresolved', record['warnings'])
+
     def test_raw_child_uuid_alone_cannot_prove_a_requested_year_scope(self):
         known_child_id = api_pages(1, key='activity-news-2569')[1]['data']['contents'][0]['sub_category_id']
         for child_id in (None, known_child_id):
-            record = unresolved_fixture()['records'][0]['record']
-            if child_id:
-                record['sub_category_id'] = child_id
-                record['categories'][0]['sub_category_id'] = child_id
-            with self.subTest(child_id=child_id):
-                with self.assertRaisesRegex(ValueError, 'requested scope'):
-                    tcct_api.normalize_record(record, 'activity-news-2569')
+            for omitted in (False, True):
+                record = unresolved_fixture()['records'][0]['record']
+                if child_id:
+                    record['sub_category_id'] = child_id
+                    record['categories'][0]['sub_category_id'] = child_id
+                if omitted:
+                    record.pop('sub_category')
+                with self.subTest(child_id=child_id, omitted=omitted):
+                    with self.assertRaisesRegex(ValueError, 'requested scope'):
+                        tcct_api.normalize_record(record, 'activity-news-2569')
 
-    def test_unresolved_primary_requires_explicit_null_and_matching_raw_membership_id(self):
+    def test_primary_ids_and_mandatory_membership_fields_remain_strict(self):
         mutations = (
-            lambda row: row.pop('sub_category'),
             lambda row: row.update(sub_category_id='different-raw-child'),
             lambda row: row['categories'][0].update(sub_category_id=None),
             lambda row: row['categories'][0].pop('sub_category'),
+            lambda row: row['categories'][0].pop('sub_category_id'),
         )
         for mutate in mutations:
             row = unresolved_fixture()['records'][0]['record']
@@ -112,8 +139,13 @@ class UnresolvedSubcategoryParserTests(unittest.TestCase):
 
 class UnresolvedSubcategoryCollectionTests(unittest.TestCase):
     def test_complete_parent_is_atomic_retains_all_five_and_is_stable_on_rerun(self):
+        for omitted in (False, True):
+            with self.subTest(omitted=omitted):
+                self.assert_complete_parent(omitted)
+
+    def assert_complete_parent(self, omitted):
         state = empty_state()
-        payloads = reconstructed_parent_pages()
+        payloads = reconstructed_parent_pages(omit_top_level_relation=omitted)
         test = self
 
         class InspectBeforeApply(ApiTransport):
@@ -135,6 +167,7 @@ class UnresolvedSubcategoryCollectionTests(unittest.TestCase):
         for ident in expected_ids:
             metadata = observed[ident]['source_metadata']
             self.assertIsNone(metadata['sub_category'])
+            self.assertEqual(metadata['sub_category_relation_state'], 'omitted' if omitted else 'null')
             self.assertTrue(metadata['sub_category_id'])
             self.assertEqual(metadata['category_years_buddhist'], [])
         events = deepcopy(state['events'])
