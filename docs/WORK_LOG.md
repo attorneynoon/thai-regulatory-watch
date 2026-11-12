@@ -134,3 +134,7 @@ live probe was blocked by this environment's DNS/robots resolution, not a verifi
 origin outage. No source registry, production state, generated site, collector,
 monitoring schedule or deployment changes. Legacy/new identity mapping and hosted
 qualification remain required before activation. See `qualification/tcct-api.md`.
+
+TCCT follow-up: added an isolated PR-only six-first-page network qualification
+job on Ubuntu 24.04 with contents:read and no production writes or schedule.
+Hosted outcome remains separate from unit/offline validation.

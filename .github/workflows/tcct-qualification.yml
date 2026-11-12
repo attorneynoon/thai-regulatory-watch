@@ -1,0 +1,28 @@
+name: TCCT read-only API qualification
+on:
+  pull_request:
+    paths: ['regwatch/tcct.py', 'regwatch/transport.py', '.github/workflows/tcct-qualification.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --upgrade pip==26.2.1
+      - run: python -m pip install -r requirements.txt
+      - name: Qualify six public first pages without production state writes
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          failed=0
+          for category in verdict verdict-mergers draft-principles-hearing tcct-draft-laws-hearing giveaway-news-2569 activity-news-2569; do
+            python -m regwatch.tcct "$category" --max-pages 1 || failed=1
+          done
+          exit "$failed"

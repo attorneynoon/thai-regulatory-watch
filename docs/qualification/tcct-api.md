@@ -55,8 +55,10 @@ The parser was replayed against all six captured first pages. Live native
 Transport verification in this cloud execution environment failed at DNS/robots
 resolution (`Errno -3 Temporary failure in name resolution`), while ordinary
 curl public probes succeeded. This environment result is not a TCCT origin
-failure. A hosted read-only qualification is still required; no workflow dispatch,
-monitoring run, merge, deployment or production source enablement was performed.
+failure. A PR-only TCCT qualification job now tests the six first pages with native
+Transport on Ubuntu 24.04, contents:read, no schedule or manual dispatch trigger,
+and sanitized stdout only. Its result must be checked before claiming success.
+No monitoring run, merge, deployment or production source enablement is performed.
 
 ## Migration hold and lineage
 
