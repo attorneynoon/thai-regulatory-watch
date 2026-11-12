@@ -1,0 +1,1018 @@
+{
+  "fixture_kind": "representative-official-page-extract",
+  "fixture_provenance": {
+    "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+    "category_key": "giveaway-news-2569",
+    "retrieved_on": "2026-11-12",
+    "raw_response_sha256": "b3eafdfe6e719bf4b98f3c994381a3d4e64e6db47a9562cec6dae9af7b63d696",
+    "note": "Complete first-page records and pagination retained. CMS owner, counters, image assets and audit timestamps omitted. One page is not proof of complete archive traversal."
+  },
+  "status": "success",
+  "data": {
+    "category": {
+      "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+      "key": "giveaway-news-2569",
+      "name": "พ.ศ. 2569",
+      "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+      "is_active": true,
+      "is_delete": false,
+      "description": "",
+      "filter_category_ids": null,
+      "sequence": null
+    },
+    "meta": {
+      "total": 20,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 2,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "92650bd5-818c-40ea-8682-85f02769085f",
+        "code": "CTN260920130402",
+        "document_number": null,
+        "title": "[ฉบับที่ 20/2569] กขค. เดินหน้ารับฟังเสียงฝั่งแพลตฟอร์ม แจง GP คือต้นทุน จี้รัฐบูรณาการลดทับซ้อน",
+        "content": null,
+        "description": null,
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "492125be-1633-43cf-ac73-a8b65735e3dd",
+            "file_name": "Press_20_2569.pdf",
+            "display_file_name": "Press_20_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_20_2569.pdf",
+            "originalName": "Press_20_2569.pdf",
+            "file_size": 118654,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/492125be-1633-43cf-ac73-a8b65735e3dd"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-09-15T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "83e8e922-7c28-483e-ab18-42728285f2c5",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "64a5cf61-abef-4edd-9661-3a2179c852ca",
+        "code": "CTN260920130341",
+        "document_number": null,
+        "title": "[ฉบับที่ 19/2569] “ศุภจี” หนุน กขค. ปฏิรูปการแข่งขัน ดันไทยสู่เศรษฐกิจแห่งอนาคต",
+        "content": null,
+        "description": null,
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "e5d3678c-f159-434d-a489-1b62ca6b841d",
+            "file_name": "press19_69_CompetitionDay.pdf",
+            "display_file_name": "press19_69_CompetitionDay.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "press19_69_CompetitionDay.pdf",
+            "originalName": "press19_69_CompetitionDay.pdf",
+            "file_size": 114914,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/e5d3678c-f159-434d-a489-1b62ca6b841d"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-09-07T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "1f3f6e19-337e-4b61-9fca-f244091769ab",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "202a24c1-8707-4462-975f-9664a6797dcc",
+        "code": "CTN260920130315",
+        "document_number": null,
+        "title": "[ฉบับที่ 18/2569] กขค. เร่งลุย 2 ปมร้อน น้ำมันแพง - ของขาด พร้อมรับหลักฐานเพิ่มเติมจากทีม โอ๋ สุดซอย",
+        "content": null,
+        "description": null,
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "e4c43b64-d527-4d79-92ef-63fb4ceffe25",
+            "file_name": "Press_18_2569.pdf",
+            "display_file_name": "Press_18_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_18_2569.pdf",
+            "originalName": "Press_18_2569.pdf",
+            "file_size": 220473,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/e4c43b64-d527-4d79-92ef-63fb4ceffe25"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-09-04T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "b8526a52-1be2-4cdf-b71b-882aca23ce2c",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "b59fff46-3124-4799-832f-ee2ce13f30a2",
+        "code": "CTN260920130245",
+        "document_number": null,
+        "title": "[ฉบับที่ 17/2569] กขค. เปิดเวทีรับฟัง “ไรเดอร์ - ร้านอาหาร” ปมแพลตฟอร์มเก็บ GP สูง หวั่นเอาเปรียบคู่ค้า",
+        "content": null,
+        "description": null,
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "b9024f2e-d3ba-4cc3-88a4-c3ae6b2fe66b",
+            "file_name": "Press_17_2569.pdf",
+            "display_file_name": "Press_17_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_17_2569.pdf",
+            "originalName": "Press_17_2569.pdf",
+            "file_size": 110337,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/b9024f2e-d3ba-4cc3-88a4-c3ae6b2fe66b"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-09-01T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "c6d5e556-758e-4ea9-ae68-ed9790453ccb",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "663097db-e3c6-49f1-81d2-a1bd35d577c1",
+        "code": "CTN260903141946",
+        "document_number": null,
+        "title": "[ฉบับที่ 16/2569] กขค. จับตาแพลตฟอร์มรายใหญ่ ลุยตรวจสอบพฤติกรรมที่กระทบการแข่งขัน ย้ำ! ไม่ดูแค่ “GP” แต่ต้องมองทั้ง Business Model",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "fea04c8b-696c-4b1b-975c-e727e79ff507",
+            "file_name": "Press_16_2569.pdf",
+            "display_file_name": "Press_16_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_16_2569.pdf",
+            "originalName": "Press_16_2569.pdf",
+            "file_size": 272233,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/fea04c8b-696c-4b1b-975c-e727e79ff507"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-21T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "c7ead09f-b2a7-4e3b-b906-fc88b939a885",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "4ea6d9bd-d3c2-480f-881f-918fb2796825",
+        "code": "CTN260903141905",
+        "document_number": null,
+        "title": "[ฉบับที่่ 15/2569] กขค. ชง “กติกาเหล็ก” คุมแพลตฟอร์มเรียกรถ - ส่งของ ปิดช่องเอาเปรียบไรเดอร์ - ผู้บริโภค เปิดรับฟังความเห็นถึง 31 ส.ค. นี้",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "fc06bdbd-dcb5-4853-84fb-abfa6f9b546a",
+            "file_name": "Press_15_2569.pdf",
+            "display_file_name": "Press_15_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_15_2569.pdf",
+            "originalName": "Press_15_2569.pdf",
+            "file_size": 266456,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/fc06bdbd-dcb5-4853-84fb-abfa6f9b546a"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-20T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "01894b6e-9ffc-49d6-aaeb-05150dbe755d",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "af5eaaae-c9a6-4bd8-8837-eccf1772c3d1",
+        "code": "CTN260903141835",
+        "document_number": null,
+        "title": "[ฉบับที่ 14/2569] สนามแข่งขันที่เท่าเทียม ดันรัฐวิสาหกิจและองค์การมหาชน ใช้ “Competition Compliance Checklist” เช็คความเสี่ยง",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "4aff5b1b-b0b6-47d0-aa5a-d68574acc3e3",
+            "file_name": "TCCT_PRESS_RELEASE_14_2026.pdf",
+            "display_file_name": "TCCT_PRESS_RELEASE_14_2026.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "TCCT_PRESS_RELEASE_14_2026.pdf",
+            "originalName": "TCCT_PRESS_RELEASE_14_2026.pdf",
+            "file_size": 130611,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/4aff5b1b-b0b6-47d0-aa5a-d68574acc3e3"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-18T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "bdf68d2c-bc32-4dfa-a162-e690d909384f",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "511ed3eb-e4fa-4198-bb41-1ba8dea3e1a4",
+        "code": "CTN260808092327",
+        "document_number": null,
+        "title": "[ฉบับที่ 13/2569] \"พิทยา\" - กขค. ขอบคุณสมาคมอีคอมเมิร์ซไทยเป็นกระบอกเสียงพาผู้ค้าบนแพลตฟอร์มโร่ร้อง ถูกเอาเปรียบ",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "6c9aba9c-8682-42d1-b56f-b0c40231de3b",
+            "file_name": "Press_13_2569.pdf",
+            "display_file_name": "Press_13_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_13_2569.pdf",
+            "originalName": "Press_13_2569.pdf",
+            "file_size": 249403,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/6c9aba9c-8682-42d1-b56f-b0c40231de3b"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-06T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "6666ac51-1a32-4d7d-8c24-1cdb76ddf660",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "9d7732ec-1b86-414c-9f49-3c9fc1853d21",
+        "code": "CTN260808092400",
+        "document_number": null,
+        "title": "[ฉบับที่ 12/2569] กขค. เตรียมปัดฝุ่นไกด์ไลน์แพลตฟอร์มดิจิทัล ค้าส่งค้าปลีกบริการจัดส่งออนดีมานด์ - พร้อมเปิดรับฟังความคิดเห็น วันนี้ - 31 ส.ค. 69",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "5b42f92a-7a91-4e7b-ae4f-77a98f3786fa",
+            "file_name": "Press_12_2569.pdf",
+            "display_file_name": "Press_12_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_12_2569.pdf",
+            "originalName": "Press_12_2569.pdf",
+            "file_size": 182983,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/5b42f92a-7a91-4e7b-ae4f-77a98f3786fa"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-31T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "7dd0897d-17ad-4577-8cde-c1a152905e52",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "e61ff5e4-0716-47c1-adf5-86eed6c4ce60",
+        "code": "CTN260808092441",
+        "document_number": null,
+        "title": "[ฉบับที่ 11/2569] กขค. พบสัญญาณพฤติกรรมทางการค้าที่ไม่เป็นธรรมในบริการแพลตฟอร์มดิจิทัล - รับกรณีกักตุนน้ำมันเชื้อเพลิงไว้พิจารณา 2 คดี",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "10c009d4-ed68-4617-a943-a1d580559ef4",
+            "file_name": "Press_11_2569.pdf.pdf",
+            "display_file_name": "Press_11_2569.pdf.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_11_2569.pdf.pdf",
+            "originalName": "Press_11_2569.pdf.pdf",
+            "file_size": 128061,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/10c009d4-ed68-4617-a943-a1d580559ef4"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-25T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "25e0f34b-d3a3-4553-aae9-4871ccdda66a",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "59a99c30-d1c8-47b7-8a34-1a847036754e",
+        "code": "CTN260808092533",
+        "document_number": null,
+        "title": "[ฉบับที่ 10/2569] กขค. เปิดสถิติเรื่องร้องเรียนแพลตฟอร์มดิจิทัลเร่งเครื่องสร้างความเป็นธรรมทางการค้า",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "5c3b1b45-d8fb-45c8-8670-32e43bc16b75",
+            "file_name": "Press_10_2569.pdf",
+            "display_file_name": "Press_10_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_10_2569.pdf",
+            "originalName": "Press_10_2569.pdf",
+            "file_size": 228569,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/5c3b1b45-d8fb-45c8-8670-32e43bc16b75"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "2a2aac33-2716-41bc-89dd-3e44e5a45190",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "30a4906f-1224-4208-9fc6-905c233dd98d",
+        "code": "CTN260808093026",
+        "document_number": null,
+        "title": "[ฉบับที่ 9/2569] กขค. เอาจริง ตั้งคณะอนุกรรมการ 2 ชุด คุมเข้มแพลตฟอร์มดิจิทัล - วางกติกา Modern Trade",
+        "content": "",
+        "description": "",
+        "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "file_list": [
+          {
+            "id": "db7377e0-c9e5-4ab1-a38a-c80715301404",
+            "file_name": "Press_09_2569.pdf",
+            "display_file_name": "Press_09_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Press_09_2569.pdf",
+            "originalName": "Press_09_2569.pdf",
+            "file_size": 209014,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/db7377e0-c9e5-4ab1-a38a-c80715301404"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-07T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "key": "giveaway-news",
+          "name": "ข่าวประชาสัมพันธ์",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "5a10dc01-d5ed-4110-9c0d-6fb8141a5089",
+            "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "sequence": 0,
+            "category": {
+              "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "key": "giveaway-news",
+              "name": "ข่าวประชาสัมพันธ์",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+              "key": "giveaway-news-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "key": "giveaway-news-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      }
+    ]
+  }
+}

@@ -2335,7 +2335,7 @@ sources:
   feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Press releases — current official archive
-  url: https://www.tcct.or.th/view/1/giveaway_news/TH-TH
+  url: https://www.tcct.or.th/category/giveaway-news
   topics:
   - competition
   - news
@@ -2345,33 +2345,40 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 500
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - Empty year-specific legacy URL replaced with the current official press-release index; overlaps existing press source.
-    All year tabs present on the one listing response, bounded500 items.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - All-year parent archive retained; first-page contract observed. Full parent archive qualification
+    is pending a successful production-transport scan.
   origin_ids:
   - enforcement:tcct:2
-  include_url: null
-  link_selector: li.list-news a[href]
-  fixture: tests/fixtures/repairs/main-tcct-listing-02.html
-  fixture_kind: representative-official-extract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .detail, li.list-news
-  date_selector: .text-red2
-  content_selector: '#col-content'
-  title_attribute: title
+  fixture: tests/fixtures/tcct-api/pages/giveaway-news-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
-  document_id_pattern: ฉบับที่\s*([0-9๐-๙]+/[0-9๐-๙]+)
+  tcct_category_key: giveaway-news
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: tcct-listing-03
   regulator_id: tcct
   title: TCCT — Press releases — original watch scope
-  url: https://www.tcct.or.th/view/1/giveaway_news/TH-TH
+  url: https://www.tcct.or.th/category/giveaway-news
   topics:
   - competition
   - news
@@ -2381,31 +2388,40 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 100
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - Listing scope and recent-item completeness require live validation.
-  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - All-year parent archive retained; first-page contract observed. Full parent archive qualification
+    is pending a successful production-transport scan.
   origin_ids:
   - enforcement:tcct:3
-  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
-  link_selector: .detail a[href], li.list-news a[href]
-  fixture: tests/fixtures/listing.html
-  fixture_kind: synthetic-adapter-contract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .detail, li.list-news
-  date_selector: .text-red2
+  fixture: tests/fixtures/tcct-api/pages/giveaway-news-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
-  document_id_pattern: ฉบับที่\s*([0-9๐-๙]+/[0-9๐-๙]+)
+  tcct_category_key: giveaway-news
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: tcct-listing-04
   regulator_id: tcct
   title: TCCT — News and activities — migrated scope
-  url: https://www.tcct.or.th/view/1/activity/TH-TH
+  url: https://www.tcct.or.th/category/activity-news
   topics:
   - competition
   - activities
@@ -2415,31 +2431,40 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 100
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - Official activity cards replace empty generic news page where applicable; duplicate activity scope is explicit. Displayed
-    day/month lacks year, so publication date remains unknown.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - All-year parent archive retained; first-page contract observed. Full parent archive qualification
+    is pending a successful production-transport scan.
   origin_ids:
   - enforcement:tcct:4
-  include_url: /activity/
-  link_selector: .card-title a[href]
-  fixture: tests/fixtures/repairs/main-tcct-listing-04.html
-  fixture_kind: representative-official-extract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .card
-  date_selector: .entry-date
-  content_selector: '#col-content'
+  fixture: tests/fixtures/tcct-api/pages/activity-news-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  tcct_category_key: activity-news
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: tcct-listing-05
   regulator_id: tcct
   title: TCCT — Activities
-  url: https://www.tcct.or.th/view/1/activity/TH-TH
+  url: https://www.tcct.or.th/category/activity-news
   topics:
   - competition
   - activities
@@ -2449,27 +2474,36 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 100
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - Official activity cards replace empty generic news page where applicable; duplicate activity scope is explicit. Displayed
-    day/month lacks year, so publication date remains unknown.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - All-year parent archive retained; first-page contract observed. Full parent archive qualification
+    is pending a successful production-transport scan.
   origin_ids:
   - enforcement:tcct:5
-  include_url: /activity/
-  link_selector: .card-title a[href]
-  fixture: tests/fixtures/repairs/main-tcct-listing-05.html
-  fixture_kind: representative-official-extract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .card
-  date_selector: .entry-date
-  content_selector: '#col-content'
+  fixture: tests/fixtures/tcct-api/pages/activity-news-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  tcct_category_key: activity-news
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: tcct-listing-06
   regulator_id: tcct
   title: TCCT — Competition statistics
@@ -2541,7 +2575,7 @@ sources:
   feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Merger rulings
-  url: https://www.tcct.or.th/view/1/Verdict_mergers/TH-TH
+  url: https://www.tcct.or.th/category/verdict-mergers
   topics:
   - competition
   - mergers
@@ -2551,26 +2585,34 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 100
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 2
   limitations:
-  - Listing scope and recent-item completeness require live validation.
-  - Candidate family filter; fixture tests engine behavior, not live source completeness.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
   origin_ids:
   - owner-initial-source-assessment
-  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
-  link_selector: .detail a[href], li.list-news a[href]
-  fixture: tests/fixtures/listing.html
-  fixture_kind: synthetic-adapter-contract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .detail, li.list-news
-  date_selector: .text-red2
+  fixture: tests/fixtures/tcct-api/pages/verdict-mergers-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  tcct_category_key: verdict-mergers
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: tcct-official-complaints-prosecution
   feed_priority: regulatory
   regulator_id: tcct
@@ -2689,7 +2731,7 @@ sources:
   feed_priority: regulatory
   regulator_id: tcct
   title: TCCT — Unfair-trade rulings
-  url: https://www.tcct.or.th/view/1/verdict/TH-TH
+  url: https://www.tcct.or.th/category/verdict
   topics:
   - competition
   - rulings
@@ -2699,27 +2741,34 @@ sources:
   authority_class: official-publication
   enabled: true
   validation_status: candidate
-  mode: html
+  mode: tcct-api
   allowed_hosts:
   - www.tcct.or.th
-  max_pages: 1
-  max_items: 300
+  - api.tcct.or.th
+  max_pages: 50
+  max_items: 1000
   min_items: 1
   asset_budget: 3
   limitations:
-  - Official unfair-rulings index; publication dates extracted from .text-red2. Current listing only; no completeness assertion
-    or nested-detail traversal. PDF checks rotate under a per-run budget.
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
   origin_ids:
   - owner-initial-source-assessment
-  include_url: (?i)(\.pdf(?:\?|$)|/view/1/(?:Detail|News|news|detail)[^/]*/|/news/\d)
-  link_selector: .detail a[href], li.list-news a[href]
-  fixture: tests/fixtures/tcct-ruling.html
-  fixture_kind: representative-official-extract
-  exclude_title: จัดซื้อ|จัดจ้าง|ประกวดราคา|รับสมัครงาน|สมัครสอบ|บรรจุและแต่งตั้งเป็นพนักงาน
-  item_selector: .detail, li.list-news
-  date_selector: .text-red2
-  include_title: คำวินิจฉัย
+  fixture: tests/fixtures/tcct-api/pages/verdict-page1.json
+  fixture_kind: representative-official-page-extract
   publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  tcct_category_key: verdict
+  tcct_migration_version: tcct-api-2026-11
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
 - id: thaibma-listing-01
   regulator_id: thaibma
   title: สมาคมตลาดตราสารหนี้ไทย
@@ -3038,3 +3087,173 @@ sources:
   include_title: ประกาศ|ระเบียบ|คำชี้แจง|รายงาน|สรุปมติ|คู่มือ|ข้อมูล
   fixture: tests/fixtures/repairs/institution-wage-committee.html
   fixture_kind: representative-official-extract
+- id: tcct-draft-principles-hearing
+  feed_priority: regulatory
+  regulator_id: tcct
+  title: TCCT — Draft principles hearings
+  topics:
+  - competition
+  - consultation
+  jurisdiction: TH
+  language: th
+  document_type: consultation
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  min_items: 1
+  asset_budget: 2
+  origin_ids:
+  - tcct-rebuild-20261112:draft-principles-hearing
+  publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  url: https://www.tcct.or.th/category/draft-principles-hearing
+  mode: tcct-api
+  allowed_hosts:
+  - www.tcct.or.th
+  - api.tcct.or.th
+  tcct_category_key: draft-principles-hearing
+  tcct_migration_version: tcct-api-2026-11
+  max_pages: 50
+  max_items: 1000
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
+  fixture: tests/fixtures/tcct-api/pages/draft-principles-hearing-page1.json
+  fixture_kind: representative-official-page-extract
+  limitations:
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+- id: tcct-draft-laws-hearing
+  feed_priority: regulatory
+  regulator_id: tcct
+  title: TCCT — Draft laws hearings
+  topics:
+  - competition
+  - consultation
+  jurisdiction: TH
+  language: th
+  document_type: consultation
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  min_items: 1
+  asset_budget: 2
+  origin_ids:
+  - tcct-rebuild-20261112:tcct-draft-laws-hearing
+  publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  url: https://www.tcct.or.th/category/tcct-draft-laws-hearing
+  mode: tcct-api
+  allowed_hosts:
+  - www.tcct.or.th
+  - api.tcct.or.th
+  tcct_category_key: tcct-draft-laws-hearing
+  tcct_migration_version: tcct-api-2026-11
+  max_pages: 50
+  max_items: 1000
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
+  fixture: tests/fixtures/tcct-api/pages/tcct-draft-laws-hearing-page1.json
+  fixture_kind: representative-official-page-extract
+  limitations:
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+- id: tcct-press-2569
+  feed_priority: regulatory
+  regulator_id: tcct
+  title: TCCT — Press releases — พ.ศ. 2569
+  topics:
+  - competition
+  - news
+  jurisdiction: TH
+  language: th
+  document_type: press-release
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  min_items: 1
+  asset_budget: 2
+  origin_ids:
+  - tcct-rebuild-20261112:giveaway-news-2569
+  publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  url: https://www.tcct.or.th/category/giveaway-news/giveaway-news-2569
+  mode: tcct-api
+  allowed_hosts:
+  - www.tcct.or.th
+  - api.tcct.or.th
+  tcct_category_key: giveaway-news-2569
+  tcct_migration_version: tcct-api-2026-11
+  max_pages: 50
+  max_items: 1000
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
+  fixture: tests/fixtures/tcct-api/pages/giveaway-news-2569-page1.json
+  fixture_kind: representative-official-page-extract
+  limitations:
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - This is the explicit พ.ศ. 2569 scope; it does not automatically roll into a later year.
+- id: tcct-activities-2569
+  feed_priority: radar
+  regulator_id: tcct
+  title: TCCT — Activities — พ.ศ. 2569
+  topics:
+  - competition
+  - activities
+  jurisdiction: TH
+  language: th
+  document_type: activity-news
+  authority_class: official-publication
+  enabled: true
+  validation_status: candidate
+  min_items: 1
+  asset_budget: 2
+  origin_ids:
+  - tcct-rebuild-20261112:activity-news-2569
+  publisher_name: สำนักงานคณะกรรมการแข่งขันทางการค้า (Trade Competition Commission of Thailand — TCCT)
+  url: https://www.tcct.or.th/category/activity-news/activity-news-2569
+  mode: tcct-api
+  allowed_hosts:
+  - www.tcct.or.th
+  - api.tcct.or.th
+  tcct_category_key: activity-news-2569
+  tcct_migration_version: tcct-api-2026-11
+  max_pages: 50
+  max_items: 1000
+  max_response_bytes: 4000000
+  max_asset_bytes: 40000000
+  fixture: tests/fixtures/tcct-api/pages/activity-news-2569-page1.json
+  fixture_kind: representative-official-page-extract
+  limitations:
+  - Complete 12-record API page set required at every successful scan; metadata drift, duplicate IDs or
+    a missing page retains the prior inventory.
+  - API record UUID is identity. No general public article-token mapping is verified; records link to
+    the exact category listing or primary official PDF, not an invented permalink.
+  - Raw source_start_date, source_end_date and category year are retained separately. Publication and
+    legal-effect dates remain unassessed.
+  - All API category memberships and file_list entries, including isPublic:false, remain evidence. Only
+    a budgeted primary PDF is fingerprinted; references are preserved without following external sites.
+  - First complete API migration baselines unseen UUIDs while retaining old URL identities and immutable
+    history. Old and new records may coexist; filenames are not identity aliases.
+  - This is the explicit พ.ศ. 2569 scope; it does not automatically roll into a later year.

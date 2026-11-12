@@ -1,0 +1,283 @@
+{
+  "fixture_kind": "sanitized-official-taxonomy-projection-with-reconstructed-fields",
+  "provenance": {
+    "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+    "category_key": "activity-news",
+    "qualified_at": "2026-11-12T09:57:35Z",
+    "ci_run": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/43195991839",
+    "head_sha": "f1e2e33e9787fc61e681277c10b3f40bdd3b63da",
+    "diagnostic_sha256": "f35998451b89fa8fb040c5de1332ec3a920cbad0d6355edfc4bb7d9696a58eeb",
+    "observed_total": 401,
+    "diagnostic_pages_inspected": 34,
+    "observed_unresolved_records": 5,
+    "observed_fields": [
+      "id",
+      "title",
+      "code",
+      "category_id",
+      "sub_category_id",
+      "category identifiers and visibility",
+      "categories identifiers and visibility"
+    ],
+    "reconstructed_fields": [
+      "top-level sub_category:null placeholder; original field presence was not captured",
+      "document_number",
+      "content",
+      "description",
+      "file_list",
+      "is_active",
+      "is_draft",
+      "start_date",
+      "end_date",
+      "is_reference_link",
+      "url_link"
+    ],
+    "top_level_sub_category_presence_captured": false,
+    "followup_ci_run": "https://github.com/attorneynoon/thai-regulatory-watch/actions/runs/43197495029",
+    "followup_head_sha": "bbadbdb478f2ab11361f2fd55ab509c1f5506494",
+    "note": "Taxonomy IDs, keys, parents, flags, titles and codes are from the sanitized CI projection. That diagnostic used get() for expanded relations and could not distinguish an omitted field from explicit null. The top-level sub_category:null in these reconstructed records is therefore a placeholder, not observed field presence. A subsequent live parser failure confirmed an omitted top-level relation, but this first projection cannot establish the original presence for each of the five rows. Membership relation presence remains a mandatory parser contract. Missing category names are joined only from the matching official first-page parent category. Other required record fields are synthetic scaffolding, not official values or evidence of absent content. This is not a complete API response or a 401-record capture."
+  },
+  "listing_category": {
+    "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+    "key": "activity-news",
+    "name": "ข่าวกิจกรรม",
+    "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+    "is_active": true,
+    "is_delete": false,
+    "description": "",
+    "filter_category_ids": null,
+    "sequence": 3
+  },
+  "records": [
+    {
+      "observed_page": 2,
+      "record": {
+        "id": "62c15cb6-110f-4b44-8a38-52943585a4f8",
+        "title": "การเปิดโอกาสให้เกิดการมีส่วนร่วม ของสำนักงาน กขค. ประจำปีงบประมาณ พ.ศ.2567",
+        "code": "CTN260808065847",
+        "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "sub_category_id": "09ecabfa-75ac-41c3-8385-6ede3caac3f6",
+        "category": {
+          "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "key": "activity-news",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "name": "ข่าวกิจกรรม"
+        },
+        "sub_category": null,
+        "categories": [
+          {
+            "id": "1c58c088-0b7d-4f5c-b4b8-3dc023150649",
+            "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "sub_category_id": "09ecabfa-75ac-41c3-8385-6ede3caac3f6",
+            "sequence": 0,
+            "category": {
+              "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+              "key": "activity-news",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "name": "ข่าวกิจกรรม"
+            },
+            "sub_category": null
+          }
+        ],
+        "document_number": null,
+        "content": null,
+        "description": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": null,
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null
+      }
+    },
+    {
+      "observed_page": 2,
+      "record": {
+        "id": "23c4d1ca-95d0-4eec-a685-be309eba25cb",
+        "title": "ความร่วมมือ / ข้อตกลงความร่วมมือ",
+        "code": "CTN260808065651",
+        "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "sub_category_id": "23b7622e-6b3c-45c0-9f67-87c713f6dc70",
+        "category": {
+          "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "key": "activity-news",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "name": "ข่าวกิจกรรม"
+        },
+        "sub_category": null,
+        "categories": [
+          {
+            "id": "d767ea2b-f7d2-4545-93b1-90b6e9739464",
+            "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "sub_category_id": "23b7622e-6b3c-45c0-9f67-87c713f6dc70",
+            "sequence": 0,
+            "category": {
+              "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+              "key": "activity-news",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "name": "ข่าวกิจกรรม"
+            },
+            "sub_category": null
+          }
+        ],
+        "document_number": null,
+        "content": null,
+        "description": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": null,
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null
+      }
+    },
+    {
+      "observed_page": 2,
+      "record": {
+        "id": "6a13b8d0-1eeb-4056-9c48-697a3a8336c4",
+        "title": "ข่าวตัวอย่าง",
+        "code": "CTN260729024351",
+        "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "sub_category_id": "3e0cf94b-9f45-4eeb-813e-cce0c64544f9",
+        "category": {
+          "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "key": "activity-news",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "name": "ข่าวกิจกรรม"
+        },
+        "sub_category": null,
+        "categories": [
+          {
+            "id": "4377357f-c529-470a-ae43-bdc5ba02cafa",
+            "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "sub_category_id": "3e0cf94b-9f45-4eeb-813e-cce0c64544f9",
+            "sequence": 0,
+            "category": {
+              "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+              "key": "activity-news",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "name": "ข่าวกิจกรรม"
+            },
+            "sub_category": null
+          }
+        ],
+        "document_number": null,
+        "content": null,
+        "description": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": null,
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null
+      }
+    },
+    {
+      "observed_page": 2,
+      "record": {
+        "id": "0e5b06df-6f46-49c4-8e12-fe978d05ec0d",
+        "title": "ข่าวตัวอย่าง2",
+        "code": "CTN260729054252",
+        "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "sub_category_id": "3d3c0bbd-ae4c-4994-bc7c-b73517aad8de",
+        "category": {
+          "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "key": "activity-news",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "name": "ข่าวกิจกรรม"
+        },
+        "sub_category": null,
+        "categories": [
+          {
+            "id": "00c4f1a8-5dbd-4be1-9ddb-1aeec36e7fcf",
+            "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "sub_category_id": "3d3c0bbd-ae4c-4994-bc7c-b73517aad8de",
+            "sequence": 0,
+            "category": {
+              "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+              "key": "activity-news",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "name": "ข่าวกิจกรรม"
+            },
+            "sub_category": null
+          }
+        ],
+        "document_number": null,
+        "content": null,
+        "description": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": null,
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null
+      }
+    },
+    {
+      "observed_page": 3,
+      "record": {
+        "id": "cc1b1f89-96c1-4d62-8d42-8c9e124c10d9",
+        "title": "[ฉบับที่ 10/2569]  กขค. เปิดสถิติเรื่องร้องเรียนแพลตฟอร์มดิจิทัลเร่งเครื่องสร้างความเป็นธรรมทางการค้า",
+        "code": "CTN260725060309",
+        "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "sub_category_id": "3d3c0bbd-ae4c-4994-bc7c-b73517aad8de",
+        "category": {
+          "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "key": "activity-news",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "name": "ข่าวกิจกรรม"
+        },
+        "sub_category": null,
+        "categories": [
+          {
+            "id": "95dd9895-d02c-469b-b798-cc95736c712f",
+            "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "sub_category_id": "3d3c0bbd-ae4c-4994-bc7c-b73517aad8de",
+            "sequence": 0,
+            "category": {
+              "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+              "key": "activity-news",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "name": "ข่าวกิจกรรม"
+            },
+            "sub_category": null
+          }
+        ],
+        "document_number": null,
+        "content": null,
+        "description": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": null,
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "fixture_kind": "synthetic-observed-contract-reconstruction",
+  "root_fixture_provenance": {
+    "reconstructed_on": "2026-11-12",
+    "reason": "Original executor filesystem became unavailable and was reset. These are new synthetic contract fixtures, not byte-identical recovered captures.",
+    "evidence_basis": "Selected record IDs, codes, titles, dates, category IDs and primary download metadata were observed in earlier tool results. Membership IDs and supplementary test bodies, rows and download URLs are synthetic.",
+    "limitations": "Do not cite these fixtures as live responses, complete listings, exact original extracts, or independently verified documents. Original 414-record qualification was performed against separate captures before filesystem loss."
+  },
+  "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "category_key": "verdict",
+  "observed_page1_meta": {
+    "total": 137,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 12,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  },
+  "listing_category": {
+    "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+    "key": "verdict",
+    "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+    "description": "",
+    "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+    "is_active": true,
+    "is_delete": false,
+    "filter_category_ids": null,
+    "sequence": null
+  },
+  "records": [
+    {
+      "id": "75ad3a91-53ed-4ac0-ac65-27f357b38ee3",
+      "code": "CTN260920125848",
+      "document_number": null,
+      "title": "คำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์ \"Shopee\" จัดรายการส่งเสริมการขายและบังคับให้เข้าร่วมโดยไม่แจ้งให้ร้านค้าทราบล่วงหน้าและไม่ได้รับการยินยอมจากร้านค้า",
+      "content": "",
+      "description": null,
+      "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+      "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+      "file_list": [
+        {
+          "id": "f0b69f4d-257c-4acc-8434-5111573e0058",
+          "file_name": "platform_promotion.pdf",
+          "display_file_name": "platform_promotion.pdf",
+          "file_type": "application/pdf",
+          "file_extension": ".pdf",
+          "file_size": 36090254,
+          "file_path": "platform_promotion.pdf",
+          "originalName": "platform_promotion.pdf",
+          "fileUrl": "https://api.tcct.or.th/upload/f0b69f4d-257c-4acc-8434-5111573e0058",
+          "isPublic": false
+        }
+      ],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-09-17T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "key": "verdict",
+        "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": {
+        "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+        "key": "verdict-2569",
+        "name": "พ.ศ. 2569",
+        "description": "",
+        "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "categories": [
+        {
+          "id": "synthetic-membership-verdict-0",
+          "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+          "sequence": 0,
+          "category": {
+            "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "key": "verdict",
+            "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+            "key": "verdict-2569",
+            "name": "พ.ศ. 2569",
+            "description": "",
+            "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        },
+        {
+          "id": "synthetic-membership-tca-section-1",
+          "category_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+          "sub_category_id": "dfd5f3f1-b051-40aa-89e0-f8ee3d7ee677",
+          "sequence": 1,
+          "category": {
+            "id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+            "key": "tca-section",
+            "name": "มาตรา",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "dfd5f3f1-b051-40aa-89e0-f8ee3d7ee677",
+            "key": "tca-section-57",
+            "name": "มาตรา 57",
+            "description": "",
+            "parent_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        }
+      ]
+    }
+  ]
+}

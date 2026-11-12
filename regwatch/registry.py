@@ -63,7 +63,7 @@ def load_registry(path):
             if not isinstance(s['json_sort'],dict) or not isinstance(s['json_sort'].get('field'),str) or type(s['json_sort'].get('descending',True)) is not bool:
                 raise ValueError('Invalid JSON sort definition')
         if s["enabled"]:
-            if s.get("mode") not in {"html", "rss", "page", "json", "next-data", "json-html", "json-script", "json-page"} or not s.get("url") or s["validation_status"] not in {"candidate", "verified"}:
+            if s.get("mode") not in {"html", "rss", "page", "json", "next-data", "json-html", "json-script", "json-page", "tcct-api"} or not s.get("url") or s["validation_status"] not in {"candidate", "verified"}:
                 raise ValueError("Enabled source requires a supported adapter and candidate/verified status")
             fixture = (path.parent.parent / s.get("fixture", "MISSING")).resolve()
             if not fixture.is_relative_to(path.parent.parent.resolve()) or not fixture.is_file():
@@ -99,8 +99,27 @@ def load_registry(path):
         for key in ("include_url", "exclude_url", "include_title", "exclude_title", "date_pattern", "document_id_pattern"):
             if s.get(key):
                 re.compile(s[key])
-        for key, low, high, default in [("max_pages", 1, 10, 1), ("max_items", 1, 1000, 100), ("asset_budget", 0, 20, 2), ("min_items", 0, 1000, 1), ('max_response_bytes',1000,64_000_000,4_000_000)]:
+        tcct = s.get('mode') == 'tcct-api'
+        for key, low, high, default in [("max_pages", 1, 100 if tcct else 10, 1), ("max_items", 1, 1000, 100), ("asset_budget", 0, 20, 2), ("min_items", 0, 1000, 1), ('max_response_bytes',1000,64_000_000,4_000_000)]:
             val = s.get(key, default)
             if type(val) is not int or not low <= val <= high:
                 raise ValueError("Invalid bound: " + key)
+        if tcct:
+            from .tcct_api import LISTING_URLS, MIGRATION_VERSION
+            category = s.get('tcct_category_key')
+            if (not isinstance(category, str) or category not in LISTING_URLS
+                    or s.get('regulator_id') != 'tcct' or s['url'] != LISTING_URLS[category]
+                    or s.get('tcct_migration_version') != MIGRATION_VERSION):
+                raise ValueError('TCCT requires its exact observed category URL, key and migration version')
+            if set(s['allowed_hosts']) != {'www.tcct.or.th', 'api.tcct.or.th'}:
+                raise ValueError('TCCT requires explicit listing and document hosts')
+            if s.get('start_urls') or s.get('public_form') or s.get('render') or s.get('url_template'):
+                raise ValueError('TCCT discovery uses only its fixed page-number JSON contract')
+            budget = s.get('max_asset_bytes', 15_000_000)
+            if type(budget) is not int or not 1000 <= budget <= 64_000_000:
+                raise ValueError('Invalid bound: max_asset_bytes')
+            if s.get('min_items', 1) > s.get('max_items', 100):
+                raise ValueError('TCCT minimum exceeds item bound')
+        elif 'max_asset_bytes' in s:
+            raise ValueError('max_asset_bytes is supported only by the TCCT API adapter')
     return sources

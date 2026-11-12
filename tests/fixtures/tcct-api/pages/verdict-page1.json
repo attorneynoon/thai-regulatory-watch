@@ -1,0 +1,1130 @@
+{
+  "fixture_kind": "representative-official-page-extract",
+  "fixture_provenance": {
+    "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+    "category_key": "verdict",
+    "retrieved_on": "2026-11-12",
+    "raw_response_sha256": "1b8340976a3055e47383b37f16c3a5edd866678dcecc0aadd0623de522c5013e",
+    "note": "Complete first-page records and pagination retained. CMS owner, counters, image assets and audit timestamps omitted. One page is not proof of complete archive traversal."
+  },
+  "status": "success",
+  "data": {
+    "category": {
+      "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+      "key": "verdict",
+      "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+      "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+      "is_active": true,
+      "is_delete": false,
+      "description": "",
+      "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+      "sequence": 2
+    },
+    "meta": {
+      "total": 137,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 12,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "75ad3a91-53ed-4ac0-ac65-27f357b38ee3",
+        "code": "CTN260920125848",
+        "document_number": null,
+        "title": "คำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์ \"Shopee\" จัดรายการส่งเสริมการขายและบังคับให้เข้าร่วมโดยไม่แจ้งให้ร้านค้าทราบล่วงหน้าและไม่ได้รับการยินยอมจากร้านค้า",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+        "file_list": [
+          {
+            "id": "f0b69f4d-257c-4acc-8434-5111573e0058",
+            "file_name": "platform_promotion.pdf",
+            "display_file_name": "platform_promotion.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "platform_promotion.pdf",
+            "originalName": "platform_promotion.pdf",
+            "file_size": 36090254,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/f0b69f4d-257c-4acc-8434-5111573e0058"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-09-17T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "fcb841e8-76db-487f-ab15-daa28fb8b23b",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+              "key": "verdict-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          },
+          {
+            "id": "0d4dc41b-24f2-4625-97ac-346dc9fd333d",
+            "category_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+            "sub_category_id": "dfd5f3f1-b051-40aa-89e0-f8ee3d7ee677",
+            "sequence": 1,
+            "category": {
+              "id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "key": "tca-section",
+              "name": "มาตรา",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "dfd5f3f1-b051-40aa-89e0-f8ee3d7ee677",
+              "key": "tca-section-57",
+              "name": "มาตรา 57",
+              "parent_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "is_active": true,
+              "is_delete": false,
+              "description": "การกระทำทางการค้าที่ไม่เป็นธรรม",
+              "filter_category_ids": null,
+              "sequence": 5
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+          "key": "verdict-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "ea8add97-3320-429a-9a27-3701b9fb0f14",
+        "code": "CTN260920125926",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผู้ให้บริการซื้อขายรถยนต์มือสองออนไลน์ปฏิเสธคู่แข่ง ",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+        "file_list": [
+          {
+            "id": "1e682a2f-3061-4f22-9648-77fcefcf506e",
+            "file_name": "17_08_2569.pdf",
+            "display_file_name": "17_08_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "17_08_2569.pdf",
+            "originalName": "17_08_2569.pdf",
+            "file_size": 116704,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/1e682a2f-3061-4f22-9648-77fcefcf506e"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-17T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "3acbae5d-717c-46e5-8640-f482cd4f3d7f",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+              "key": "verdict-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          },
+          {
+            "id": "0aa8af74-528f-4316-a738-601795b168ad",
+            "category_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+            "sub_category_id": "1b9495cb-6713-4b0e-9ac3-d510462e8dc3",
+            "sequence": 1,
+            "category": {
+              "id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "key": "tca-section",
+              "name": "มาตรา",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "1b9495cb-6713-4b0e-9ac3-d510462e8dc3",
+              "key": "tca-section-50",
+              "name": "มาตรา 50",
+              "parent_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "is_active": true,
+              "is_delete": false,
+              "description": "การใช้อำนาจเหนือตลาดโดยมิชอบ",
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "fd32bae2-ddae-4fea-84fd-0fb3ea5bdb8b",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "bb5bcab4-feb7-4818-9a53-b51126b54dbc",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "bb5bcab4-feb7-4818-9a53-b51126b54dbc",
+              "key": "business-sector-automotive",
+              "name": "ยานยนต์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 9
+            }
+          },
+          {
+            "id": "886661fe-c868-40ca-bdd6-7d7796e61452",
+            "category_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+            "sub_category_id": "a2a200bb-f940-4b9c-86d4-a99bbb3d22da",
+            "sequence": 3,
+            "category": {
+              "id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "key": "tca-section",
+              "name": "มาตรา",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "a2a200bb-f940-4b9c-86d4-a99bbb3d22da",
+              "key": "tca-section-51",
+              "name": "มาตรา 51",
+              "parent_id": "4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad",
+              "is_active": true,
+              "is_delete": false,
+              "description": "การรวมธุรกิจ",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+          "key": "verdict-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "1c51d0e2-387c-49d2-bc38-9194508c5992",
+        "code": "CTN260920125822",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ให้บริการขนส่งกำหนดระยะเวลาการให้สินเชื่อการค้าอย่างไม่เป็นธรรม",
+        "content": null,
+        "description": null,
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+        "file_list": [
+          {
+            "id": "e805263e-fdd6-472a-880c-653d71e69cc2",
+            "file_name": "Transportation_Loan.pdf",
+            "display_file_name": "Transportation_Loan.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Transportation_Loan.pdf",
+            "originalName": "Transportation_Loan.pdf",
+            "file_size": 80308,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/e805263e-fdd6-472a-880c-653d71e69cc2"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-08T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "87616f66-151a-43e2-9dda-f1abbaa3b9bc",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+              "key": "verdict-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+          "key": "verdict-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "830e2822-076f-4daf-8289-0940a6eebf3c",
+        "code": "CTN260807101204",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจบอกเลิกสัญญตัวแทนจำหน่ายสินค้าไก่อย่างไม่เป็นธรรม",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+        "file_list": [
+          {
+            "id": "a769d70a-d33a-4eeb-91bb-e9688811394b",
+            "file_name": "selling_chickens.pdf",
+            "display_file_name": "selling_chickens.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "selling_chickens.pdf",
+            "originalName": "selling_chickens.pdf",
+            "file_size": 109304,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/a769d70a-d33a-4eeb-91bb-e9688811394b"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-08-06T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "83844ad6-f492-434f-801f-37b1585a1953",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+              "key": "verdict-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+          "key": "verdict-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "6316e268-5608-4f1a-9ec2-57e6b1cf7e2f",
+        "code": "CTN260807102453",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์ “ก” กำหนดเงื่อนไขอันเป็นการจำกัดทางเลือกในการขนส่งสินค้า",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+        "file_list": [
+          {
+            "id": "ad2d7ae5-73d5-4067-9e44-2c5911860d56",
+            "file_name": "shipping_terms.pdf",
+            "display_file_name": "shipping_terms.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "shipping_terms.pdf",
+            "originalName": "shipping_terms.pdf",
+            "file_size": 79863,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/ad2d7ae5-73d5-4067-9e44-2c5911860d56"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "065edb7b-d991-48ed-a17e-068ffb47a7fb",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+              "key": "verdict-2567",
+              "name": "พ.ศ. 2567",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+          "key": "verdict-2567",
+          "name": "พ.ศ. 2567",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "df4b8e87-8a86-4230-8790-b6edd37b909e",
+        "code": "CTN260807100545",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีบริษัทตัวแทนนายหน้าซื้อขายหลักทรัพย์กำหนดราคาให้บริการต่ำกว่าทุน โดยไม่เรียกเก็บค่าธรรมเนียมนายหน้า",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+        "file_list": [
+          {
+            "id": "f0ec5ce6-7863-44ef-aa75-f376fa26f25e",
+            "file_name": "Securities_Broker.pdf",
+            "display_file_name": "Securities_Broker.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Securities_Broker.pdf",
+            "originalName": "Securities_Broker.pdf",
+            "file_size": 94867,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/f0ec5ce6-7863-44ef-aa75-f376fa26f25e"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "1d993526-6036-4fa0-a355-3ec1228a0ea9",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+              "key": "verdict-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+          "key": "verdict-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "f58cc997-bb29-48e6-91e5-e0851ffbca03",
+        "code": "CTN260807100109",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีการร่วมกันกำหนดราคาค่าโดยสารรถแท็กซี่บนเกาะลันตา",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+        "file_list": [
+          {
+            "id": "bf3d5681-7f6a-4b7c-b449-c411a6e4e47c",
+            "file_name": "taxi_price.pdf",
+            "display_file_name": "taxi_price.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "taxi_price.pdf",
+            "originalName": "taxi_price.pdf",
+            "file_size": 112131,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/bf3d5681-7f6a-4b7c-b449-c411a6e4e47c"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-14T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "1ecc9f1a-8f18-48e8-b7a4-f43a38eca475",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+              "key": "verdict-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+          "key": "verdict-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "686e9160-668f-4ad4-93d8-13f3ed09bc06",
+        "code": "CTN260807100242",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ผลิตสินค้าแบรนด์ “พ.” ห้ามจำหน่ายสินค้า",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+        "file_list": [
+          {
+            "id": "67b2af1c-c466-4797-96dc-698cb8c66839",
+            "file_name": "14_07_2569.pdf",
+            "display_file_name": "14_07_2569.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "14_07_2569.pdf",
+            "originalName": "14_07_2569.pdf",
+            "file_size": 98047,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/67b2af1c-c466-4797-96dc-698cb8c66839"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-13T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "4665d555-4ef1-4ffe-a20d-d3235dcc806b",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+              "key": "verdict-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c9312e53-cc88-43c9-b209-753f8ac5e305",
+          "key": "verdict-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "5012c92d-8167-4f25-9fb3-9a2005196745",
+        "code": "CTN260807101109",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์เก็บค่าบริการเสริมจากผู้ขายสินค้าอย่างไม่เป็นธรรม",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+        "file_list": [
+          {
+            "id": "d0ebadbc-bb63-4605-b3a8-51d0dbb3b179",
+            "file_name": "Electronic_Price.pdf",
+            "display_file_name": "Electronic_Price.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Electronic_Price.pdf",
+            "originalName": "Electronic_Price.pdf",
+            "file_size": 106981,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/d0ebadbc-bb63-4605-b3a8-51d0dbb3b179"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-06T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "ca62cd8f-d0cb-4d43-bcd1-34f5c591dc69",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+              "key": "verdict-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+          "key": "verdict-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "5b580b3f-79d5-46e1-9327-9e5c4e4eb298",
+        "code": "CTN260807101136",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจขนส่งหักเงินโดยไม่เป็นธรรม",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+        "file_list": [
+          {
+            "id": "9a4e0074-b61e-4a29-b216-5847f2f311fb",
+            "file_name": "transport28-8-2568.pdf",
+            "display_file_name": "transport28-8-2568.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "transport28-8-2568.pdf",
+            "originalName": "transport28-8-2568.pdf",
+            "file_size": 97988,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/9a4e0074-b61e-4a29-b216-5847f2f311fb"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-05-13T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "65ffedbe-cbc6-4707-ba98-efe13195e79c",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+              "key": "verdict-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "c297de81-88a1-4a3f-996b-78f612c173fb",
+          "key": "verdict-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "39c47a81-4696-41eb-9bdf-c79cb033fa97",
+        "code": "CTN260807102519",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีตกลงร่วมกันในธุรกิจนำเข้าและจำหน่ายคอมพิวเตอร์ (คดีอาญา)",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+        "file_list": [
+          {
+            "id": "9b162bb1-935e-4754-844d-0d9727f54dff",
+            "file_name": "Computer180467.pdf",
+            "display_file_name": "Computer180467.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "Computer180467.pdf",
+            "originalName": "Computer180467.pdf",
+            "file_size": 182552,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/9b162bb1-935e-4754-844d-0d9727f54dff"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-03-03T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "4b9bb454-a16f-4c33-8027-6f2e948877b9",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+              "key": "verdict-2567",
+              "name": "พ.ศ. 2567",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+          "key": "verdict-2567",
+          "name": "พ.ศ. 2567",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      },
+      {
+        "id": "c06316da-ddf9-4aad-b201-28c76e03bf0f",
+        "code": "CTN260807102543",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย การพิจารณาออกคำสั่งตามมาตรา 60 แห่งพระราชบัญญัติการแข่งขันทางการค้า พ.ศ. ๒๕๖๐ กรณีผู้ให้บริการซื้อขายรถยนต์มือสองออนไลน์ปฏิเสธคู่แข่งลงโฆษณาขายรถยนต์อย่างไม่เป็นธรรม",
+        "content": "",
+        "description": "",
+        "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+        "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+        "file_list": [
+          {
+            "id": "321da5cd-923b-4aff-a430-a714f74831ad",
+            "file_name": "second_hand_cars.pdf",
+            "display_file_name": "second_hand_cars.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "second_hand_cars.pdf",
+            "originalName": "second_hand_cars.pdf",
+            "file_size": 109725,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/321da5cd-923b-4aff-a430-a714f74831ad"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-02-15T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "key": "verdict",
+          "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "bfc60a5b-8c49-43e7-a23a-9fd6b456893e",
+            "category_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+            "sub_category_id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+            "sequence": 0,
+            "category": {
+              "id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "key": "verdict",
+              "name": "ผลคำวินิจฉัยเรื่องพฤติกรรมการแข่งขันทางการค้าที่ไม่เป็นธรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4d3b9f0a-c0c3-4b35-aadc-7e5a3e9486ad\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+              "key": "verdict-2567",
+              "name": "พ.ศ. 2567",
+              "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "ab472f35-1958-4cca-af7c-1541f4cccdc6",
+          "key": "verdict-2567",
+          "name": "พ.ศ. 2567",
+          "parent_id": "01ebd589-43b4-458c-b494-fc8548bb2181",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        }
+      }
+    ]
+  }
+}

@@ -51,7 +51,14 @@ class Transport:
         self.robots = {}
         self.last_request = {}
 
-    def _raw(self, url, headers=None, max_bytes=4_000_000, delay=1.0, form=None):
+    def _raw(self, url, headers=None, max_bytes=4_000_000, delay=1.0, form=None, json_body=None):
+        request_args = {}
+        if json_body is not None:
+            from .tcct_api import validate_request
+            validate_request(url, json_body)
+            if form is not None:
+                raise ValueError('Form and JSON POST cannot be combined')
+            request_args['json'] = json_body
         allowed_url(url, self.hosts)
         public_address(url)
         host = urlsplit(url).hostname
@@ -60,12 +67,13 @@ class Transport:
             time.sleep(wait)
         self.last_request[host] = time.monotonic()
         self.session.cookies.clear()
-        with self.session.request('POST' if form is not None else 'GET',url, data=form, headers={"User-Agent": AGENT, **(headers or {})}, timeout=(8, 20), allow_redirects=False, stream=True) as r:
+        with self.session.request('POST' if form is not None or json_body is not None else 'GET',url, data=form, headers={"User-Agent": AGENT, **(headers or {})}, timeout=(8, 20), allow_redirects=False, stream=True, **request_args) as r:
             data = bytearray()
             for chunk in r.iter_content(65536):
                 data.extend(chunk)
                 if len(data) > max_bytes:
-                    raise ValueError("Response exceeds byte budget")
+                    content_type = ' '.join(r.headers.get('Content-Type', 'unknown').split())[:100]
+                    raise ValueError(f"Response exceeds byte budget (limit={max_bytes}; received_at_least={len(data)}; HTTP={r.status_code}; content_type={content_type})")
             return r.status_code, requests.structures.CaseInsensitiveDict(r.headers), bytes(data)
 
     def _policy(self, url):
@@ -119,12 +127,22 @@ class Transport:
             raise AccessBlocked("Disallowed by robots.txt")
         return delay
 
-    def fetch(self, url, headers=None, max_bytes=4_000_000, form=None):
+    def fetch(self, url, headers=None, max_bytes=4_000_000, form=None, json_body=None):
+        if json_body is not None:
+            from .tcct_api import validate_request
+            validate_request(url, json_body)
+            if form is not None:
+                raise ValueError('Form and JSON POST cannot be combined')
         for _ in range(5):
             url = allowed_url(url, self.hosts)
             delay = self._policy(url)
-            status, response_headers, body = self._raw(url, headers, max_bytes, delay,form=form)
+            kwargs = {'form': form}
+            if json_body is not None:
+                kwargs['json_body'] = json_body
+            status, response_headers, body = self._raw(url, headers, max_bytes, delay, **kwargs)
             if status in (301, 302, 303, 307, 308):
+                if json_body is not None:
+                    raise ValueError('TCCT JSON POST cannot follow a redirect')
                 if form is not None and status in (307,308):
                     raise ValueError('Public navigation POST cannot be replayed on a redirect')
                 form=None
@@ -133,7 +151,7 @@ class Transport:
                 continue
             if status in (401, 403, 429):
                 raise AccessBlocked("Access unavailable: HTTP " + str(status))
-            if status not in (200, 304):
+            if status not in ((200, 201) if json_body is not None else (200, 304)):
                 raise ValueError("HTTP " + str(status))
             content_type = response_headers.get("Content-Type", "").lower()
             if "html" in content_type:

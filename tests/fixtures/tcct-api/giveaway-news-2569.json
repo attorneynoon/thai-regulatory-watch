@@ -1,0 +1,114 @@
+{
+  "fixture_kind": "synthetic-observed-contract-reconstruction",
+  "root_fixture_provenance": {
+    "reconstructed_on": "2026-11-12",
+    "reason": "Original executor filesystem became unavailable and was reset. These are new synthetic contract fixtures, not byte-identical recovered captures.",
+    "evidence_basis": "Selected record IDs, codes, titles, dates, category IDs and primary download metadata were observed in earlier tool results. Membership IDs and supplementary test bodies, rows and download URLs are synthetic.",
+    "limitations": "Do not cite these fixtures as live responses, complete listings, exact original extracts, or independently verified documents. Original 414-record qualification was performed against separate captures before filesystem loss."
+  },
+  "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "category_key": "giveaway-news-2569",
+  "observed_page1_meta": {
+    "total": 20,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 2,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  },
+  "listing_category": {
+    "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+    "key": "giveaway-news-2569",
+    "name": "พ.ศ. 2569",
+    "description": "",
+    "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+    "is_active": true,
+    "is_delete": false,
+    "filter_category_ids": null,
+    "sequence": null
+  },
+  "records": [
+    {
+      "id": "92650bd5-818c-40ea-8682-85f02769085f",
+      "code": "CTN260920130402",
+      "document_number": null,
+      "title": "[ฉบับที่ 20/2569] กขค. เดินหน้ารับฟังเสียงฝั่งแพลตฟอร์ม แจง GP คือต้นทุน จี้รัฐบูรณาการลดทับซ้อน",
+      "content": "",
+      "description": null,
+      "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+      "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+      "file_list": [
+        {
+          "id": "492125be-1633-43cf-ac73-a8b65735e3dd",
+          "file_name": "Press_20_2569.pdf",
+          "display_file_name": "Press_20_2569.pdf",
+          "file_type": "application/pdf",
+          "file_extension": ".pdf",
+          "file_size": 118654,
+          "file_path": "Press_20_2569.pdf",
+          "originalName": "Press_20_2569.pdf",
+          "fileUrl": "https://api.tcct.or.th/upload/492125be-1633-43cf-ac73-a8b65735e3dd",
+          "isPublic": false
+        }
+      ],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-09-15T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "key": "giveaway-news",
+        "name": "ข่าวประชาสัมพันธ์",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": {
+        "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+        "key": "giveaway-news-2569",
+        "name": "พ.ศ. 2569",
+        "description": "",
+        "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "categories": [
+        {
+          "id": "synthetic-membership-giveaway-news-0",
+          "category_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+          "sub_category_id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+          "sequence": 0,
+          "category": {
+            "id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "key": "giveaway-news",
+            "name": "ข่าวประชาสัมพันธ์",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "6b685457-a51d-4c1b-9f94-8dfb3df28e75",
+            "key": "giveaway-news-2569",
+            "name": "พ.ศ. 2569",
+            "description": "",
+            "parent_id": "a1d3be8e-77ba-49db-ad56-c694365d0fd9",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        }
+      ]
+    }
+  ]
+}

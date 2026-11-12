@@ -13,6 +13,9 @@ def age_days(stamp, now):
 
 
 def collect_source(state, source, now, transport=None, root=None):
+    if source.get('mode') == 'tcct-api':
+        from .tcct_collector import collect_tcct
+        return collect_tcct(state, source, now, transport=transport)
     ss = source_state(state, source['id'])
     ss['last_attempt_at'] = now
     queue, visited, rows, seen = [source['url'],*source.get('start_urls',[])], set(), [], set()

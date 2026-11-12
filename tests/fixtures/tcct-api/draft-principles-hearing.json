@@ -1,0 +1,130 @@
+{
+  "fixture_kind": "synthetic-observed-contract-reconstruction",
+  "root_fixture_provenance": {
+    "reconstructed_on": "2026-11-12",
+    "reason": "Original executor filesystem became unavailable and was reset. These are new synthetic contract fixtures, not byte-identical recovered captures.",
+    "evidence_basis": "Selected record IDs, codes, titles, dates, category IDs and primary download metadata were observed in earlier tool results. Membership IDs and supplementary test bodies, rows and download URLs are synthetic.",
+    "limitations": "Do not cite these fixtures as live responses, complete listings, exact original extracts, or independently verified documents. Original 414-record qualification was performed against separate captures before filesystem loss."
+  },
+  "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "category_key": "draft-principles-hearing",
+  "observed_page1_meta": {
+    "total": 3,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 1,
+    "hasNextPage": false,
+    "hasPreviousPage": false
+  },
+  "listing_category": {
+    "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+    "key": "draft-principles-hearing",
+    "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+    "description": "",
+    "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+    "is_active": true,
+    "is_delete": false,
+    "filter_category_ids": null,
+    "sequence": null
+  },
+  "records": [
+    {
+      "id": "03802ed9-c6e3-4a3d-ac83-338e973df5c0",
+      "code": "CTN261111105959",
+      "document_number": null,
+      "title": "การจัดรับฟังความคิดเห็น เรื่อง การจัดทำระบบหน่วยงานกลาง (Trustee) เพื่อการบังคับใช้มาตรการปรับปรุงพฤติกรรมและโครงสร้างทางการค้า ระหว่างวันที่ 15 ตุลาคม - 13 พฤศจิกายน 2569",
+      "content": "",
+      "description": null,
+      "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+      "sub_category_id": null,
+      "file_list": [],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-10-15T00:00:00.000Z",
+      "end_date": "2026-11-13T00:00:00.000Z",
+      "is_reference_link": true,
+      "url_link": "https://sites.google.com/view/hearing-trustee/hearing-trustee",
+      "category": {
+        "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+        "key": "draft-principles-hearing",
+        "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": null,
+      "categories": [
+        {
+          "id": "synthetic-membership-draft-principles-hearing-0",
+          "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+          "sub_category_id": null,
+          "sequence": 0,
+          "category": {
+            "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+            "key": "draft-principles-hearing",
+            "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": null
+        }
+      ]
+    },
+    {
+      "id": "synthetic-principle-body",
+      "code": "SYNTHETIC-ONLY",
+      "document_number": null,
+      "title": "Synthetic body-reference contract case",
+      "content": "<p>Synthetic reference <a href=\"https://example.org/hearing\">hearing</a></p>",
+      "description": null,
+      "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+      "sub_category_id": null,
+      "file_list": [],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-01-01T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+        "key": "draft-principles-hearing",
+        "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": null,
+      "categories": [
+        {
+          "id": "synthetic-membership-draft-principles-hearing-0",
+          "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+          "sub_category_id": null,
+          "sequence": 0,
+          "category": {
+            "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+            "key": "draft-principles-hearing",
+            "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": null
+        }
+      ]
+    }
+  ]
+}

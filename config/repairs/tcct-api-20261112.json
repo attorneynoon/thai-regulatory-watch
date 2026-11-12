@@ -1,0 +1,72 @@
+{
+  "contract_version": "tcct-api-2026-11-12",
+  "activation": "candidate_contract_not_loaded_by_runtime",
+  "endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "method": "POST",
+  "content_type": "application/json",
+  "observed_success_http_status": 201,
+  "request_defaults": {
+    "is_active": true,
+    "page_number": 1,
+    "limit": 12,
+    "sort_by": "start_date",
+    "sort_direction": "desc"
+  },
+  "response_paths": {
+    "records": "data.contents",
+    "pagination": "data.meta",
+    "category": "data.category"
+  },
+  "listing_host": "www.tcct.or.th",
+  "attachment_host": "api.tcct.or.th",
+  "categories": [
+    {
+      "category_key": "verdict",
+      "url": "https://www.tcct.or.th/category/verdict",
+      "observed_total": 137,
+      "observed_pages": 12,
+      "observed_at": "2026-11-12"
+    },
+    {
+      "category_key": "verdict-mergers",
+      "url": "https://www.tcct.or.th/category/verdict-mergers",
+      "observed_total": 169,
+      "observed_pages": 15,
+      "observed_at": "2026-11-12"
+    },
+    {
+      "category_key": "draft-principles-hearing",
+      "url": "https://www.tcct.or.th/category/draft-principles-hearing",
+      "observed_total": 3,
+      "observed_pages": 1,
+      "observed_at": "2026-11-12"
+    },
+    {
+      "category_key": "tcct-draft-laws-hearing",
+      "url": "https://www.tcct.or.th/category/tcct-draft-laws-hearing",
+      "observed_total": 20,
+      "observed_pages": 2,
+      "observed_at": "2026-11-12"
+    },
+    {
+      "category_key": "giveaway-news-2569",
+      "url": "https://www.tcct.or.th/category/giveaway-news/giveaway-news-2569",
+      "observed_total": 20,
+      "observed_pages": 2,
+      "observed_at": "2026-11-12"
+    },
+    {
+      "category_key": "activity-news-2569",
+      "url": "https://www.tcct.or.th/category/activity-news/activity-news-2569",
+      "observed_total": 65,
+      "observed_pages": 6,
+      "observed_at": "2026-11-12"
+    }
+  ],
+  "limitations": [
+    "Counts are captured observations, not fixed future assertions.",
+    "This candidate file does not enable sources.",
+    "Verify actual transport and article URL mapping before live integration.",
+    "Preserve archive scope, historical IDs/events, and source-specific migration baseline."
+  ]
+}
