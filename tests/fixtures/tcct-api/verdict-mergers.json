@@ -1,0 +1,170 @@
+{
+  "fixture_kind": "synthetic-observed-contract-reconstruction",
+  "root_fixture_provenance": {
+    "reconstructed_on": "2026-11-12",
+    "reason": "Original executor filesystem became unavailable and was reset. These are new synthetic contract fixtures, not byte-identical recovered captures.",
+    "evidence_basis": "Selected record IDs, codes, titles, dates, category IDs and primary download metadata were observed in earlier tool results. Membership IDs and supplementary test bodies, rows and download URLs are synthetic.",
+    "limitations": "Do not cite these fixtures as live responses, complete listings, exact original extracts, or independently verified documents. Original 414-record qualification was performed against separate captures before filesystem loss."
+  },
+  "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "category_key": "verdict-mergers",
+  "observed_page1_meta": {
+    "total": 169,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 15,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  },
+  "listing_category": {
+    "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+    "key": "verdict-mergers",
+    "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+    "description": "",
+    "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+    "is_active": true,
+    "is_delete": false,
+    "filter_category_ids": null,
+    "sequence": null
+  },
+  "records": [
+    {
+      "id": "b05d6e3b-96a9-45b4-abbc-2558f0420adc",
+      "code": "CTN260808025232",
+      "document_number": null,
+      "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท อ. และบริษัท น.",
+      "content": "",
+      "description": null,
+      "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+      "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+      "file_list": [
+        {
+          "id": "aa492a3a-bc12-482d-81bb-172645a12e41",
+          "file_name": "MA1_0008_080769.pdf",
+          "display_file_name": "MA1_0008_080769.pdf",
+          "file_type": "application/pdf",
+          "file_extension": ".pdf",
+          "file_size": 416747,
+          "file_path": "MA1_0008_080769.pdf",
+          "originalName": "MA1_0008_080769.pdf",
+          "fileUrl": "https://api.tcct.or.th/upload/aa492a3a-bc12-482d-81bb-172645a12e41",
+          "isPublic": false
+        }
+      ],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-07-08T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "key": "verdict-mergers",
+        "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": {
+        "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+        "key": "verdict-mergers-2569",
+        "name": "พ.ศ. 2569",
+        "description": "",
+        "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "categories": [
+        {
+          "id": "synthetic-membership-verdict-mergers-0",
+          "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+          "sequence": 0,
+          "category": {
+            "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "key": "verdict-mergers",
+            "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+            "key": "verdict-mergers-2569",
+            "name": "พ.ศ. 2569",
+            "description": "",
+            "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        },
+        {
+          "id": "synthetic-membership-merger-type-1",
+          "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+          "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+          "sequence": 1,
+          "category": {
+            "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "key": "merger-type",
+            "name": "ประเภท",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "key": "merger-type-notify",
+            "name": "การแจ้งผลการรวมธุรกิจ",
+            "description": "",
+            "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        },
+        {
+          "id": "synthetic-membership-business-sector-2",
+          "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+          "sub_category_id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+          "sequence": 2,
+          "category": {
+            "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "key": "business-sector",
+            "name": "เรื่อง/พฤติกรรม",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+            "key": "business-sector-transport-logistics",
+            "name": "ขนส่งและโลจิสติกส์",
+            "description": "",
+            "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        }
+      ]
+    }
+  ]
+}

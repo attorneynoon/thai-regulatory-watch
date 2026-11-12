@@ -1,0 +1,170 @@
+{
+  "fixture_kind": "synthetic-observed-contract-reconstruction",
+  "root_fixture_provenance": {
+    "reconstructed_on": "2026-11-12",
+    "reason": "Original executor filesystem became unavailable and was reset. These are new synthetic contract fixtures, not byte-identical recovered captures.",
+    "evidence_basis": "Selected record IDs, codes, titles, dates, category IDs and primary download metadata were observed in earlier tool results. Membership IDs and supplementary test bodies, rows and download URLs are synthetic.",
+    "limitations": "Do not cite these fixtures as live responses, complete listings, exact original extracts, or independently verified documents. Original 414-record qualification was performed against separate captures before filesystem loss."
+  },
+  "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+  "category_key": "activity-news-2569",
+  "observed_page1_meta": {
+    "total": 65,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 6,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  },
+  "listing_category": {
+    "id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+    "key": "activity-news-2569",
+    "name": "พ.ศ. 2569",
+    "description": "",
+    "parent_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+    "is_active": true,
+    "is_delete": false,
+    "filter_category_ids": null,
+    "sequence": null
+  },
+  "records": [
+    {
+      "id": "a3990e8a-a6e5-4dbd-9eaf-d5c45df472a7",
+      "code": "CTN261008170238",
+      "document_number": null,
+      "title": "สำนักงาน กขค. จัดประชุมคณะอนุกรรมการด้านการวิเคราะห์ทางเศรษฐศาสตร์และธุรกิจ เพื่อการบังคับใช้กฎหมายการแข่งขันทางการค้า เพื่อเดินหน้าพัฒนาคู่มือ Theory of Harm และกรอบแนวทางการกำกับดูแลการแข่งขันในธุรกิจบริการสุขภาพ (Healthcare)",
+      "content": "<p>Synthetic activity body; original full HTML was not recovered.</p>",
+      "description": null,
+      "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+      "sub_category_id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+      "file_list": [],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-09-30T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "key": "activity-news",
+        "name": "ข่าวกิจกรรม",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": {
+        "id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+        "key": "activity-news-2569",
+        "name": "พ.ศ. 2569",
+        "description": "",
+        "parent_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "categories": [
+        {
+          "id": "synthetic-membership-activity-news-0",
+          "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "sub_category_id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+          "sequence": 0,
+          "category": {
+            "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "key": "activity-news",
+            "name": "ข่าวกิจกรรม",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+            "key": "activity-news-2569",
+            "name": "พ.ศ. 2569",
+            "description": "",
+            "parent_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "synthetic-activity-http",
+      "code": "SYNTHETIC-ONLY",
+      "document_number": null,
+      "title": "Synthetic rejected HTTP body-reference case",
+      "content": "<p>Synthetic body <a href=\"http://www.tcct.or.th/?fixture=synthetic\">source link</a></p>",
+      "description": null,
+      "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+      "sub_category_id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+      "file_list": [],
+      "is_active": true,
+      "is_draft": false,
+      "start_date": "2026-01-01T00:00:00.000Z",
+      "end_date": null,
+      "is_reference_link": false,
+      "url_link": null,
+      "category": {
+        "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "key": "activity-news",
+        "name": "ข่าวกิจกรรม",
+        "description": "",
+        "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "sub_category": {
+        "id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+        "key": "activity-news-2569",
+        "name": "พ.ศ. 2569",
+        "description": "",
+        "parent_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+        "is_active": true,
+        "is_delete": false,
+        "filter_category_ids": null,
+        "sequence": null
+      },
+      "categories": [
+        {
+          "id": "synthetic-membership-activity-news-0",
+          "category_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+          "sub_category_id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+          "sequence": 0,
+          "category": {
+            "id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "key": "activity-news",
+            "name": "ข่าวกิจกรรม",
+            "description": "",
+            "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          },
+          "sub_category": {
+            "id": "6556afc2-f18a-4fd2-bd71-228537eb2694",
+            "key": "activity-news-2569",
+            "name": "พ.ศ. 2569",
+            "description": "",
+            "parent_id": "b776790b-ce2d-463e-bb50-f5b885a5c5e2",
+            "is_active": true,
+            "is_delete": false,
+            "filter_category_ids": null,
+            "sequence": null
+          }
+        }
+      ]
+    }
+  ]
+}

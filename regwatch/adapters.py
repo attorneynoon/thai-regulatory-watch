@@ -36,6 +36,8 @@ def source_excerpt(value):
 
 def parse_document(source, body, final_url):
     mode = source["mode"]
+    if mode == 'tcct-api':
+        raise ValueError('TCCT collection requires the dedicated complete-page-set collector')
     if mode=='json-page':
         from .jsonsnapshot import parse_json_snapshot
         return parse_json_snapshot(source,body,final_url)

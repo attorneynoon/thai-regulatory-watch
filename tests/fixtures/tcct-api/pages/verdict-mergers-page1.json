@@ -1,0 +1,1690 @@
+{
+  "fixture_kind": "representative-official-page-extract",
+  "fixture_provenance": {
+    "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+    "category_key": "verdict-mergers",
+    "retrieved_on": "2026-11-12",
+    "raw_response_sha256": "ed1d938941986aa9c49c406effd959367c767b2f00c1108e3d743a70eed67ac6",
+    "note": "Complete first-page records and pagination retained. CMS owner, counters, image assets and audit timestamps omitted. One page is not proof of complete archive traversal."
+  },
+  "status": "success",
+  "data": {
+    "category": {
+      "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+      "key": "verdict-mergers",
+      "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+      "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+      "is_active": true,
+      "is_delete": false,
+      "description": "",
+      "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+      "sequence": 2
+    },
+    "meta": {
+      "total": 169,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 15,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "b05d6e3b-96a9-45b4-abbc-2558f0420adc",
+        "code": "CTN260808025232",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท อ. และบริษัท น.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+        "file_list": [
+          {
+            "id": "aa492a3a-bc12-482d-81bb-172645a12e41",
+            "file_name": "MA1_0008_080769.pdf",
+            "display_file_name": "MA1_0008_080769.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0008_080769.pdf",
+            "originalName": "MA1_0008_080769.pdf",
+            "file_size": 416747,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/aa492a3a-bc12-482d-81bb-172645a12e41"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "06009223-1edf-4101-9f4f-1bbe4d69d819",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+              "key": "verdict-mergers-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 1
+            }
+          },
+          {
+            "id": "b416d18b-a45c-482e-9550-ba885c49b427",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "b1198025-93f3-48a1-97a8-7dd047dc2866",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+              "key": "business-sector-transport-logistics",
+              "name": "ขนส่งและโลจิสติกส์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 26
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+          "key": "verdict-mergers-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 1
+        }
+      },
+      {
+        "id": "b55dceb9-ff0d-4ead-bf87-d56848e0a755",
+        "code": "CTN260808025123",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ป. และบริษัท ท.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+        "file_list": [
+          {
+            "id": "059fe1a2-8cd0-4920-b7d5-cd8b9eafa08d",
+            "file_name": "MA1_0012_080769.pdf",
+            "display_file_name": "MA1_0012_080769.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0012_080769.pdf",
+            "originalName": "MA1_0012_080769.pdf",
+            "file_size": 415572,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/059fe1a2-8cd0-4920-b7d5-cd8b9eafa08d"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "8627514a-c373-47cb-bf80-5ea016861963",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+              "key": "verdict-mergers-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 1
+            }
+          },
+          {
+            "id": "4b173fee-1818-455d-b017-92ade368296e",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "ab3cad82-b870-412f-b1d9-ce6ec9dcf629",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "27d78b9d-57c1-490c-9dad-ed09471bb76b",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "27d78b9d-57c1-490c-9dad-ed09471bb76b",
+              "key": "business-sector-ict",
+              "name": "เทคโนโลยีสารสนเทศและการสื่อสาร",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 28
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+          "key": "verdict-mergers-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 1
+        }
+      },
+      {
+        "id": "a6c8f9a7-66ad-4c42-8d63-9276fd58cf2c",
+        "code": "CTN260808025154",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ม. และบริษัท อ.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+        "file_list": [
+          {
+            "id": "ffb709f0-3baa-44a9-82c3-46feb440788b",
+            "file_name": "MA1_0009_080769.pdf",
+            "display_file_name": "MA1_0009_080769.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0009_080769.pdf",
+            "originalName": "MA1_0009_080769.pdf",
+            "file_size": 303830,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/ffb709f0-3baa-44a9-82c3-46feb440788b"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "e19ce24c-7bec-46c8-ac78-a809d62f1d4b",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+              "key": "verdict-mergers-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 1
+            }
+          },
+          {
+            "id": "5ca7fdf9-43fe-46ae-9962-9e0d45a6bae1",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "ed5c8ddf-732f-4d62-a008-fa0f42d29451",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "39141e0f-cf87-4633-a9a3-269379a01958",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "39141e0f-cf87-4633-a9a3-269379a01958",
+              "key": "business-sector-personal-pharma",
+              "name": "ของใช้ส่วนตัวและเวชภัณฑ์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 5
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+          "key": "verdict-mergers-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 1
+        }
+      },
+      {
+        "id": "a0b47082-54da-42b3-b20a-b2b64c6ea593",
+        "code": "CTN260808025255",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ค. และบริษัท อ.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+        "file_list": [
+          {
+            "id": "7764ee97-07d5-4226-afbb-17ddaa95e7ce",
+            "file_name": "MA1_0007_080769.pdf",
+            "display_file_name": "MA1_0007_080769.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0007_080769.pdf",
+            "originalName": "MA1_0007_080769.pdf",
+            "file_size": 433865,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/7764ee97-07d5-4226-afbb-17ddaa95e7ce"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "62c83ff8-7073-4318-ac2b-85a8003c9573",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+              "key": "verdict-mergers-2569",
+              "name": "พ.ศ. 2569",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 1
+            }
+          },
+          {
+            "id": "0fa6e59a-11de-4ee3-8186-0ddddb85ee07",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "b334447b-acca-44b2-8afe-5898f21f8c60",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "9e970861-0896-49f0-a4bc-ebb7a98aae77",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "9e970861-0896-49f0-a4bc-ebb7a98aae77",
+              "key": "business-sector-electronics",
+              "name": "ชิ้นส่วนอิเล็กทรอนิกส์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 27
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "e48b0f6b-b732-4beb-9cda-2afe6f72f5fd",
+          "key": "verdict-mergers-2569",
+          "name": "พ.ศ. 2569",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 1
+        }
+      },
+      {
+        "id": "65ef18e4-9d2f-4432-82e3-1844da7b5400",
+        "code": "CTN260808025329",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่างบริษัท ส. และบริษัท ด.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "849183a1-5717-4ac9-a97a-877ce6908296",
+            "file_name": "MA2_0004_2568.pdf",
+            "display_file_name": "MA2_0004_2568.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA2_0004_2568.pdf",
+            "originalName": "MA2_0004_2568.pdf",
+            "file_size": 741841,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/849183a1-5717-4ac9-a97a-877ce6908296"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-06-18T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "2c4b2784-739d-46ee-9ffc-851e3299a0ea",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "fe0b3cdd-fba0-4086-8e3b-412fcd32470c",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+              "key": "merger-type-permit",
+              "name": "การขออนุญาตรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "dc7044a9-79f2-48b2-9e56-1fa0713e36af",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "bb5bcab4-feb7-4818-9a53-b51126b54dbc",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "bb5bcab4-feb7-4818-9a53-b51126b54dbc",
+              "key": "business-sector-automotive",
+              "name": "ยานยนต์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 9
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "6416b9f6-0476-4753-8bd9-bea15beec846",
+        "code": "CTN260808025502",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่าง (1) บริษัท ต. กับ (2) บริษัท ฮ. และ (1) บริษัท ด. กับ (2) บริษัท ม.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "e07c4959-e586-4e31-a793-b35df1e2d702",
+            "file_name": "MA2_0003_2568.pdf",
+            "display_file_name": "MA2_0003_2568.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA2_0003_2568.pdf",
+            "originalName": "MA2_0003_2568.pdf",
+            "file_size": 773102,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/e07c4959-e586-4e31-a793-b35df1e2d702"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-05-27T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "dcbb33d2-4816-408f-83fb-c93de8f819f1",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "1e66eb68-c41f-471e-bfb4-539c9a0ba75e",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+              "key": "merger-type-permit",
+              "name": "การขออนุญาตรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "803d6152-7eff-4410-a7ba-f5e8444047fd",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "41bceb64-1bba-402e-898a-6fb28f2841bb",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "41bceb64-1bba-402e-898a-6fb28f2841bb",
+              "key": "business-sector-industrial",
+              "name": "วัสดุอุตสาหกรรมและเครื่องจักร",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 10
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "08d900f6-6d5e-4fdc-9791-6647f495ece0",
+        "code": "CTN260808025529",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่าง บริษัท ร. จำกัด (มหาชน) และบริษัท ธ. จำกัด (มหาชน)",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "61b89911-982a-47e9-8a53-b7f45272329a",
+            "file_name": "MA2_0001_2568.pdf",
+            "display_file_name": "MA2_0001_2568.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA2_0001_2568.pdf",
+            "originalName": "MA2_0001_2568.pdf",
+            "file_size": 1004038,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/61b89911-982a-47e9-8a53-b7f45272329a"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-03-31T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "8d09b88e-20fd-4259-93ba-0a3163db5941",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "efaca8da-0b41-4bf3-bcd0-780f4c66cdd2",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9538c9cb-33c2-433a-aa40-b24ad378c636",
+              "key": "merger-type-permit",
+              "name": "การขออนุญาตรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "89b10e7b-6f96-43ff-bb9d-3b91f5865087",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "21ed773a-397b-4ebb-bca5-a8665ade6386",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "21ed773a-397b-4ebb-bca5-a8665ade6386",
+              "key": "business-sector-health-care",
+              "name": "การแพทย์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 22
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "2f982b1b-117b-4fac-a639-8eb210261088",
+        "code": "CTN260808025653",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ม. และบริษัท ต.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "8b79a21e-35b5-48c1-85ae-0df606aebe45",
+            "file_name": "MA1_0003_170269.pdf",
+            "display_file_name": "MA1_0003_170269.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0003_170269.pdf",
+            "originalName": "MA1_0003_170269.pdf",
+            "file_size": 404018,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/8b79a21e-35b5-48c1-85ae-0df606aebe45"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "4d9aff3f-06bb-4dc7-a4be-35b52b435771",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "9ea7b592-7ee3-44b2-8693-a56766c9ee9a",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "66185d3e-f7c2-4764-a7a8-45fbec1b6738",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "1e230489-a19e-41d9-bc40-96379e8f6922",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "1e230489-a19e-41d9-bc40-96379e8f6922",
+              "key": "business-sector-home-office",
+              "name": "ของใช้ในครัวเรือนและสำนักงาน",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 4
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "db9d4a26-5b55-4927-9795-4552f9fd8179",
+        "code": "CTN260808025549",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท บ. และบริษัท ว.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "e00edaa0-1599-4995-96c0-e5a28d14dda2",
+            "file_name": "MA1_0006_170269.pdf",
+            "display_file_name": "MA1_0006_170269.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0006_170269.pdf",
+            "originalName": "MA1_0006_170269.pdf",
+            "file_size": 504693,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/e00edaa0-1599-4995-96c0-e5a28d14dda2"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "11ece868-1f13-4612-9c11-ce366d1e774a",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "b488225a-06aa-424c-a41a-d84b9e5b0138",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "36b8a58b-cdcb-49cb-bb6f-91d233bd6dd7",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "2504b9d2-6c60-434c-8aad-6d06d02729ad",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "2504b9d2-6c60-434c-8aad-6d06d02729ad",
+              "key": "business-sector-agriculture",
+              "name": "การเกษตร",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "7bbab865-8f0c-49ed-8006-8c18397a60a2",
+        "code": "CTN260808025610",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ซ. และบริษัท น.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "1288b8ab-d2cf-4cc8-9934-118f4d23f428",
+            "file_name": "MA1_0005_170269.pdf",
+            "display_file_name": "MA1_0005_170269.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0005_170269.pdf",
+            "originalName": "MA1_0005_170269.pdf",
+            "file_size": 261484,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/1288b8ab-d2cf-4cc8-9934-118f4d23f428"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "7482d89b-bd81-4ae6-8eba-31166ea20a76",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "febc901b-d657-4ac5-8459-24e2b809cc48",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "de7f20cf-4b26-45eb-8de6-e3277cda00b4",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "0b5fbd0d-4f12-4c17-9b31-b93e61c8b411",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "0b5fbd0d-4f12-4c17-9b31-b93e61c8b411",
+              "key": "business-sector-petrochemicals",
+              "name": "ปิโตรเคมีและเคมีภัณฑ์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 13
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "748cafbd-e6c1-483d-9c57-647f1aef7c25",
+        "code": "CTN260808025633",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ด. และบริษัท ช.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "7d1ad44c-2673-4809-80a5-66925dca6066",
+            "file_name": "MA1_0004_170269.pdf",
+            "display_file_name": "MA1_0004_170269.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1_0004_170269.pdf",
+            "originalName": "MA1_0004_170269.pdf",
+            "file_size": 446488,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/7d1ad44c-2673-4809-80a5-66925dca6066"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "e47c0031-5f07-4f71-a2c0-a9dfe4af1105",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "11b4a630-111f-4011-a9dc-34829f075902",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "fb0fa5bd-3c36-4747-8dc7-4f6eff8ff237",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "c5ad0c10-bb99-43cb-a169-fc7a89850537",
+              "key": "business-sector-transport-logistics",
+              "name": "ขนส่งและโลจิสติกส์",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 26
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      },
+      {
+        "id": "12fad38d-e737-4934-90dc-f8dad4741656",
+        "code": "CTN260808025712",
+        "document_number": null,
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ช. และบริษัท อ.",
+        "content": "",
+        "description": "",
+        "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+        "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+        "file_list": [
+          {
+            "id": "9669677e-2c45-4b82-a874-7690990a7190",
+            "file_name": "MA1-0002-2568.pdf",
+            "display_file_name": "MA1-0002-2568.pdf",
+            "file_type": "application/pdf",
+            "file_extension": ".pdf",
+            "file_path": "MA1-0002-2568.pdf",
+            "originalName": "MA1-0002-2568.pdf",
+            "file_size": 350045,
+            "isPublic": false,
+            "fileUrl": "https://api.tcct.or.th/upload/9669677e-2c45-4b82-a874-7690990a7190"
+          }
+        ],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-01-07T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "key": "verdict-mergers",
+          "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+          "sequence": 2
+        },
+        "categories": [
+          {
+            "id": "c06e3248-d203-47a6-904c-0419ba719c17",
+            "category_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+            "sub_category_id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+            "sequence": 0,
+            "category": {
+              "id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "key": "verdict-mergers",
+              "name": "ผลคำวินิจฉัยเรื่องการรวมธุรกิจ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": "[\"4325960f-e90a-448d-99e7-da7897c77ba2\",\"1edbbcbc-e32b-45f3-b4bc-3cd410d304ec\"]",
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+              "key": "verdict-mergers-2568",
+              "name": "พ.ศ. 2568",
+              "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": 2
+            }
+          },
+          {
+            "id": "47d4e553-a6c0-4a7a-8118-1bde8ed8d95d",
+            "category_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+            "sub_category_id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+            "sequence": 1,
+            "category": {
+              "id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "key": "merger-type",
+              "name": "ประเภท",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": {
+              "id": "9d5d6008-189e-4ef7-a6cd-7a860b2c7fe0",
+              "key": "merger-type-notify",
+              "name": "การแจ้งผลการรวมธุรกิจ",
+              "parent_id": "4325960f-e90a-448d-99e7-da7897c77ba2",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 1
+            }
+          },
+          {
+            "id": "87c4c3da-0b7e-4b74-87f8-9e27b65f9af6",
+            "category_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+            "sub_category_id": "517c8f72-bea9-45b8-b1ff-3c30c1b3def9",
+            "sequence": 2,
+            "category": {
+              "id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "key": "business-sector",
+              "name": "เรื่อง/พฤติกรรม",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 2
+            },
+            "sub_category": {
+              "id": "517c8f72-bea9-45b8-b1ff-3c30c1b3def9",
+              "key": "business-sector-insurance",
+              "name": "ประกันภัยและประกัน",
+              "parent_id": "1edbbcbc-e32b-45f3-b4bc-3cd410d304ec",
+              "is_active": true,
+              "is_delete": false,
+              "description": null,
+              "filter_category_ids": null,
+              "sequence": 8
+            }
+          }
+        ],
+        "sub_category": {
+          "id": "6deb4c31-cd85-45af-9c6c-1608e30facb0",
+          "key": "verdict-mergers-2568",
+          "name": "พ.ศ. 2568",
+          "parent_id": "3a4c4cdc-7883-46a8-ac46-4e885fd8adc9",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": 2
+        }
+      }
+    ]
+  }
+}

@@ -15,10 +15,19 @@ class MainQualified(unittest.TestCase):
         for sid,s in self.sources.items():
             if not s['enabled']:continue
             with self.subTest(source=sid):
-                rows,_=parse_document(s,(ROOT/s['fixture']).read_bytes(),s['url'])
+                body=(ROOT/s['fixture']).read_bytes()
+                if s['mode']=='tcct-api':
+                    from regwatch.tcct_api import parse_page
+                    from regwatch.tcct_collector import candidate
+                    page=parse_page(body,s['tcct_category_key'],1)
+                    rows=[candidate(s,r,'a'*64) for r in page['records']]
+                    identities={r['tcct_record_id'] for r in rows}
+                else:
+                    rows,_=parse_document(s,body,s['url'])
+                    identities={r['url'] for r in rows}
                 self.assertGreater(len(rows),0)
                 self.assertTrue(all(len(r['title'])>10 for r in rows))
-                self.assertEqual(len(rows),len({r['url'] for r in rows}))
+                self.assertEqual(len(rows),len(identities))
 
     def test_legislative_dates_and_scope(self):
         s=self.sources['parliament-einitiative-discovery']

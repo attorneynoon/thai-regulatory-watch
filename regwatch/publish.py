@@ -145,6 +145,8 @@ def event_description(event,source=None,detected=False):
             field('RSS date precision','day; midnight UTC is presentation only, not a known source publication time')
     links=[]
     for key,label in (('official_url','Original page'),('listing_url','Source listing'),('document_url','Document')):
+        if key == 'official_url' and event.get('tcct_record_id'):
+            label = 'Category listing' if event.get('source_metadata', {}).get('link_role') == 'listing' else 'Official document'
         if event.get(key):
             links.append(source_link(event[key],label)+' — '+escape(event[key]))
     return '<h3>'+escape(event.get('title') or event['source_id'])+'</h3><dl>'+''.join(rows)+'</dl><p>'+'<br>'.join(links)+'</p>'

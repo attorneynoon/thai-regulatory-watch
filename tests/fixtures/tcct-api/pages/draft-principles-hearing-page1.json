@@ -1,0 +1,178 @@
+{
+  "fixture_kind": "representative-official-page-extract",
+  "fixture_provenance": {
+    "source_endpoint": "https://www.tcct.or.th/api/proxy/contents/now",
+    "category_key": "draft-principles-hearing",
+    "retrieved_on": "2026-11-12",
+    "raw_response_sha256": "734bce34aac2b5fd8f43ee42f9a0abf26cca37baba62c3b2ad2210fe4ce28df1",
+    "note": "Complete first-page records and pagination retained. CMS owner, counters, image assets and audit timestamps omitted. One page is not proof of complete archive traversal."
+  },
+  "status": "success",
+  "data": {
+    "category": {
+      "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+      "key": "draft-principles-hearing",
+      "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+      "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+      "is_active": true,
+      "is_delete": false,
+      "description": "",
+      "filter_category_ids": null,
+      "sequence": null
+    },
+    "meta": {
+      "total": 3,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 1,
+      "hasNextPage": false,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "03802ed9-c6e3-4a3d-ac83-338e973df5c0",
+        "code": "CTN261111105959",
+        "document_number": null,
+        "title": "การจัดรับฟังความคิดเห็น เรื่อง การจัดทำระบบหน่วยงานกลาง (Trustee) เพื่อการบังคับใช้มาตรการปรับปรุงพฤติกรรมและโครงสร้างทางการค้า  ระหว่างวันที่ 15 ตุลาคม - 13 พฤศจิกายน 2569",
+        "content": "",
+        "description": "",
+        "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+        "sub_category_id": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-10-15T00:00:00.000Z",
+        "end_date": "2026-11-13T00:00:00.000Z",
+        "is_reference_link": true,
+        "url_link": "https://sites.google.com/view/hearing-trustee/hearing-trustee",
+        "category": {
+          "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+          "key": "draft-principles-hearing",
+          "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        },
+        "categories": [
+          {
+            "id": "6793f1fd-421c-4964-a831-ec4ee87e0ecd",
+            "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+            "sub_category_id": null,
+            "sequence": 0,
+            "category": {
+              "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+              "key": "draft-principles-hearing",
+              "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": null
+          }
+        ]
+      },
+      {
+        "id": "5dd07110-1124-44fd-b914-f786ad69c286",
+        "code": "CTN260808075703",
+        "document_number": null,
+        "title": "[หมดเขตแล้ว] เปิดรับฟังความคิดเห็นเพื่อพัฒนากฎระเบียบการกำกับดูแลการแข่งขันทางการค้า 1. ธุรกิจ Digital Platform 2. ธุรกิจ Modern Trade & Credit Term 3. ธุรกิจบริการเรียกรถโดยสารและบริการจัดส่งออนดีมานด์ ตั้งแต่วันที่ 31 กรกฎาคม - 31 สิงหาคม 2569",
+        "content": "<p><span style=\"color: #ba372a; font-size: 24px;\"><a style=\"color: #ba372a;\" href=\"https://sites.google.com/view/tcctrequestforcomment/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81?fbclid=IwY2xjawTffV9wZG9mAWV4dG4DYWVtAjEwAGJyaWQRMXF3NG41N3FCbTlUS2FDb0hzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEejhoe2RDcZLBZXzQz1QDK-3s6scYcQblgXD_HlOe93iFKGR_mvv0DZbD-3NQ_aem_005uX9dOnJTUHwRaIfafuA\">ดำเนินการต่อได้ที่</a></span></p>",
+        "description": "",
+        "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+        "sub_category_id": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2026-07-31T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+          "key": "draft-principles-hearing",
+          "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        },
+        "categories": [
+          {
+            "id": "841c6558-7a15-4e50-92ef-c5fc8be593d8",
+            "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+            "sub_category_id": null,
+            "sequence": 0,
+            "category": {
+              "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+              "key": "draft-principles-hearing",
+              "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": null
+          }
+        ]
+      },
+      {
+        "id": "b4304955-1d94-4fb1-a9be-e0ce347ea1cb",
+        "code": "CTN260808082158",
+        "document_number": null,
+        "title": "[หมดเขตแล้ว] การรับฟังความคิดเห็นสาธารณะต่อ (ร่าง) แผนแม่บทด้านการแข่งขันทางการค้า (ระยะเวลา 5 ปี พ.ศ. 2566-2570) l ระหว่างวันที่ 29 สิงหาคม 2565 ถึงวันที่ 14 กันยายน 2565",
+        "content": "<h1 align=\"center\"><span style=\"font-size: 18px;\"><strong>การรับฟังความคิดเห็นสาธารณะต่อ<br>(ร่าง)&nbsp;แผนแม่บทด้านการแข่งขันทางการค้า (ระยะ 5 ปี พ.ศ. 2566 &ndash; 2570)</strong></span></h1>\n<h1><span style=\"font-size: 18px;\">&nbsp;ด้วยสำนักงานคณะกรรมการการแข่งขันทางการค้า (สำนักงาน กขค. ) ได้ดำเนินการจัดทำแผนแม่บทด้านการแข่งขันทางการค้า (ระยะ 5 ปี พ.ศ. 2566 &ndash; 2570) เพื่อให้มีกรอบยุทธศาสตร์สำหรับการดำเนินงานด้านการแข่งขันทางการค้าที่มีความสอดคล้องกับยุทธศาสตร์ชาติ แผนปฏิรูป นโยบายของรัฐบาล และแผนอื่นที่เกี่ยวข้อง</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ในการนี้ สำนักงาน กขค. ขอเชิญชวนผู้มีส่วนได้เสียและประชาชนทั่วไป ร่วมแสดงความคิดเห็นสาธารณะต่อ (ร่าง) แผนแม่บทด้านการแข่งขันทางการค้า (ระยะ 5 ปี พ.ศ. 2566 &ndash; 2570) โดยมีรายละเอียดการรับฟังความคิดเห็น ดังนี้</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;1.&nbsp; ระยะเวลาการรับฟังความคิดเห็น:&nbsp;<strong>ตั้งแต่วันที่&nbsp;</strong><strong>29 สิงหาคม 2565 ถึงวันที่ 14&nbsp;กันยายน 2565</strong></span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;2.&nbsp; สามารถนำส่งความคิดเห็นเป็นลายลักษณ์อักษร ได้ตั้งแต่ วันที่&nbsp;<strong>29 สิงหาคม 2565</strong>&nbsp;ผ่านช่องทางดังต่อไปนี้</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong>1)&nbsp; นำส่งด้วยตนเองหรือทางไปรษณีย์ลงทะเบียน</strong>&nbsp;ตามที่อยู่ดังนี้</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;สำนักงาน กขค. (ฝ่ายยุทธศาสตร์องค์กร)</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;เลขที่ 120 ถนนแจ้งวัฒนะ แขวงทุ่งสองห้อง เขตหลักสี่ กรุงเทพมหานคร 10210</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;ทั้งนี้ ให้วงเล็บมุมซองว่า &ldquo;แสดงความคิดเห็นต่อร่างแผนแม่บทด้านการแข่งขันทางการค้า&rdquo;</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;2)&nbsp; หรือ นำส่งทางไปรษณีย์อิเล็กทรอนิกส์</strong>&nbsp;(E-mail):&nbsp;strategy@tcct.or.th&nbsp;โดยตั้งชื่อเรื่องว่า &ldquo;แสดงความคิดเห็นต่อร่างแผนแม่บทด้านการแข่งขันทางการค้า&rdquo;</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;3)&nbsp;หรือ แบบสอบถามความคิดเห็น&nbsp;</strong>ต่อ (ร่าง) แผนแม่บทด้านการแข่งขันทางการค้า ผ่านช่องทางออนไลน์ที่&nbsp;http://shorturl.at/aksy8</span><br><span style=\"font-size: 18px;\">&nbsp; &nbsp; 3.&nbsp; สอบถามข้อมูลเพิ่มเติมได้ที่ ฝ่ายยุทธศาสตร์องค์กร สำนักงาน กขค. 0 2199 5406 email:&nbsp;strategy@tcct.or.th</span></h1>\n<hr>\n<p><span style=\"font-size: 18px;\">&nbsp;</span></p>\n<div style=\"text-align: center;\"><span style=\"font-size: 18px;\"><strong>สรุปรายละเอียดร่างแผนแม่บทด้านการแข่งขันทางการค้า<br>(ระยะ 5 ปี พ.ศ. 2566 &ndash; 2570)</strong></span></div>\n<div style=\"text-align: left;\"><span style=\"font-size: 18px;\"><strong><a href=\"https://drive.google.com/drive/u/1/folders/1tOb6BKweHWys3F4UVOpbxUdFcNMm_xrm\"><span style=\"color: #ba372a;\"><img src=\"https://api.tcct.or.th/upload/e77c3cd4-f518-4dc8-9604-14fd967b3b04\" alt=\"\" width=\"23\" height=\"23\">เอกสารนำเสนอร่างแผนแม่บทด้านการแข่งขันทางการค้า ( ระยะ 5 ปี พ.ศ. 2566 &ndash; 2570)</span> </a></strong></span></div>\n<div style=\"text-align: left;\">&nbsp;</div>",
+        "description": "",
+        "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+        "sub_category_id": null,
+        "file_list": [],
+        "is_active": true,
+        "is_draft": false,
+        "start_date": "2022-08-29T00:00:00.000Z",
+        "end_date": null,
+        "is_reference_link": false,
+        "url_link": null,
+        "category": {
+          "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+          "key": "draft-principles-hearing",
+          "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+          "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+          "is_active": true,
+          "is_delete": false,
+          "description": "",
+          "filter_category_ids": null,
+          "sequence": null
+        },
+        "categories": [
+          {
+            "id": "cc1629c8-9b03-454c-8da6-b5cca45be050",
+            "category_id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+            "sub_category_id": null,
+            "sequence": 0,
+            "category": {
+              "id": "df85c812-97dc-419f-98a2-c3b98fb34ec4",
+              "key": "draft-principles-hearing",
+              "name": "การรับฟังความคิดเห็นต่อร่างหลักการ",
+              "parent_id": "1f76cf5c-63a9-4ca0-8460-d7132cdec111",
+              "is_active": true,
+              "is_delete": false,
+              "description": "",
+              "filter_category_ids": null,
+              "sequence": null
+            },
+            "sub_category": null
+          }
+        ]
+      }
+    ]
+  }
+}

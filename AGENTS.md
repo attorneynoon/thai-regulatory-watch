@@ -28,3 +28,7 @@ Read docs/ADDING_SOURCES.md. Keep IDs stable. Record exact hosts, scope, selecto
 - Preserve source-specific metadata when multiple sources share a URL.
 - External publishing and account changes require the owner's task authorization.
 - Append material outcomes and limitations to docs/WORK_LOG.md.
+
+## TCCT rebuilt website
+
+Before TCCT monitoring or source repairs, read docs/qualification/tcct-api-2026-11-12.md. Use the observed JSON POST listing contract for the six rebuilt categories; legacy /view routes and selectors are not the current contract. Keep source-date/legal-date distinctions, all PDF/body/reference records, category scope, history and migration baselines intact. Offline qualification is not live integration or deployment. Do not invent article URLs, discard attachments solely on isPublic:false, or turn migrated historical records into new-publication alerts.
