@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-12T03:04:30Z",
+  "generated_at": "2026-11-12T11:21:15Z",
   "records": [
+    {
+      "event_id": "health-9a5fb4b639be9b99997c9635b7b5f477",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-11-12T11:21:15Z",
+      "official_url": "https://www.cifs.go.th/index.php?mod=news",
+      "previous_status": "healthy",
+      "regulator_id": "cifs",
+      "source_id": "cifs-watch",
+      "status": "blocked"
+    },
     {
       "event_id": "health-a44bbdd158d7b369a6c2b6481495a67c",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
