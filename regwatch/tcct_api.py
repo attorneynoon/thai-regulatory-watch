@@ -187,7 +187,10 @@ def _membership(value):
     if result["category_id"] != result["category"]["id"]:
         raise ValueError("Category membership identifier mismatch")
     sub = result["sub_category"]
-    if result["sub_category_id"] != (sub["id"] if sub else None) or (sub and sub["parent_id"] != result["category_id"]):
+    # Some public parent-archive rows retain a child ID while the expanded
+    # relation is explicitly null. Keep that unresolved ID; only a populated
+    # child can establish its key, year, parent or visibility.
+    if sub and (result["sub_category_id"] != sub["id"] or sub["parent_id"] != result["category_id"]):
         raise ValueError("Subcategory membership identifier mismatch")
     return result
 
@@ -227,12 +230,16 @@ def normalize_record(record, category_key):
         raise ValueError("Record categories/file_list array missing or changed shape")
     categories = [_membership(value) for value in raw_categories]
     primary = _category(record.get("category"), "record.category")
+    category_id = _string(record["category_id"], "record.category_id")
+    sub_category_id = _string(record["sub_category_id"], "record.sub_category_id", nullable=True)
+    if sub_category_id is not None:
+        _require_fields(record, ("sub_category",), "record with a subcategory ID")
     sub = None if record.get("sub_category") is None else _category(record["sub_category"], "record.sub_category")
-    if record.get("category_id") != primary["id"] or record.get("sub_category_id") != (sub["id"] if sub else None):
+    if category_id != primary["id"] or (sub and sub_category_id != sub["id"]):
         raise ValueError("Primary category identifier mismatch")
     if sub and sub["parent_id"] != primary["id"]:
         raise ValueError("Primary subcategory parent mismatch")
-    if not any(m["category_id"] == primary["id"] and m["sub_category_id"] == (sub["id"] if sub else None) for m in categories):
+    if not any(m["category_id"] == category_id and m["sub_category_id"] == sub_category_id for m in categories):
         raise ValueError("Primary category is absent from memberships")
     if not any(category_key in {m["category"]["key"], (m["sub_category"] or {}).get("key")} for m in categories):
         raise ValueError("Record category does not match requested scope")
@@ -247,6 +254,9 @@ def normalize_record(record, category_key):
     if record["is_reference_link"] and reference is None:
         raise ValueError("Reference-link record is missing its URL")
     links, accepted, warnings = [], [], []
+    if (sub_category_id is not None and sub is None) or any(
+            m["sub_category_id"] is not None and m["sub_category"] is None for m in categories):
+        warnings.append("source_subcategory_unresolved")
     if reference:
         accepted.append({"kind": "url_link", "url": reference})
     for kind, values in (("body", hrefs), ("description", description_hrefs)):
@@ -275,6 +285,7 @@ def normalize_record(record, category_key):
         "source_start_date": start,
         "source_end_date": _date(record.get("end_date"), "record.end_date"),
         "category_years_buddhist": years,
+        "category_id": category_id, "sub_category_id": sub_category_id,
         "category": primary, "sub_category": sub, "categories": categories,
         "body_text": body, "description_text": description,
         "downloads": downloads, "is_reference_link": record["is_reference_link"],

@@ -48,14 +48,19 @@ class LiveQualificationTests(unittest.TestCase):
 
     def test_attachment_budget_is_zero_without_mutating_registry(self):
         selected = source("verdict")
+        warnings = {"source_subcategory_unresolved": 1}
         def collect(state, candidate, now, **kwargs):
             self.assertEqual(candidate["asset_budget"], 0)
             self.assertEqual(kwargs["root"], ROOT)
-            return successful_collector(state, candidate, now, **kwargs)
+            return {**successful_collector(state, candidate, now, **kwargs),
+                    "tcct_listing_warnings": warnings}
         result = MODULE.qualify_sources([selected], ["verdict"], collector=collect, root=ROOT)
         self.assertTrue(result["complete"])
         self.assertEqual(selected["asset_budget"], 3)
         self.assertFalse(result["pdf_bytes_qualified"])
+        self.assertEqual(result["scopes"][0]["listing_warnings"], warnings)
+        result["scopes"][0]["listing_warnings"]["source_subcategory_unresolved"] = 9
+        self.assertEqual(warnings["source_subcategory_unresolved"], 1)
 
     def test_blocked_scope_is_not_a_successful_inventory(self):
         def blocked(*args, **kwargs):

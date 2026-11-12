@@ -42,6 +42,8 @@ Do not equate `healthy` transport/parser status with verified completeness. Sour
 
 For TCCT, `scripts/qualify_tcct.py` validates retained captures without network access, and `scripts/qualify_tcct_live.py` uses the actual collector with disposable in-memory state. The live qualifier does not read or write production state and does not download PDF bytes. Do not use the ordinary production `collect` command for a read-only qualification. New TCCT UUIDs are a migration baseline only on the first complete API transition; retain all older URL-based observations and events. A listing provenance link is not an individual article permalink.
 
+TCCT may return a non-null subcategory ID with an explicit null relation. Preserve both the raw ID and null, and surface `source_subcategory_unresolved`; do not infer a year or substitute a category. Only a resolved requested category key and ID can establish scope. Missing required fields, populated identifier/parent conflicts and invalid visibility still fail the category. Use the live qualifier's optional `--diagnose-taxonomy` flag for bounded read-only evidence; diagnostic traversal never establishes a successful inventory.
+
 ## Metadata and bounds
 
 Use `publisher_name` for the full institution name and `title` for the distinct configured section. Set source-scope `document_type` and `topics` conservatively; these are not item-level legal conclusions. For HTML, `title_attribute`, `title_selector`, `summary_selector` and `date_selector` may recover full visible metadata. Use `date_pattern` to exclude view counters and other volatile text; `document_id_pattern` must capture an explicitly published identifier, never an inferred date. RSS excerpts are reduced to plain text and capped at600 characters.

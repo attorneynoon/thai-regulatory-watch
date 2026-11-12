@@ -267,6 +267,7 @@ def qualify_sources(sources, category_keys, *, collector=collect_source, root=RO
             "status": source_result.get("status"), "complete": complete,
             "records": count, "distinct_observations": len(observations),
             "pages": pages, "error": error,
+            "listing_warnings": deepcopy(source_result.get("tcct_listing_warnings", {})),
         }
         if diagnose_taxonomy and not complete:
             scope["taxonomy_diagnostic"] = transport.diagnose_failure()
