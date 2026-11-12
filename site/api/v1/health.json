@@ -1,6 +1,126 @@
 {
-  "generated_at": "2026-11-12T11:21:15Z",
+  "generated_at": "2026-11-12T19:58:53Z",
   "records": [
+    {
+      "event_id": "health-fc3373010bc5ec006c874e72ffee4df2",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/giveaway-news",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-e92ea3e7266df4b1727a3d3e2ff95e4d",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/activity-news",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-04",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-d39891f56cf9191244a21bf7a612b9a1",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/tcct-draft-laws-hearing",
+      "previous_status": "not-run",
+      "regulator_id": "tcct",
+      "source_id": "tcct-draft-laws-hearing",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-cc04eec1830f7907609ccde690c80c74",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/draft-principles-hearing",
+      "previous_status": "not-run",
+      "regulator_id": "tcct",
+      "source_id": "tcct-draft-principles-hearing",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-97e01191dbd7731e1528b18a99824832",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.cifs.go.th/index.php?mod=news",
+      "previous_status": "blocked",
+      "regulator_id": "cifs",
+      "source_id": "cifs-watch",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-8bbb868d34ad26760378450ad62ed097",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6967303eceaf4df5b1dca811b6847acd",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/giveaway-news/giveaway-news-2569",
+      "previous_status": "not-run",
+      "regulator_id": "tcct",
+      "source_id": "tcct-press-2569",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-52dfa2ab291a03043369c9f698d28dd9",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/activity-news",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-05",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-4bb66ca761d5b53240ac08767ad41ae0",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/verdict",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-3d598346c2d55705c4f7eddb3a4730b4",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/verdict-mergers",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-merger",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1a4d6be37dab080efd7febf180b8ea7b",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/giveaway-news",
+      "previous_status": "failed",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0e5a548929e3b17a16af5c02cad27191",
+      "message": null,
+      "observed_at": "2026-11-12T19:58:53Z",
+      "official_url": "https://www.tcct.or.th/category/activity-news/activity-news-2569",
+      "previous_status": "not-run",
+      "regulator_id": "tcct",
+      "source_id": "tcct-activities-2569",
+      "status": "healthy"
+    },
     {
       "event_id": "health-9a5fb4b639be9b99997c9635b7b5f477",
       "message": "Robots policy unresolved: HTTP 503",
