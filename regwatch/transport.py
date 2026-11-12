@@ -1,5 +1,6 @@
 """Bounded public HTTPS with robots checks on each content redirect."""
 import ipaddress
+import json
 import socket
 import time
 import ssl
@@ -10,6 +11,11 @@ import requests
 from .registry import allowed_url
 
 AGENT = "ThaiRegulatoryWatch/1.0 (+https://github.com/attorneynoon/thai-regulatory-watch)"
+TCCT_ENDPOINT = "https://www.tcct.or.th/api/proxy/contents/now"
+TCCT_CATEGORIES = frozenset({
+    "verdict", "verdict-mergers", "draft-principles-hearing",
+    "tcct-draft-laws-hearing", "giveaway-news-2569", "activity-news-2569",
+})
 CHALLENGE_MARKERS = (b'cf-chl-', b'verify you are human', b'<title>just a moment', b'<title>access denied', b'incapsula incident id')
 
 
@@ -118,6 +124,39 @@ class Transport:
         if not policy.can_fetch(url, 'ThaiRegulatoryWatch'):
             raise AccessBlocked("Disallowed by robots.txt")
         return delay
+
+    def fetch_tcct_page(self, category, page=1, limit=12, max_bytes=4_000_000):
+        """Read one public TCCT category page via its observed POST contract.
+
+        This deliberately does not expose a general JSON POST, follow redirects,
+        or relax the ordinary GET status policy. Schema checks belong to the
+        TCCT parser; HTTP 201 alone is not proof of a valid publication listing.
+        """
+        if category not in TCCT_CATEGORIES:
+            raise ValueError('Unqualified TCCT category')
+        if type(page) is not int or not 1 <= page <= 10:
+            raise ValueError('TCCT page outside bounded window')
+        if type(limit) is not int or not 1 <= limit <= 12:
+            raise ValueError('TCCT page size outside bounded window')
+        if type(max_bytes) is not int or not 1000 <= max_bytes <= 64_000_000:
+            raise ValueError('TCCT response byte budget outside bounds')
+        url = allowed_url(TCCT_ENDPOINT, self.hosts)
+        delay = self._policy(url)
+        payload = json.dumps({'category_key': category, 'is_active': True,
+                              'page_number': page, 'limit': limit,
+                              'sort_by': 'start_date', 'sort_direction': 'desc'})
+        status, headers, body = self._raw(
+            url, headers={'Content-Type': 'application/json', 'Accept': 'application/json'},
+            max_bytes=max_bytes, delay=delay, form=payload)
+        if status in (301, 302, 303, 307, 308):
+            raise ValueError('TCCT public listing POST redirect rejected')
+        if status in (401, 403, 429):
+            raise AccessBlocked('Access unavailable: HTTP ' + str(status))
+        if status not in (200, 201):
+            raise ValueError('HTTP ' + str(status))
+        if headers.get('Content-Type', '').split(';', 1)[0].strip().lower() != 'application/json':
+            raise ValueError('TCCT listing requires application/json')
+        return status, headers, body, url
 
     def fetch(self, url, headers=None, max_bytes=4_000_000, form=None):
         for _ in range(5):

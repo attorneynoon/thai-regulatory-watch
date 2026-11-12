@@ -1,0 +1,338 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "verdict"
+    },
+    "meta": {
+      "total": 137,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 12,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "75ad3a91-53ed-4ac0-ac65-27f357b38ee3",
+        "code": "CTN260920125848",
+        "title": "คำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์ \"Shopee\" จัดรายการส่งเสริมการขายและบังคับให้เข้าร่วมโดยไม่แจ้งให้ร้านค้าทราบล่วงหน้าและไม่ได้รับการยินยอมจากร้านค้า",
+        "start_date": "2026-09-17T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2569"
+            }
+          },
+          {
+            "category": {
+              "key": "tca-section"
+            },
+            "sub_category": {
+              "key": "tca-section-57"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ea8add97-3320-429a-9a27-3701b9fb0f14",
+        "code": "CTN260920125926",
+        "title": "ผลคำวินิจฉัย กรณีผู้ให้บริการซื้อขายรถยนต์มือสองออนไลน์ปฏิเสธคู่แข่ง ",
+        "start_date": "2026-08-17T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "tca-section"
+            },
+            "sub_category": {
+              "key": "tca-section-50"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-automotive"
+            }
+          },
+          {
+            "category": {
+              "key": "tca-section"
+            },
+            "sub_category": {
+              "key": "tca-section-51"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1c51d0e2-387c-49d2-bc38-9194508c5992",
+        "code": "CTN260920125822",
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ให้บริการขนส่งกำหนดระยะเวลาการให้สินเชื่อการค้าอย่างไม่เป็นธรรม",
+        "start_date": "2026-08-08T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "830e2822-076f-4daf-8289-0940a6eebf3c",
+        "code": "CTN260807101204",
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจบอกเลิกสัญญตัวแทนจำหน่ายสินค้าไก่อย่างไม่เป็นธรรม",
+        "start_date": "2026-08-06T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2568"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6316e268-5608-4f1a-9ec2-57e6b1cf7e2f",
+        "code": "CTN260807102453",
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์ “ก” กำหนดเงื่อนไขอันเป็นการจำกัดทางเลือกในการขนส่งสินค้า",
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2567"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2567"
+            }
+          }
+        ]
+      },
+      {
+        "id": "df4b8e87-8a86-4230-8790-b6edd37b909e",
+        "code": "CTN260807100545",
+        "title": "ผลคำวินิจฉัย กรณีบริษัทตัวแทนนายหน้าซื้อขายหลักทรัพย์กำหนดราคาให้บริการต่ำกว่าทุน โดยไม่เรียกเก็บค่าธรรมเนียมนายหน้า",
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2568"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58cc997-bb29-48e6-91e5-e0851ffbca03",
+        "code": "CTN260807100109",
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีการร่วมกันกำหนดราคาค่าโดยสารรถแท็กซี่บนเกาะลันตา",
+        "start_date": "2026-07-14T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "686e9160-668f-4ad4-93d8-13f3ed09bc06",
+        "code": "CTN260807100242",
+        "title": "ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า กรณีผู้ผลิตสินค้าแบรนด์ “พ.” ห้ามจำหน่ายสินค้า",
+        "start_date": "2026-07-13T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5012c92d-8167-4f25-9fb3-9a2005196745",
+        "code": "CTN260807101109",
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์เก็บค่าบริการเสริมจากผู้ขายสินค้าอย่างไม่เป็นธรรม",
+        "start_date": "2026-07-06T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2568"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5b580b3f-79d5-46e1-9327-9e5c4e4eb298",
+        "code": "CTN260807101136",
+        "title": "ผลคำวินิจฉัย กรณีผู้ประกอบธุรกิจขนส่งหักเงินโดยไม่เป็นธรรม",
+        "start_date": "2026-05-13T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2568"
+            }
+          }
+        ]
+      },
+      {
+        "id": "39c47a81-4696-41eb-9bdf-c79cb033fa97",
+        "code": "CTN260807102519",
+        "title": "ผลคำวินิจฉัย กรณีตกลงร่วมกันในธุรกิจนำเข้าและจำหน่ายคอมพิวเตอร์ (คดีอาญา)",
+        "start_date": "2026-03-03T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2567"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2567"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c06316da-ddf9-4aad-b201-28c76e03bf0f",
+        "code": "CTN260807102543",
+        "title": "ผลคำวินิจฉัย การพิจารณาออกคำสั่งตามมาตรา 60 แห่งพระราชบัญญัติการแข่งขันทางการค้า พ.ศ. ๒๕๖๐ กรณีผู้ให้บริการซื้อขายรถยนต์มือสองออนไลน์ปฏิเสธคู่แข่งลงโฆษณาขายรถยนต์อย่างไม่เป็นธรรม",
+        "start_date": "2026-02-15T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict"
+        },
+        "sub_category": {
+          "key": "verdict-2567"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict"
+            },
+            "sub_category": {
+              "key": "verdict-2567"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "giveaway-news-2569"
+    },
+    "meta": {
+      "total": 20,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 2,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "92650bd5-818c-40ea-8682-85f02769085f",
+        "code": "CTN260920130402",
+        "title": "[ฉบับที่ 20/2569] กขค. เดินหน้ารับฟังเสียงฝั่งแพลตฟอร์ม แจง GP คือต้นทุน จี้รัฐบูรณาการลดทับซ้อน",
+        "start_date": "2026-09-15T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64a5cf61-abef-4edd-9661-3a2179c852ca",
+        "code": "CTN260920130341",
+        "title": "[ฉบับที่ 19/2569] “ศุภจี” หนุน กขค. ปฏิรูปการแข่งขัน ดันไทยสู่เศรษฐกิจแห่งอนาคต",
+        "start_date": "2026-09-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "202a24c1-8707-4462-975f-9664a6797dcc",
+        "code": "CTN260920130315",
+        "title": "[ฉบับที่ 18/2569] กขค. เร่งลุย 2 ปมร้อน น้ำมันแพง - ของขาด พร้อมรับหลักฐานเพิ่มเติมจากทีม โอ๋ สุดซอย",
+        "start_date": "2026-09-04T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b59fff46-3124-4799-832f-ee2ce13f30a2",
+        "code": "CTN260920130245",
+        "title": "[ฉบับที่ 17/2569] กขค. เปิดเวทีรับฟัง “ไรเดอร์ - ร้านอาหาร” ปมแพลตฟอร์มเก็บ GP สูง หวั่นเอาเปรียบคู่ค้า",
+        "start_date": "2026-09-01T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "663097db-e3c6-49f1-81d2-a1bd35d577c1",
+        "code": "CTN260903141946",
+        "title": "[ฉบับที่ 16/2569] กขค. จับตาแพลตฟอร์มรายใหญ่ ลุยตรวจสอบพฤติกรรมที่กระทบการแข่งขัน ย้ำ! ไม่ดูแค่ “GP” แต่ต้องมองทั้ง Business Model",
+        "start_date": "2026-08-21T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4ea6d9bd-d3c2-480f-881f-918fb2796825",
+        "code": "CTN260903141905",
+        "title": "[ฉบับที่่ 15/2569] กขค. ชง “กติกาเหล็ก” คุมแพลตฟอร์มเรียกรถ - ส่งของ ปิดช่องเอาเปรียบไรเดอร์ - ผู้บริโภค เปิดรับฟังความเห็นถึง 31 ส.ค. นี้",
+        "start_date": "2026-08-20T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "af5eaaae-c9a6-4bd8-8837-eccf1772c3d1",
+        "code": "CTN260903141835",
+        "title": "[ฉบับที่ 14/2569] สนามแข่งขันที่เท่าเทียม ดันรัฐวิสาหกิจและองค์การมหาชน ใช้ “Competition Compliance Checklist” เช็คความเสี่ยง",
+        "start_date": "2026-08-18T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "511ed3eb-e4fa-4198-bb41-1ba8dea3e1a4",
+        "code": "CTN260808092327",
+        "title": "[ฉบับที่ 13/2569] \"พิทยา\" - กขค. ขอบคุณสมาคมอีคอมเมิร์ซไทยเป็นกระบอกเสียงพาผู้ค้าบนแพลตฟอร์มโร่ร้อง ถูกเอาเปรียบ",
+        "start_date": "2026-08-06T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9d7732ec-1b86-414c-9f49-3c9fc1853d21",
+        "code": "CTN260808092400",
+        "title": "[ฉบับที่ 12/2569] กขค. เตรียมปัดฝุ่นไกด์ไลน์แพลตฟอร์มดิจิทัล ค้าส่งค้าปลีกบริการจัดส่งออนดีมานด์ - พร้อมเปิดรับฟังความคิดเห็น วันนี้ - 31 ส.ค. 69",
+        "start_date": "2026-07-31T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e61ff5e4-0716-47c1-adf5-86eed6c4ce60",
+        "code": "CTN260808092441",
+        "title": "[ฉบับที่ 11/2569] กขค. พบสัญญาณพฤติกรรมทางการค้าที่ไม่เป็นธรรมในบริการแพลตฟอร์มดิจิทัล - รับกรณีกักตุนน้ำมันเชื้อเพลิงไว้พิจารณา 2 คดี",
+        "start_date": "2026-07-25T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "59a99c30-d1c8-47b7-8a34-1a847036754e",
+        "code": "CTN260808092533",
+        "title": "[ฉบับที่ 10/2569] กขค. เปิดสถิติเรื่องร้องเรียนแพลตฟอร์มดิจิทัลเร่งเครื่องสร้างความเป็นธรรมทางการค้า",
+        "start_date": "2026-07-21T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "30a4906f-1224-4208-9fc6-905c233dd98d",
+        "code": "CTN260808093026",
+        "title": "[ฉบับที่ 9/2569] กขค. เอาจริง ตั้งคณะอนุกรรมการ 2 ชุด คุมเข้มแพลตฟอร์มดิจิทัล - วางกติกา Modern Trade",
+        "start_date": "2026-07-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "giveaway-news"
+        },
+        "sub_category": {
+          "key": "giveaway-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "giveaway-news"
+            },
+            "sub_category": {
+              "key": "giveaway-news-2569"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "draft-principles-hearing"
+    },
+    "meta": {
+      "total": 3,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 1,
+      "hasNextPage": false,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "03802ed9-c6e3-4a3d-ac83-338e973df5c0",
+        "code": "CTN261111105959",
+        "title": "การจัดรับฟังความคิดเห็น เรื่อง การจัดทำระบบหน่วยงานกลาง (Trustee) เพื่อการบังคับใช้มาตรการปรับปรุงพฤติกรรมและโครงสร้างทางการค้า  ระหว่างวันที่ 15 ตุลาคม - 13 พฤศจิกายน 2569",
+        "start_date": "2026-10-15T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "draft-principles-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "draft-principles-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5dd07110-1124-44fd-b914-f786ad69c286",
+        "code": "CTN260808075703",
+        "title": "[หมดเขตแล้ว] เปิดรับฟังความคิดเห็นเพื่อพัฒนากฎระเบียบการกำกับดูแลการแข่งขันทางการค้า 1. ธุรกิจ Digital Platform 2. ธุรกิจ Modern Trade & Credit Term 3. ธุรกิจบริการเรียกรถโดยสารและบริการจัดส่งออนดีมานด์ ตั้งแต่วันที่ 31 กรกฎาคม - 31 สิงหาคม 2569",
+        "start_date": "2026-07-31T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "draft-principles-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "draft-principles-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b4304955-1d94-4fb1-a9be-e0ce347ea1cb",
+        "code": "CTN260808082158",
+        "title": "[หมดเขตแล้ว] การรับฟังความคิดเห็นสาธารณะต่อ (ร่าง) แผนแม่บทด้านการแข่งขันทางการค้า (ระยะเวลา 5 ปี พ.ศ. 2566-2570) (ระหว่างวันที่ 29 สิงหาคม ถึงวันที่ 14 กันยายน 2565)",
+        "start_date": "2022-08-29T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "draft-principles-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "draft-principles-hearing"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

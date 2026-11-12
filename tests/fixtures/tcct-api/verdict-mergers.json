@@ -1,0 +1,498 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "verdict-mergers"
+    },
+    "meta": {
+      "total": 169,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 15,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "b05d6e3b-96a9-45b4-abbc-2558f0420adc",
+        "code": "CTN260808025232",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท อ. และบริษัท น.",
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2569"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-transport-logistics"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b55dceb9-ff0d-4ead-bf87-d56848e0a755",
+        "code": "CTN260808025123",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ป. และบริษัท ท.",
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2569"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-ict"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a6c8f9a7-66ad-4c42-8d63-9276fd58cf2c",
+        "code": "CTN260808025154",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ม. และบริษัท อ.",
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2569"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-personal-pharma"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a0b47082-54da-42b3-b20a-b2b64c6ea593",
+        "code": "CTN260808025255",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ค. และบริษัท อ.",
+        "start_date": "2026-07-08T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2569"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-electronics"
+            }
+          }
+        ]
+      },
+      {
+        "id": "65ef18e4-9d2f-4432-82e3-1844da7b5400",
+        "code": "CTN260808025329",
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่างบริษัท ส. และบริษัท ด.",
+        "start_date": "2026-06-18T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-permit"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-automotive"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6416b9f6-0476-4753-8bd9-bea15beec846",
+        "code": "CTN260808025502",
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่าง (1) บริษัท ต. กับ (2) บริษัท ฮ. และ (1) บริษัท ด. กับ (2) บริษัท ม.",
+        "start_date": "2026-05-27T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-permit"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-industrial"
+            }
+          }
+        ]
+      },
+      {
+        "id": "08d900f6-6d5e-4fdc-9791-6647f495ece0",
+        "code": "CTN260808025529",
+        "title": "ผลคำวินิจฉัย กรณีผลการพิจารณาคำขออนุญาตรวมธุรกิจระหว่าง บริษัท ร. จำกัด (มหาชน) และบริษัท ธ. จำกัด (มหาชน)",
+        "start_date": "2026-03-31T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-permit"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-health-care"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2f982b1b-117b-4fac-a639-8eb210261088",
+        "code": "CTN260808025653",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ม. และบริษัท ต.",
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-home-office"
+            }
+          }
+        ]
+      },
+      {
+        "id": "db9d4a26-5b55-4927-9795-4552f9fd8179",
+        "code": "CTN260808025549",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท บ. และบริษัท ว.",
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-agriculture"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7bbab865-8f0c-49ed-8006-8c18397a60a2",
+        "code": "CTN260808025610",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ซ. และบริษัท น.",
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-petrochemicals"
+            }
+          }
+        ]
+      },
+      {
+        "id": "748cafbd-e6c1-483d-9c57-647f1aef7c25",
+        "code": "CTN260808025633",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ด. และบริษัท ช.",
+        "start_date": "2026-02-16T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-transport-logistics"
+            }
+          }
+        ]
+      },
+      {
+        "id": "12fad38d-e737-4934-90dc-f8dad4741656",
+        "code": "CTN260808025712",
+        "title": "ผลคำวินิจฉัย กรณีการแจ้งผลการรวมธุรกิจระหว่างบริษัท ช. และบริษัท อ.",
+        "start_date": "2026-01-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "verdict-mergers"
+        },
+        "sub_category": {
+          "key": "verdict-mergers-2568"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "verdict-mergers"
+            },
+            "sub_category": {
+              "key": "verdict-mergers-2568"
+            }
+          },
+          {
+            "category": {
+              "key": "merger-type"
+            },
+            "sub_category": {
+              "key": "merger-type-notify"
+            }
+          },
+          {
+            "category": {
+              "key": "business-sector"
+            },
+            "sub_category": {
+              "key": "business-sector-insurance"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
