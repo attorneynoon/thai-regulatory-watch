@@ -1,0 +1,34 @@
+[
+  {
+    "replay_at": "2026-10-16T23:46:52Z",
+    "strict_coverage": false,
+    "original_exit": 1,
+    "patched_exit": 1,
+    "problem_count": 26,
+    "same_source_status_validation": true
+  },
+  {
+    "replay_at": "2026-10-16T23:46:52Z",
+    "strict_coverage": true,
+    "original_exit": 1,
+    "patched_exit": 1,
+    "problem_count": 85,
+    "same_source_status_validation": true
+  },
+  {
+    "replay_at": "2026-10-17T03:44:34Z",
+    "strict_coverage": false,
+    "original_exit": 1,
+    "patched_exit": 1,
+    "problem_count": 78,
+    "same_source_status_validation": true
+  },
+  {
+    "replay_at": "2026-10-17T03:44:34Z",
+    "strict_coverage": true,
+    "original_exit": 1,
+    "patched_exit": 1,
+    "problem_count": 99,
+    "same_source_status_validation": true
+  }
+]
