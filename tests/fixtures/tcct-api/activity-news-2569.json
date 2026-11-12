@@ -1,0 +1,306 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "activity-news-2569"
+    },
+    "meta": {
+      "total": 65,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 6,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "a3990e8a-a6e5-4dbd-9eaf-d5c45df472a7",
+        "code": "CTN261008170238",
+        "title": "สำนักงาน กขค. จัดประชุมคณะอนุกรรมการด้านการวิเคราะห์ทางเศรษฐศาสตร์และธุรกิจ เพื่อการบังคับใช้กฎหมายการแข่งขันทางการค้า เพื่อเดินหน้าพัฒนาคู่มือ Theory of Harm และกรอบแนวทางการกำกับดูแลการแข่งขันในธุรกิจบริการสุขภาพ (Healthcare)",
+        "start_date": "2026-09-30T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e716a326-dc9c-4fd8-9ef3-7215e950268a",
+        "code": "CTN261008170101",
+        "title": "กขค. ได้รับเชิญร่วมงาน CIB AI Day 2026 มุ่งยกระดับเทคโนโลยี ดัน AI เสริมทัพกำกับดูแลธุรกิจดิจิทัล",
+        "start_date": "2026-09-18T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "51b19d3d-ba7f-45f1-8a0b-1f08efdab26f",
+        "code": "CTN261008165810",
+        "title": "คณะอนุกรรมการพิจารณาแนวทางการกำกับดูแลและป้องปรามพฤติกรรมทางการค้าในธุรกิจแพลตฟอร์มดิจิทัล ได้ประชุมครั้งที่ 2/2569 ณ สำนักงานคณะกรรมการการแข่งขันทางการค้า",
+        "start_date": "2026-09-17T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "960c2f44-edde-47e9-8160-b5086b656528",
+        "code": "CTN261008165210",
+        "title": "สำนักงาน กขค. ร่วมวงอภิปรายในงานสัมมนา “การยกระดับความโปร่งใสและธรรมาภิบาลของประเทศไทยตามมาตรฐาน OECD” ผลักดันไทยเข้าเป็นสมาชิก OECD ภายในปี 2571",
+        "start_date": "2026-09-16T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "36d3dd65-edb4-4337-aae8-cf69fab52b89",
+        "code": "CTN260920131426",
+        "title": "สำนักงาน กขค. จัดกิจกรรม Workshop ก่อนปิดหลักสูตร CLE Masterclass รุ่นที่ 2",
+        "start_date": "2026-09-15T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f25bdc4b-0f93-43e3-8224-94dcb70aa338",
+        "code": "CTN261008164827",
+        "title": "สำนักงาน กขค. ร่วมกับ ACCC และเครือข่ายอาเซียน จัด Workshop พัฒนาองค์ความรู้ด้านการรวมธุรกิจ เสริมศักยภาพการบังคับใช้กฎหมายการแข่งขันทางการค้า",
+        "start_date": "2026-09-14T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1c420a86-e833-40c5-ad63-99c7a8f5ad10",
+        "code": "CTN261008164612",
+        "title": "กขค. ร่วมเวที ASEAN Enforcers Roundtable แลกเปลี่ยนมุมมองด้านการแข่งขันในภูมิภาคอาเซียน ณ สิงคโปร์",
+        "start_date": "2026-09-11T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c53f6c53-5b1c-4503-8f47-0c3928b201da",
+        "code": "CTN261008164446",
+        "title": "ว่าที่ร้อยเอกณัฐพล พัวประเสริฐ ผู้อำนวยการฝ่ายส่งเสริมการแข่งขันทางการค้า ได้เข้าร่วมเป็นวิทยากรในงานเสวนาแลกเปลี่ยนเรียนรู้ “การส่งเสริมการแข่งขันทางการค้าที่เป็นธรรม”",
+        "start_date": "2026-09-03T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2d60687a-826e-48cc-b8f5-f3a77f90d911",
+        "code": "CTN261008164322",
+        "title": "สำนักงาน กขค. เข้าร่วมประชุมหารือกับธนาคารแห่งประเทศไทย (ธปท.) เพื่อแลกเปลี่ยนแนวทางกำกับดูแลการแข่งขันในธุรกิจภาคการเงิน",
+        "start_date": "2026-08-28T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "14a7e52f-a819-4122-9fb6-942ae3dbde24",
+        "code": "CTN261008164142",
+        "title": "สำนักงาน กขค. จัดประชุมคณะอนุกรรมการกำหนดแนวทางและแผนปฏิบัติการเกี่ยวกับสภาพการแข่งขันในธุรกิจค้าส่งและค้าปลีกสมัยใหม่ (Modern Trade) ครั้งที่ 2/2569",
+        "start_date": "2026-08-27T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "01cce6ef-a911-4063-8f36-b3d01ca9ea87",
+        "code": "CTN261008163950",
+        "title": "สำนักงาน กขค. จัดการฝึกอบรมหลักสูตร Competition Law & Economics Masterclass (CLE Masterclass) รุ่นที่ 2",
+        "start_date": "2026-08-27T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      },
+      {
+        "id": "da36486b-95b7-40b2-aee1-dfeb1219762b",
+        "code": "CTN261008163817",
+        "title": "กขค. ลงพื้นที่ให้คำปรึกษาและความช่วยเหลือทางกฎหมาย (Mobile Competition Clinic) ณ จังหวัดจันทบุรี",
+        "start_date": "2026-08-25T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "activity-news"
+        },
+        "sub_category": {
+          "key": "activity-news-2569"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "activity-news"
+            },
+            "sub_category": {
+              "key": "activity-news-2569"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "status": "success",
+  "data": {
+    "category": {
+      "key": "tcct-draft-laws-hearing"
+    },
+    "meta": {
+      "total": 20,
+      "page": 1,
+      "limit": 12,
+      "totalPages": 2,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "contents": [
+      {
+        "id": "1014bc1b-a6ff-4ee5-9c69-e563567a76f4",
+        "code": "CTN261111135110",
+        "title": "การจัดรับฟังความคิดเห็น (ร่าง) ประกาศคณะกรรมการการแข่งขันทางการค้า เรื่อง แนวปฏิบัติทางการค้าของผู้ประกอบธุรกิจบริการแพลตฟอร์มดิจิทัลประเภทบริการเรียกรถขนส่งสาธารณะ (Ride hailing) และประเภทบริการจัดส่งตามอุปสงค์ (On-demand) พ.ศ. ....  ระหว่างวันที่ 4 พฤศจิกายน - 3 ธันวาคม 2569 จัดโดย สำนักงานคณะกรรมการการแข่งขันทางการค้า (สำนักงาน กขค.)",
+        "start_date": "2026-11-11T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b6f9e6c1-df38-48f6-96db-debd8b97999a",
+        "code": "CTN261111135207",
+        "title": "การจัดรับฟังความคิดเห็น (ร่าง) ประกาศคณะกรรมการการแข่งขันทางการค้า เรื่อง การกำกับโครงสร้างอัตราค่าบริการ และการจัดส่งสินค้าในระบบนิเวศแพลตฟอร์มหลายด้าน (Multi-sided Platform) ประเภทธุรกิจบริการแพลตฟอร์มดิจิทัลซื้อขายสินค้าหรือบริการ (E-commerce) พ.ศ. ....",
+        "start_date": "2026-11-11T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "67142729-2138-46b3-9fbb-0ea4e59bf9ab",
+        "code": "CTN261111133946",
+        "title": "การจัดรับฟังความคิดเห็น (ร่าง) ประกาศคณะกรรมการการแข่งขันทางการค้า เรื่อง การกำกับโครงสร้างอัตราค่าบริการในระบบนิเวศแพลตฟอร์มดิจิทัลประเภทบริการเรียกรถขนส่งสาธารณะ และประเภทบริการจัดส่งตามอุปสงค์ พ.ศ. .... ระหว่างวันที่ 21 ตุลาคม - 19 พฤศจิกายน 2569 จัดโดย สำนักงานคณะกรรมการการแข่งขันทางการค้า (สำนักงาน กขค.)",
+        "start_date": "2026-11-11T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1f415be1-5de8-4cec-988c-ec015e66b177",
+        "code": "CTN260808082232",
+        "title": "[หมดเขตแล้ว] การรับฟังความคิดเห็นร่างประกาศ กขค. เรื่อง แนวทางพิจารณาการปฏิบัติทางการค้าที่เป็นธรรมเกี่ยวกับระยะเวลาการให้สินเชื่อการค้า (Credit Term) กรณีผู้ประกอบธุรกิจขนาดกลางและขนาดย่อม (SMEs) เป็นผู้ขายสินค้าหรือบริการ (ฉบับที่ ..)",
+        "start_date": "2026-08-18T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2884944d-6154-442f-b942-127e62665275",
+        "code": "CTN260808080532",
+        "title": "[หมดเขตแล้ว] เปิดรับฟังความคิดเห็น ร่างพระราชบัญญัติการแข่งขันทางการค้า พ.ศ. .............. (ฉบับสำนักงานคณะกรรมการการแข่งขันทางการค้า)  ",
+        "start_date": "2026-08-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8afc35ff-497e-479c-b10b-55aa34d6f861",
+        "code": "CTN260808080218",
+        "title": "[หมดเขตแล้ว] ร่างประกาศ กขค. เรื่อง  หลักเกณฑ์การพิจารณา การเข้าซื้อสินทรัพย์หรือหุ้น เพื่อควบคุมนโยบาย การบริหารธุรกิจ การอำนวยการ หรือการจัดการ ที่เป็นการรวมธุรกิจ (ฉบับที่..) พ.ศ. ...",
+        "start_date": "2026-08-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7d081290-de5a-4a4f-acf5-5d2ec357c5f2",
+        "code": "CTN260808080651",
+        "title": "[หมดเขตแล้ว] ร่างประกาศ กขค. เรื่อง แนวทางพิจารณาการปฏิบัติทางการค้าที่ไม่เป็นธรรมและการกระทำอันเป็นการผูกขาด หรือลดการแข่งขัน หรือจำกัดการแข่งขันในการประกอบธุรกิจแพลตฟอร์มหลายด้าน (Multi-sided Platform) ประเภทธุรกิจบริการดิจิทัลแพลตฟอร์มซื้อขายสินค้าหรือบริการ (E-Commerce)",
+        "start_date": "2026-08-07T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "71a17b60-f2a7-49b1-a356-684bfba50ebe",
+        "code": "CTN260808080400",
+        "title": "[หมดเขตแล้ว] รับฟังความคิดเห็นร่างประกาศ กขค. เรื่อง หลักเกณฑ์และวิธีการยื่นคำร้องขอให้ กขค. มีคำวินิจฉัยเป็นการล่วงหน้า (ฉบับที่ ..)",
+        "start_date": "2026-02-04T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bd9ee504-ce03-40fa-8f3d-f4ad9be68a9f",
+        "code": "CTN260808081633",
+        "title": "[หมดเขตแล้ว] ประกาศ กขค. เรื่อง หลักเกณฑ์การพิจารณาการเข้าซื้อสินทรัพย์หรือหุ้น เพื่อควบคุมนโยบายการบริหารธุรกิจ การอำนวยการ หรือการจัดการที่เป็นการรวมธุรกิจ พ.ศ. 2561",
+        "start_date": "2025-04-23T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a03d9cdd-1a75-4c8f-9c33-dad8a1505d82",
+        "code": "CTN260808081506",
+        "title": "[หมดเขตแล้ว] ประกาศ กขค. เรื่อง หลักเกณฑ์ วิธีการ และเงื่อนไขการขออนุญาตและการอนุญาตการรวมธุรกิจ พ.ศ. 2561",
+        "start_date": "2025-03-24T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7651c33e-114d-4074-ba89-968acf111d99",
+        "code": "CTN260808080911",
+        "title": "[หมดเขตแล้ว] ประกาศ กขค. เรื่อง แนวทางปฏิบัติในการพิจารณากำหนดขอบเขตตลาดและส่วนแบ่งตลาด พ.ศ. 2561",
+        "start_date": "2025-03-24T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3a13de06-a7e0-4ac7-a2ce-83ec47c9048b",
+        "code": "CTN260808080753",
+        "title": "[หมดเขตแล้ว] ประกาศ กขค. เรื่อง หลักเกณฑ์ วิธีการ และเงื่อนไขในการกำหนดจำนวนเงินค่าปรับที่จะเปรียบเทียบ พ.ศ. 2562",
+        "start_date": "2025-03-24T00:00:00.000Z",
+        "is_active": true,
+        "is_draft": false,
+        "category": {
+          "key": "tcct-draft-laws-hearing"
+        },
+        "categories": [
+          {
+            "category": {
+              "key": "tcct-draft-laws-hearing"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -124,3 +124,17 @@ Hosted closeout: PR7 merged; run35447234736 completed collection and Pages deplo
 ## 2026-11-04 — courts listing host rotation (draft)
 
 Recovered runner production run 41806560563 collected and deployed successfully. Separate courts empty-parse failure traced to six official API cards targeting five previously unlisted court hosts. Added only those exact hostnames, a representative public fixture and regression tests; selectors, candidate status, safety gates and history remain unchanged. Destination robots checks passed; two article titles were verified directly, while three destination hosts returned HTTP 503, so only national-listing metadata is qualified. No production transport bypass, collection, generated-data commit or merge is part of this draft. See `docs/qualification/courts-host-rotation-2026-11-04.md` for evidence and remaining AMLO/prosecutor limitations.
+
+## 2026-11-12 — TCCT public API qualification, production held
+
+Added a narrow read-only TCCT listing POST transport and sanitized metadata
+qualifier with six observed category fixtures. Public curl probes returned
+HTTP201/status success; parser replay passed all six first pages. Native transport
+live probe was blocked by this environment's DNS/robots resolution, not a verified
+origin outage. No source registry, production state, generated site, collector,
+monitoring schedule or deployment changes. Legacy/new identity mapping and hosted
+qualification remain required before activation. See `qualification/tcct-api.md`.
+
+TCCT follow-up: added an isolated PR-only six-first-page network qualification
+job on Ubuntu 24.04 with contents:read and no production writes or schedule.
+Hosted outcome remains separate from unit/offline validation.
