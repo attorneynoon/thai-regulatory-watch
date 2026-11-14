@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-13T22:41:38Z",
+  "generated_at": "2026-11-14T03:21:19Z",
   "records": [
+    {
+      "event_id": "health-bd93af28bf082f7782df2ec1bb4c6448",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-14T03:21:19Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
+    {
+      "event_id": "health-61b04e30918c8aca2d17ad562d17b752",
+      "message": null,
+      "observed_at": "2026-11-14T03:21:19Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "failed",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-fa7806d092caa23e47f0a08d07736ce4",
       "message": "HTTP 502",
