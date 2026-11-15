@@ -23,7 +23,7 @@ The latest outputs already add three useful sections: an academic/economic deep-
 1. Preserve the original `litigation`, `competition`, and `platform` branches.
 2. Add a serial fourth layer, `decision_intelligence`, after the three branch syntheses.
 3. Segment multi-decision source bundles before analysis.
-4. Route legal and economic modules according to the decision family and procedural posture.
+4. Route legal and economic modules according to the decision family, procedural posture and conduct/merger nature.
 5. Separate source facts, party arguments, TCCT findings/holdings, analyst inference, academic lenses, external research, hypotheses and missing evidence.
 6. Produce actual arguments/evidence, counterarguments, ideal evidence, record gaps, TCCT critique, loopholes, stronger claimant/regulator/respondent cases and outcome-changing counterfactuals.
 7. Translate the dispute for boards, executives, operating teams, counterparties and capital providers without overstating what the ruling authorizes.
@@ -43,9 +43,9 @@ The latest outputs already add three useful sections: an academic/economic deep-
 
 Retain the v0.1 source ledger, Thai-numeral analysis copy and stable source locators. Add bundle segmentation when a document contains repeated TCCT decision headings. Each segment receives its own locator and allowed-source boundary.
 
-### Stage 1 — Decision-family router
+### Stage 1 — Decision-family and nature router
 
-Classify each segment into one primary family, optional secondary families and a procedural posture:
+Classify each segment into one primary family, optional secondary families, nature tags and a procedural posture:
 
 - `UNFAIR_TRADE`
 - `HORIZONTAL_AGREEMENT`
@@ -55,7 +55,7 @@ Classify each segment into one primary family, optional secondary families and a
 - `MERGER_POST_NOTIFICATION`
 - `UNKNOWN`
 
-`PLATFORM_HYBRID` is a secondary characteristic, not a substitute for the statutory family.
+`PLATFORM_HYBRID` is a secondary characteristic, not a substitute for the statutory family. Nature tags distinguish mechanisms such as forced participation, discrimination, termination, payment terms, self-preferencing, horizontal overlap, vertical foreclosure and conglomerate/ecosystem effects.
 
 ### Stage 2 — Existing parallel branches
 
@@ -92,11 +92,11 @@ Validate provenance, case-family modules, cross-case citations, academic-source 
 
 ### Unfair trade / Section 57
 
-Focus on relative dependency or bargaining position, the challenged act or term, comparator treatment, objective business justification, proportionality, notice/cure, harm, causation and remedy. Market definition or HHI is forbidden unless the source or a separately reached Section 50 issue makes it relevant.
+Identify the case-specific unfairness benchmark, the challenged act or term, comparator treatment, objective business justification, proportionality, notice/cure, harm, causation and remedy. Relative dependency or bargaining imbalance is context when relevant, not a universal element. Market definition or HHI is forbidden unless the source, pleaded theory or a separately reached Section 50 issue makes it relevant.
 
 ### Horizontal agreement / Section 54
 
-Focus on contact, agreement or concerted practice, object, direct and circumstantial evidence, implementation, monitoring/enforcement as evidence, individual attribution, withdrawal, settlement and ne bis in idem. Do not make monitoring or enforcement a universal statutory element unless an authoritative source expressly does so.
+Focus on contact, agreement or concerted practice, object/effect where legally relevant, direct and circumstantial evidence, implementation, monitoring/enforcement as evidence, individual attribution, withdrawal, settlement and ne bis in idem. Do not make monitoring or enforcement a universal statutory element unless an authoritative source expressly does so.
 
 ### Vertical agreement / Section 55
 
@@ -104,11 +104,11 @@ Focus on the vertical relationship, restraint, legal category, foreclosure or ef
 
 ### Abuse of dominance / Section 50
 
-Focus on relevant market, market power, conduct, exploitative or exclusionary mechanism, foreclosure, causation, efficiencies, proportionality and remedy.
+Focus on relevant market, market power, conduct, exploitative or exclusionary mechanism, foreclosure, causation, efficiencies, proportionality and remedy. Keep dominance and abuse as separate propositions.
 
 ### Merger pre-approval / Sections 51(2) and 52
 
-Focus on control, jurisdiction and thresholds; horizontal, vertical and conglomerate overlaps; counterfactual; HHI and delta where supported; unilateral and coordinated effects; entry/expansion; buyer power; efficiencies; failing-firm claims; Section 52 balancing; conditions, remedies and monitoring.
+Focus on control, jurisdiction and thresholds; horizontal, vertical and conglomerate/ecosystem overlaps; counterfactual; market structure and concentration evidence; unilateral and coordinated effects; vertical ability/incentive/effect; entry/expansion; buyer power; efficiencies; failing-firm claims; Section 52 balancing; conditions, remedies and monitoring. HHI and delta are conditional metrics where supported, not mandatory substitutes for effects analysis.
 
 ### Merger post-notification / Section 51(1)
 
@@ -120,7 +120,7 @@ Every material proposition must be tagged as one of:
 
 `SOURCE_FACT`, `PARTY_ARGUMENT`, `TCCT_FINDING`, `TCCT_HOLDING`, `ANALYST_INFERENCE`, `ACADEMIC_LENS`, `EXTERNAL_RESEARCH`, `HYPOTHESIS`, `MISSING_EVIDENCE`, or `NOT_APPLICABLE`.
 
-Academic or comparative claims require governed external source references. Without them, the output must say `NEEDS_RESEARCH`, not present model memory as authority.
+Case-record references and governed external references occupy separate namespaces. Academic or comparative claims require governed external source references. Without them, the output must say `NEEDS_RESEARCH`, not present model memory as authority.
 
 ## Business translation
 
@@ -135,11 +135,13 @@ The fourth layer must provide:
 - evidence and controls to preserve before a dispute;
 - concrete “next Monday” decisions.
 
+Every required stakeholder role must contain at least one meaningful takeaway.
+
 ## OCR and Gemini boundary
 
 Support Gemini native PDF document input as an optional extraction/verification path while retaining the deterministic source ledger and Drive OCR fallback. The request builder must use the current Interactions API path, structured output and `store=false`. Confidential or privileged documents remain blocked until provider, retention, region and access approvals are recorded.
 
-OCR status values are limited to `UNCHECKED`, `TEXT_EXTRACTED`, `MANUAL_SAMPLE_REVIEWED`, `BASELINE_COMPARED` and `FAILED`. `CLEAN_TEXT` is not a valid status without a defined comparison protocol and metrics.
+OCR status values are limited to `UNCHECKED`, `TEXT_EXTRACTED`, `MANUAL_SAMPLE_REVIEWED`, `BASELINE_COMPARED` and `FAILED`. `CLEAN_TEXT` is not a valid status without a defined comparison protocol and metrics. A zero-error assertion is invalid if the measured error rate is non-zero.
 
 ## Safety and release status
 
