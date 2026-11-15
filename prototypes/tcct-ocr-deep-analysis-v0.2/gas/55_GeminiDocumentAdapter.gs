@@ -57,7 +57,8 @@ function tcctV02BuildGeminiPdfInteraction(config) {
     method: 'post',
     headers: {
       'x-goog-api-key': value.apiKey,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Api-Revision': value.apiRevision || '2026-05-20'
     },
     body: {
       model: value.model,
