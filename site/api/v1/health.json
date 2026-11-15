@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-15T02:43:31Z",
+  "generated_at": "2026-11-15T11:00:21Z",
   "records": [
+    {
+      "event_id": "health-9444e4b8c4a4584523ae7b8087f1eb69",
+      "message": null,
+      "observed_at": "2026-11-15T11:00:21Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "failed",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-19b553dbc458d0c2c8357b0c0c7c076a",
+      "message": null,
+      "observed_at": "2026-11-15T11:00:21Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-6558ef42df4077bb339e7377d1b7d179",
       "message": "Attachment checks: Document is not a PDF",
