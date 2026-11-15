@@ -46,8 +46,6 @@ jobs:
       - name: Run public Gemini smoke
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_GENAI_API_KEY: ${{ secrets.GOOGLE_GENAI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: node prototypes/tcct-ocr-deep-analysis-v0.2/scripts/public-smoke.mjs
 
