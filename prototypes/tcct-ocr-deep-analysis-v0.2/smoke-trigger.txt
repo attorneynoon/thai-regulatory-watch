@@ -1,0 +1,10 @@
+Historical approval marker only.
+
+The initial public-document smoke was approved on 2026-11-15. This file no longer triggers the hosted workflow.
+
+Future hosted runs require:
+1. environment `tcct-public-smoke` configured with required reviewers;
+2. dedicated environment secret `GEMINI_API_KEY`;
+3. label `run-public-gemini-smoke` applied to draft PR #22, or an authorized manual workflow dispatch.
+
+No merge, deployment, production write or Thai Legal Assistant writeback is authorized.
