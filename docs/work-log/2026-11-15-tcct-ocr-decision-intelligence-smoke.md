@@ -11,3 +11,9 @@ Historical smoke run `43703105149` built a one-page 138,750-byte PDF with SHA-25
 Subsequent hardening requires an explicit document-sensitivity classification, a same-repository manual label trigger, environment `tcct-public-smoke`, and only a dedicated environment secret `GEMINI_API_KEY`. The repository administrator must add required reviewers to that environment before storing the key. Ordinary PR updates no longer trigger a live smoke or expose the secret.
 
 No merge, deployment, production Drive write, production trigger, confidential-document transmission or Thai Legal Assistant 2.0 writeback occurred. A future live `PASS` remains review-only.
+
+## Owner approval and merge gate
+
+On 15 November 2026, the owner approved completing the GitHub process and merging PR #22 into `main` after a fresh green validation against the then-current base branch. The approved integration covers the review-only prototype, deterministic controls, tests, documentation and manually gated public-smoke harness.
+
+This approval does not convert `BLOCKED_NO_API_KEY` into a successful live Gemini test and does not authorize deployment, production Drive writes, confidential-document processing, Thai Legal Assistant 2.0 writeback or automatic production activation. The live public smoke remains a separate post-merge review gate once environment `tcct-public-smoke` and its dedicated `GEMINI_API_KEY` are configured.
