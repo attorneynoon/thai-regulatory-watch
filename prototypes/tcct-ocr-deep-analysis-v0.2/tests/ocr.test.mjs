@@ -18,6 +18,7 @@ test('builds a stateless v1beta Interactions API request for a Gemini file URI',
   assert.equal(request.body.input[0].uri, 'https://generativelanguage.googleapis.com/v1beta/files/public-test');
   assert.equal(request.body.response_format.mime_type, 'application/json');
   assert.equal(request.headers['x-goog-api-key'], 'test-key');
+  assert.equal(request.headers['Api-Revision'], '2026-05-20');
 });
 
 test('supports inline PDF data without changing the evidence contract', () => {
