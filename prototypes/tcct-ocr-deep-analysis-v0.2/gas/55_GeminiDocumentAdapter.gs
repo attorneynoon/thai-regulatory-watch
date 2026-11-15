@@ -1,8 +1,29 @@
 function tcctV02SensitiveApprovalCheck(config) {
   var value = config || {};
-  var sensitivity = String(value.sensitivity || 'PUBLIC').toUpperCase();
-  var sensitive = sensitivity === 'CONFIDENTIAL' || sensitivity === 'PRIVILEGED';
-  if (!sensitive) return { approved: true, sensitivity: sensitivity, missing: [] };
+  var rawSensitivity = value.sensitivity;
+  if (rawSensitivity == null || String(rawSensitivity).trim() === '') {
+    return {
+      approved: false,
+      sensitivity: 'UNDECLARED',
+      reasonCode: 'SENSITIVITY_REQUIRED',
+      missing: ['sensitivity']
+    };
+  }
+
+  var sensitivity = String(rawSensitivity).trim().toUpperCase();
+  var supported = ['PUBLIC', 'INTERNAL', 'CONFIDENTIAL', 'PRIVILEGED'];
+  if (supported.indexOf(sensitivity) === -1) {
+    return {
+      approved: false,
+      sensitivity: sensitivity,
+      reasonCode: 'SENSITIVITY_UNSUPPORTED',
+      missing: ['sensitivity']
+    };
+  }
+
+  if (sensitivity === 'PUBLIC') {
+    return { approved: true, sensitivity: sensitivity, missing: [] };
+  }
 
   var approvals = value.approvals || {};
   var normalized = {
@@ -12,13 +33,26 @@ function tcctV02SensitiveApprovalCheck(config) {
     access: approvals.access === true
   };
   var missing = Object.keys(normalized).filter(function (key) { return normalized[key] !== true; });
-  return { approved: missing.length === 0, sensitivity: sensitivity, missing: missing, approvals: normalized };
+  return {
+    approved: missing.length === 0,
+    sensitivity: sensitivity,
+    reasonCode: missing.length === 0 ? null : 'SENSITIVE_APPROVAL_INCOMPLETE',
+    missing: missing,
+    approvals: normalized
+  };
 }
 
 function tcctV02ChoosePdfProcessingPath(config) {
   var value = config || {};
   var approval = tcctV02SensitiveApprovalCheck(value);
   if (!approval.approved) {
+    if (approval.reasonCode === 'SENSITIVITY_REQUIRED' || approval.reasonCode === 'SENSITIVITY_UNSUPPORTED') {
+      return {
+        path: 'BLOCKED_SENSITIVITY_UNDECLARED',
+        reason: 'Explicit supported document sensitivity is required',
+        missingApprovals: approval.missing
+      };
+    }
     return {
       path: 'BLOCKED_PENDING_PROVIDER_APPROVAL',
       reason: 'Provider, retention, region and access approval required',
@@ -29,7 +63,7 @@ function tcctV02ChoosePdfProcessingPath(config) {
   if (value.fileUri) return { path: 'GEMINI_FILES_API', reason: 'Reusable Gemini file URI supplied' };
   var inlineLimit = Number(value.inlineMaxBytes || 50 * 1024 * 1024);
   if (value.base64Data && (!value.sizeBytes || Number(value.sizeBytes) <= inlineLimit)) {
-    return { path: 'GEMINI_NATIVE_PDF_INLINE', reason: 'Inline public/non-confidential PDF within configured limit' };
+    return { path: 'GEMINI_NATIVE_PDF_INLINE', reason: 'Inline public PDF within configured limit' };
   }
   if (value.sizeBytes && Number(value.sizeBytes) > inlineLimit) return { path: 'GEMINI_FILES_API_UPLOAD_REQUIRED', reason: 'PDF exceeds inline limit' };
   return { path: 'DRIVE_OCR_FALLBACK', reason: 'No native PDF input available' };
@@ -44,6 +78,9 @@ function tcctV02BuildGeminiPdfInteraction(config) {
   if (!!value.fileUri === !!value.base64Data) throw new Error('Supply exactly one of fileUri or base64Data');
 
   var processing = tcctV02ChoosePdfProcessingPath(value);
+  if (processing.path === 'BLOCKED_SENSITIVITY_UNDECLARED') {
+    throw new Error('Explicit supported document sensitivity is required');
+  }
   if (processing.path === 'BLOCKED_PENDING_PROVIDER_APPROVAL') {
     throw new Error('Sensitive document approval incomplete: ' + processing.missingApprovals.join(', '));
   }
