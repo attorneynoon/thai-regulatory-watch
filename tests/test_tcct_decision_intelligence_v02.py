@@ -35,6 +35,12 @@ class TCCTDecisionIntelligenceV02ContractTests(unittest.TestCase):
         self.assertNotIn("    paths:\n", workflow)
         self.assertIn("github.event.pull_request.head.repo.full_name == github.repository", workflow)
 
+    def test_live_smoke_uses_only_the_dedicated_environment_api_key(self) -> None:
+        workflow = SMOKE_WORKFLOW.read_text(encoding="utf-8")
+        self.assertEqual(workflow.count("GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}"), 1)
+        self.assertNotIn("GOOGLE_API_KEY:", workflow)
+        self.assertNotIn("GOOGLE_GENAI_API_KEY:", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
