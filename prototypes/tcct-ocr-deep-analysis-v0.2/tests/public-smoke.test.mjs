@@ -24,13 +24,28 @@ function groundedOutput() {
       ],
     },
     theoriesOfHarm: [
-      { theory: 'constructive coercion', disposition: 'NOT_REACHED', actualEvidence: [], idealEvidence: [], counterArguments: [] },
+      {
+        theory: 'constructive coercion',
+        disposition: 'NOT_REACHED',
+        actualEvidence: [{ text: 'ticket and carrier-change record', legalPurpose: 'whether a practical choice existed' }],
+        idealEvidence: [{ item: 'complete opt-out logs', custodian: 'platform CRM owner', authentication: 'native export and audit log' }],
+        counterArguments: [{ argument: 'the default improved delivery quality', reply: 'test less restrictive alternatives' }],
+      },
     ],
     academicLenses: [
       { school: 'transaction cost economics', sourceStatus: 'NEEDS_RESEARCH', externalSourceRefs: [] },
     ],
-    litigationWarRoom: {},
-    tcctCritique: [],
+    litigationWarRoom: {
+      actualArgumentsAndEvidence: [{ side: 'complainant', argument: 'carrier choice was constrained' }],
+      strongerClaimantOrRegulatorCase: [{ argument: 'prove system-wide opt-out friction' }],
+      strongerRespondentDefense: [{ argument: 'prove an accessible, objective exception process' }],
+      missingRecord: [{ item: 'cohort-level request and rejection logs' }],
+      proceduralChallenges: [],
+      remedyOptions: [{ text: 'transparent opt-out and reason codes' }],
+    },
+    tcctCritique: [
+      { type: 'SOURCE_GROUNDED_OMISSION', criticism: 'The published reasoning does not show a system-wide workflow audit.', fairCounterview: 'The pleaded facts failed first.' },
+    ],
     businessTranslation: {
       whatItDoesNotMean: ['ไม่ใช่การรับรองนโยบายขนส่งทุกแบบ'],
       roleTakeaways: {
@@ -78,10 +93,28 @@ test('builds branch prompts that require actual evidence and keep the PDF as the
   assert.doesNotMatch(prompt, /600\s*metres/i);
 });
 
-test('passes a grounded public shipping-choice result and records every smoke check', () => {
+test('passes a grounded public shipping-choice result and records evidentiary, academic and business depth', () => {
   const evaluation = evaluatePublicShippingCase(groundedOutput(), { status: 'VALID', issues: [] });
   assert.equal(evaluation.status, 'PASS', JSON.stringify(evaluation.checks));
-  assert.ok(evaluation.checks.length >= 10);
+  const expectedChecks = [
+    'case_family',
+    'multi_carrier_fact',
+    'carrier_change_date',
+    'distance_600m',
+    'distance_3_3km',
+    'dominance_not_reached',
+    'actual_evidence_present',
+    'ideal_evidence_present',
+    'counterarguments_present',
+    'litigation_war_room_depth',
+    'tcct_critique_present',
+    'academic_lens_present',
+    'business_roles_complete',
+    'validator_valid',
+  ];
+  for (const id of expectedChecks) {
+    assert.ok(evaluation.checks.some((check) => check.id === id && check.pass), id);
+  }
   assert.ok(evaluation.checks.every((check) => check.pass));
 });
 
