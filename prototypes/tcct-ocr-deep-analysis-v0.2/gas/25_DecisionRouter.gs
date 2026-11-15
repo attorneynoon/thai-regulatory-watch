@@ -23,7 +23,7 @@ function tcctV02AddSignal(scores, signals, family, points, signal) {
 function tcctV02ExtractLegalBases(text) {
   var result = [];
   var seen = {};
-  var expression = /มาตรา\s*\d+(?:\s*วรรค(?:หนึ่ง|สอง|สาม|สี่|\d+))?(?:\s*\([^)]+\))?/g;
+  var expression = /มาตรา\s*\d+(?:\s*วรรค\s*(?:หนึ่ง|สอง|สาม|สี่|\d+))?(?:\s*\([^)]+\))?/g;
   var match;
   while ((match = expression.exec(text)) !== null) {
     var value = match[0].replace(/\s+/g, ' ').trim();
@@ -33,6 +33,63 @@ function tcctV02ExtractLegalBases(text) {
     }
   }
   return result;
+}
+
+function tcctV02AddNatureTag(tags, tag) {
+  if (tags.indexOf(tag) === -1) tags.push(tag);
+}
+
+function tcctV02DetectNatureTags(text) {
+  var tags = [];
+
+  if (/(บังคับ.{0,40}(เข้าร่วม|ใช้|ซื้อ|รับ)|ผูก.{0,40}(สินค้า|บริการ)|forced participation|tying)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'FORCED_PARTICIPATION_OR_TYING');
+  }
+  if (/(เลือกปฏิบัติ|discriminat|ปฏิบัติแตกต่าง.{0,40}(ไม่มีเหตุ|ไร้เหตุ))/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'DISCRIMINATORY_TREATMENT');
+  }
+  if (/(ในเครือ|บริษัทในเครือ|บริการของตน|self-preferen|affiliated service)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'AFFILIATED_SERVICE_OR_SELF_PREFERENCING');
+  }
+  if (/(บอกเลิก|ยกเลิกสัญญา|ระงับบัญชี|ปฏิเสธการค้า|termination|refusal to deal)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'TERMINATION_SUSPENSION_OR_REFUSAL');
+  }
+  if (/(เครดิตเทอม|ระยะเวลาชำระ|ค้างชำระ|payment term|credit term)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'PAYMENT_OR_CREDIT_TERMS');
+  }
+  if (/(ขนส่ง|โลจิสติก|delivery|logistic)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'LOGISTICS_OR_ACCESS_RESTRICTION');
+  }
+
+  if (/(กำหนดราคา|price.?fix)/i.test(text)) tcctV02AddNatureTag(tags, 'PRICE_FIXING');
+  if (/(แบ่งตลาด|แบ่งลูกค้า|market allocation)/i.test(text)) tcctV02AddNatureTag(tags, 'MARKET_OR_CUSTOMER_ALLOCATION');
+  if (/(จำกัดปริมาณ|output restriction)/i.test(text)) tcctV02AddNatureTag(tags, 'OUTPUT_RESTRICTION');
+  if (/(ฮั้วประมูล|bid.?rig)/i.test(text)) tcctV02AddNatureTag(tags, 'BID_RIGGING');
+
+  if (/(ราคาขายต่อ|resale price|RPM)/i.test(text)) tcctV02AddNatureTag(tags, 'RESALE_PRICE_MAINTENANCE');
+  if (/(ซื้อขายแต่เพียงผู้เดียว|exclusive dealing|ห้ามซื้อจาก)/i.test(text)) tcctV02AddNatureTag(tags, 'EXCLUSIVE_DEALING');
+  if (/(MFN|most favou?red nation|price parity|เงื่อนไขเสมอภาคด้านราคา)/i.test(text)) tcctV02AddNatureTag(tags, 'MFN_OR_PARITY_CLAUSE');
+
+  if (/(แข่งขันกัน|คู่แข่งขัน|ตลาดเดียวกัน|horizontal|ทับซ้อน)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'HORIZONTAL_OVERLAP');
+  }
+  if (/(ต้นน้ำ.{0,50}ปลายน้ำ|ปลายน้ำ.{0,50}ต้นน้ำ|ห่วงโซ่อุปทาน|vertical|ผู้ผลิต.{0,50}ผู้จำหน่าย)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'VERTICAL_FORECLOSURE');
+  }
+  if (/(ระบบนิเวศ|ecosystem|conglomerate|บริการเสริม|ผลิตภัณฑ์เกี่ยวเนื่อง)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'CONGLOMERATE_OR_ECOSYSTEM_EFFECTS');
+  }
+  if (/(network effect|ผลกระทบเครือข่าย|data advantage|ความได้เปรียบด้านข้อมูล)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'DATA_OR_NETWORK_EFFECTS');
+  }
+  if (/(failing firm|กิจการล้มเหลว|ไม่สามารถดำรงกิจการ)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'FAILING_FIRM_OR_DISTRESS');
+  }
+  if (/(มาตรการเยียวยา|remed|เงื่อนไขอนุญาต|monitoring trustee)/i.test(text)) {
+    tcctV02AddNatureTag(tags, 'REMEDY_OR_CONDITION_DESIGN');
+  }
+
+  return tags;
 }
 
 function tcctV02ClassifyDecision(sourceText) {
@@ -48,11 +105,11 @@ function tcctV02ClassifyDecision(sourceText) {
   var signals = [];
 
   if (/คำขออนุญาตรวมธุรกิจ/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_PRE_APPROVAL', 4, 'pre-approval heading');
-  if (/มาตรา\s*51\s*วรรคสอง/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_PRE_APPROVAL', 4, 'Section 51 paragraph two');
+  if (/มาตรา\s*51\s*วรรค\s*(?:สอง|2)/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_PRE_APPROVAL', 4, 'Section 51 paragraph two');
   if (/มาตรา\s*52/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_PRE_APPROVAL', 2, 'Section 52 factors');
 
   if (/การแจ้งผลการรวมธุรกิจ/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_POST_NOTIFICATION', 4, 'post-notification heading');
-  if (/มาตรา\s*51\s*วรรคหนึ่ง/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_POST_NOTIFICATION', 4, 'Section 51 paragraph one');
+  if (/มาตรา\s*51\s*วรรค\s*(?:หนึ่ง|1)/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_POST_NOTIFICATION', 4, 'Section 51 paragraph one');
   if (/มีมติรับทราบ/.test(text)) tcctV02AddSignal(scores, signals, 'MERGER_POST_NOTIFICATION', 2, 'acknowledgement disposition');
 
   if (/มาตรา\s*54/.test(text)) tcctV02AddSignal(scores, signals, 'HORIZONTAL_AGREEMENT', 4, 'Section 54');
@@ -109,6 +166,7 @@ function tcctV02ClassifyDecision(sourceText) {
   return {
     primaryFamily: primaryFamily,
     secondaryFamilies: secondaryFamilies.filter(function (value, index, array) { return array.indexOf(value) === index; }),
+    natureTags: tcctV02DetectNatureTags(text),
     proceduralPosture: postureByFamily[primaryFamily],
     legalBases: tcctV02ExtractLegalBases(text),
     confidence: confidence,
@@ -122,15 +180,22 @@ function tcctV02GetAnalysisPlan(classification) {
   var plans = {
     UNFAIR_TRADE: {
       required: [
-        'relative_bargaining_and_dependency',
+        'statutory_unfairness_and_case_specific_benchmark',
         'challenged_conduct_and_comparators',
         'objective_justification_and_proportionality',
         'harm_causation_and_remedy',
         'notice_cure_and_procedural_fairness'
       ],
-      optional: ['market_power_if_reached', 'platform_multi_sided_economics'],
-      forbidden: ['merger_hhi_delta', 'section_52_balancing'],
-      doctrinalGuards: { marketDefinition: 'ONLY_IF_REACHED_OR_NECESSARY' }
+      optional: [
+        'bargaining_context_and_dependency_if_relevant',
+        'market_power_if_reached',
+        'platform_multi_sided_economics'
+      ],
+      forbidden: ['merger_hhi_delta_if_supported', 'section_52_balancing'],
+      doctrinalGuards: {
+        dependency: 'CONTEXT_NOT_UNIVERSAL_ELEMENT',
+        marketDefinition: 'ONLY_IF_REACHED_OR_NECESSARY'
+      }
     },
     HORIZONTAL_AGREEMENT: {
       required: [
@@ -141,7 +206,7 @@ function tcctV02GetAnalysisPlan(classification) {
         'procedural_and_evidentiary_defenses'
       ],
       optional: ['market_context_without_dominance_requirement'],
-      forbidden: ['merger_hhi_delta', 'section_52_balancing', 'market_dominance'],
+      forbidden: ['merger_hhi_delta_if_supported', 'section_52_balancing', 'market_dominance'],
       doctrinalGuards: { enforcementMechanism: 'EVIDENCE_NOT_UNIVERSAL_ELEMENT' }
     },
     VERTICAL_AGREEMENT: {
@@ -171,16 +236,16 @@ function tcctV02GetAnalysisPlan(classification) {
       required: [
         'jurisdiction_control_and_thresholds',
         'overlaps_and_counterfactual',
-        'merger_hhi_delta',
+        'market_structure_and_concentration_evidence',
         'unilateral_coordinated_vertical_conglomerate_effects',
         'entry_expansion_and_buyer_power',
         'efficiencies_and_failing_firm',
         'section_52_balancing',
         'conditions_remedies_and_monitoring'
       ],
-      optional: ['innovation_data_and_ecosystem_effects'],
+      optional: ['merger_hhi_delta_if_supported', 'innovation_data_and_ecosystem_effects'],
       forbidden: ['section_57_general_fairness_substitute'],
-      doctrinalGuards: { hhi: 'REPORT_LEVEL_AND_DELTA_SEPARATELY' }
+      doctrinalGuards: { hhi: 'CONDITIONAL_METRIC_REPORT_LEVEL_AND_DELTA_IF_SUPPORTED' }
     },
     MERGER_POST_NOTIFICATION: {
       required: [
@@ -205,8 +270,13 @@ function tcctV02GetAnalysisPlan(classification) {
     required: plan.required.slice(),
     optional: plan.optional.slice(),
     forbidden: plan.forbidden.slice(),
-    doctrinalGuards: JSON.parse(JSON.stringify(plan.doctrinalGuards))
+    doctrinalGuards: JSON.parse(JSON.stringify(plan.doctrinalGuards)),
+    natureTags: classification && classification.natureTags ? classification.natureTags.slice() : []
   };
+}
+
+function tcctV02StripHeadingPrefix(value) {
+  return String(value || '').replace(/^\s*(?:#{1,6}\s*|[-*]\s*)/, '').trim();
 }
 
 function tcctV02SplitDecisionBundle(sourceText, documentId) {
@@ -215,13 +285,14 @@ function tcctV02SplitDecisionBundle(sourceText, documentId) {
   var lines = text.split('\n');
   var starts = [];
   lines.forEach(function (line, index) {
-    if (/^ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า.*กรณี/.test(line.trim())) starts.push(index);
+    var normalized = tcctV02StripHeadingPrefix(line);
+    if (/^ผลคำวินิจฉัยคณะกรรมการการแข่งขันทางการค้า.*กรณี/.test(normalized)) starts.push(index);
   });
 
   if (starts.length === 0) {
     return [{
       locator: id + ':CASE1',
-      heading: lines[0] || '',
+      heading: tcctV02StripHeadingPrefix(lines[0] || ''),
       text: text,
       startLine: 1,
       endLine: lines.length,
@@ -233,10 +304,12 @@ function tcctV02SplitDecisionBundle(sourceText, documentId) {
   return starts.map(function (start, index) {
     var end = index + 1 < starts.length ? starts[index + 1] : lines.length;
     var locator = id + ':CASE' + (index + 1);
-    var segmentText = lines.slice(start, end).join('\n').trim();
+    var segmentLines = lines.slice(start, end);
+    segmentLines[0] = tcctV02StripHeadingPrefix(segmentLines[0]);
+    var segmentText = segmentLines.join('\n').trim();
     return {
       locator: locator,
-      heading: lines[start].trim(),
+      heading: tcctV02StripHeadingPrefix(lines[start]),
       text: segmentText,
       startLine: start + 1,
       endLine: end,

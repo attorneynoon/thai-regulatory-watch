@@ -13,11 +13,17 @@ function tcctV02Walk(value, path, visitor) {
   }
 }
 
+function tcctV02LastPathField(path) {
+  var parts = String(path || '').split('.');
+  return parts[parts.length - 1].replace(/\[\d+\]$/, '');
+}
+
 function tcctV02ValidateSourceBoundary(output, allowedSourceIds) {
   var issues = [];
   var allowed = allowedSourceIds || [];
   tcctV02Walk(output, '', function (value, path) {
-    if (!/sourceRefs$/.test(path) || !Array.isArray(value)) return;
+    var field = tcctV02LastPathField(path);
+    if ((field !== 'sourceRefs' && field !== 'supportingRefs') || !Array.isArray(value)) return;
     value.forEach(function (reference) {
       var valid = allowed.some(function (prefix) {
         return reference === prefix || String(reference).indexOf(prefix + ':') === 0;
@@ -53,6 +59,9 @@ function tcctV02ValidateOcrAssessment(assessment) {
     if (!value.comparisonMethod) issues.push(tcctV02Issue('OCR_COMPARISON_METHOD_MISSING', 'comparisonMethod'));
     if (!(Number(value.sampledPages) > 0)) issues.push(tcctV02Issue('OCR_SAMPLE_SIZE_MISSING', 'sampledPages'));
     if (typeof value.characterErrorRate !== 'number') issues.push(tcctV02Issue('OCR_ERROR_RATE_MISSING', 'characterErrorRate'));
+    if (value.zeroErrors === true && Number(value.characterErrorRate) !== 0) {
+      issues.push(tcctV02Issue('OCR_ZERO_ERROR_CONTRADICTION', 'zeroErrors', 'Measured character error rate is non-zero'));
+    }
   }
   return { status: issues.length ? 'INVALID' : 'VALID', issues: issues };
 }
@@ -68,6 +77,45 @@ function tcctV02ContainsInferredDissent(value) {
     if (typeof item === 'string' && expression.test(item)) found = true;
   });
   return found;
+}
+
+function tcctV02ValidateMaterialStatement(statement, path, issues) {
+  if (!statement || typeof statement !== 'object') {
+    issues.push(tcctV02Issue('MATERIAL_STATEMENT_INVALID', path));
+    return;
+  }
+  if (!statement.text) issues.push(tcctV02Issue('MATERIAL_TEXT_MISSING', path + '.text'));
+  if (!statement.provenanceType || TCCT_V02_PROVENANCE_TYPES.indexOf(statement.provenanceType) === -1) {
+    issues.push(tcctV02Issue('MATERIAL_PROVENANCE_MISSING', path + '.provenanceType'));
+  }
+  if (!Array.isArray(statement.sourceRefs)) {
+    issues.push(tcctV02Issue('MATERIAL_SOURCE_REFS_MISSING', path + '.sourceRefs'));
+    return;
+  }
+  var grounded = ['SOURCE_FACT', 'PARTY_ARGUMENT', 'TCCT_FINDING', 'TCCT_HOLDING', 'ANALYST_INFERENCE'];
+  if (grounded.indexOf(statement.provenanceType) !== -1 && statement.sourceRefs.length === 0) {
+    issues.push(tcctV02Issue('MATERIAL_SOURCE_REFS_EMPTY', path + '.sourceRefs'));
+  }
+}
+
+function tcctV02ValidateHoldingBoundary(boundary, issues) {
+  var value = boundary || {};
+  ['whatDecisionHolds', 'whatDecisionDoesNotDecide'].forEach(function (field) {
+    if (!Array.isArray(value[field])) return;
+    value[field].forEach(function (statement, index) {
+      tcctV02ValidateMaterialStatement(statement, 'holdingBoundary.' + field + '[' + index + ']', issues);
+    });
+  });
+}
+
+function tcctV02ValidateActualEvidence(theories, issues) {
+  (theories || []).forEach(function (theory, theoryIndex) {
+    (theory.actualEvidence || []).forEach(function (evidence, evidenceIndex) {
+      var path = 'theoriesOfHarm[' + theoryIndex + '].actualEvidence[' + evidenceIndex + ']';
+      tcctV02ValidateMaterialStatement(evidence, path, issues);
+      if (!evidence.legalPurpose) issues.push(tcctV02Issue('EVIDENCE_LEGAL_PURPOSE_MISSING', path + '.legalPurpose'));
+    });
+  });
 }
 
 function tcctV02ValidateDecisionIntelligence(output, context) {
@@ -92,14 +140,22 @@ function tcctV02ValidateDecisionIntelligence(output, context) {
   );
   issues = issues.concat(moduleResult.issues);
 
+  tcctV02ValidateHoldingBoundary(value.holdingBoundary, issues);
+  tcctV02ValidateActualEvidence(value.theoriesOfHarm, issues);
+
   (value.theoriesOfHarm || []).forEach(function (theory, theoryIndex) {
     if (!theory.id || !theory.theory || !theory.disposition) {
       issues.push(tcctV02Issue('THEORY_OF_HARM_INCOMPLETE', 'theoriesOfHarm[' + theoryIndex + ']'));
     }
     (theory.idealEvidence || []).forEach(function (evidence, evidenceIndex) {
       var path = 'theoriesOfHarm[' + theoryIndex + '].idealEvidence[' + evidenceIndex + ']';
-      var required = ['element', 'item', 'whyItMatters', 'custodian', 'authentication', 'expectedRebuttal', 'provenanceType', 'sourceRefs'];
-      var missing = required.filter(function (key) { return evidence[key] == null || evidence[key] === ''; });
+      var required = [
+        'element', 'item', 'whyItMatters', 'custodian', 'authentication',
+        'expectedRebuttal', 'provenanceType', 'sourceRefs', 'numericBasisRefs'
+      ];
+      var missing = required.filter(function (key) {
+        return evidence[key] == null || evidence[key] === '' || ((key === 'sourceRefs' || key === 'numericBasisRefs') && !Array.isArray(evidence[key]));
+      });
       if (missing.length) issues.push(tcctV02Issue('IDEAL_EVIDENCE_INCOMPLETE', path, missing.join(', ')));
       var numericText = [evidence.item, evidence.whyItMatters].join(' ');
       if (/\b\d+(?:\.\d+)?\s*%/.test(numericText) && !(evidence.numericBasisRefs && evidence.numericBasisRefs.length)) {
@@ -121,7 +177,11 @@ function tcctV02ValidateDecisionIntelligence(output, context) {
   var roleTakeaways = value.businessTranslation && value.businessTranslation.roleTakeaways;
   var roles = ['board', 'executive', 'productOperations', 'commercialProcurement', 'finance', 'legalCompliance', 'smeCounterparty', 'investorLender'];
   roles.forEach(function (role) {
-    if (!roleTakeaways || !Array.isArray(roleTakeaways[role])) issues.push(tcctV02Issue('BUSINESS_ROLE_MISSING', 'businessTranslation.roleTakeaways.' + role));
+    if (!roleTakeaways || !Array.isArray(roleTakeaways[role])) {
+      issues.push(tcctV02Issue('BUSINESS_ROLE_MISSING', 'businessTranslation.roleTakeaways.' + role));
+    } else if (roleTakeaways[role].length === 0) {
+      issues.push(tcctV02Issue('BUSINESS_ROLE_EMPTY', 'businessTranslation.roleTakeaways.' + role));
+    }
   });
 
   var penaltyStatements = value.businessTranslation && value.businessTranslation.penaltyStatements || [];
