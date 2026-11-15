@@ -2,8 +2,8 @@
 
 **Report date:** 2026-11-15  
 **Branch:** `prototype/tcct-ocr-v0.2-decision-intelligence`  
-**Pull request:** draft PR #22  
-**Deployment status:** not deployed, not merged
+**Pull request:** PR #22 — owner-approved and ready for merge  
+**Deployment status:** not deployed
 
 ## TDD evidence
 
@@ -23,22 +23,25 @@
 | Sensitivity GREEN | `e17a7384dfbd29feb174ca85d390656c3da2d2f0` | `43704094689` | passed | explicit classification and fail-closed blocking |
 | Dedicated-secret RED | `2d08117ed46a17a634f8cf757e64d270eea4a445` | `43704218775` | failed | workflow exposed broad fallback secret names |
 | Dedicated-secret GREEN | `d90db7d9a6f380396d1177d41f90b4a222e47f91` | `43704309960` | passed | hosted workflow accepts only environment `GEMINI_API_KEY` |
+| Final audit RED | `2f252deaec2cce329d3f8e2f67106b0945816b09` | `43709642242` | failed | unconstrained war-room records and inaccurate pre-call receipt semantics |
+| Final audit GREEN | `64b3b8436d0174284369ae00e14b7fc1991b2341` | `43709953399` | passed | structured war-room records, validator enforcement and actual attempted-call receipts |
 
 ## Contract/regression coverage
 
-The Node suite contains **35 tests**. The repository suite contains **212 Python-discovered tests**, including the Node wrapper and workflow-security contracts.
+The Node suite contains **40 tests**. The repository suite contains **212 Python-discovered tests**, including the Node wrapper and workflow-security contracts.
 
-Coverage includes case routing and segmentation; preservation of the three original branches; theory-of-harm, actual/ideal evidence and counterargument structures; provenance and cross-case boundaries; academic-source governance; eight business audiences; OCR certainty controls; current Interactions API request and response contracts; explicit sensitivity classification; public-smoke source-to-output checks; manual label/environment gating; and dedicated-secret enforcement.
+Coverage includes case routing and segmentation; preservation of the three original branches; theory-of-harm, actual/ideal evidence and counterargument structures; auditable litigation-war-room argument and stronger-case records; provenance and cross-case boundaries; academic-source governance; eight business audiences; OCR certainty controls; current Interactions API request and response contracts; explicit sensitivity classification; public-smoke source-to-output checks; accurate live-call attempt receipts; manual label/environment gating; and dedicated-secret enforcement.
 
 ## Latest full repository verification
 
-Validation run `43704309960` completed successfully:
+Validation run `43709953399` completed successfully against synthetic merge commit `17c46e8ac6749dce3d9cafddd805277a16fbf032`, combining head `64b3b8436d0174284369ae00e14b7fc1991b2341` with then-current `main` `bef7a6bd07bca2f86b12cc2e38b769ae13a5e820`:
 
 1. `python -m unittest discover -s tests -v` — **212 tests passed**;
-2. `python -m regwatch validate` — passed;
-3. `python -m regwatch build` — passed;
-4. `python -m regwatch check` — XML and JSON contracts passed;
-5. deterministic rebuild — passed with no diff.
+2. Node decision-intelligence subset — **40 tests passed** through the Python wrapper;
+3. `python -m regwatch validate` — **103 sources, 82 enabled, 21 pending, 53 regulators, 9 practices**;
+4. `python -m regwatch build` — **6,118 items, 7,482 events, 267 feeds**;
+5. `python -m regwatch check` — XML and JSON contracts passed;
+6. deterministic rebuild — passed with no diff.
 
 The separate `tcct-api-qualification` job was skipped by its workflow condition; it is unrelated to this prototype’s local contract tests.
 
@@ -58,12 +61,13 @@ The live model stage did not run because no key was configured. The report state
 
 The live workflow now:
 
-- runs on a PR only when label `run-public-gemini-smoke` is applied to a same-repository branch;
+- runs on a PR only when label `run-public-gemini-smoke` is applied to a same-repository branch, or through authorized manual dispatch;
 - declares environment `tcct-public-smoke`;
 - uses only `GEMINI_API_KEY` from that environment;
 - retains read-only repository permissions;
 - does not run on ordinary pushes or PR synchronization;
-- requires explicit document sensitivity before request construction.
+- requires explicit document sensitivity before request construction;
+- records whether and how many live calls were actually attempted, rather than inferring a call from credential presence.
 
 The repository administrator must still configure environment protection and required reviewers. The workflow file cannot itself prove that administrative setting exists.
 
@@ -72,8 +76,9 @@ The repository administrator must still configure environment protection and req
 - Apps Script-compatible routing, request-building and validation logic behaves as defined;
 - the public scanned fixture is reproducible in hosted CI;
 - missing credentials are detected before document transmission;
-- source-to-output checks cover facts, evidence depth, academic status and business audiences;
-- unsafe OCR certainty, unsupported numeric targets and unsourced penalty claims fail closed;
+- source-to-output checks cover facts, auditable evidence depth, academic status and business audiences;
+- empty-object war-room records, unsafe OCR certainty, unsupported numeric targets and unsourced penalty claims fail closed;
+- runtime reports distinguish pre-call failure from an attempted API call;
 - ordinary repository validation and deterministic build controls remain green.
 
 ## What remains unverified
@@ -89,4 +94,4 @@ The repository administrator must still configure environment protection and req
 
 ## Next release gate
 
-Create/configure GitHub environment `tcct-public-smoke`, add required reviewers, store one dedicated environment secret named `GEMINI_API_KEY`, and then apply label `run-public-gemini-smoke` to draft PR #22. Do not place the key in source, a PR comment, chat or an artifact. A future `PASS` remains review-only and does not authorize merge, deployment, production Drive writes or Thai Legal Assistant integration.
+After merge, create or configure GitHub environment `tcct-public-smoke`, add required reviewers, store one dedicated environment secret named `GEMINI_API_KEY`, and run the `TCCT Public Gemini Smoke` workflow manually on `main`. Do not place the key in source, a PR comment, chat or an artifact. A future `PASS` remains review-only and does not authorize deployment, production Drive writes or Thai Legal Assistant integration.

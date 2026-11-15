@@ -54,7 +54,7 @@ Material propositions use one of:
 
 `SOURCE_FACT`, `PARTY_ARGUMENT`, `TCCT_FINDING`, `TCCT_HOLDING`, `ANALYST_INFERENCE`, `ACADEMIC_LENS`, `EXTERNAL_RESEARCH`, `HYPOTHESIS`, `MISSING_EVIDENCE`, or `NOT_APPLICABLE`.
 
-The validator rejects cross-case citations, missing provenance, empty stakeholder takeaways, unsupported numeric targets, inferred dissent reasons, uncited penalty statements, academic claims marked sourced without a governed external source, and case-family modules that should not apply.
+The validator rejects cross-case citations, missing provenance, empty or structurally incomplete litigation-war-room records, empty stakeholder takeaways, unsupported numeric targets, inferred dissent reasons, uncited penalty statements, academic claims marked sourced without a governed external source, and case-family modules that should not apply.
 
 ## OCR and Gemini boundary
 
@@ -81,23 +81,23 @@ The approved harness creates a one-page, image-only, public-derived TCCT fixture
 3. platform branch;
 4. serial `decision_intelligence` synthesis.
 
-The deterministic gate checks extraction of the multi-carrier arrangement, the 20 June 2567 carrier-change request, the pleaded 3.3-kilometre distance, the approximately 600-metre finding and the fact that dominance was not reached. It also requires actual evidence, ideal evidence, counterarguments, litigation-war-room depth, a fair TCCT critique, governed academic-source status and non-empty takeaways for eight stakeholder groups. It rejects absolute OCR claims, unsupported 80-percent targets and unsourced penalty statements.
+The deterministic gate checks extraction of the multi-carrier arrangement, the 20 June 2567 carrier-change request, the pleaded 3.3-kilometre distance, the approximately 600-metre finding and the fact that dominance was not reached. It also requires auditable actual evidence, ideal evidence, counterarguments, litigation-war-room depth, a fair TCCT critique, governed academic-source status and non-empty takeaways for eight stakeholder groups. It rejects absolute OCR claims, unsupported 80-percent targets and unsourced penalty statements. Runtime receipts distinguish credential presence from the number of live calls actually attempted.
 
 The first hosted smoke built the scanned PDF but did **not** call Gemini because no API key was configured. Its status is deliberately `BLOCKED_NO_API_KEY`; the final gate failed rather than treating the blocker as a pass. See [`LIVE_SMOKE_REPORT.md`](LIVE_SMOKE_REPORT.md).
 
-Future hosted live runs are not automatic. The workflow runs only after the same-repository PR receives label `run-public-gemini-smoke` or through manual dispatch, declares environment `tcct-public-smoke`, and consumes only the dedicated environment secret `GEMINI_API_KEY`. Repository administration must create that environment, add required reviewers and store the key there before a live run.
+Future hosted live runs are not automatic. The workflow runs only after a same-repository PR receives label `run-public-gemini-smoke` or through manual dispatch, declares environment `tcct-public-smoke`, and consumes only the dedicated environment secret `GEMINI_API_KEY`. Repository administration must create that environment, add required reviewers and store the key there before a live run.
 
 ## Files
 
 - `gas/25_DecisionRouter.gs` — segmentation, family routing, nature tags and module plans
 - `gas/35_DecisionIntelligenceContract.gs` — fourth-layer schema and prompt contract
-- `gas/45_OutputGuard.gs` — provenance, boundary, OCR and audience QA
+- `gas/45_OutputGuard.gs` — provenance, boundary, OCR, war-room and audience QA
 - `gas/55_GeminiDocumentAdapter.gs` — request builder and sensitivity gate
 - `gas/95_V02Integration.gs` — integration plan preserving the original branches
 - `tests/*.test.mjs` — Node contract/regression tests
 - `../../tests/test_tcct_decision_intelligence_v02.py` — repository CI and workflow-security tests
 - `scripts/build-public-fixture.py` — bounded scanned-PDF fixture builder
-- `scripts/public-smoke-lib.mjs` — response parsing and deterministic smoke checks
+- `scripts/public-smoke-lib.mjs` — response parsing, call receipts and deterministic smoke checks
 - `scripts/public-smoke.mjs` — review-only live smoke runner
 - `GEMINI_REVIEW.md` — re-check of Gemini-augmented outputs
 - `CASE_FAMILY_PLAYBOOK.md` — unfair conduct, agreement, dominance and merger depth
@@ -107,7 +107,7 @@ Future hosted live runs are not automatic. The workflow runs only after the same
 
 ## Verified in CI
 
-The Node contract/regression suite contains **35 tests**. Repository validation run `43704309960` passed all **212 Python-discovered tests**, registry validation, build, XML/JSON checks and deterministic rebuild.
+The Node contract/regression suite contains **40 tests**. Repository validation run `43709953399` passed all **212 Python-discovered tests**, registry validation, build, XML/JSON checks and deterministic rebuild against GitHub’s synthetic merge with the then-current `main`.
 
 ## Not yet verified
 
@@ -120,4 +120,4 @@ The Node contract/regression suite contains **35 tests**. Repository validation 
 
 ## Safety status
 
-All output remains `AI_DRAFT_REVIEW_REQUIRED`. This branch does not deploy, create production triggers, write to production Drive, change Thai Legal Assistant 2.0 or merge itself. The smoke workflow stores no API key, raw request body or base64 PDF in its report artifact.
+All output remains `AI_DRAFT_REVIEW_REQUIRED`. The implementation does not deploy, create production triggers, write to production Drive, change Thai Legal Assistant 2.0 or merge itself. The smoke workflow stores no API key, raw request body or base64 PDF in its report artifact.
