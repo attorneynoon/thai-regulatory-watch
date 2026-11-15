@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-14T22:29:21Z",
+  "generated_at": "2026-11-15T02:43:31Z",
   "records": [
+    {
+      "event_id": "health-6558ef42df4077bb339e7377d1b7d179",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-11-15T02:43:31Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-3feed6987f3871f7435c62ed1863d25b",
+      "message": "Response ended prematurely",
+      "observed_at": "2026-11-15T02:43:31Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "healthy",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "failed"
+    },
     {
       "event_id": "health-6394f3613c2171fe7df0229b48e307c8",
       "message": null,
