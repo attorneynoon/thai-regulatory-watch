@@ -9,6 +9,7 @@ test('builds a stateless v1beta Interactions API request for a Gemini file URI',
     model: 'approved-test-model',
     apiKey: 'test-key',
     fileUri: 'https://generativelanguage.googleapis.com/v1beta/files/public-test',
+    sensitivity: 'PUBLIC',
     prompt: 'Analyze the public ruling',
     schema: { type: 'object', properties: {} },
   });
@@ -23,10 +24,40 @@ test('builds a stateless v1beta Interactions API request for a Gemini file URI',
 
 test('supports inline PDF data without changing the evidence contract', () => {
   const request = ctx.tcctV02BuildGeminiPdfInteraction({
-    model: 'approved-test-model', apiKey: 'test-key', base64Data: 'JVBERi0=', prompt: 'Extract', schema: { type: 'object' },
+    model: 'approved-test-model',
+    apiKey: 'test-key',
+    base64Data: 'JVBERi0=',
+    sensitivity: 'PUBLIC',
+    prompt: 'Extract',
+    schema: { type: 'object' },
   });
   assert.equal(request.body.input[0].data, 'JVBERi0=');
   assert.equal(request.body.input[0].mime_type, 'application/pdf');
+});
+
+test('requires an explicit supported sensitivity before any PDF processing path', () => {
+  assert.equal(
+    ctx.tcctV02ChoosePdfProcessingPath({ base64Data: 'JVBERi0=' }).path,
+    'BLOCKED_SENSITIVITY_UNDECLARED',
+  );
+  assert.equal(
+    ctx.tcctV02ChoosePdfProcessingPath({ sensitivity: 'UNKNOWN', base64Data: 'JVBERi0=' }).path,
+    'BLOCKED_SENSITIVITY_UNDECLARED',
+  );
+  assert.throws(
+    () => ctx.tcctV02BuildGeminiPdfInteraction({
+      model: 'approved-test-model',
+      apiKey: 'test-key',
+      base64Data: 'JVBERi0=',
+      prompt: 'Extract',
+      schema: { type: 'object' },
+    }),
+    /sensitivity/i,
+  );
+  assert.equal(
+    ctx.tcctV02ChoosePdfProcessingPath({ sensitivity: 'PUBLIC', base64Data: 'JVBERi0=' }).path,
+    'GEMINI_NATIVE_PDF_INLINE',
+  );
 });
 
 test('blocks confidential or privileged native-PDF processing without provider approval', () => {
