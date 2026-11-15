@@ -9,6 +9,7 @@ import {
   buildBlockedReport,
   buildBranchPrompt,
   buildBranchSchema,
+  buildRuntimeErrorReport,
   evaluatePublicShippingCase,
   parseInteractionJson,
   reportToMarkdown,
@@ -24,6 +25,9 @@ const META_PATH = path.join(WORK, 'fixture-metadata.json');
 const API_REVISION = '2026-05-20';
 const MODEL = String(process.env.GEMINI_MODEL || '').trim() || 'gemini-3.8-flash';
 const SOURCE_ID = 'D1:CASE1';
+
+let liveCallCount = 0;
+let currentSourceSha256 = null;
 
 function sha256(buffer) {
   return crypto.createHash('sha256').update(buffer).digest('hex');
@@ -51,6 +55,7 @@ function writeReport(report) {
 async function callInteraction(request, label, apiKey) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 300_000);
+  liveCallCount += 1;
   try {
     const response = await fetch(request.url, {
       method: 'POST',
@@ -113,6 +118,7 @@ async function main() {
   if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) throw new Error('Smoke fixture is not a PDF');
   const metadata = fs.existsSync(META_PATH) ? JSON.parse(fs.readFileSync(META_PATH, 'utf8')) : {};
   const sourceSha256 = sha256(pdf);
+  currentSourceSha256 = sourceSha256;
   const apiKey = selectApiKey(process.env);
 
   if (!apiKey) {
@@ -187,8 +193,8 @@ async function main() {
 
   writeReport({
     status: evaluation.status,
-    liveCallExecuted: true,
-    liveCallCount: 4,
+    liveCallExecuted: liveCallCount > 0,
+    liveCallCount,
     model: MODEL,
     apiRevision: API_REVISION,
     sourceSha256,
@@ -216,12 +222,11 @@ async function main() {
 try {
   await main();
 } catch (error) {
-  writeReport({
-    status: 'API_OR_RUNTIME_ERROR',
-    liveCallExecuted: Boolean(selectApiKey(process.env)),
+  writeReport(buildRuntimeErrorReport({
     model: MODEL,
     apiRevision: API_REVISION,
+    sourceSha256: currentSourceSha256,
+    liveCallCount,
     error: sanitizeError(error, selectApiKey(process.env)),
-    reviewStatus: 'AI_DRAFT_REVIEW_REQUIRED',
-  });
+  }));
 }

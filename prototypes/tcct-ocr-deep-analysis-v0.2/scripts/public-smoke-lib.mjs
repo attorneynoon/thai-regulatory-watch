@@ -28,6 +28,46 @@ function nonEmptyArray(value) {
   return Array.isArray(value) && value.length > 0;
 }
 
+function nonEmptyString(value) {
+  return typeof value === 'string' && value.trim().length > 0;
+}
+
+function statementLike(value) {
+  return Boolean(value) && typeof value === 'object' && nonEmptyString(value.text);
+}
+
+function evidenceLike(value) {
+  return statementLike(value) && nonEmptyString(value.legalPurpose);
+}
+
+function idealEvidenceLike(value) {
+  return Boolean(value)
+    && typeof value === 'object'
+    && nonEmptyString(value.item)
+    && nonEmptyString(value.custodian)
+    && nonEmptyString(value.authentication);
+}
+
+function actualArgumentLike(value) {
+  return Boolean(value)
+    && typeof value === 'object'
+    && nonEmptyString(value.side)
+    && statementLike(value.argument)
+    && nonEmptyArray(value.evidence)
+    && value.evidence.every(evidenceLike);
+}
+
+function strongerCaseLike(value) {
+  return Boolean(value)
+    && typeof value === 'object'
+    && statementLike(value.proposition)
+    && nonEmptyArray(value.evidenceNeeded)
+    && value.evidenceNeeded.every(idealEvidenceLike)
+    && statementLike(value.expectedCounter)
+    && nonEmptyArray(value.replyEvidence)
+    && value.replyEvidence.every(idealEvidenceLike);
+}
+
 function addCheck(checks, id, pass, detail) {
   checks.push({ id, pass: Boolean(pass), detail: String(detail || '') });
 }
@@ -133,9 +173,60 @@ function evidenceSchema() {
   };
 }
 
+function idealEvidenceSchema() {
+  return {
+    type: 'object',
+    properties: {
+      element: { type: 'string' },
+      item: { type: 'string' },
+      whyItMatters: { type: 'string' },
+      custodian: { type: 'string' },
+      authentication: { type: 'string' },
+      expectedRebuttal: { type: 'string' },
+      provenanceType: { type: 'string', enum: ['MISSING_EVIDENCE', 'HYPOTHESIS', 'EXTERNAL_RESEARCH'] },
+      sourceRefs: { type: 'array', items: { type: 'string' } },
+      numericBasisRefs: { type: 'array', items: { type: 'string' } },
+    },
+    required: [
+      'element', 'item', 'whyItMatters', 'custodian', 'authentication',
+      'expectedRebuttal', 'provenanceType', 'sourceRefs', 'numericBasisRefs',
+    ],
+  };
+}
+
+function counterArgumentSchema(statement, evidence, idealEvidence) {
+  return {
+    type: 'object',
+    properties: {
+      argument: statement,
+      supportingEvidence: { type: 'array', items: evidence },
+      reply: statement,
+      replyEvidence: { type: 'array', items: evidence },
+      missingEvidence: { type: 'array', items: idealEvidence },
+    },
+    required: ['argument', 'supportingEvidence', 'reply', 'replyEvidence', 'missingEvidence'],
+  };
+}
+
+function strongerCaseSchema(statement, idealEvidence) {
+  return {
+    type: 'object',
+    properties: {
+      proposition: statement,
+      evidenceNeeded: { type: 'array', items: idealEvidence },
+      expectedCounter: statement,
+      replyEvidence: { type: 'array', items: idealEvidence },
+    },
+    required: ['proposition', 'evidenceNeeded', 'expectedCounter', 'replyEvidence'],
+  };
+}
+
 export function buildBranchSchema(branch) {
   const statement = statementSchema();
   const evidence = evidenceSchema();
+  const idealEvidence = idealEvidenceSchema();
+  const counterArgument = counterArgumentSchema(statement, evidence, idealEvidence);
+  const strongerCase = strongerCaseSchema(statement, idealEvidence);
   return {
     type: 'object',
     properties: {
@@ -170,8 +261,8 @@ export function buildBranchSchema(branch) {
             disposition: { type: 'string', enum: ['ALLEGED', 'ACCEPTED', 'REJECTED', 'UNTESTED', 'NOT_REACHED'] },
             causalChain: { type: 'array', items: statement },
             actualEvidence: { type: 'array', items: evidence },
-            idealEvidence: { type: 'array', items: { type: 'object' } },
-            counterArguments: { type: 'array', items: { type: 'object' } },
+            idealEvidence: { type: 'array', items: idealEvidence },
+            counterArguments: { type: 'array', items: counterArgument },
           },
           required: ['theory', 'disposition', 'causalChain', 'actualEvidence', 'idealEvidence', 'counterArguments'],
         },
@@ -179,12 +270,12 @@ export function buildBranchSchema(branch) {
       strongerCase: {
         type: 'object',
         properties: {
-          claimantOrRegulator: { type: 'array', items: { type: 'object' } },
-          respondent: { type: 'array', items: { type: 'object' } },
+          claimantOrRegulator: { type: 'array', items: strongerCase },
+          respondent: { type: 'array', items: strongerCase },
         },
         required: ['claimantOrRegulator', 'respondent'],
       },
-      missingEvidence: { type: 'array', items: { type: 'object' } },
+      missingEvidence: { type: 'array', items: idealEvidence },
       tcctCritique: { type: 'array', items: { type: 'object' } },
       businessSignals: { type: 'array', items: { type: 'object' } },
       academicResearchNeeds: { type: 'array', items: { type: 'string' } },
@@ -227,10 +318,14 @@ export function evaluatePublicShippingCase(output, validationResult) {
     checks,
     'litigation_war_room_depth',
     nonEmptyArray(warRoom.actualArgumentsAndEvidence)
+      && warRoom.actualArgumentsAndEvidence.every(actualArgumentLike)
       && nonEmptyArray(warRoom.strongerClaimantOrRegulatorCase)
+      && warRoom.strongerClaimantOrRegulatorCase.every(strongerCaseLike)
       && nonEmptyArray(warRoom.strongerRespondentDefense)
-      && nonEmptyArray(warRoom.missingRecord),
-    'War room must contain actual arguments, stronger cases for both sides, and missing record',
+      && warRoom.strongerRespondentDefense.every(strongerCaseLike)
+      && nonEmptyArray(warRoom.missingRecord)
+      && warRoom.missingRecord.every(idealEvidenceLike),
+    'War room must contain auditable actual arguments, stronger cases for both sides, and missing record',
   );
   addCheck(checks, 'tcct_critique_present', nonEmptyArray(output && output.tcctCritique), 'Must contain a fair TCCT critique');
   addCheck(
@@ -264,9 +359,25 @@ export function buildBlockedReport({ model, sourceSha256, reason = 'No supported
   return {
     status: 'BLOCKED_NO_API_KEY',
     liveCallExecuted: false,
+    liveCallCount: 0,
     model,
     sourceSha256,
     reason,
+    reviewStatus: 'AI_DRAFT_REVIEW_REQUIRED',
+  };
+}
+
+export function buildRuntimeErrorReport({ model, apiRevision, sourceSha256, liveCallCount = 0, error }) {
+  const numericCount = Number(liveCallCount);
+  const normalizedCount = Number.isFinite(numericCount) && numericCount > 0 ? Math.trunc(numericCount) : 0;
+  return {
+    status: 'API_OR_RUNTIME_ERROR',
+    liveCallExecuted: normalizedCount > 0,
+    liveCallCount: normalizedCount,
+    model,
+    apiRevision,
+    sourceSha256: sourceSha256 || null,
+    error: String(error || 'Unknown runtime error'),
     reviewStatus: 'AI_DRAFT_REVIEW_REQUIRED',
   };
 }
@@ -277,6 +388,7 @@ export function reportToMarkdown(report) {
     '',
     `- Status: **${report.status}**`,
     `- Live Gemini call executed: **${report.liveCallExecuted ? 'yes' : 'no'}**`,
+    `- Live Gemini call count: **${Number(report.liveCallCount || 0)}**`,
     `- Model: \`${report.model || 'not set'}\``,
     `- API revision: \`${report.apiRevision || 'not called'}\``,
     `- Source SHA-256: \`${report.sourceSha256 || 'unknown'}\``,

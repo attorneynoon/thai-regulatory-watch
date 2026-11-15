@@ -98,6 +98,29 @@ function tcctV02ValidateMaterialStatement(statement, path, issues) {
   }
 }
 
+function tcctV02ValidateEvidenceItem(evidence, path, issues) {
+  tcctV02ValidateMaterialStatement(evidence, path, issues);
+  if (!evidence || !evidence.legalPurpose) {
+    issues.push(tcctV02Issue('EVIDENCE_LEGAL_PURPOSE_MISSING', path + '.legalPurpose'));
+  }
+}
+
+function tcctV02ValidateIdealEvidenceItem(evidence, path, issues) {
+  var value = evidence || {};
+  var required = [
+    'element', 'item', 'whyItMatters', 'custodian', 'authentication',
+    'expectedRebuttal', 'provenanceType', 'sourceRefs', 'numericBasisRefs'
+  ];
+  var missing = required.filter(function (key) {
+    return value[key] == null || value[key] === '' || ((key === 'sourceRefs' || key === 'numericBasisRefs') && !Array.isArray(value[key]));
+  });
+  if (missing.length) issues.push(tcctV02Issue('IDEAL_EVIDENCE_INCOMPLETE', path, missing.join(', ')));
+  var numericText = [value.item, value.whyItMatters].join(' ');
+  if (/\b\d+(?:\.\d+)?\s*%/.test(numericText) && !(value.numericBasisRefs && value.numericBasisRefs.length)) {
+    issues.push(tcctV02Issue('UNSUPPORTED_NUMERIC_TARGET', path, numericText));
+  }
+}
+
 function tcctV02ValidateHoldingBoundary(boundary, issues) {
   var value = boundary || {};
   ['whatDecisionHolds', 'whatDecisionDoesNotDecide'].forEach(function (field) {
@@ -111,11 +134,58 @@ function tcctV02ValidateHoldingBoundary(boundary, issues) {
 function tcctV02ValidateActualEvidence(theories, issues) {
   (theories || []).forEach(function (theory, theoryIndex) {
     (theory.actualEvidence || []).forEach(function (evidence, evidenceIndex) {
-      var path = 'theoriesOfHarm[' + theoryIndex + '].actualEvidence[' + evidenceIndex + ']';
-      tcctV02ValidateMaterialStatement(evidence, path, issues);
-      if (!evidence.legalPurpose) issues.push(tcctV02Issue('EVIDENCE_LEGAL_PURPOSE_MISSING', path + '.legalPurpose'));
+      tcctV02ValidateEvidenceItem(evidence, 'theoriesOfHarm[' + theoryIndex + '].actualEvidence[' + evidenceIndex + ']', issues);
     });
   });
+}
+
+function tcctV02ValidateWarRoom(warRoom, issues) {
+  var value = warRoom || {};
+  var actual = value.actualArgumentsAndEvidence;
+  if (!Array.isArray(actual)) {
+    issues.push(tcctV02Issue('WAR_ROOM_ARGUMENT_INCOMPLETE', 'litigationWarRoom.actualArgumentsAndEvidence'));
+  } else {
+    actual.forEach(function (entry, index) {
+      var path = 'litigationWarRoom.actualArgumentsAndEvidence[' + index + ']';
+      if (!entry || typeof entry !== 'object' || !entry.side || !entry.argument || !Array.isArray(entry.evidence)) {
+        issues.push(tcctV02Issue('WAR_ROOM_ARGUMENT_INCOMPLETE', path));
+        return;
+      }
+      tcctV02ValidateMaterialStatement(entry.argument, path + '.argument', issues);
+      entry.evidence.forEach(function (item, evidenceIndex) {
+        tcctV02ValidateEvidenceItem(item, path + '.evidence[' + evidenceIndex + ']', issues);
+      });
+    });
+  }
+
+  ['strongerClaimantOrRegulatorCase', 'strongerRespondentDefense'].forEach(function (field) {
+    var records = value[field];
+    if (!Array.isArray(records)) {
+      issues.push(tcctV02Issue('WAR_ROOM_STRONGER_CASE_INCOMPLETE', 'litigationWarRoom.' + field));
+      return;
+    }
+    records.forEach(function (entry, index) {
+      var path = 'litigationWarRoom.' + field + '[' + index + ']';
+      if (!entry || typeof entry !== 'object' || !entry.proposition || !Array.isArray(entry.evidenceNeeded) || !entry.expectedCounter || !Array.isArray(entry.replyEvidence)) {
+        issues.push(tcctV02Issue('WAR_ROOM_STRONGER_CASE_INCOMPLETE', path));
+        return;
+      }
+      tcctV02ValidateMaterialStatement(entry.proposition, path + '.proposition', issues);
+      tcctV02ValidateMaterialStatement(entry.expectedCounter, path + '.expectedCounter', issues);
+      entry.evidenceNeeded.forEach(function (item, evidenceIndex) {
+        tcctV02ValidateIdealEvidenceItem(item, path + '.evidenceNeeded[' + evidenceIndex + ']', issues);
+      });
+      entry.replyEvidence.forEach(function (item, evidenceIndex) {
+        tcctV02ValidateIdealEvidenceItem(item, path + '.replyEvidence[' + evidenceIndex + ']', issues);
+      });
+    });
+  });
+
+  if (Array.isArray(value.missingRecord)) {
+    value.missingRecord.forEach(function (item, index) {
+      tcctV02ValidateIdealEvidenceItem(item, 'litigationWarRoom.missingRecord[' + index + ']', issues);
+    });
+  }
 }
 
 function tcctV02ValidateDecisionIntelligence(output, context) {
@@ -148,21 +218,11 @@ function tcctV02ValidateDecisionIntelligence(output, context) {
       issues.push(tcctV02Issue('THEORY_OF_HARM_INCOMPLETE', 'theoriesOfHarm[' + theoryIndex + ']'));
     }
     (theory.idealEvidence || []).forEach(function (evidence, evidenceIndex) {
-      var path = 'theoriesOfHarm[' + theoryIndex + '].idealEvidence[' + evidenceIndex + ']';
-      var required = [
-        'element', 'item', 'whyItMatters', 'custodian', 'authentication',
-        'expectedRebuttal', 'provenanceType', 'sourceRefs', 'numericBasisRefs'
-      ];
-      var missing = required.filter(function (key) {
-        return evidence[key] == null || evidence[key] === '' || ((key === 'sourceRefs' || key === 'numericBasisRefs') && !Array.isArray(evidence[key]));
-      });
-      if (missing.length) issues.push(tcctV02Issue('IDEAL_EVIDENCE_INCOMPLETE', path, missing.join(', ')));
-      var numericText = [evidence.item, evidence.whyItMatters].join(' ');
-      if (/\b\d+(?:\.\d+)?\s*%/.test(numericText) && !(evidence.numericBasisRefs && evidence.numericBasisRefs.length)) {
-        issues.push(tcctV02Issue('UNSUPPORTED_NUMERIC_TARGET', path, numericText));
-      }
+      tcctV02ValidateIdealEvidenceItem(evidence, 'theoriesOfHarm[' + theoryIndex + '].idealEvidence[' + evidenceIndex + ']', issues);
     });
   });
+
+  tcctV02ValidateWarRoom(value.litigationWarRoom, issues);
 
   (value.academicLenses || []).forEach(function (lens, index) {
     var path = 'academicLenses[' + index + ']';

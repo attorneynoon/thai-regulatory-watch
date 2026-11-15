@@ -95,6 +95,25 @@ function tcctV02GetDecisionIntelligenceSchema() {
       'idealEvidence', 'counterArguments', 'outcomeChangingCounterfactual'
     ]
   };
+  var warRoomArgument = {
+    type: 'object',
+    properties: {
+      side: { type: 'string' },
+      argument: statement,
+      evidence: { type: 'array', items: evidence }
+    },
+    required: ['side', 'argument', 'evidence']
+  };
+  var strongerCase = {
+    type: 'object',
+    properties: {
+      proposition: statement,
+      evidenceNeeded: { type: 'array', items: idealEvidence },
+      expectedCounter: statement,
+      replyEvidence: { type: 'array', items: idealEvidence }
+    },
+    required: ['proposition', 'evidenceNeeded', 'expectedCounter', 'replyEvidence']
+  };
   var roleTakeaways = {
     type: 'object',
     properties: {
@@ -159,9 +178,9 @@ function tcctV02GetDecisionIntelligenceSchema() {
       litigationWarRoom: {
         type: 'object',
         properties: {
-          actualArgumentsAndEvidence: { type: 'array', items: { type: 'object' } },
-          strongerClaimantOrRegulatorCase: { type: 'array', items: { type: 'object' } },
-          strongerRespondentDefense: { type: 'array', items: { type: 'object' } },
+          actualArgumentsAndEvidence: { type: 'array', items: warRoomArgument },
+          strongerClaimantOrRegulatorCase: { type: 'array', items: strongerCase },
+          strongerRespondentDefense: { type: 'array', items: strongerCase },
           missingRecord: { type: 'array', items: idealEvidence },
           proceduralChallenges: { type: 'array', items: statement },
           remedyOptions: { type: 'array', items: statement }
