@@ -4,6 +4,8 @@ import assert from 'node:assert/strict';
 import {
   buildBlockedReport,
   buildBranchPrompt,
+  buildBranchSchema,
+  buildRuntimeErrorReport,
   evaluatePublicShippingCase,
   extractInteractionText,
   parseInteractionJson,
@@ -36,10 +38,24 @@ function groundedOutput() {
       { school: 'transaction cost economics', sourceStatus: 'NEEDS_RESEARCH', externalSourceRefs: [] },
     ],
     litigationWarRoom: {
-      actualArgumentsAndEvidence: [{ side: 'complainant', argument: 'carrier choice was constrained' }],
-      strongerClaimantOrRegulatorCase: [{ argument: 'prove system-wide opt-out friction' }],
-      strongerRespondentDefense: [{ argument: 'prove an accessible, objective exception process' }],
-      missingRecord: [{ item: 'cohort-level request and rejection logs' }],
+      actualArgumentsAndEvidence: [{
+        side: 'complainant',
+        argument: { text: 'carrier choice was constrained' },
+        evidence: [{ text: 'ticket and carrier-change record', legalPurpose: 'conduct and practical choice' }],
+      }],
+      strongerClaimantOrRegulatorCase: [{
+        proposition: { text: 'prove system-wide opt-out friction' },
+        evidenceNeeded: [{ item: 'cohort-level opt-out logs', custodian: 'platform CRM owner', authentication: 'native export and audit log' }],
+        expectedCounter: { text: 'requests were exceptional' },
+        replyEvidence: [{ item: 'all request outcomes', custodian: 'platform CRM owner', authentication: 'native export and audit log' }],
+      }],
+      strongerRespondentDefense: [{
+        proposition: { text: 'prove an accessible, objective exception process' },
+        evidenceNeeded: [{ item: 'versioned workflow and SLA records', custodian: 'product owner', authentication: 'version control and audit log' }],
+        expectedCounter: { text: 'the process was nominal rather than usable' },
+        replyEvidence: [{ item: 'completion and response-time telemetry', custodian: 'analytics owner', authentication: 'native warehouse export' }],
+      }],
+      missingRecord: [{ item: 'cohort-level request and rejection logs', custodian: 'platform CRM owner', authentication: 'native export and audit log' }],
       proceduralChallenges: [],
       remedyOptions: [{ text: 'transparent opt-out and reason codes' }],
     },
@@ -93,6 +109,26 @@ test('builds branch prompts that require actual evidence and keep the PDF as the
   assert.doesNotMatch(prompt, /600\s*metres/i);
 });
 
+test('branch schema requires auditable ideal evidence, counterarguments and stronger-case records', () => {
+  const schema = buildBranchSchema('litigation');
+  const theory = schema.properties.theoriesOfHarm.items;
+  const ideal = theory.properties.idealEvidence.items;
+  assert.ok(ideal.required.includes('custodian'));
+  assert.ok(ideal.required.includes('authentication'));
+  assert.ok(ideal.required.includes('expectedRebuttal'));
+
+  const counter = theory.properties.counterArguments.items;
+  assert.ok(counter.required.includes('argument'));
+  assert.ok(counter.required.includes('reply'));
+  assert.ok(counter.required.includes('missingEvidence'));
+
+  const stronger = schema.properties.strongerCase.properties.claimantOrRegulator.items;
+  assert.ok(stronger.required.includes('proposition'));
+  assert.ok(stronger.required.includes('evidenceNeeded'));
+  assert.ok(stronger.required.includes('expectedCounter'));
+  assert.ok(stronger.required.includes('replyEvidence'));
+});
+
 test('passes a grounded public shipping-choice result and records evidentiary, academic and business depth', () => {
   const evaluation = evaluatePublicShippingCase(groundedOutput(), { status: 'VALID', issues: [] });
   assert.equal(evaluation.status, 'PASS', JSON.stringify(evaluation.checks));
@@ -118,6 +154,15 @@ test('passes a grounded public shipping-choice result and records evidentiary, a
   assert.ok(evaluation.checks.every((check) => check.pass));
 });
 
+test('fails empty-object litigation war-room records', () => {
+  const output = groundedOutput();
+  output.litigationWarRoom.actualArgumentsAndEvidence = [{}];
+  output.litigationWarRoom.strongerClaimantOrRegulatorCase = [{}];
+  const evaluation = evaluatePublicShippingCase(output, { status: 'VALID', issues: [] });
+  assert.equal(evaluation.status, 'FAIL');
+  assert.ok(evaluation.checks.some((check) => check.id === 'litigation_war_room_depth' && !check.pass));
+});
+
 test('fails unsupported OCR certainty, invented thresholds and unsourced penalty claims', () => {
   const output = groundedOutput();
   output.quality = { note: 'OCR Quality Status: CLEAN_TEXT with zero corruption' };
@@ -136,4 +181,26 @@ test('builds an explicit non-live report when no API key is configured', () => {
   assert.equal(report.liveCallExecuted, false);
   assert.equal(report.model, 'gemini-3.8-flash');
   assert.equal(report.sourceSha256, 'abc123');
+});
+
+test('runtime error report distinguishes key presence from an actual attempted call', () => {
+  const beforeCall = buildRuntimeErrorReport({
+    model: 'gemini-3.8-flash',
+    apiRevision: '2026-05-20',
+    sourceSha256: 'abc123',
+    liveCallCount: 0,
+    error: 'fixture missing',
+  });
+  assert.equal(beforeCall.liveCallExecuted, false);
+  assert.equal(beforeCall.liveCallCount, 0);
+
+  const afterCalls = buildRuntimeErrorReport({
+    model: 'gemini-3.8-flash',
+    apiRevision: '2026-05-20',
+    sourceSha256: 'abc123',
+    liveCallCount: 2,
+    error: 'second branch failed',
+  });
+  assert.equal(afterCalls.liveCallExecuted, true);
+  assert.equal(afterCalls.liveCallCount, 2);
 });

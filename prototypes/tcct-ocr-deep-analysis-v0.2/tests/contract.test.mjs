@@ -8,6 +8,37 @@ const ctx = loadGsFiles([
   '45_OutputGuard.gs',
 ]);
 
+function statement(text, provenanceType = 'ANALYST_INFERENCE', sourceRefs = ['D1:CASE1']) {
+  return { text, provenanceType, sourceRefs };
+}
+
+function evidence(text, legalPurpose = 'proof') {
+  return { text, legalPurpose, provenanceType: 'SOURCE_FACT', sourceRefs: ['D1:CASE1'] };
+}
+
+function idealEvidence(item = 'Complete opt-out request and rejection logs') {
+  return {
+    element: 'coercion',
+    item,
+    whyItMatters: 'Shows whether the choice was practically available',
+    custodian: 'platform CRM owner',
+    authentication: 'native export, audit log and responsible-witness declaration',
+    expectedRebuttal: 'Requests were exceptional or incomplete',
+    provenanceType: 'MISSING_EVIDENCE',
+    sourceRefs: [],
+    numericBasisRefs: [],
+  };
+}
+
+function strongerCase(proposition) {
+  return {
+    proposition: statement(proposition),
+    evidenceNeeded: [idealEvidence()],
+    expectedCounter: statement('The observed requests were exceptional', 'HYPOTHESIS', []),
+    replyEvidence: [idealEvidence('Cohort-level requests, rejection reasons and response times')],
+  };
+}
+
 function validOutput() {
   return {
     schemaVersion: '2.0',
@@ -18,8 +49,8 @@ function validOutput() {
       modulesApplied: ['relative_bargaining_and_dependency'],
     },
     holdingBoundary: {
-      whatDecisionHolds: [{ text: 'The record was insufficient on the alleged unilateral term.', provenanceType: 'TCCT_HOLDING', sourceRefs: ['D1:CASE1'] }],
-      whatDecisionDoesNotDecide: [{ text: 'It does not approve all carrier defaults.', provenanceType: 'ANALYST_INFERENCE', sourceRefs: ['D1:CASE1'] }],
+      whatDecisionHolds: [statement('The record was insufficient on the alleged unilateral term.', 'TCCT_HOLDING')],
+      whatDecisionDoesNotDecide: [statement('It does not approve all carrier defaults.')],
     },
     adjudicativeMap: [{
       issue: 'Whether the term was imposed unilaterally',
@@ -35,26 +66,20 @@ function validOutput() {
       theory: 'Constructive coercion through a restrictive default',
       disposition: 'UNTESTED',
       causalChain: [],
-      actualEvidence: [{ text: 'A seller requested a carrier change', legalPurpose: 'conduct', provenanceType: 'SOURCE_FACT', sourceRefs: ['D1:CASE1'] }],
-      idealEvidence: [{
-        element: 'coercion',
-        item: 'Complete opt-out request and rejection logs',
-        whyItMatters: 'Shows whether the choice was practically available',
-        custodian: 'platform CRM owner',
-        authentication: 'native export, audit log and responsible-witness declaration',
-        expectedRebuttal: 'Requests were exceptional or incomplete',
-        provenanceType: 'MISSING_EVIDENCE',
-        sourceRefs: [],
-        numericBasisRefs: [],
-      }],
+      actualEvidence: [evidence('A seller requested a carrier change', 'conduct')],
+      idealEvidence: [idealEvidence()],
       counterArguments: [{ argument: 'The default improves delivery performance', supportingEvidence: [], reply: 'Compare outcomes and less restrictive alternatives', missingEvidence: ['SLA scorecards'] }],
       outcomeChangingCounterfactual: 'Repeated rejected opt-outs across comparable sellers',
     }],
     litigationWarRoom: {
-      actualArgumentsAndEvidence: [],
-      strongerClaimantOrRegulatorCase: [],
-      strongerRespondentDefense: [],
-      missingRecord: [],
+      actualArgumentsAndEvidence: [{
+        side: 'claimant',
+        argument: statement('The carrier default was practically unavoidable', 'PARTY_ARGUMENT'),
+        evidence: [evidence('Seller support ticket and carrier-change record', 'conduct and practical choice')],
+      }],
+      strongerClaimantOrRegulatorCase: [strongerCase('Prove system-wide opt-out friction and discriminatory treatment')],
+      strongerRespondentDefense: [strongerCase('Prove an accessible and objective exception process')],
+      missingRecord: [idealEvidence('Complete cohort-level opt-out logs')],
       proceduralChallenges: [],
       remedyOptions: [],
     },
@@ -122,6 +147,21 @@ test('fourth-layer schema and prompt require the requested litigation, academic 
   assert.match(prompt, /what the decision does not decide/i);
 });
 
+test('litigation war-room schema requires auditable argument and stronger-case records', () => {
+  const schema = ctx.tcctV02GetDecisionIntelligenceSchema();
+  const warRoom = schema.properties.litigationWarRoom;
+  const actual = warRoom.properties.actualArgumentsAndEvidence.items;
+  assert.ok(actual.required.includes('side'));
+  assert.ok(actual.required.includes('argument'));
+  assert.ok(actual.required.includes('evidence'));
+
+  const stronger = warRoom.properties.strongerClaimantOrRegulatorCase.items;
+  assert.ok(stronger.required.includes('proposition'));
+  assert.ok(stronger.required.includes('evidenceNeeded'));
+  assert.ok(stronger.required.includes('expectedCounter'));
+  assert.ok(stronger.required.includes('replyEvidence'));
+});
+
 test('accepts a complete source-bounded output', () => {
   const result = ctx.tcctV02ValidateDecisionIntelligence(validOutput(), {
     primaryFamily: 'UNFAIR_TRADE',
@@ -129,6 +169,22 @@ test('accepts a complete source-bounded output', () => {
     analysisPlan: { required: ['relative_bargaining_and_dependency'], optional: [], forbidden: ['merger_hhi_delta'] },
   });
   assert.equal(result.status, 'VALID', JSON.stringify(result.issues));
+});
+
+test('rejects empty war-room argument and stronger-case objects', () => {
+  const actual = validOutput();
+  actual.litigationWarRoom.actualArgumentsAndEvidence = [{}];
+  let result = ctx.tcctV02ValidateDecisionIntelligence(actual, {
+    primaryFamily: 'UNFAIR_TRADE', allowedSourceIds: ['D1:CASE1'], analysisPlan: { required: [], optional: [], forbidden: [] },
+  });
+  assert.ok(result.issues.some((issue) => issue.code === 'WAR_ROOM_ARGUMENT_INCOMPLETE'));
+
+  const stronger = validOutput();
+  stronger.litigationWarRoom.strongerClaimantOrRegulatorCase = [{}];
+  result = ctx.tcctV02ValidateDecisionIntelligence(stronger, {
+    primaryFamily: 'UNFAIR_TRADE', allowedSourceIds: ['D1:CASE1'], analysisPlan: { required: [], optional: [], forbidden: [] },
+  });
+  assert.ok(result.issues.some((issue) => issue.code === 'WAR_ROOM_STRONGER_CASE_INCOMPLETE'));
 });
 
 test('rejects ideal evidence that omits custodian or authentication', () => {
