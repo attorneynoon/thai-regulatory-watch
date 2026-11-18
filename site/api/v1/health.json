@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-18T04:29:04Z",
+  "generated_at": "2026-11-18T14:04:48Z",
   "records": [
+    {
+      "event_id": "health-eb6aeab3ba231fff11a1c2dee6b8d664",
+      "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "observed_at": "2026-11-18T14:04:48Z",
+      "official_url": "https://www.tcct.or.th/category/giveaway-news",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "blocked"
+    },
     {
       "event_id": "health-8701db0792ada91fc2c298b86fbc42c2",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
