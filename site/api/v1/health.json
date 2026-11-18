@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-18T14:04:48Z",
+  "generated_at": "2026-11-18T22:11:10Z",
   "records": [
+    {
+      "event_id": "health-6a49e33511297bbe4147ce753fe54465",
+      "message": null,
+      "observed_at": "2026-11-18T22:11:10Z",
+      "official_url": "https://www.tcct.or.th/category/giveaway-news",
+      "previous_status": "blocked",
+      "regulator_id": "tcct",
+      "source_id": "tcct-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-37a1efa85301c6d6792d83e9c3c55ba5",
+      "message": null,
+      "observed_at": "2026-11-18T22:11:10Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-eb6aeab3ba231fff11a1c2dee6b8d664",
       "message": "Robots unavailable: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
