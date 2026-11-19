@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-19T03:34:04Z",
+  "generated_at": "2026-11-19T13:16:54Z",
   "records": [
+    {
+      "event_id": "health-e87ce1be6ba5507516a16555fb10aac5",
+      "message": "Attachment checks: Response exceeds byte budget (limit=15000000; received_at_least=15007744; HTTP=200; content_type=application/pdf)",
+      "observed_at": "2026-11-19T13:16:54Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-e322c04e7cec40df1276e306514554e4",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.thaibma.or.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thaibma.or.th', port=443) at 0x7fe64471513",
+      "observed_at": "2026-11-19T13:16:54Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-622abaf8be0dbff274a4997dd2cf35d0",
+      "message": null,
+      "observed_at": "2026-11-19T13:16:54Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-1b87dda6018c83d75956d6f0c5befe96",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.thaibma.or.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thaibma.or.th', port=443) at 0x7fe644717e0",
+      "observed_at": "2026-11-19T13:16:54Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "blocked"
+    },
     {
       "event_id": "health-25aef4bf40aae4cea060f7cf886c4f3b",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
