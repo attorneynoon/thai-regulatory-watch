@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-19T13:16:54Z",
+  "generated_at": "2026-11-19T21:40:53Z",
   "records": [
+    {
+      "event_id": "health-91c201b282894a0c4726b525c1e2923b",
+      "message": null,
+      "observed_at": "2026-11-19T21:40:53Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "degraded",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e87ce1be6ba5507516a16555fb10aac5",
       "message": "Attachment checks: Response exceeds byte budget (limit=15000000; received_at_least=15007744; HTTP=200; content_type=application/pdf)",
