@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-20T03:24:08Z",
+  "generated_at": "2026-11-20T12:59:18Z",
   "records": [
+    {
+      "event_id": "health-c576749afecc7d6d46ec2d3e3ec4a47c",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.thaibma.or.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thaibma.or.th', port=443) at 0x7f9071e77c5",
+      "observed_at": "2026-11-20T12:59:18Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "degraded",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-b49eaba0021a6937c887c1e4a43cb2f1",
+      "message": "Robots unavailable: HTTPSConnectionPool(host='www.thaibma.or.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thaibma.or.th', port=443) at 0x7f90721998e",
+      "observed_at": "2026-11-20T12:59:18Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "failed",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-7c0bc350fb84c4bad5539d0c1bbebb04",
+      "message": "Robots policy unresolved: HTTP 502",
+      "observed_at": "2026-11-20T12:59:18Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "healthy",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "blocked"
+    },
     {
       "event_id": "health-c1383ecd0aa83f744250ab056a182b5d",
       "message": "Attachment checks: HTTP 503",
