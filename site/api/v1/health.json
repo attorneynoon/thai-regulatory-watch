@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-20T12:59:18Z",
+  "generated_at": "2026-11-20T21:10:55Z",
   "records": [
+    {
+      "event_id": "health-ab6c291bfd887f569504a1ba181a1be9",
+      "message": null,
+      "observed_at": "2026-11-20T21:10:55Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-6c6f965cb561c28850fb543bc14060f8",
+      "message": null,
+      "observed_at": "2026-11-20T21:10:55Z",
+      "official_url": "https://www.parliament.go.th/section77/ajax/pagination.php?page=1&type=12",
+      "previous_status": "blocked",
+      "regulator_id": "house-section-77",
+      "source_id": "house-section-77-discovery",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-35e59dd23b5b9e566c1101f670b67cd2",
+      "message": null,
+      "observed_at": "2026-11-20T21:10:55Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-323941dc8961ad91020a1ce9fab6732e",
+      "message": null,
+      "observed_at": "2026-11-20T21:10:55Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-c576749afecc7d6d46ec2d3e3ec4a47c",
       "message": "Robots unavailable: HTTPSConnectionPool(host='www.thaibma.or.th', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thaibma.or.th', port=443) at 0x7f9071e77c5",
