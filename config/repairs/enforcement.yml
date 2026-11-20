@@ -3,6 +3,7 @@ sources:
   url: https://www.amlo.go.th/index.php/th/
   enabled: true
   validation_status: verified
+  count_drop_min_previous: 1
   public_form: {intro_page: '1'}
   public_form_url: https://www.amlo.go.th/index.php/th/
   mode: html

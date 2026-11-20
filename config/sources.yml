@@ -51,6 +51,7 @@ sources:
   max_pages: 1
   max_items: 100
   min_items: 1
+  count_drop_min_previous: 1
   asset_budget: 2
   limitations:
   - Public intro form POST intro_page=1 required; no cookies or authentication. Homepage headlines/recent cards only:5 unique

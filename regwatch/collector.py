@@ -46,7 +46,7 @@ def collect_source(state, source, now, transport=None, root=None):
         rows = rows[:source.get('max_items', 100)]
         if len(rows) < source.get('min_items', 1):
             raise ValueError('Suspicious empty/undersized parse; previous inventory retained')
-        if ss.get('last_count', 0) >= 10 and len(rows) < ss['last_count'] * 0.5:
+        if ss.get('last_count', 0) >= source.get('count_drop_min_previous', 10) and len(rows) < ss['last_count'] * 0.5:
             raise ValueError('Suspicious count drop greater than 50%; previous inventory retained')
         # Check oldest attempted documents first, including retained items absent
         # from today's bounded listing. Date/metadata remain source-observed.
