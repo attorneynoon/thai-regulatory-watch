@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-21T18:00:49Z",
+  "generated_at": "2026-11-21T23:23:26Z",
   "records": [
+    {
+      "event_id": "health-ce59c813aaccbc71265dde82591e5168",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-11-21T23:23:26Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-380e5d5679412b4515724346b1e18f08",
+      "message": "Access unavailable: HTTP 403",
+      "observed_at": "2026-11-21T23:23:26Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-0d8ff0a0cf0203b794100454d90a4203",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-21T23:23:26Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-f646ed331c31e104d18171107e63f246",
       "message": null,
