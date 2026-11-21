@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-21T11:11:50Z",
+  "generated_at": "2026-11-21T18:00:49Z",
   "records": [
+    {
+      "event_id": "health-f646ed331c31e104d18171107e63f246",
+      "message": null,
+      "observed_at": "2026-11-21T18:00:49Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-79fa0e4bf1cd1543b2a0f588333c2392",
+      "message": null,
+      "observed_at": "2026-11-21T18:00:49Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0bc1a48fe40bd1c3fb7187a50cac7640",
+      "message": null,
+      "observed_at": "2026-11-21T18:00:49Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-88539636380b7df4a565a0940fc6f910",
       "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
