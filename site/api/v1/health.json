@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-23T02:50:32Z",
+  "generated_at": "2026-11-23T12:55:06Z",
   "records": [
+    {
+      "event_id": "health-a583179eb792c966239b3aba6353d335",
+      "message": null,
+      "observed_at": "2026-11-23T12:55:06Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-29fbfa030496e39df22d46ef98eb1ba3",
+      "message": "Attachment checks: Document is not a PDF",
+      "observed_at": "2026-11-23T12:55:06Z",
+      "official_url": "https://www.mol.go.th/อัตราค่าจ้างขั้นต่ำ",
+      "previous_status": "healthy",
+      "regulator_id": "wage-committee",
+      "source_id": "wage-committee-watch",
+      "status": "degraded"
+    },
     {
       "event_id": "health-5663549e799b591e5dcabff278217de0",
       "message": "Robots unavailable: [Errno -3] Temporary failure in name resolution",
