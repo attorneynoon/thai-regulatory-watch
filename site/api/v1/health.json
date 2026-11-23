@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-22T21:50:46Z",
+  "generated_at": "2026-11-23T02:50:32Z",
   "records": [
+    {
+      "event_id": "health-5663549e799b591e5dcabff278217de0",
+      "message": "Robots unavailable: [Errno -3] Temporary failure in name resolution",
+      "observed_at": "2026-11-23T02:50:32Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-15fb2f4f2300cf2702271082e825a9fd",
+      "message": "HTTPSConnectionPool(host='www.etda.or.th', port=443): Read timed out. (read timeout=20)",
+      "observed_at": "2026-11-23T02:50:32Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "healthy",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "failed"
+    },
     {
       "event_id": "health-0ac44e63f1e77184529f0895b8b9f566",
       "message": null,
