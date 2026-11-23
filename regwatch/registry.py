@@ -100,7 +100,7 @@ def load_registry(path):
             if s.get(key):
                 re.compile(s[key])
         tcct = s.get('mode') == 'tcct-api'
-        for key, low, high, default in [("max_pages", 1, 100 if tcct else 10, 1), ("max_items", 1, 1000, 100), ("asset_budget", 0, 20, 2), ("min_items", 0, 1000, 1), ('max_response_bytes',1000,64_000_000,4_000_000)]:
+        for key, low, high, default in [("max_pages", 1, 100 if tcct else 10, 1), ("max_items", 1, 1000, 100), ("asset_budget", 0, 20, 2), ("min_items", 0, 1000, 1), ('count_drop_min_previous', 1, 1000, 10), ('max_response_bytes',1000,64_000_000,4_000_000)]:
             val = s.get(key, default)
             if type(val) is not int or not low <= val <= high:
                 raise ValueError("Invalid bound: " + key)

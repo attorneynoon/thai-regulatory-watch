@@ -5,6 +5,7 @@ The caller retains Transport's robots, destination, TLS and response checks.
 """
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
+from .models import digest
 from .registry import allowed_url
 
 AMLO_ENTRY='https://www.amlo.go.th/index.php/th/'
@@ -40,5 +41,11 @@ def validate_public_form(source, body, final_url):
             raise ValueError('Unexpected public navigation form control')
         fields[name]=control.get('value')
     if fields!=configured:
-        raise ValueError('Public navigation form fields changed')
+        raise ValueError(
+            'Public navigation form fields changed '
+            f'(stage=pre_post; observed_field_count={len(fields)}; '
+            f'csrf_token_present={"csrf_token" in fields}; '
+            f'intro_page_matches={fields.get("intro_page")==configured["intro_page"]}; '
+            f'response_sha256={digest(body)})'
+        )
     return dict(fields)
