@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-25T04:20:05Z",
+  "generated_at": "2026-11-25T15:40:18Z",
   "records": [
+    {
+      "event_id": "health-c85a8d65bfc126287070844280cc477d",
+      "message": null,
+      "observed_at": "2026-11-25T15:40:18Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-34e448f8e6ef6901a55bd296fa088f88",
+      "message": null,
+      "observed_at": "2026-11-25T15:40:18Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "healthy"
+    },
     {
       "event_id": "health-89380d63262d29616400273557f5ee24",
       "message": null,
