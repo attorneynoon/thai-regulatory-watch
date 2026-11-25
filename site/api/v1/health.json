@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-24T21:16:47Z",
+  "generated_at": "2026-11-25T04:20:05Z",
   "records": [
+    {
+      "event_id": "health-89380d63262d29616400273557f5ee24",
+      "message": null,
+      "observed_at": "2026-11-25T04:20:05Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-c565412558b13349fdb1c5566a18dc0b",
       "message": "Access unavailable: HTTP 403",
