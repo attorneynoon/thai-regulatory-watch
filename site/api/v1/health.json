@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-25T15:40:18Z",
+  "generated_at": "2026-11-26T00:25:45Z",
   "records": [
+    {
+      "event_id": "health-cee6052ff270f9bc77fa1714c56ac1e6",
+      "message": null,
+      "observed_at": "2026-11-26T00:25:45Z",
+      "official_url": "https://www.etda.or.th/th/Useful-Resource/knowledge-sharing/articles.aspx",
+      "previous_status": "failed",
+      "regulator_id": "etda",
+      "source_id": "etda-listing-03",
+      "status": "healthy"
+    },
     {
       "event_id": "health-c85a8d65bfc126287070844280cc477d",
       "message": null,
