@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-27T02:53:57Z",
+  "generated_at": "2026-11-27T12:30:38Z",
   "records": [
+    {
+      "event_id": "health-b20d53bae8149ee759d32e89f2be2167",
+      "message": "Attachment checks: HTTP 404",
+      "observed_at": "2026-11-27T12:30:38Z",
+      "official_url": "https://www.tcct.or.th/category/verdict",
+      "previous_status": "healthy",
+      "regulator_id": "tcct",
+      "source_id": "tcct-unfair",
+      "status": "degraded"
+    },
+    {
+      "event_id": "health-b18ef9c256a4711425cff2f2805059c3",
+      "message": null,
+      "observed_at": "2026-11-27T12:30:38Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-743cecbb3994a1a4ac89e3969714c592",
+      "message": "Robots policy unresolved: HTTP 503",
+      "observed_at": "2026-11-27T12:30:38Z",
+      "official_url": "https://www.admincourt.go.th/public-relations/public-relations-news",
+      "previous_status": "healthy",
+      "regulator_id": "administrative-court",
+      "source_id": "administrative-court-watch",
+      "status": "blocked"
+    },
+    {
+      "event_id": "health-6e797ff239e564bd2a789848cecb4ca4",
+      "message": null,
+      "observed_at": "2026-11-27T12:30:38Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-067a4bde27b05aa66b73b2dc6d53c484",
+      "message": "HTTP 522",
+      "observed_at": "2026-11-27T12:30:38Z",
+      "official_url": "https://www.ncsa.or.th/data/output/news.json",
+      "previous_status": "healthy",
+      "regulator_id": "ncsa",
+      "source_id": "ncsa-listing-02",
+      "status": "failed"
+    },
     {
       "event_id": "health-eaaf9a0926266973a43e158aaeaecca3",
       "message": null,
