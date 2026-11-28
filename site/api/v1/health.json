@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-27T22:00:58Z",
+  "generated_at": "2026-11-28T03:56:37Z",
   "records": [
+    {
+      "event_id": "health-eacec55f0adf2f0b4370d622812c33a6",
+      "message": null,
+      "observed_at": "2026-11-28T03:56:37Z",
+      "official_url": "https://www.ocpb.go.th/index.php?filename=index",
+      "previous_status": "failed",
+      "regulator_id": "ocpb",
+      "source_id": "ocpb-home",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-96d0a438a893355c9649f0fcb6394874",
+      "message": null,
+      "observed_at": "2026-11-28T03:56:37Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Hearing.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-02",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-771e182c795a163760d970dddc071b3a",
+      "message": null,
+      "observed_at": "2026-11-28T03:56:37Z",
+      "official_url": "https://www.dbd.go.th/api/frontend/content/category/1656067670544?page=1&limit=25&slug=1656067670544",
+      "previous_status": "blocked",
+      "regulator_id": "dbd",
+      "source_id": "dbd-listing-01",
+      "status": "healthy"
+    },
+    {
+      "event_id": "health-0d9d211409f7a9e181f5cacb66a5f136",
+      "message": null,
+      "observed_at": "2026-11-28T03:56:37Z",
+      "official_url": "https://www.thaibma.or.th/EN/Rule/Rules.aspx",
+      "previous_status": "blocked",
+      "regulator_id": "thaibma",
+      "source_id": "thaibma-listing-01",
+      "status": "healthy"
+    },
     {
       "event_id": "health-e17d880eb9d2627293f6df886b27f62b",
       "message": null,
